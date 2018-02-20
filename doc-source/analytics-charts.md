@@ -155,7 +155,7 @@ Device models on which your app is installed\.
 Device makes on which your app is installed\.
 
 **Countries**  
-Countries where your users are located\.
+Countries or regions where your users are located\.
 
 **Custom charts**  
 Custom attributes reported by your app\.

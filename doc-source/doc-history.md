@@ -2,13 +2,15 @@
 
 The following table describes the documentation for this release of Amazon Pinpoint\.
 
-+ **Latest documentation update:** December 22, 2017
++ **Latest documentation update:** February 6, 2018
 
 
 ****  
 
 | Change | Description | Date | 
 | --- | --- | --- | 
+| Segment import documentation | Amazon Pinpoint can now create an IAM role for you automatically\. | February 6, 2018 | 
+| 2\-way SMS support by country | Updated the table of Supported Countries and Regions for the SMS channel to list the countries and regions that support 2\-way SMS\. | February 5, 2018 | 
 | Time to Live value for mobile push | In the Amazon Pinpoint console, you can specify a Time to Live \(TTL\) value when you write a mobile push message for a campaign\. | December 22, 2017 | 
 | Removal of Amazon S3 export documentation | The ability to export Amazon Pinpoint event data directly to Amazon S3 has been deprecated\. Instead, you can use Amazon Kinesis Data Firehose to send event data to Amazon S3, Amazon Redshift, and other AWS services\. For more information, see [[ERROR] BAD/MISSING LINK TEXT](analytics-streaming.md)\. | December 18, 2017 | 
 | Segment import documentation | [Importing Segments](segments-importing.md) includes updated information about how to create endpoint files, the attributes you can use within these files, and how to create an IAM role for importing\. | October 26, 2017 | 

@@ -1,215 +1,227 @@
-# Supported Countries<a name="channels-sms-countries"></a>
+# Supported Countries and Regions<a name="channels-sms-countries"></a>
 
-You can use Amazon Pinpoint to send SMS messages to the following countries\.
-
-Support for sender IDs varies by country\. For example, messages delivered to U\.S\. phone numbers will not display the sender ID\. If you do not specify a sender ID when you send an SMS message, the message will display a long code as the sender ID in supported countries\. For countries that require an alphabetic sender ID, the message displays *NOTICE* as the sender ID\.
+You can use Amazon Pinpoint to send SMS messages to the countries and regions listed in the following table\. This table also lists the countries and regions that support sender IDs and 2\-way SMS\.
 
 
-| Country | ISO Code | Supports Sender IDs | 
-| --- | --- | --- | 
-| Afghanistan | AF |  | 
-| Albania | AL | Yes | 
-| Algeria | DZ |  | 
-| Andorra | AD | Yes | 
-| Angola | AO | Yes | 
-| Anguilla | AI | Yes | 
-| Antigua and Barbuda | AG | Yes | 
-| Argentina | AR |  | 
-| Armenia | AM | Yes | 
-| Aruba | AW | Yes | 
-| Australia | AU | Yes | 
-| Austria | AT | Yes | 
-| Azerbaijan | AZ |  | 
-| Bahamas | BS | Yes | 
-| Bahrain | BH | Yes | 
-| Bangladesh | BD |  | 
-| Barbados | BB | Yes | 
-| Belarus | BY | Yes | 
-| Belgium | BE |  | 
-| Belize | BZ | Yes | 
-| Benin | BJ | Yes | 
-| Bermuda | BM | Yes | 
-| Bhutan | BT | Yes | 
-| Bolivia | BO | Yes | 
-| Bosnia and Herzegovina | BA | Yes | 
-| Botswana | BW | Yes | 
-| Brazil | BR |  | 
-| Brunei | BN | Yes | 
-| Bulgaria | BG | Yes | 
-| Burkina Faso | BF | Yes | 
-| Burundi | BI | Yes | 
-| Cambodia | KH | Yes | 
-| Cameroon | CM | Yes | 
-| Canada | CA |  | 
-| Cape Verde | CV | Yes | 
-| Cayman Islands | KY | Yes | 
-| Central African Republic | CF | Yes | 
-| Chad | TD | Yes | 
-| Chile | CL |  | 
-| China | CN |  | 
-| Colombia | CO |  | 
-| Comoros | KM | Yes | 
-| Cook Islands | CK | Yes | 
-| Costa Rica | CR |  | 
-| Croatia | HR |  | 
-| Cyprus | CY | Yes | 
-| Czech Republic | CZ | Yes | 
-| Democratic Republic of the Congo | CD |  | 
-| Denmark | DK | Yes | 
-| Djibouti | DJ | Yes | 
-| Dominica | DM | Yes | 
-| Dominican republic | DO |  | 
-| East Timor | TL |  | 
-| Ecuador | EC |  | 
-| Egypt | EG |  | 
-| El Salvador | SV |  | 
-| Equatorial Guinea | GQ | Yes | 
-| Estonia | EE | Yes | 
-| Ethiopia | ET |  | 
-| Faroe Islands | FO | Yes | 
-| Fiji | FJ | Yes | 
-| Finland | FI | Yes | 
-| France | FR | Yes | 
-| French Guiana | GF |  | 
-| Gabon | GA | Yes | 
-| Gambia | GM | Yes | 
-| Georgia | GE | Yes | 
-| Germany | DE | Yes | 
-| Ghana | GH |  | 
-| Gibraltar | GI | Yes | 
-| Greece | GR | Yes | 
-| Greenland | GL | Yes | 
-| Grenada | GD | Yes | 
-| Guadeloupe | GP | Yes | 
-| Guam | GU |  | 
-| Guatemala | GT |  | 
-| Guinea | GN | Yes | 
-| Guinea\-Bissau | GW | Yes | 
-| Guyana | GY | Yes | 
-| Haiti | HT | Yes | 
-| Honduras | HN |  | 
-| Hong Kong | HK | Yes | 
-| Hungary | HU |  | 
-| Iceland | IS | Yes | 
-| India | IN |  | 
-| Indonesia | ID |  | 
-| Iraq | IQ |  | 
-| Ireland | IE | Yes | 
-| Israel | IL | Yes | 
-| Italy | IT | Yes | 
-| Ivory Coast | CI |  | 
-| Jamaica | JM | Yes | 
-| Japan | JP |  | 
-| Jordan | JO | Yes | 
-| Kazakhstan | KZ |  | 
-| Kenya | KE |  | 
-| Kiribati | KI |  | 
-| Kuwait | KW |  | 
-| Kyrgyzstan | KG |  | 
-| Laos | LA |  | 
-| Latvia | LV | Yes | 
-| Lebanon | LB | Yes | 
-| Lesotho | LS | Yes | 
-| Liberia | LR | Yes | 
-| Libya | LY | Yes | 
-| Liechtenstein | LI | Yes | 
-| Lithuania | LT | Yes | 
-| Luxembourg | LU | Yes | 
-| Macau | MO | Yes | 
-| Macedonia | MK | Yes | 
-| Madagascar | MG | Yes | 
-| Malawi | MW | Yes | 
-| Malaysia | MY |  | 
-| Maldives | MV | Yes | 
-| Mali | ML |  | 
-| Malta | MT | Yes | 
-| Martinique | MQ | Yes | 
-| Mauritania | MR | Yes | 
-| Mauritius | MU | Yes | 
-| Mexico | MX |  | 
-| Moldova | MD | Yes | 
-| Monaco | MC |  | 
-| Mongolia | MO | Yes | 
-| Montenegro | ME | Yes | 
-| Montserrat | MS | Yes | 
-| Morocco | MA |  | 
-| Mozambique | MZ |  | 
-| Myanmar | MM |  | 
-| Namibia | NA |  | 
-| Nepal | NP |  | 
-| Netherlands | NL | Yes | 
-| Netherlands Antilles | AN | Yes | 
-| New Caledonia | NC | Yes | 
-| New Zealand | NZ |  | 
-| Nicaragua | NI |  | 
-| Niger | NE | Yes | 
-| Nigeria | NG | Yes | 
-| Norway | NO | Yes | 
-| Oman | OM |  | 
-| Pakistan | PK |  | 
-| Palau | PW |  | 
-| Palestinian Territory | PS | Yes | 
-| Panama | PA |  | 
-| Papua New Guinea | PG | Yes | 
-| Paraguay | PY | Yes | 
-| Peru | PE | Yes | 
-| Philippines | PH |  | 
-| Poland | PL | Yes | 
-| Portugal | PT | Yes | 
-| Puerto Rico | PR |  | 
-| Qatar | QA |  | 
-| Republic of the Congo | CG |  | 
-| Reunion Island | RE | Yes | 
-| Romania | RO |  | 
-| Russia | RU | Yes | 
-| Rwanda | RW | Yes | 
-| Saint Kitts and Nevis | KN |  | 
-| Saint Lucia | LC |  | 
-| Saint Vincent and the Grenadines | VC |  | 
-| Samoa | WS | Yes | 
-| Sao Tome and Principe | ST | Yes | 
-| Saudi Arabia | SA |  | 
-| Senegal | SN | Yes | 
-| Serbia | RS |  | 
-| Seychelles | SC | Yes | 
-| Sierra Leone | SL | Yes | 
-| Singapore | SG | Yes | 
-| Slovakia | SK | Yes | 
-| Slovenia | SI | Yes | 
-| Solomon Islands | SB | Yes | 
-| Somalia | SO | Yes | 
-| South Africa | ZA |  | 
-| South Korea | KR |  | 
-| South Sudan | SS | Yes | 
-| Spain | ES | Yes | 
-| Sri Lanka | LK |  | 
-| Suriname | SR | Yes | 
-| Swaziland | SZ | Yes | 
-| Sweden | SE | Yes | 
-| Switzerland | CH | Yes | 
-| Taiwan | TW |  | 
-| Tajikistan | TJ | Yes | 
-| Tanzania | TZ | Yes | 
-| Thailand | TH |  | 
-| Togo | TG | Yes | 
-| Tonga | TO | Yes | 
-| Trinidad and Tobago | TT | Yes | 
-| Tunisia | TN |  | 
-| Turkey | TR |  | 
-| Turkmenistan | TM | Yes | 
-| Turks and Caicos Islands | TC | Yes | 
-| Uganda | UG | Yes | 
-| Ukraine | UA | Yes | 
-| United Arab Emirates | AE |  | 
-| United Kingdom | GB | Yes | 
-| United States | US |  | 
-| Uruguay | UY |  | 
-| Uzbekistan | UZ | Yes | 
-| Vanuatu | VU | Yes | 
-| Venezuela | VE |  | 
-| Vietnam | VN |  | 
-| Virgin Islands, British | VG | Yes | 
-| Virgin Islands, US | VI |  | 
-| Yemen | YE | Yes | 
-| Zambia | ZM | Yes | 
-| Zimbabwe | ZW | Yes | 
+| Country or region | ISO code | Supports sender IDs | Supports 2\-way SMS | 
+| --- | --- | --- | --- | 
+| Afghanistan | AF |  |  | 
+| Albania | AL | Yes |  | 
+| Algeria | DZ |  |  | 
+| Andorra | AD | Yes |  | 
+| Angola | AO | Yes |  | 
+| Anguilla | AI | Yes |  | 
+| Antigua and Barbuda | AG | Yes |  | 
+| Argentina | AR |  | Yes | 
+| Armenia | AM | Yes |  | 
+| Aruba | AW | Yes |  | 
+| Australia | AU | Yes | Yes | 
+| Austria | AT | Yes | Yes | 
+| Azerbaijan | AZ |  |  | 
+| Bahamas | BS | Yes |  | 
+| Bahrain | BH | Yes |  | 
+| Bangladesh | BD |  |  | 
+| Barbados | BB | Yes |  | 
+| Belarus | BY | Yes |  | 
+| Belgium | BE |  | Yes | 
+| Belize | BZ | Yes |  | 
+| Benin | BJ | Yes |  | 
+| Bermuda | BM | Yes |  | 
+| Bhutan | BT | Yes |  | 
+| Bolivia | BO | Yes |  | 
+| Bosnia and Herzegovina | BA | Yes |  | 
+| Botswana | BW | Yes |  | 
+| Brazil | BR |  | Yes | 
+| Brunei | BN | Yes |  | 
+| Bulgaria | BG | Yes |  | 
+| Burkina Faso | BF | Yes |  | 
+| Burundi | BI | Yes |  | 
+| Cambodia | KH | Yes |  | 
+| Cameroon | CM | Yes |  | 
+| Canada | CA |  | Yes | 
+| Cape Verde | CV | Yes |  | 
+| Cayman Islands | KY | No |  | 
+| Central African Republic | CF | Yes |  | 
+| Chad | TD | Yes |  | 
+| Chile | CL |  | Yes | 
+| China | CN |  | Yes | 
+| Colombia | CO |  |  | 
+| Comoros | KM | Yes |  | 
+| Cook Islands | CK | Yes |  | 
+| Costa Rica | CR |  |  | 
+| Croatia | HR |  | Yes | 
+| Cyprus | CY | Yes |  | 
+| Czech Republic | CZ | Yes\[1\] | Yes | 
+| Democratic Republic of the Congo | CD |  |  | 
+| Denmark | DK | Yes | Yes | 
+| Djibouti | DJ | Yes |  | 
+| Dominica | DM | Yes |  | 
+| Dominican Republic | DO |  |  | 
+| East Timor | TL |  |  | 
+| Ecuador | EC |  |  | 
+| Egypt | EG | Yes |  | 
+| El Salvador | SV |  |  | 
+| Equatorial Guinea | GQ | Yes |  | 
+| Estonia | EE | Yes | Yes | 
+| Ethiopia | ET |  |  | 
+| Faroe Islands | FO | Yes |  | 
+| Fiji | FJ | Yes |  | 
+| Finland | FI | Yes | Yes | 
+| France | FR | Yes | Yes | 
+| French Guiana | GF |  |  | 
+| Gabon | GA | Yes |  | 
+| Gambia | GM | Yes |  | 
+| Georgia | GE | Yes |  | 
+| Germany | DE | Yes | Yes | 
+| Ghana | GH |  |  | 
+| Gibraltar | GI | Yes |  | 
+| Greece | GR | Yes |  | 
+| Greenland | GL | Yes |  | 
+| Grenada | GD | Yes |  | 
+| Guadeloupe | GP | Yes |  | 
+| Guam | GU |  |  | 
+| Guatemala | GT |  | Yes | 
+| Guinea | GN | Yes |  | 
+| Guinea\-Bissau | GW | Yes |  | 
+| Guyana | GY | Yes |  | 
+| Haiti | HT | Yes |  | 
+| Honduras | HN |  | Yes | 
+| Hong Kong | HK | Yes | Yes | 
+| Hungary | HU |  | Yes | 
+| Iceland | IS | Yes |  | 
+| India | IN | Yes\[1\] | Yes | 
+| Indonesia | ID | Yes\[1\] | Yes | 
+| Iraq | IQ |  |  | 
+| Ireland | IE | Yes | Yes | 
+| Israel | IL | Yes | Yes | 
+| Italy | IT | Yes | Yes | 
+| Ivory Coast | CI |  |  | 
+| Jamaica | JM | Yes |  | 
+| Japan | JP | Yes\[2\] | Yes | 
+| Jordan | JO | Yes\[1\] |  | 
+| Kazakhstan | KZ |  |  | 
+| Kenya | KE |  |  | 
+| Kiribati | KI |  |  | 
+| Kuwait | KW |  |  | 
+| Kyrgyzstan | KG |  |  | 
+| Laos | LA |  |  | 
+| Latvia | LV | Yes | Yes | 
+| Lebanon | LB | Yes |  | 
+| Lesotho | LS | Yes |  | 
+| Liberia | LR | Yes |  | 
+| Libya | LY | Yes |  | 
+| Liechtenstein | LI | Yes |  | 
+| Lithuania | LT | Yes | Yes | 
+| Luxembourg | LU | Yes |  | 
+| Macau | MO | Yes |  | 
+| Macedonia | MK | Yes |  | 
+| Madagascar | MG | Yes |  | 
+| Malawi | MW | Yes |  | 
+| Malaysia | MY |  | Yes | 
+| Maldives | MV | Yes |  | 
+| Mali | ML |  |  | 
+| Malta | MT | Yes |  | 
+| Martinique | MQ | Yes |  | 
+| Mauritania | MR | Yes |  | 
+| Mauritius | MU | Yes |  | 
+| Mexico | MX |  | Yes | 
+| Moldova | MD | Yes |  | 
+| Monaco | MC |  |  | 
+| Mongolia | MO | Yes |  | 
+| Montenegro | ME | Yes |  | 
+| Montserrat | MS | Yes |  | 
+| Morocco | MA |  |  | 
+| Mozambique | MZ |  |  | 
+| Myanmar | MM |  |  | 
+| Namibia | NA |  |  | 
+| Nepal | NP |  |  | 
+| Netherlands | NL | Yes | Yes | 
+| Netherlands Antilles | AN | Yes |  | 
+| New Caledonia | NC | Yes |  | 
+| New Zealand | NZ |  | Yes | 
+| Nicaragua | NI |  |  | 
+| Niger | NE | Yes |  | 
+| Nigeria | NG | Yes\[1\] | Yes | 
+| Norway | NO | Yes | Yes | 
+| Oman | OM | Yes\[1\] |  | 
+| Pakistan | PK |  |  | 
+| Palau | PW |  |  | 
+| Palestinian Territories | PS | Yes\[1\]\[3\] |  | 
+| Panama | PA |  |  | 
+| Papua New Guinea | PG | Yes |  | 
+| Paraguay | PY | Yes |  | 
+| Peru | PE | No |  | 
+| Philippines | PH | Yes\[1\] | Yes | 
+| Poland | PL | Yes | Yes | 
+| Portugal | PT | Yes | Yes | 
+| Puerto Rico | PR |  | Yes | 
+| Qatar | QA |  |  | 
+| Republic of the Congo | CG |  |  | 
+| Reunion Island | RE | Yes |  | 
+| Romania | RO |  | Yes | 
+| Russia | RU | Yes\[1\] | Yes | 
+| Rwanda | RW | Yes |  | 
+| Saint Kitts and Nevis | KN |  |  | 
+| Saint Lucia | LC |  |  | 
+| Saint Vincent and the Grenadines | VC |  |  | 
+| Samoa | WS | Yes |  | 
+| Sao Tome and Principe | ST | Yes |  | 
+| Saudi Arabia | SA | Yes\[1\] |  | 
+| Senegal | SN | Yes |  | 
+| Serbia | RS | Yes |  | 
+| Seychelles | SC | Yes |  | 
+| Sierra Leone | SL | Yes |  | 
+| Singapore | SG | Yes | Yes | 
+| Slovakia | SK | Yes | Yes | 
+| Slovenia | SI | Yes | Yes | 
+| Solomon Islands | SB | Yes |  | 
+| Somalia | SO | Yes |  | 
+| South Africa | ZA |  | Yes | 
+| South Korea | KR |  | Yes | 
+| South Sudan | SS | Yes |  | 
+| Spain | ES | Yes | Yes | 
+| Sri Lanka | LK |  |  | 
+| Suriname | SR | Yes |  | 
+| Swaziland | SZ | Yes |  | 
+| Sweden | SE | Yes | Yes | 
+| Switzerland | CH | Yes | Yes | 
+| Taiwan | TW |  | Yes | 
+| Tajikistan | TJ | Yes |  | 
+| Tanzania | TZ | Yes |  | 
+| Thailand | TH | Yes | Yes | 
+| Togo | TG | Yes |  | 
+| Tonga | TO | Yes |  | 
+| Trinidad and Tobago | TT | Yes |  | 
+| Tunisia | TN | Yes |  | 
+| Turkey | TR |  | Yes | 
+| Turkmenistan | TM | Yes |  | 
+| Turks and Caicos Islands | TC | Yes |  | 
+| Uganda | UG | Yes |  | 
+| Ukraine | UA | Yes | Yes | 
+| United Arab Emirates | AE | Yes\[1\] |  | 
+| United Kingdom | GB | Yes | Yes | 
+| United States | US |  | Yes | 
+| Uruguay | UY |  |  | 
+| Uzbekistan | UZ | Yes |  | 
+| Vanuatu | VU | Yes |  | 
+| Venezuela | VE |  |  | 
+| Vietnam | VN |  |  | 
+| Virgin Islands, British | VG | Yes |  | 
+| Virgin Islands, US | VI | Yes |  | 
+| Yemen | YE | Yes |  | 
+| Zambia | ZM | Yes |  | 
+| Zimbabwe | ZW | Yes |  | 
+
+**Notes**
+
+1. <a name="sms-support-note-1"></a>Senders are required to use a sender ID\. [Open a Service Limit Increase case](https://console.aws.amazon.com/support/v1?region=home#/case/create) in Support Center to request the creation of a sender ID\.
+
+1. <a name="sms-support-note-2"></a>All carriers in Japan except KDDI support sender ID\.
+
+1. <a name="sms-support-note-3"></a>Jawwal is the only carrier in the Palestinian Territories that supports alphabetic sender IDs\.
+
+## Sender ID Support<a name="channels-sms-countries-sender-id"></a>
+
+The following table explains which ID is displayed when you send SMS messages to countries or regions where sender ID is supported, compared to those where sender ID isn't supported\.
+
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-countries.html)

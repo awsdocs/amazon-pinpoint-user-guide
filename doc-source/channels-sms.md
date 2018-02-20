@@ -9,10 +9,10 @@ Your SMS channel settings apply to all SMS messages that you send from your AWS 
 
 Where required by local laws and regulations \(such as the US and Canada\), SMS recipients can opt out, which means that they choose to stop receiving SMS messages from your AWS account\. 
 
-You can use Amazon Pinpoint to send SMS messages to more than 200 countries\. For more information, see [Supported Countries](channels-sms-countries.md)\.
+You can use Amazon Pinpoint to send SMS messages to more than 200 countries and/or regions\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
 
 
 + [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)
 + [Monitoring SMS Activity with Amazon Pinpoint](channels-sms-monitor.md)
 + [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)
-+ [Supported Countries](channels-sms-countries.md)
++ [Supported Countries and Regions](channels-sms-countries.md)

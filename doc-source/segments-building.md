@@ -31,15 +31,15 @@ You can create segments separately from campaigns to assemble a collection of se
 1. For **Segment name**, type a name for your segment to make it easy to recognize later\.
 
 1. For **How would you like to define your segment**, keep **Build segment** selected\.  
-![\[The Build segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Build segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Build segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The Build segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_build.png)![\[The Build segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Build segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For **What messaging channel do you want to use?**, choose the channel you will use to engage the segment with a campaign\. The channel must be enabled in your Amazon Pinpoint project\. For more information, see [Amazon Pinpoint Channels](channels.md)\.
 
 1. If you selected **Mobile push** as the channel type, define the **App usage criteria**\. Select which users belong to the segment based on whether they have \(or haven't\) used your app within the specified number of days\.  
-![\[The app usage criteria options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The app usage criteria options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The app usage criteria options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The app usage criteria options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_usage.png)![\[The app usage criteria options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The app usage criteria options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. \(Optional\) For **Filter by standard attributes**, define which users belong to the segment based on the characteristics that are standard to Amazon Pinpoint\.  
-![\[The device attributes options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The device attributes options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The device attributes options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The device attributes options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_standard_attributes.png)![\[The device attributes options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The device attributes options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. \(Optional\) For **Filter by custom attributes** and **Filter by user attributes**, define which users belong to the segment based on custom attributes that you add to your Amazon Pinpoint endpoint resources\.
 

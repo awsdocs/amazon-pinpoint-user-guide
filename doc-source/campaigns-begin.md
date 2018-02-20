@@ -21,7 +21,7 @@ Optionally, you can set up your campaign as an A/B test to experiment with diffe
 1. In the navigation menu, choose **Campaigns**\. The **Campaigns** page opens, and it displays summary information for previously defined campaigns\.
 
 1. Choose **New campaign**\. The **Create a campaign** page opens at the **Details** step\.  
-![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_details.png)![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For **Campaign name**, type a name to make the campaign easy to recognize later\.
 
@@ -34,7 +34,7 @@ Optionally, you can set up your campaign as an A/B test to experiment with diffe
    + **A/B Test** – Behaves like a standard campaign, but enables you to define different treatments for the campaign's message or schedule\.
 
 1. If you choose to create an A/B test, for **Choose what you will test for**, choose whether you will test variations of the campaign's **Messages** or **Schedule**\.  
-![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_abselect.png)![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. Choose **Next step**\.
 

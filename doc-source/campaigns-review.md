@@ -8,7 +8,7 @@ Before you begin, complete [Step 4: Set the Campaign Schedule](campaigns-schedul
 **To review and launch a campaign**
 
 1. For the **Review and launch** step, review the campaign settings\. If you need to make changes, choose an earlier stage in the campaign creation process\.  
-![\[The steps for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The steps for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The steps for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The steps for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_navigation.png)![\[The steps for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The steps for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. If all of the settings are correct, choose **Launch campaign**\. The console displays the **Campaign details** page for your campaign\.
 

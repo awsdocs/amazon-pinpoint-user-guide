@@ -14,10 +14,7 @@ If you chose **Mobile push** as the channel type, write the push notification th
 **Choose the notification type**
 
 + Choose the type of notification that your campaign delivers:  
-![\[The options to create a standard notification or a silent
-                     notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The options to create a standard notification or a silent
-                     notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The options to create a standard notification or a silent
-                     notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_messagetype.png)![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
   + **Standard notification** – A push notification with a title and message\. Users are alerted by their mobile devices when they receive the notification\.
 
@@ -58,10 +55,10 @@ If you chose **Email** as the channel type, write the email that your campaign s
 1. For **Subject**, type the subject for your email\.
 
 1. For **Message**, type the email body\. You can use the rich text editor to format your message:  
-![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_editor.png)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
    To write your message body as HTML, choose the source icon:  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_source.png)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
    When you finish writing your message, you can save it as a template for later use by choosing **Save as template**\.
 
@@ -91,7 +88,7 @@ If you selected **SMS** as the channel type, write the text message that your ca
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
-   Support for sender IDs varies by country\. For more information, see [Supported Countries](channels-sms-countries.md)\.
+   Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
 
    This message\-level sender ID overrides your default sender ID, which you set on the **Settings** page\.
 
@@ -102,10 +99,7 @@ If you selected **SMS** as the channel type, write the text message that your ca
 For a campaign that includes an A/B test of the message, define two or more message treatments\.
 
 1. To help you start, Amazon Pinpoint provides two treatments\. If you want more treatments, choose **Add more**\.  
-![\[Amazon Pinpoint provides two treatments to get you started, and you can add
-                     more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add
-                     more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add
-                     more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_allocation.png)![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For each treatment, do the following:
 
@@ -149,6 +143,66 @@ You can base a template on any supported message type, and you can use the same 
 | --- | --- | --- | 
 | Message type | Title | Subject | 
 | Message body | Message body | Plain text message | 
+
+### Email Template Restrictions<a name="campaigns-message-templates-restrictions"></a>
+
+Email templates can only include the HTML elements and attributes listed in the following table\.
+
+
+| Allowed Elements | Allowed Attributes | 
+| --- | --- | 
+| a | dir, href, style, title | 
+| b | dir, style, title | 
+| blockquote | cite, dir, style, title | 
+| br | dir, style, title | 
+| caption | dir, style, title | 
+| cite | dir, style, title | 
+| code | dir, style, title | 
+| col | dir, span, style, title | 
+| colgroup | dir, span, style, title | 
+| dd | dir, style, title | 
+| div | dir, style, title | 
+| dl | dir, style, title | 
+| dt | dir, style, title | 
+| em | dir, style, title | 
+| h1 | dir, style, title | 
+| h2 | dir, style, title | 
+| h3 | dir, style, title | 
+| h4 | dir, style, title | 
+| h5 | dir, style, title | 
+| h6 | dir, style, title | 
+| i | dir, style, title | 
+| img | alt, dir, height, src, style, title, width | 
+| li | dir, style, title, value | 
+| ol | dir, reversed, start, style, title, type | 
+| p | dir, style, title | 
+| pre | dir, style, title | 
+| q | cite, dir, style, title | 
+| small | dir, style, title | 
+| span | dir, style, title | 
+| strike | dir, style, title | 
+| strong | dir, style, title | 
+| sub | dir, style, title | 
+| sup | dir, style, title | 
+| table | dir, style, title | 
+| tbody | dir, style, title | 
+| td | colspan, dir, rowspan, style, title | 
+| tfoot | dir, style, title | 
+| th | abbr, colspan, dir, rowspan, scope, sorted, style, title | 
+| thead | dir, style, title | 
+| tr | dir, style, title | 
+| u | dir, style, title | 
+| ul | dir, style, title | 
+
+Additionally, some attributes—such as `src` or `href`—allow you to specify a protocol\. If your HTML templates include these attributes, they can only specify certain protocols\. The allowed protocols for these attributes are listed in the following table\.
+
+
+| Element/attribute | Allowed protocols | 
+| --- | --- | 
+| <a href="\.\.\."> | ftp, http, https, mailto | 
+| <blockquote cite="\.\.\."> | http, https | 
+| <img src="\.\.\."> | http, https | 
+| <q cite="\.\.\."> | http, https | 
 
 ## Message Variables<a name="campaigns-message-variables"></a>
 

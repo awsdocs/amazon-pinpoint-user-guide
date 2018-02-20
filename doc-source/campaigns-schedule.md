@@ -14,14 +14,14 @@ Before you begin, complete [Step 3: Write the Message](campaigns-message.md)\.
 **To set a schedule**
 
 1. Select the frequency with which the campaign runs\. The default selection is once, but you can choose a recurring frequency \(such as **Weekly**\), or you can choose **Immediate** to send the message when you launch the campaign\.  
-![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_frequency.png)![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. Unless you are sending the message immediately, choose when the message is sent:
 
    + If you chose to send the message only once, for **When**, select the date, time, and time zone\.
 
    + If you chose a recurring frequency, for **Start**, select the date, time, and time zone for the beginning of the campaign\. The default date is the current date and the default time is immediately \(approximately 15 minutes from the current time\)\. For **End**, select a date and time to end the campaign\.  
-![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_schedule.png)![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. Enable **User’s local time** if you want to make the schedule take effect according to each recipient’s local time\. For example, if the campaign start time is 2:00 PM, and the time zone is UTC\-05:00 \(Eastern Standard Time\), then recipients in New York receive the message at 2:00 PM in their local time\. One hour later, when the campaign sends its message for UTC\-06:00 \(Central Standard Time\), users in Kansas City receive the message at 2:00 PM in their local time\.
 
@@ -34,10 +34,7 @@ Before you begin, complete [Step 3: Write the Message](campaigns-message.md)\.
 **To create a schedule A/B test**
 
 1. To help you start, Amazon Pinpoint provides two treatments\. If you want more treatments, choose **Add more**\.  
-![\[Amazon Pinpoint provides two treatments to get you started, and you can add
-                  more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add
-                  more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add
-                  more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_allocation.png)![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For each treatment, do the following:
 

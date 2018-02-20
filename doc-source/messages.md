@@ -79,10 +79,10 @@ To send a direct email, you must use a project in which the email channel is ena
 1. For **Subject**, type the subject for your email\.
 
 1. For **Message**, type the email body\. You can use the rich text editor to format your message:  
-![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_editor.png)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
    To write your message body as HTML, choose the source icon:  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_source.png)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
    When you finish writing your message, you can save it as a template for later use by choosing **Save as template**\.
 
@@ -126,7 +126,7 @@ To send a direct SMS message, you must use a project in which the SMS channel is
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
-   Support for sender IDs varies by country\. For more information, see [Supported Countries](channels-sms-countries.md)\.
+   Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
 
    This message\-level sender ID overrides your default sender ID, which you set on the **Settings** page\.
 
@@ -162,27 +162,3 @@ You can base a template on any supported message type, and you can use the same 
 | --- | --- | --- | 
 | Message type | Title | Subject | 
 | Message body | Message body | Plain text message | 
-
-## Message Variables<a name="messages-variables"></a>
-
-To create a message that is personalized for each recipient, use message variables\. Message variables refer to specific *endpoint* attributes\. These attributes can include characteristics that you add to the endpoint resource, such as the recipient's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it substitutes the variables with the corresponding attribute values for the receiving endpoint\.
-
-For the attributes, see [Endpoint Attributes](http://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoints.html#rest-api-endpoints-attributes)\.
-
-To include a variable in your message, enclose the attribute name in double brackets, as in `{{Demographic.AppVersion}}`\.
-
-Often, the most useful endpoint attribute for message variables is `{{Attributes.customAttributeName}}`, where `customAttributeName` refers to custom attributes that you add to the endpoint\. By using custom attributes for your variables, you can display personalized messages that are unique for each recipient\.
-
-For example, if your app is a fitness app for runners and it includes custom attributes for the user's name, activity, and personal record, you could use variables in the following message:
-
-`Hey {{Attributes.userName}}, congratulations on your new {{Attributes.activity}} PR of {{Attributes.personalRecord}}!`
-
-When Amazon Pinpoint delivers this message, the content varies for each recipient after the variables are substituted\. Possible final messages are:
-
-`Hey Jane Doe, congratulations on your new half marathon PR of 1:42:17!`
-
-Or:
-
-`Hey John Doe, congratulations on your new 5K PR of 20:52!`
-
-For examples of custom attributes for your app's code, see the [iOS example](http://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](http://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes)\.

@@ -6,7 +6,7 @@ By monitoring funnels, you can assess whether conversion rates have improved bec
 
 After you specify which steps belong in your funnel, the **Create funnel** page displays a chart like the following example:
 
-![\[A bar chart depicting each step in a funnel.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[A bar chart depicting each step in a funnel.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[A bar chart depicting each step in a funnel.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[A bar chart depicting each step in a funnel.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/funnel.png)![\[A bar chart depicting each step in a funnel.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[A bar chart depicting each step in a funnel.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 This example chart shows the percentage of users who complete each step in the process of updating an app\. By comparing the values between columns, you can determine the drop off rates between steps\. In this example, there is a 35% drop off between users who receive a notification and those who start an app session\. Then there is a 19% drop off between users who start a session and those who open the app settings page\.
 
@@ -39,6 +39,6 @@ For information about creating events using the AWS Mobile SDK for Android or th
    + **Event** – The event type reported by your app to Amazon Pinpoint\.
 
    + **Attributes** – The attribute\-value pairs that are assigned to the events you want to add to the chart\.  
-![\[The tabs on the Analytics page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The tabs on the Analytics page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The tabs on the Analytics page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+![\[The tabs on the Analytics page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/funnel_eventbox.png)![\[The tabs on the Analytics page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The tabs on the Analytics page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. To add more events, choose the add \(\+\) button, or copy an event by choosing the copy icon\.

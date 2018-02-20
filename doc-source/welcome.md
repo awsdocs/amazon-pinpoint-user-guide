@@ -1,28 +1,26 @@
 # What Is Amazon Pinpoint?<a name="welcome"></a>
 
-Amazon Pinpoint is an AWS service that you can use to improve user engagement\. Use Amazon Pinpoint to create campaigns that reach audience segments with tailored messages\. 
+Amazon Pinpoint is an AWS service that you can use to engage with your customers across multiple messaging channels\. You can send push notifications, emails, or text messages \(SMS\), depending on the purpose of your campaign\.
 
-Amazon Pinpoint supports multiple messaging channels\. You can choose to send push notifications, emails, or text messages \(SMS\) depending on the purpose of your campaign and the type of message\.
-
-With Amazon Pinpoint, you can do the following:
+This section describes the major features of Amazon Pinpoint\.
 
 ## Define Audience Segments<a name="welcome-segments"></a>
 
-To reach the right audience with your messages, define audience segments\. You can define dynamic segments based on data reported by your application, such as operating system or mobile device\.
-
-You can also import segments that you define outside of Amazon Pinpoint\.
-
-A segment designates which users receive the messages delivered by a campaign\.
+Reach the right audience for your messages by defining audience segments\. A segment designates which users receive the messages that are sent from a campaign\. You can define dynamic segments based on data that's reported by your application, such as operating system or mobile device type\. You can also import static segments that you define outside of Amazon Pinpoint\.
 
 ## Engage Your Audience with Messaging Campaigns<a name="welcome-campaigns"></a>
 
-Engage your audience segment by creating a messaging campaign\. A campaign sends tailored messages according to a schedule that you define\. You can create a campaign that sends messages through any channel that is supported by Amazon Pinpoint: mobile push, email, or SMS\.
+Engage your audience by creating a messaging campaign\. A campaign sends tailored messages on a schedule that you define\. You can create campaigns that send mobile push, email, or SMS messages\.
 
 To experiment with alternative campaign strategies, set up your campaign as an A/B test, and analyze the results with Amazon Pinpoint analytics\.
 
+## Send Direct Messages<a name="welcome-transactional"></a>
+
+Keep your customers informed by sending direct mobile push and SMS messages—such as new account activation messages, order confirmations, and password reset notifications—to specific users\.
+
 ## Analyze User Behavior<a name="welcome-analyze"></a>
 
-Using the analytics provided by Amazon Pinpoint, you can gain insights about your audience and the effectiveness of your campaigns\. You can view trends about your users' level of engagement, purchase activity, and demographics\. You can monitor your message traffic with metrics for messages sent and opened\. Through the Amazon Pinpoint API, your application can report custom data, which Amazon Pinpoint makes available for analysis\.
+Gain insights about your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends about your users' level of engagement, purchase activity, and demographics\. You can monitor your message traffic with metrics for messages sent and opened\. Through the Amazon Pinpoint API, your application can report custom data, which Amazon Pinpoint makes available for analysis\.
 
 To analyze or store the analytics data outside of Amazon Pinpoint, you can configure Amazon Pinpoint to stream the data to Amazon Kinesis\.
 

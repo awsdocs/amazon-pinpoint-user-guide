@@ -1,7 +1,7 @@
 # Amazon Pinpoint User Guide
 
 -----
-*****Copyright &copy; 2017 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2018 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -35,7 +35,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)
       + [Monitoring SMS Activity with Amazon Pinpoint](channels-sms-monitor.md)
       + [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)
-      + [Supported Countries](channels-sms-countries.md)
+      + [Supported Countries and Regions](channels-sms-countries.md)
 + [Amazon Pinpoint Segments](segments.md)
    + [Building Segments](segments-building.md)
    + [Importing Segments](segments-importing.md)

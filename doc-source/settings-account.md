@@ -32,7 +32,7 @@ Because Amazon Pinpoint is a distributed system, it stops sending SMS messages w
 
 1. For **Default sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
-   Support for sender IDs varies by country\. For more information, see [Supported Countries](channels-sms-countries.md)\.
+   Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
 
    You can override this setting when you send a message\.
 
@@ -46,7 +46,7 @@ A long code is a standard 10 digit phone number that is meant for low\-volume, p
 
 To request a short code or long code, create an *Account and Billing Support* case in the [AWS Support Center](https://console.aws.amazon.com/support/home#/)\. A customer service associate will contact you for additional information about your use case, including the response messages your audience receives for keywords like HELP or STOP\. AWS works with wireless carriers on your behalf to provision your number\. For short codes, it typically takes 6 \- 12 weeks for all carriers to approve your use case and provision the short code so that you can send messages to the subscribers in their networks\. AWS will notify you when the number provisioning is complete\.
 
-To use short codes in multiple countries, request a separate short code for each country\. A short code can send and receive messages only within the same country in which wireless carriers approved the short code\.
+To use short codes in multiple countries or regions, request a separate short code for each country or region\. A short code can send and receive messages only within the same country or region in which wireless carriers approved the short code\.
 
 After you receive one or more dedicated short codes or long codes from AWS, those numbers are provided under **Number settings**, where you can manage settings for keywords and 2\-way SMS\.
 
