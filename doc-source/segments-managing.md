@@ -12,9 +12,9 @@ You can use the Amazon Pinpoint console to create new segments, update the setti
 
 1. On the **Segments** page, choose the segment that you want to manage\.
 
-On the **Segment** page, for a segment that's built from segmentation criteria, you can do the following:
+On the **Segment** page, for a segment that's [built from segmentation criteria](segments-building.md), you can do the following:
 
-+ **Create campaign** – Create a campaign that uses the segment you're managing\.
++ **Create campaign** – [Create a campaign](campaigns-begin.md) that uses the segment you're managing\.
 
 + **Copy to new** – Copy the segment to use its settings as a template for a new segment, in which you can change or keep any of the original settings\.
 
@@ -22,9 +22,9 @@ On the **Segment** page, for a segment that's built from segmentation criteria, 
 
 + **Delete segment** – Remove the segment from Amazon Pinpoint\. The segment becomes unavailable for future campaigns, but preexisting campaigns that use the segment are unaffected\.
 
-For an imported segment, you can do the following:
+For an [imported segment](segments-importing.md), you can do the following:
 
-+ **Create campaign** – Create a campaign that uses the segment you're managing\.
++ **Create campaign** – [Create a campaign](campaigns-begin.md) that uses the segment you're managing\.
 
 + **Reimport segment** – Update the segment with the endpoint files that are currently stored in the Amazon S3 location that you originally imported the segment from\.
 

@@ -1,10 +1,10 @@
 # Managing the Amazon Pinpoint SMS Channel<a name="channels-sms-manage"></a>
 
-Use the Amazon Pinpoint console to enable the SMS channel and manage SMS settings, such as how your deliveries are optimized \(for cost or for reliable delivery\) and your monthly spending limit\.
+Use the Amazon Pinpoint console to enable the SMS channel and manage SMS settings, such as your default message type \(transactional or promotional\) and your monthly spending limit\.
 
 To update your SMS settings, use the **Account settings** page\. For more information, see [Managing Account Settings in Amazon Pinpoint](settings-account.md)\.
 
-Before you can use Amazon Pinpoint to send SMS messages, you must enable the SMS channel for one or more projects\.
+Before you can use Amazon Pinpoint to send SMS messages, you must enable the SMS channel for one or more projects\. To create a new project with SMS support, see [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)\. To enable the SMS channel in an existing project, complete the following steps:
 
 **To enable the SMS channel for a project**
 

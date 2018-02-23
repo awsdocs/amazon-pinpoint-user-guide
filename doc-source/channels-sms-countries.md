@@ -1,9 +1,9 @@
 # Supported Countries and Regions<a name="channels-sms-countries"></a>
 
-You can use Amazon Pinpoint to send SMS messages to the countries and regions listed in the following table\. This table also lists the countries and regions that support sender IDs and 2\-way SMS\.
+You can use Amazon Pinpoint to send SMS messages to the countries and regions listed in the following table\. This table also lists the countries and regions that support sender IDs and two\-way SMS\.
 
 
-| Country or region | ISO code | Supports sender IDs | Supports 2\-way SMS | 
+| Country or region | ISO code | Supports sender IDs | Supports two\-way SMS | 
 | --- | --- | --- | --- | 
 | Afghanistan | AF |  |  | 
 | Albania | AL | Yes |  | 
@@ -51,7 +51,7 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Costa Rica | CR |  |  | 
 | Croatia | HR |  | Yes | 
 | Cyprus | CY | Yes |  | 
-| Czech Republic | CZ | Yes\[1\] | Yes | 
+| Czech Republic | CZ | Yes\[[1](#sms-support-note-1)\] | Yes | 
 | Democratic Republic of the Congo | CD |  |  | 
 | Denmark | DK | Yes | Yes | 
 | Djibouti | DJ | Yes |  | 
@@ -89,16 +89,16 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Hong Kong | HK | Yes | Yes | 
 | Hungary | HU |  | Yes | 
 | Iceland | IS | Yes |  | 
-| India | IN | Yes\[1\] | Yes | 
-| Indonesia | ID | Yes\[1\] | Yes | 
+| India | IN | Yes\[[1](#sms-support-note-1)\] | Yes | 
+| Indonesia | ID | Yes\[[1](#sms-support-note-1)\] | Yes | 
 | Iraq | IQ |  |  | 
 | Ireland | IE | Yes | Yes | 
 | Israel | IL | Yes | Yes | 
 | Italy | IT | Yes | Yes | 
 | Ivory Coast | CI |  |  | 
 | Jamaica | JM | Yes |  | 
-| Japan | JP | Yes\[2\] | Yes | 
-| Jordan | JO | Yes\[1\] |  | 
+| Japan | JP | Yes\[[2](#sms-support-note-2)\] | Yes | 
+| Jordan | JO | Yes\[[1](#sms-support-note-1)\] |  | 
 | Kazakhstan | KZ |  |  | 
 | Kenya | KE |  |  | 
 | Kiribati | KI |  |  | 
@@ -141,17 +141,17 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | New Zealand | NZ |  | Yes | 
 | Nicaragua | NI |  |  | 
 | Niger | NE | Yes |  | 
-| Nigeria | NG | Yes\[1\] | Yes | 
+| Nigeria | NG | Yes\[[1](#sms-support-note-1)\] | Yes | 
 | Norway | NO | Yes | Yes | 
-| Oman | OM | Yes\[1\] |  | 
+| Oman | OM | Yes\[[1](#sms-support-note-1)\] |  | 
 | Pakistan | PK |  |  | 
 | Palau | PW |  |  | 
-| Palestinian Territories | PS | Yes\[1\]\[3\] |  | 
+| Palestinian Territories | PS | Yes\[[1](#sms-support-note-1)\]\[[3](#sms-support-note-3)\] |  | 
 | Panama | PA |  |  | 
 | Papua New Guinea | PG | Yes |  | 
 | Paraguay | PY | Yes |  | 
 | Peru | PE | No |  | 
-| Philippines | PH | Yes\[1\] | Yes | 
+| Philippines | PH | Yes\[[1](#sms-support-note-1)\] | Yes | 
 | Poland | PL | Yes | Yes | 
 | Portugal | PT | Yes | Yes | 
 | Puerto Rico | PR |  | Yes | 
@@ -159,14 +159,14 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Republic of the Congo | CG |  |  | 
 | Reunion Island | RE | Yes |  | 
 | Romania | RO |  | Yes | 
-| Russia | RU | Yes\[1\] | Yes | 
+| Russia | RU | Yes\[[1](#sms-support-note-1)\] | Yes | 
 | Rwanda | RW | Yes |  | 
 | Saint Kitts and Nevis | KN |  |  | 
 | Saint Lucia | LC |  |  | 
 | Saint Vincent and the Grenadines | VC |  |  | 
 | Samoa | WS | Yes |  | 
 | Sao Tome and Principe | ST | Yes |  | 
-| Saudi Arabia | SA | Yes\[1\] |  | 
+| Saudi Arabia | SA | Yes\[[1](#sms-support-note-1)\] |  | 
 | Senegal | SN | Yes |  | 
 | Serbia | RS | Yes |  | 
 | Seychelles | SC | Yes |  | 
@@ -198,7 +198,7 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Turks and Caicos Islands | TC | Yes |  | 
 | Uganda | UG | Yes |  | 
 | Ukraine | UA | Yes | Yes | 
-| United Arab Emirates | AE | Yes\[1\] |  | 
+| United Arab Emirates | AE | Yes\[[1](#sms-support-note-1)\] |  | 
 | United Kingdom | GB | Yes | Yes | 
 | United States | US |  | Yes | 
 | Uruguay | UY |  |  | 
@@ -214,7 +214,7 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 
 **Notes**
 
-1. <a name="sms-support-note-1"></a>Senders are required to use a sender ID\. [Open a Service Limit Increase case](https://console.aws.amazon.com/support/v1?region=home#/case/create) in Support Center to request the creation of a sender ID\.
+1. <a name="sms-support-note-1"></a>Senders are required to use a sender ID\. To request a sender ID from AWS Support, see [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. 
 
 1. <a name="sms-support-note-2"></a>All carriers in Japan except KDDI support sender ID\.
 

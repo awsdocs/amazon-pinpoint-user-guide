@@ -1,31 +1,74 @@
 # Setting up the Amazon Pinpoint SMS Channel<a name="channels-sms-setup"></a>
 
-To send SMS messages with Amazon Pinpoint, you need an Amazon Pinpoint project in which the SMS channel is enabled\.
-
-You can create a new project with SMS support by using AWS Mobile Hub\. In the AWS Mobile Hub console, create a project, and add the **Messaging & Analytics** feature\. Then, enable the SMS channel as part of that feature\. After you create a project in Mobile Hub, the project becomes available in Amazon Pinpoint\. 
+To send SMS messages with Amazon Pinpoint, you need an Amazon Pinpoint project in which the SMS channel is enabled\. If your project is based on a mobile app, create it by using AWS Mobile Hub\. Otherwise, create your project by using the AWS CLI\.
 
 You can also enable the SMS channel for an existing project by using the **Settings** page in the Amazon Pinpoint console\. For more information, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
 
-**To create a project with SMS support**
+## Creating an SMS Project With AWS Mobile Hub<a name="channels-sms-setup-mobilehub"></a>
 
-1. Sign in to the AWS Management Console and open the Mobile Hub console at [https://console.aws.amazon.com/mobilehub](https://console.aws.amazon.com/mobilehub)\.
+You can enable SMS messaging for a mobile app by creating a project with AWS Mobile Hub\. In the Mobile Hub console, create a project, and add the **Messaging & Analytics** feature\. Then, enable the SMS channel as part of that feature\. After you create a project in Mobile Hub, the project becomes available in Amazon Pinpoint\.
 
-1. If you have other Mobile Hub projects, choose **Create new mobile project**\. If this is your first project, skip this step because you are taken directly to the page for creating a new project\.
+For more information, see the following topics in the *AWS Mobile Developer Guide*:
 
-1. Enter a project name\. The name you enter will be the name of your project in the Amazon Pinpoint console\. 
++ To create a project in Mobile Hub, see [Get Started](http://docs.aws.amazon.com/aws-mobile/latest/developerguide/getting-started.html)\.
 
-1. For the region, keep **US East \(Virginia\)**\. 
++ After you create a project, to enable SMS messaging, see [Add Messaging to Your Mobile App with Amazon Pinpoint](http://docs.aws.amazon.com/aws-mobile/latest/developerguide/add-aws-mobile-messaging.html)\.
 
-1. Choose **Create project**\. Mobile Hub creates the project and shows the **Pick and configure features for your project** page\.
+## Creating an SMS Project With the AWS CLI<a name="channels-sms-setup-cli"></a>
 
-1. Choose **Messaging & Analytics**\.
+You can create an Amazon Pinpoint project that is enabled for SMS messaging by using the [AWS Command Line Interface](https://aws.amazon.com/cli/) \(AWS CLI\)\. The AWS CLI requires Python 2 version 2\.6\.5 or later, or Python 3 version 3\.3 or later\. For more information about installing and configuring the AWS CLI, see [Installing the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) in the *AWS Command Line Interface User Guide*\.
 
-1. On the **Messaging & Analytics** page, for **What engagement features do you want to enable?**, choose **Messaging**\.
+To create an project that is enabled for SMS, use the `create-app` and `update-sms-channel` commands, as shown by the following examples\.
 
-1. For **What Messaging Channels do you want to enable?**, choose **SMS**\.
+**Example create\-app command**  
+Use the [http://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-app.html](http://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-app.html) command to create an Amazon Pinpoint project:  
 
-1. For **Do you want to enable SMS messaging?**, choose **Enable**\.
+```
+$aws pinpoint create-app --create-application-request Name="My SMS Project"
+```
+The following response is shown in the terminal:  
 
-1. For **What engagement features do you want to enable?**, choose **Analytics**, and choose **Enable**\. With analytics enabled, Amazon Pinpoint provides metrics about your SMS campaign activity\.
+```
+{
+    "ApplicationResponse": {
+        "Id": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6",
+        "Name": "My SMS Project"
+    }
+}
+```
+Note the ID provided in the response because you will use it when you enable the SMS channel\.
 
-In the Amazon Pinpoint console, you can specify SMS preferences\. For more information, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
+**Example update\-sms\-channel command**  
+Use the [http://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-sms-channel.html](http://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-sms-channel.html) command to enable the SMS channel for a project:  
+
+```
+$aws pinpoint update-sms-channel --application-id application-id --sms-channel-request Enabled=true
+```
+The following response is shown in the terminal:  
+
+```
+{
+    "SMSChannelResponse": {
+        "ApplicationId": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6",
+        "CreationDate": "2018-02-20T22:15:05.025Z",
+        "Enabled": true,
+        "Id": "sms",
+        "IsArchived": false,
+        "LastModifiedDate": "2018-02-20T22:15:05.025Z",
+        "Platform": "SMS",
+        "Version": 1
+    }
+}
+```
+
+After you create a project, it is available in the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+## Next Steps<a name="channels-sms-setup-next"></a>
+
+You've created a project that is enabled for SMS messaging\. Now you can use Amazon Pinpoint to send SMS messages\. 
+
+To engage an audience segment with an SMS campaign, see [Engage Your Audience with Messaging Campaigns](welcome.md#welcome-campaigns)\.
+
+To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.
+
+Some SMS options, such as dedicated origination numbers or sender IDs, are unavailable until you contact AWS Support\. For more information, see [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)\.

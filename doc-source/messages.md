@@ -2,7 +2,7 @@
 
 With Amazon Pinpoint, you can send a *direct message*, which is a one time message that you send to a limited audience without creating a campaign\. Sending a direct message is useful if, before creating a campaign, you want to test how your message appears to recipients\.
 
-You can send the message to up to 15 recipients\. You cannot use the message to engage a segment\. When you send the message, Amazon Pinpoint delivers it immediately, and you cannot schedule the delivery\. To engage a user segment, and to schedule the message delivery, create a campaign instead of sending a direct message\.
+You can send the message to up to 15 recipients\. You cannot use the message to engage a segment\. When you send the message, Amazon Pinpoint delivers it immediately, and you cannot schedule the delivery\. To engage a user segment, and to schedule the message delivery, [create a campaign](campaigns.md) instead of sending a direct message\.
 
 You can send a direct messages using any channel that is supported by Amazon Pinpoint: mobile push, email, or SMS\.
 
@@ -92,7 +92,7 @@ To send a direct email, you must use a project in which the email channel is ena
 
 ## Sending an SMS Message<a name="messages-sms"></a>
 
-To send a direct SMS message, you must use a project in which the SMS channel is enabled\. To create a new project with SMS support, see [[ERROR] BAD/MISSING LINK TEXT](channels-sms-setup.md)\. To add SMS support to an existing project, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
+To send a direct SMS message, you must use a project in which the SMS channel is enabled\. To create a new project with SMS support, see [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)\. To add SMS support to an existing project, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
 
 **To send a direct SMS message**
 

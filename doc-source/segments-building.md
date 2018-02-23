@@ -16,7 +16,7 @@ Because the segment is built from segmentation criteria, it is dynamic, meaning 
 
 To create a static segment, which includes a fixed set of end users, import endpoints that represent those users\. For more information, see [Importing Segments](segments-importing.md)\.
 
-You can create segments separately from campaigns to assemble a collection of segments for multiple campaigns\. You also can create a segment when creating a campaign\. 
+You can create segments separately from campaigns to assemble a collection of segments for multiple campaigns\. You also can create a segment when [creating a campaign](campaigns.md)\. 
 
 **To create a segment**
 

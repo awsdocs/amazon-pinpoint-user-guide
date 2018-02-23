@@ -20,8 +20,8 @@ When you add the **Messaging & Analytics** feature, you choose one or more messa
 
 After you add a project to Amazon Pinpoint, you can choose your project in the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/) to do the following tasks\.
 
-1. Define a user segment so that you can engage a specific subset of your audience with a messaging campaign\. 
+1. [Define a user segment](segments.md) so that you can engage a specific subset of your audience with a messaging campaign\. 
 
-1. Create a campaign to send tailored messages to your segment according to a schedule that you define\.
+1. [Create a campaign](campaigns.md) to send tailored messages to your segment according to a schedule that you define\.
 
-1. View analytics to learn how many users your campaign is sending messages to, how many users are viewing those messages, and other information\.
+1. [View analytics](analytics.md) to learn how many users your campaign is sending messages to, how many users are viewing those messages, and other information\.

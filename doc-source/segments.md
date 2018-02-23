@@ -4,9 +4,9 @@ A user *segment* represents a subset of your audience based on shared characteri
 
 You can add segments to Amazon Pinpoint in either of the following ways:
 
-+ Building segments by choosing selection criteria that is based on data that your application reports to Amazon Pinpoint\.
++ [Building segments](segments-building.md) by choosing selection criteria that is based on data that your application reports to Amazon Pinpoint\.
 
-+ Importing segments that you defined outside of Amazon Pinpoint\.
++ [Importing segments](segments-importing.md) that you defined outside of Amazon Pinpoint\.
 
 After you create a segment, you can use it in one or more campaigns\. A campaign delivers tailored messages to the users in the segment\.
 
