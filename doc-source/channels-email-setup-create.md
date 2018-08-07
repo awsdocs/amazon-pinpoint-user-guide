@@ -1,41 +1,43 @@
 # Creating an Amazon Pinpoint Project with Email Support<a name="channels-email-setup-create"></a>
 
-You can create a new project with email support by using AWS Mobile Hub\. In the Mobile Hub console, create a project, and add the **Messaging & Analytics** feature\. Then, enable the email channel as part of that feature\. After you create a project in Mobile Hub, the project becomes available in Amazon Pinpoint\.
+To send email messages with Amazon Pinpoint, you must create an Amazon Pinpoint project, and then enable the email channel in that project\. There are two ways to create an Amazon Pinpoint project: by using the AWS Mobile Hub console, or by using the Amazon Pinpoint API\.
 
-You can also enable the email channel for an existing Amazon Pinpoint project by using the **Settings** page in the Amazon Pinpoint console\. For more information, see [Updating Email Settings](channels-email-manage-update.md)\.
+**Topics**
++ [Create a New Project by Using the Console](#channels-email-setup-create-console)
++ [Create a New Project by Using the Amazon Pinpoint API](#channels-email-setup-create-cli)
 
-**To create a project with email support**
+## Create a New Project by Using the Console<a name="channels-email-setup-create-console"></a>
 
-1. Sign in to the AWS Management Console and open the Mobile Hub console at [https://console.aws.amazon.com/mobilehub](https://console.aws.amazon.com/mobilehub)\.
+If your project is based on a mobile app, you can create a project by using the Mobile Hub console\. By creating a project in the Mobile Hub console, you gain access to the features of Mobile Hub, such as user sign\-in and cloud\-based data storage\. When you create a project by using the following procedure, your project automatically appears in the Amazon Pinpoint console\.
 
-1. If you have other Mobile Hub projects, choose **Create new mobile project**\. If this is your first project, skip this step because you are taken directly to the page for creating a new project\.
+**To create a Mobile Hub project by using the console**
 
-1. Enter a project name\. The name you enter will be the name of your project in the Amazon Pinpoint console\. 
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. For the region, keep **US East \(Virginia\)**\. 
+1. On the **Projects** page, choose **Create a project in Mobile Hub**\.
 
-1. Choose **Create project**\. Mobile Hub creates the project and shows the **Pick and configure features for your project** page\.
+1. For **Enter a name for your Mobile Hub project**, type a name, and then choose **Create project**\.
 
-1. Choose **Messaging & Analytics**\.
+1. Under **What engagement features do you want to enable**, choose **Messaging**\.
 
-1. On the **Messaging & Analytics** page, for **What engagement features do you want to enable?**, choose **Messaging**\.
+1. Under **What messaging channels do you want to enable**, choose **Email**\.
 
-1. For **What Messaging Channels do you want to enable?**, choose **Email**\.
+1. Under **Do you want to enable email messaging**, choose **Enable**\.
 
-1. For **Do you want to enable email messaging?**, choose **Enable**\.
+1. Verify an identity by completing the procedures in [Verifying an Email Identity](channels-email-manage-verify.md)\.
 
-1. To verify your email address or domain, choose the **Amazon Pinpoint console** link\. You are directed to the **Settings** page in the Amazon Pinpoint console, where you complete the following steps:
+## Create a New Project by Using the Amazon Pinpoint API<a name="channels-email-setup-create-cli"></a>
 
-   1. Choose the email identity that you want to use: **Email address** or **Email domain**\.
+You can also create a project by using the Amazon Pinpoint API\. The steps in this section show you how to interact with the API by using the AWS CLI\. These steps assume that you've configured the AWS CLI to interact with your AWS account\. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](http://docs.aws.amazon.com/cli/latest/userguide/)\.
 
-   1. Provide your email address or domain, and choose **Verify**\. Then, follow the instructions displayed by the console\.
+**To create a project by using the AWS CLI**
 
-      If you verify an email address, Amazon Pinpoint sends a verification email to the address that you provide\. Follow the instructions in the email to complete the verification process\.
+1. At the command line, type the following command to create a new project: 
 
-      If you verify an email domain, the console displays a TXT record that you must add to the domain's DNS settings\. For more information, see [Domain Verification TXT Records](channels-email-setup-txt-record.md)\.
+   ```
+   aws pinpoint create-app --create-application-request Name="My Email Project"
+   ```
 
-      For more information on verifying an email address or domain, see [Email Address or Domain Verification](channels-email-manage-verify.md)\.
+   Replace *My Email Project* in this command with a name for the project\.
 
-   1. When you finish, choose **Save**\.
-
-1. In the Mobile Hub console, for **What engagement features do you want to enable?**, choose **Analytics**, and choose **Enable**\. With analytics enabled, Amazon Pinpoint provides metrics about your email campaign activity\.
+1. Verify an identity by completing the procedures in [Verifying an Email Identity](channels-email-manage-verify.md)\.

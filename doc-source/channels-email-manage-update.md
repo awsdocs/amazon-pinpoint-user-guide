@@ -22,8 +22,8 @@ To set up a new project with email support, see [Creating an Amazon Pinpoint Pro
 
    If you verify an email address, Amazon Pinpoint sends a verification email to the address that you provide\. Follow the instructions in the email to complete the verification process\.
 
-   If you verify an email domain, the console displays a TXT record that you must add to the domain's DNS settings\. For more information, see [Domain Verification TXT Records](channels-email-setup-txt-record.md)\.
+   If you verify an email domain, the console displays a TXT record that you must add to the domain's DNS settings\.
 
-   For more information on verifying an email address or domain, see [Email Address or Domain Verification](channels-email-manage-verify.md)\.
+   For more information on verifying an email address or domain, see [Verifying an Email Identity](channels-email-manage-verify.md)\.
 
 1. When you finish, choose **Save**\.

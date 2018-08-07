@@ -1,13 +1,9 @@
 # Managing Mobile Push Channels with Amazon Pinpoint<a name="channels-mobile-manage"></a>
 
 Using the console, you can update the credentials that allow Amazon Pinpoint to send push notifications to iOS and Android devices\. You can provide credentials for the following push notification services, each of which is supported by an Amazon Pinpoint channel: 
-
 + Firebase Cloud Messaging \(FCM\) or its predecessor, Google Cloud Messaging \(GCM\)\.
-
 + Apple Push Notification service \(APNs\)\.
-
 + Baidu Cloud Push\.
-
 + Amazon Device Messaging \(ADM\)\.
 
 For FCM, GCM, and APNs, you initially provide your credentials when you add your app as a mobile project in AWS Mobile Hub\. For Baidu and ADM, you can provide your credentials only in the Amazon Pinpoint console\.
@@ -23,13 +19,9 @@ For FCM, GCM, and APNs, you initially provide your credentials when you add your
 1. On the **Settings** page, choose **Channels**, and choose **Mobile Push**\.
 
 1. Under **Choose the push notification services that you want to enable**, you can update your credentials for the following services:
-
    + **FCM/GCM** – Requires an API key \(also referred to as a server key\), which you get from the Firebase console or the Google API console\. For more information about getting FCM credentials, see [Credentials](https://firebase.google.com/docs/cloud-messaging/concept-options#credentials) in the Firebase documentation\.
-
    + **APNs** – Requires an authentication token signing key or a TLS certificate, which you get from your Apple developer account\. For more information, see the *Managing APNs Settings* section\.
-
    + **Baidu** – Requires an API key and a secret key, which you get from your Baidu Cloud Push project\.
-
    + **ADM** – Requires the OAuth Credentials \(Client ID and Client Secret\) from your Amazon Developer account\. For more information, see [Obtaining Amazon Device Messaging Credentials](https://developer.amazon.com/public/apis/engage/device-messaging/tech-docs/adm-obtaining-credentials) in the Amazon Developer documentation\.
 
 1. When you finish, choose **Save**\.
@@ -52,21 +44,13 @@ A certificate expires after one year\. When this happens, you must create a new 
 1. For **Default authentication type**, choose whether Amazon Pinpoint authenticates with APNs using your signing **key** or your TLS **certificate**\. Amazon Pinpoint uses this default for every APNs push notification that you send using the console\. You can override the default when you send a message programmatically using the Amazon Pinpoint API, the AWS CLI, or an AWS SDK\. If your default authentication type fails, Amazon Pinpoint does not attempt to use the other authentication type\.
 
 1. For **Authentication type**, choose **Key** or **Certificate** to manage the settings for that type\.
-
    + For **Key**, provide the following information from your Apple developer account at [https://developer.apple.com/account/](https://developer.apple.com/account/)\. Amazon Pinpoint requires this information to construct authentication tokens\.
-
      + **Key ID** – The ID assigned to your signing key\. To find this value, choose **Certificates, IDs & Profiles**, and choose your key in the **Keys** section\.
-
      + **Bundle identifier** – The ID assigned to your iOS app\. To find this value, choose **Certificates, IDs & Profiles**, choose **App IDs** in the **Identifiers** section, and choose your app\.
-
      + **Team ID** – The ID assigned to your Apple developer account team\. This value is provided on the **Membership** page\.
-
      + **Authentication key** – The \.p8 file that you download from your Apple developer account when you create an authentication key\. Apple allows you to download your authentication key only once\.
-
    + For **Certificate**, provide the following information:
-
      + **SSL certificate** – The \.p12 file for your TLS certificate\. You can export this file from Keychain Access after you download and install your certificate from your Apple developer account\.
-
      + **Certificate password** – If you assigned a password to your certificate, specify it here\.
 
 1. If your certificate supports sending push notifications to the APNs production environment, enable **certificate supports production environment**\. Do not enable this option if your certificate supports only the sandbox environment\.

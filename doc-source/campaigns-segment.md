@@ -6,11 +6,8 @@ When creating a campaign, you can specify which audience segment to reach with y
 Before you begin, complete [Step 1: Begin a New Campaign](campaigns-begin.md)\.
 
 **To specify a segment**
-
 + For the **Segment** step in **Create a campaign**, specify a segment in one of the following ways:
-
   + Choose **Create a new segment** and follow the steps under *To build a segment*\.
-
   + Choose **Use a previously defined segment** and select the segment that you want to target\. Then, choose **Next step**\.
 
 **To build a segment**

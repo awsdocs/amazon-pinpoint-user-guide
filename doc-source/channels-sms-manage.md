@@ -23,25 +23,15 @@ Before you can use Amazon Pinpoint to send SMS messages, you must enable the SMS
 ## SMS Opt Out<a name="channels-sms-manage-optout"></a>
 
 Where required by local laws and regulations \(such as in the US and Canada\), SMS recipients can use their devices to opt out by replying to the message with any of the following: 
-
 + ARRET \(French\)
-
 + CANCEL
-
 + END
-
 + OPT\-OUT
-
 + OPTOUT
-
 + QUIT
-
 + REMOVE
-
 + STOP
-
 + TD
-
 + UNSUBSCRIBE
 
 To opt out, the recipient must reply to the same long code or short code that Amazon Pinpoint used to deliver the message\. After opting out, the recipient no longer receives SMS messages from your AWS account\.

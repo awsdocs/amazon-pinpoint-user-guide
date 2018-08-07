@@ -6,16 +6,14 @@ After you integrate your app with Amazon Pinpoint, it reports app events, such a
 
 Amazon Pinpoint retains this data for 90 days; however, you can't directly access it for custom analysis\. To keep this data for an indefinite period of time, or to analyze it with custom queries and tools, you can configure Amazon Pinpoint to send events to Kinesis\.
 
-
+**Topics**
 + [About Amazon Kinesis](#analytics-streaming-about-kinesis)
 + [Streaming Amazon Pinpoint Events to Kinesis](#analytics-streaming-kinesis)
 
 ## About Amazon Kinesis<a name="analytics-streaming-about-kinesis"></a>
 
 The Kinesis platform offers services that you can use to load and analyze streaming data on AWS\. You can configure Amazon Pinpoint to send app and campaign events to Amazon Kinesis Data Streams or Amazon Kinesis Data Firehose\. By streaming your events, you enable more flexible options for data analysis, such as:
-
 + Converging the events from multiple apps into one stream so that you can analyze this data as a collection\.
-
 + Analyzing events with AWS query services\. For example, you can use Amazon Kinesis Data Analytics to execute SQL queries against streaming data\.
 
 ### About Amazon Kinesis Data Streams<a name="analytics-streaming-about-kinesis-streams"></a>
@@ -27,11 +25,8 @@ For more information, see the [Amazon Kinesis Data Streams Developer Guide](http
 ### About Amazon Kinesis Data Firehose<a name="analytics-streaming-about-kinesis-firehose"></a>
 
 Amazon Kinesis Data Firehose is a service that you can use to deliver your streaming data to AWS data stores, including Amazon Simple Storage Service \(Amazon S3\), Amazon Redshift, or Amazon Elasticsearch Service\. For example, streaming your events to Kinesis Data Firehose is useful if you want to:
-
 + Use your own analytics applications and tools to analyze events in Amazon S3, Amazon Redshift, or Amazon Elasticsearch Service\.
-
 + Send your events to Amazon S3 so that you can write SQL queries on this data with Amazon Athena\.
-
 + Back up your event data for long\-term storage in Amazon S3\.
 
 For more information, see the [Amazon Kinesis Data Firehose Developer Guide](http://docs.aws.amazon.com/firehose/latest/dev/)\.
@@ -63,9 +58,7 @@ Complete the following steps in Amazon Pinpoint to set up event streaming\.
 1. Select the box next to **Enable streaming of events to Amazon Kinesis**\.
 
 1. Under **Stream to Amazon Kinesis**, choose one of the following options:
-
    + **Send events to an Amazon Kinesis stream** – choose this option if you want to send Amazon Pinpoint event data to an external application for analysis\.
-
    + **Send events to an Amazon Kinesis Data Firehose delivery stream** – choose this option if you want to send event data to an AWS datastore, such as Amazon Redshift\.
 
 1. For **Amazon Kinesis stream** or **Amazon Kinesis Data Firehose delivery stream**, choose the Amazon Kinesis stream that you want to use to export the data\.
@@ -73,9 +66,7 @@ Complete the following steps in Amazon Pinpoint to set up event streaming\.
 If you have not yet created the Amazon Kinesis stream, open the Amazon Kinesis console at [https://console\.aws\.amazon\.com/kinesis](https://console.aws.amazon.com/kinesis)\. For more information about creating streams, see the [Amazon Kinesis Data Streams Developer Guide](http://docs.aws.amazon.com/streams/latest/dev/) or the [Amazon Kinesis Data Firehose Developer Guide](http://docs.aws.amazon.com/firehose/latest/dev/)\.
 
 1. Under IAM role, choose one of the following options:
-
    + **Automatically create a role** – choose this option to automatically create an IAM role with the required permissions\. This role authorizes Amazon Pinpoint to send data to the stream you chose in step 6\.
-
    + **Choose a role from your account** – choose this option to have Amazon Pinpoint assume an IAM role that already exists in your account\. The role you select must allow the `firehose:PutRecordBatch` action\. For an example of a policy that allows this action, see [Permissions Policies](http://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-streams.html#permissions-streams-permissionspolicies) in the *Amazon Pinpoint Developer Guide*\.
 
 1. Choose **Save**\.

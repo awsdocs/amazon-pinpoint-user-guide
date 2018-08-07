@@ -5,7 +5,7 @@ Your monthly spend threshold sets how much you can spend each calendar month on 
 **Important**  
 Because Amazon Pinpoint is a distributed system, it stops sending SMS messages within a time interval of minutes of the spend limit being exceeded\. During that interval, if you continue to send SMS messages, you might incur costs that exceed your limit\.
 
-By default, the spend threshold is 1\.00 USD\. For information about SMS pricing, see [Amazon Pinpoint Pricing](aws.amazon.com/pinpoint/pricing/)\.
+By default, the spend threshold is $1\.00 \(USD\)\. For information about SMS pricing, see [Amazon Pinpoint Pricing](aws.amazon.com/pinpoint/pricing/)\.
 
 Typically, AWS Support processes your case within 2 business days\. Depending on the spend limit you request and the complexity of your case, AWS Support might require an additional 3–5 days to ensure that your request can be processed\.
 
@@ -44,11 +44,8 @@ Describe how you use SMS messaging by completing the following steps\.
 1. For **Link to site or app which will be sending SMS**, identify the website or application where your audience members will opt in to receive your SMS messages\.
 
 1. For **Type of messages**, choose the type of SMS message that you send:
-
    + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
-
    + **Promotional** – Noncritical messages that promote your business or service, such as special offers or announcements\.
-
    + **One Time Passwords** – Messages that provide passwords to authenticate with your website or application\.
 
 1. For **Targeted Countries**, specify the countries that you send SMS messages to\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
@@ -56,27 +53,17 @@ Describe how you use SMS messaging by completing the following steps\.
    If your list of countries exceeds the character limit for this text box, you can instead specify your countries in the **Use Case Description** box\.
 
 1. For **Use Case Description**, provide the following details:
-
    + The website or app of the company or service that's sending SMS messages\.
-
    + The service that's provided by your website or app, and how your SMS messages contribute to that service\.
-
    + How users sign up to voluntarily receive your SMS messages on your website, app, or other location\.
 
    If your requested spend threshold \(the value you specified for **New limit value**\) exceeds 10,000 USD, provide the following additional details for each country that you're messaging:
-
    + Whether you're using a sender ID or short code\. If you're using a sender ID, provide:
-
      + The sender ID\.
-
      + Whether the sender ID is registered with wireless carriers in the country\.
-
    + The maximum expected transactions\-per\-second \(TPS\) for your messaging\.
-
    + The average message size\.
-
    + The template for the messages that you send to the country\.
-
    + \(Optional\) Character encoding needs, if any\.
 
 1. When you finish, choose **Submit**\. 

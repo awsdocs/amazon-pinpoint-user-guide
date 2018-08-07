@@ -24,13 +24,9 @@ Plan ahead\. Be aware of your sending limits and try to stay within them\. If yo
 If you anticipate needing to send more than one million emails per day, you must open an Amazon Pinpoint Sending Limits Increase case\.
 
 For Amazon Pinpoint to increase your quota, use the following guidelines: 
-
 + **Send high\-quality content** – Send content that recipients want and expect\. 
-
 + **Send real production content** – Send your actual production email\. This enables Amazon Pinpoint to accurately evaluate your sending patterns, and verify that you are sending high\-quality content\.
-
 + **Send near your current quota** – If your volume stays close to your quota without exceeding it, Amazon Pinpoint detects this usage pattern and can automatically increase your quota\.
-
 + **Have low bounce and complaint rates** – Try to minimize the numbers of bounces and complaints\. High numbers of bounces and complaints can adversely affect your sending limits\.
 **Important**  
 Test emails that you send to your own email addresses may adversely affect your bounce and complaint metrics, or appear as low\-quality content to our filters\. Whenever possible, use the Amazon Simple Email Service \(Amazon SES\) mailbox simulator to test your system\. Emails that are sent to the mailbox simulator do not count toward your sending metrics or your bounce and complaint rates\. For more information, see [Testing Amazon SES Email Sending](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/mailbox-simulator.html)\.
@@ -46,39 +42,24 @@ To apply for higher sending limits for Amazon Pinpoint, open a case in AWS Suppo
 1. Choose **Create Case**\.
 
 1. Complete the sending limit increase request by providing the following information:
-
    + **Regarding** – Choose **Service Limit Increase**\.
-
    + For **Limit Type** – Choose **Pinpoint**\.
-
    + **Region** – Select the AWS Region for which you are requesting a sending limit increase\. Your sending limits are separate for each AWS Region\. For supported regions, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *AWS General Reference*\.
-
    + **Limit** – Choose one of the following options:
-
      + Choose **Desired Daily Sending Quota** if you want to increase the number of messages you can send per day\.
-
      + Choose **Desired Maximum Send Rate** if you want to increase the number of messages you can send per second\.
-
    + **New limit value** – Enter the amount you are requesting\.
 **Note**  
 Only request the amount you think you'll need\. We cannot guarantee that you will receive the amount you request\. The larger your request, the more justification you need to provide to have your request granted\.
-
    + **Mail type** – Choose the option that best represents your use case\.
-
    + **Website URL** – Type the URL of your website\.
 **Note**  
 You are not required to provide a website URL\. However, providing a website URL helps us evaluate your request\.
-
    + **My email\-sending complies with the [AWS Service Terms](https://aws.amazon.com/service-terms/) and [AWS Acceptable Use Policy \(AUP\)](https://aws.amazon.com/aup/)** – Select **Yes** or **No**\.
-
    + **I only send to recipients who have specifically requested my mail** – Select **Yes** or **No**\.
-
    + **I have a process to handle bounces and complaints** – Select **Yes** or **No**\. 
-
    + **Use Case Description** – Describe how you plan to send email using Amazon Pinpoint in as much detail as possible\. For example, describe the type of emails you are sending and how email sending fits into your business\. The more information you provide that indicates that you send high\-quality messages to recipients who want and expect them, the more likely we are to approve your request\.
-
    + For **Support Language**, choose the language in which you want to communicate with the AWS Support team\.
-
    + For **Contact method**, choose **Web**\.
 
 1. When you finish, choose **Submit**\.

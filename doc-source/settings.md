@@ -6,6 +6,6 @@ Manage [account settings](settings-account.md) to configure SMS messaging option
 
 Manage [project settings](settings-project.md) to specify the default settings for an individual project, including the frequency with which your app users receive messages and the times at which they receive messages\.
 
-
+**Topics**
 + [Managing Account Settings in Amazon Pinpoint](settings-account.md)
 + [Managing Project Settings in Amazon Pinpoint](settings-project.md)

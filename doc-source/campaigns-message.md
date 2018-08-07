@@ -12,12 +12,9 @@ Before you begin, complete [Step 2: Specify the Audience Segment for the Campaig
 If you chose **Mobile push** as the channel type, write the push notification that your campaign sends to your user segment, and choose the action that occurs when a user opens the notification\.
 
 **Choose the notification type**
-
 + Choose the type of notification that your campaign delivers:  
 ![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_messagetype.png)![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
-
   + **Standard notification** – A push notification with a title and message\. Users are alerted by their mobile devices when they receive the notification\.
-
   + **Silent notification** – A custom JSON attribute\-value pair that Amazon Pinpoint sends to your app without alerting users\. Use silent notifications to send data that your app code is designed to receive and handle, for example to update the app's configuration or to show messages in the app\.
 
 **To write a standard notification**
@@ -35,11 +32,8 @@ If you chose **Mobile push** as the channel type, write the push notification th
    While storing the message, the push notification service attempts to deliver it until the delivery succeeds\. If you specify **0**, the message is not stored and delivery is attempted only once\. If this delivery fails, the message is discarded\.
 
 1. For **Action**, select the action you want to occur if the user opens the notification:
-
    + **Open app** – Your app launches, or it becomes the foreground app if it has been sent to the background\.
-
    + **Go to URL** – The default mobile browser on the user's device launches and opens a web page at the URL you specify\. For example, this action can be useful for sending users to a blog post\.
-
    + **Deep link** – Your app opens and displays a designated user interface\. Deep link is an iOS and Android feature\. For example, this action can be useful to direct users to special promotions for in\-app purchases\.
 
 1. \(Optional\) In the **Media URLs** section, you can optionally provide URLs that point to media files that are displayed in your push notification\. The URLs must be publicly accessible so that the push notification services for Android or iOS can retrieve the images\.
@@ -73,9 +67,7 @@ If you selected **SMS** as the channel type, write the text message that your ca
 1. If you previously saved a template that you want to use for your message, load it by choosing **Load template**\. The **Message** is populated with the contents of the template\.
 
 1. For **Message type**, choose one of the following:
-
    + **Promotional** – Noncritical messages, such as marketing messages\. Amazon Pinpoint optimizes the message delivery to incur the lowest cost\.
-
    + **Transactional** – Critical messages that support customer transactions, such as one\-time passcodes for multi\-factor authentication\. Amazon Pinpoint optimizes the message delivery to achieve the highest reliability\.
 
    This campaign\-level setting overrides your default message type, which you set on the **Settings** page\.
@@ -88,7 +80,7 @@ If you selected **SMS** as the channel type, write the text message that your ca
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
-   Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+   Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
 
    This message\-level sender ID overrides your default sender ID, which you set on the **Settings** page\.
 
@@ -112,6 +104,58 @@ For a campaign that includes an A/B test of the message, define two or more mess
       As you set the allocation for each treatment, the **Holdout** value adjusts to represent the total percentage of users who will not receive messages delivered by this campaign\.
 
 1. When you finish defining your treatments, choose **Next step**\.
+
+## Testing Messages<a name="campaigns-message-test"></a>
+
+Amazon Pinpoint can display a preview of a message that you can view before you schedule the message to be sent\. You can also send a test message to a small group of recipients for testing purposes\. You can send test messages for email, SMS, and mobile push campaigns\.
+
+When you send test messages, consider the following factors:
++ You're charged for sending test messages as if they were regular campaign messages\. For example, if you send 10,000 test emails in a month, you're charged USD $1\.00 for sending the test emails\. For more information about pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/)\.
++ Test messages count toward your account's sending limits\. For example, if your account is authorized to send 10,000 emails per 24\-hour period, and you send 100 test emails, you can send up to 9,900 additional emails in the same 24\-hour period\.
++ When you send a test message to specific users, you can specify up to 10 addresses\. Use commas to separate multiple addresses\.
+**Note**  
+The word "address" \(as it's used in this section\) can refer to any of the following: an email address, a mobile phone number, an endpoint ID, or a device token\.
++ When you send a test SMS message to specific phone numbers, the numbers must be listed in E\.164 format\. That is, they must include a plus sign \(\+\), the country code without a leading zero, and the complete subscriber number, including area code\. E\.164\-formatted numbers shouldn't contain parentheses, periods, hyphens, or any symbols other than the plus sign\. E\.164 phone numbers can have a maximum of 15 digits\.
++ When you send a test push notification, the addresses must be either endpoint IDs or device tokens\.
++ When you send a test message to a segment, you can only choose one segment\. Additionally, you can only choose segments that contain 100 endpoints or fewer\.
++ When you send a test message to a segment, Amazon Pinpoint creates a campaign for that test\. The name of the campaign contains the word "test", followed by four random alphanumeric characters, followed by the name of the campaign\. These campaigns aren't counted toward the maximum number of active campaigns that your account can contain\. Amazon Pinpoint doesn't create a new campaign when you send a test message to specific recipients\.
++ Events that are associated with test messages are counted in the metrics for the parent campaign\. For example, the Delivered chart in the Campaign dashboard includes the number of test messages that were successfully delivered\.
+
+### Sending a Test Message<a name="campaigns-message-test-send"></a>
+
+It's often helpful to send a test message to actual recipients in order to make sure that your message appears correctly when your customers receive it\. By sending a test version of a message, you can test incremental improvements to the content and appearance of your message without impacting the status of your campaign\.
+
+There are two ways to send a test message: you can send it to an existing segment, or you can send it to a list of addresses that you specify\. The method you choose depends on your use case\. For example, if you have a regular group of people who test your messages, you might find it helpful to create a segment that contains all of their endpoints\. If you need to send to a group of testers that changes regularly, or to a dynamically generated address, you might find it easier to manually specify your recipients\.
+
+**To send a test message to a segment**
+
+1. Under the message editor, choose **Test campaign message**\.
+
+1. On the **Test campaign** dialog box, under **Send test to**, choose **A segment**\.
+
+1. Use the drop\-down list to choose the segment you want to send the test message to\.
+**Note**  
+Amazon Pinpoint automatically removes all segments that contain 100 endpoints or more from this list\.
+
+1. Choose **Send test campaign**\.
+
+**To send a test message to specific recipients**
+
+1. Under the message editor, choose **Send a test message**\.
+
+1. On the **Test campaign** dialog box, under **Send test to**, choose one of the options in the following table\.    
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-message.html)
+
+1. Choose **Send test campaign**\.
+
+### Previewing an Email Without Sending It<a name="campaigns-message-test-preview"></a>
+
+Amazon Pinpoint can generate a preview of an email message without sending it\. This feature is helpful when you want to quickly verify that a message renders as you expect it to before you send a test\. 
+
+Note that this preview only shows how the message would appear if it were rendered by your web browser\. As a best practice, you should still send test emails to several recipients and view those test messages using a variety of devices and email clients\.
+
+**To preview an email**
++ Under the message editor, choose **Preview message**\. A preview of your email appears in a new window\.
 
 ## Message Templates<a name="campaigns-message-templates"></a>
 

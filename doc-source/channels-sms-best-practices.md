@@ -6,13 +6,15 @@ Additionally, mobile phone carriers continuously audit bulk SMS senders\. They t
 
 Sending unsolicited content is also a violation of the [AWS Acceptable Use Policy](https://aws.amazon.com/aup/#No_E-Mail_or_Other_Message_Abuse)\. The Amazon Pinpoint team routinely audits SMS campaigns, and might throttle or block your ability to send messages if it appears that you're sending unsolicited messages\.
 
-Finally, in many countries, regions, and jurisdictions, there are severe penalties for sending unsolicited SMS messages\. For example, in the United States, the [Telephone Consumer Protection Act](https://transition.fcc.gov/cgb/policy/TCPA-Rules.pdf) states that consumers are entitled to $500–$1,500 in damages \(paid by the sender\) for each unsolicited message that they receive\.
+Finally, in many countries, regions, and jurisdictions, there are severe penalties for sending unsolicited SMS messages\. For example, in the United States, the Telephone Consumer Protection Act \(TCPA\) states that consumers are entitled to $500–$1,500 in damages \(paid by the sender\) for each unsolicited message that they receive\.
 
-This section describes several best practices that might help you improve your customer engagement and avoid costly penalties\. However, you should always familiarize yourself with the customs and regulations in all of the jurisdictions where your customers are located before sending SMS messages through Amazon Pinpoint\.
+This section describes several best practices that might help you improve your customer engagement and avoid costly penalties\. However, note that this section doesn't contain legal advice\. Always consult an attorney to obtain legal advice\.
 
-
+**Topics**
++ [Comply with Laws and Regulations](#channels-sms-best-practices-understand-laws)
 + [Obtain Permission](#channels-sms-best-practices-obtain-permission)
 + [Audit Your Customer Lists](#channels-sms-best-practices-audit-lists)
++ [Keep Records](#channels-sms-best-practices-keep-records)
 + [Respond Appropriately](#channels-sms-best-practices-respond-appropriately)
 + [Adjust Your Sending Based on Engagement](#channels-sms-best-practices-adjust-engagement)
 + [Send at Appropriate Times](#channels-sms-best-practices-appropriate-times)
@@ -20,9 +22,22 @@ This section describes several best practices that might help you improve your c
 + [Maintain Independent Lists](#channels-sms-best-practices-independent-lists)
 + [Use Dedicated Short Codes](#channels-sms-best-practices-dedicated-short-codes)
 
+## Comply with Laws and Regulations<a name="channels-sms-best-practices-understand-laws"></a>
+
+You can face significant fines and penalties if you violate the laws and regulations of the places where your customers reside\. For this reason, it's vital to understand the laws related to SMS messaging in each country or region where you do business\.
+
+The following list includes links to key laws that apply to SMS communications in major markets around the world\.
++ **United States**: The Telephone Consumer Protection Act of 1991, also known as TCPA, applies to certain types of SMS messages\. For more information, see the [full text of the law \(PDF format\)](https://transition.fcc.gov/cgb/policy/TCPA-Rules.pdf) at the Federal Communication Commission website\.
++ **United Kingdom**: The Privacy and Electronic Communications \(EC Directive\) Regulations 2003, also known as PECR, applies to certain types of SMS messages\. For more information, see the [What are PECR?](https://ico.org.uk/for-organisations/guide-to-pecr/what-are-pecr/) at the website of the UK Information Commissioner's Office\.
++ **European Union**: The Privacy and Electronic Communications Directive 2002, sometimes known as the ePrivacy Directive, applies to some types of SMS messages\. For more information, see the [full text of the law](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058) at the Europa\.eu website\.
++ **Canada**: The Fighting Internet and Wireless Spam Act, more commonly known as Canada's Anti\-Spam Law or CASL, applies to certain types of SMS messages\. For more information, see the [full text of the law](http://www.parl.ca/DocumentViewer/en/40-3/bill/C-28/first-reading) at the website of the Parliament of Canada\.
++ **Japan**: The Act on Regulation of Transmission of Specific Electronic Mail may apply to certain types of SMS messages\. For more information, see [Japan's Countermeasures Against Spam](http://measures.antispam.soumu.go.jp/) at the website of the Japanese Ministry of Internal Affairs and Communications\.
+
+As a sender, these laws may apply to you even if you don't reside in one of these countries\. Some of the laws in this list were originally created to address unsolicited email or telephone calls, but have been interpreted or expanded to apply to SMS messages as well\. Other countries and regions may have their own laws related to the transmission of SMS messages\. Consult an attorney in each country or region where your customers are located to obtain legal advice\.
+
 ## Obtain Permission<a name="channels-sms-best-practices-obtain-permission"></a>
 
-Don't send messages to customers who haven't asked to receive them\. 
+Never send messages to customers who haven't explicitly asked to receive them\. 
 
 If customers can sign up to receive your messages by using an online form, add a CAPTCHA to the form to prevent automated scripts from subscribing people without their knowledge\.
 
@@ -47,6 +62,12 @@ When you audit your list, send each opted\-in customer a message that reminds th
 You're subscribed to Example Corp. alerts. Msg & data rates may apply. 
 Reply HELP for help, STOP to unsubscribe.
 ```
+
+## Keep Records<a name="channels-sms-best-practices-keep-records"></a>
+
+Keep records that show when each customer requested to receive SMS messages from you, and which messages you sent to each customer\. Many countries and regions around the world require SMS senders to maintain these records in a way that can be easily retrieved\. Mobile carriers might also request this information from you at any time\. The exact information that you have to provide varies by country or region\. For more information about record\-keeping requirements, review the regulations about commercial SMS messaging in each country or region where your customers are located\.
+
+Occasionally, a carrier or regulatory agency asks us to provide proof that a customer opted to receive messages from you\. In these situations, AWS Support contacts you with a list of the information that the carrier or agency requires\. If you can't provide the necessary information, we may pause your ability to send additional SMS messages\.
 
 ## Respond Appropriately<a name="channels-sms-best-practices-respond-appropriately"></a>
 

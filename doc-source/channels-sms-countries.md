@@ -22,7 +22,7 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Bahrain | BH | Yes |  | 
 | Bangladesh | BD |  |  | 
 | Barbados | BB | Yes |  | 
-| Belarus | BY | Yes |  | 
+| Belarus | BY | Yes\[[1](#sms-support-note-1)\] |  | 
 | Belgium | BE |  | Yes | 
 | Belize | BZ | Yes |  | 
 | Benin | BJ | Yes |  | 
@@ -141,7 +141,7 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | New Zealand | NZ |  | Yes | 
 | Nicaragua | NI |  |  | 
 | Niger | NE | Yes |  | 
-| Nigeria | NG | Yes\[[1](#sms-support-note-1)\] | Yes | 
+| Nigeria | NG | Yes\[[1](#sms-support-note-1)\] |  | 
 | Norway | NO | Yes | Yes | 
 | Oman | OM | Yes\[[1](#sms-support-note-1)\] |  | 
 | Pakistan | PK |  |  | 
@@ -155,7 +155,7 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Poland | PL | Yes | Yes | 
 | Portugal | PT | Yes | Yes | 
 | Puerto Rico | PR |  | Yes | 
-| Qatar | QA |  |  | 
+| Qatar | QA | Yes |  | 
 | Republic of the Congo | CG |  |  | 
 | Reunion Island | RE | Yes |  | 
 | Romania | RO |  | Yes | 
@@ -187,13 +187,13 @@ You can use Amazon Pinpoint to send SMS messages to the countries and regions li
 | Switzerland | CH | Yes | Yes | 
 | Taiwan | TW |  | Yes | 
 | Tajikistan | TJ | Yes |  | 
-| Tanzania | TZ | Yes |  | 
+| Tanzania | TZ | Yes\[[1](#sms-support-note-1)\] |  | 
 | Thailand | TH | Yes | Yes | 
 | Togo | TG | Yes |  | 
 | Tonga | TO | Yes |  | 
 | Trinidad and Tobago | TT | Yes |  | 
 | Tunisia | TN | Yes |  | 
-| Turkey | TR |  | Yes | 
+| Turkey | TR | Yes\[[1](#sms-support-note-1)\] | Yes | 
 | Turkmenistan | TM | Yes |  | 
 | Turks and Caicos Islands | TC | Yes |  | 
 | Uganda | UG | Yes |  | 

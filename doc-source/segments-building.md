@@ -5,11 +5,8 @@ To reach the intended audience for a campaign, build a segment based on the data
 For example, to reach users who haven’t used your mobile app recently, you can define a segment for users who haven’t used your app in the last 7 days\.
 
 User segments are defined by various criteria, including but not limited to:
-
 + How recently they used your application
-
 + The operating system they use
-
 + The model of mobile device they use
 
 Because the segment is built from segmentation criteria, it is dynamic, meaning the end users who belong to the segment vary over time based on user activity\. For example, if your segment includes users who haven’t used your application recently, users who respond to a campaign by using your application are removed from the segment\.

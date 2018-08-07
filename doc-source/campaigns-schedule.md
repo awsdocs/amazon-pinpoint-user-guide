@@ -17,9 +17,7 @@ Before you begin, complete [Step 3: Write the Message](campaigns-message.md)\.
 ![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_frequency.png)![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The schedule frequency options.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. Unless you are sending the message immediately, choose when the message is sent:
-
    + If you chose to send the message only once, for **When**, select the date, time, and time zone\.
-
    + If you chose a recurring frequency, for **Start**, select the date, time, and time zone for the beginning of the campaign\. The default date is the current date and the default time is immediately \(approximately 15 minutes from the current time\)\. For **End**, select a date and time to end the campaign\.  
 ![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_schedule.png)![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The settings for the schedule start and end.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 

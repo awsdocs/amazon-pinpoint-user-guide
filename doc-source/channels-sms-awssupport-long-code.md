@@ -1,6 +1,6 @@
 # Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint<a name="channels-sms-awssupport-long-code"></a>
 
-A long code \(also referred to as a long virtual number, or LVN\) is a standard 10\-digit phone number\. Long codes are meant for low\-volume, person\-to\-person communication\. For example, in the United States and Canada, sending rates for long codes are restricted to 1 TPS\. Sending high\-volume traffic to a long code might prompt wireless carriers to block the messages by blacklisting the long code\. Long codes are useful for low\-volume use cases, or for testing your SMS program before you scale up and request a short code\. With Amazon Pinpoint, long codes are supported only for two\-way SMS\.
+A long code \(also referred to as a long virtual number, or LVN\) is a standard 10\-digit phone number\. Long codes are meant for low\-volume, person\-to\-person communication\. For example, in the United States and Canada, sending rates for long codes are restricted to 1 TPS\. Sending high\-volume traffic to a long code might prompt wireless carriers to block the messages by blacklisting the long code\. Long codes are useful for testing your SMS program before you invest in a short code\. With Amazon Pinpoint, long codes are supported only for two\-way SMS\.
 
 You can request up to 5 long codes for each country that you'll send SMS messages to\.
 
@@ -30,11 +30,8 @@ Tell AWS Support that you're requesting a dedicated long code by completing the 
 1. For **Resource Type**, choose **Dedicated SMS Long Codes**\.
 
 1. For **Limit**, choose the type of message that you'll send with your long code:
-
    + **One\-time Passwords/Two\-Factor Authentication** – Messages that provide passwords to authenticate with your website or application\.
-
    + **Promotional/Marketing** – Noncritical messages that promote your business or service, such as special offers or announcements\.
-
    + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
 
 1. For **New limit value**, specify the number of long codes that you're requesting\. Typically, this value is **1**\. You can request up to 5 long codes for each country in your request\.
@@ -56,9 +53,7 @@ Describe how you'll use your dedicated long code by completing the following ste
    If your list of countries exceeds the character limit for this text box, you can instead specify your countries in the **Use Case Description** box\.
 
 1. For **Use Case Description**, provide the following details:
-
    + The AWS Region where you'll use Amazon Pinpoint to send SMS messages with your long code\.
-
    + Because long codes are supported only for two\-way SMS, confirm that you require your long code for two\-way SMS purposes\. 
 
 1. When you finish, choose **Submit**\.
@@ -72,9 +67,7 @@ After AWS notifies you that your long code is registered in the targeted countri
 1. On the **Projects** page, choose **Account settings**\.
 
 1. Under **Number settings**, choose the long code that AWS assigned to your account\. The console shows the **Number settings** page for your long code\. Under **Keywords**, the console provides:
-
    + The keywords HELP and STOP, and their default response messages\. You can edit the response messages, but you can't edit the keywords\.
-
    + The default registered keyword and its default response message\. You can edit both of these values\.
 
 1. In the table that contains the keyword or response that you want to edit, choose **Edit**, and make your changes\.
@@ -87,6 +80,6 @@ After AWS notifies you that your long code is registered in the targeted countri
 
 You've registered a long code and updated your settings in the Amazon Pinpoint console\. Now you can use Amazon Pinpoint to send SMS messages with your long code as the origination number\.
 
-To engage an audience segment with an SMS campaign, see [Engage Your Audience with Messaging Campaigns](welcome.md#welcome-campaigns)\.
+To engage an audience segment with an SMS campaign, see [Amazon Pinpoint Campaigns](campaigns.md)\.
 
 To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.

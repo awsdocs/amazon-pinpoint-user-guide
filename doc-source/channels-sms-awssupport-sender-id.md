@@ -42,11 +42,8 @@ Describe how you'll use your sender ID by completing the following steps\.
 1. For **Link to site or app which will be sending SMS**, identify the website or application where your audience members will opt in to receive your SMS messages\.
 
 1. For **Type of messages**, choose the type of message that you'll send using your sender ID:
-
    + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
-
    + **Promotional** – Noncritical messages that promote your business or service, such as special offers or announcements\.
-
    + **One Time Passwords** – Messages that provide passwords to authenticate with your website or application\.
 
 1. For **Targeted Countries**, specify the countries where you want to register a sender ID\. Support for sender IDs and sender ID registration requirements vary by country\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
@@ -54,13 +51,9 @@ Describe how you'll use your sender ID by completing the following steps\.
    If your list of countries exceeds the character limit for this text box, you can instead specify the countries in the **Use Case Description** box\.
 
 1. For **Use Case Description**, provide the following details:
-
    + The name of your organization \(or the organization associated with the sender ID\)\.
-
    + The sender ID to register\. Typically, the sender ID can contain up to 11 alphanumeric characters, including at least one letter and no spaces\. These requirements can vary depending on the country you're messaging\.
-
    + How your sender ID relates to the name of your organization, if that relationship isn't clear\. For example, if your sender ID is an acronym that includes your organization name when expanded, provide the expanded form\.
-
    + The template for the messages that you'll send with the sender ID\.
 
 1. When you finish, choose **Submit**\.
@@ -81,6 +74,6 @@ After AWS notifies you that your sender ID is registered in the targeted countri
 
 You've registered a sender ID and updated your settings in the Amazon Pinpoint console\. Now you can use Amazon Pinpoint to send SMS messages with your sender ID\. SMS recipients in supported countries will see your sender ID as the message sender on their devices\. 
 
-To engage an audience segment with an SMS campaign, see [Engage Your Audience with Messaging Campaigns](welcome.md#welcome-campaigns)\.
+To engage an audience segment with an SMS campaign, see [Amazon Pinpoint Campaigns](campaigns.md)\.
 
 To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.
