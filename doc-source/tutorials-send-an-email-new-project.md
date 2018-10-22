@@ -1,25 +1,23 @@
 # Step 1: Create a New Amazon Pinpoint Project<a name="tutorials-send-an-email-new-project"></a>
 
-In Amazon Pinpoint, a *project* is a collection of settings, segments, campaigns, and analytics for a specific set of customer engagements\. Before you can send email using Amazon Pinpoint, you first have to create a campaign\. 
+Before you can send email using Amazon Pinpoint, you first have to create a project\. A *project* is a collection of settings, segments, campaigns, and analytics for a specific set of customer engagements\.
 
-The procedure in this section shows you how to create a project by using the AWS CLI\.
+Part of creating an email campaign involves verifying an identity\. In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Before you can send email using Amazon Pinpoint, you must verify each identity that you plan to use as a "From", "Source", "Sender", or "Return\-Path" address to prove that you own it\. If your account is still in the Amazon Pinpoint sandbox, you also need to verify the identities that you plan to send emails to\.
 
-**To create a new Amazon Pinpoint project**
-+ At the command line, type the following command to create a new project\. Replace *My Email Project* with a unique name for your project\. 
+The procedure in this section shows you how to create a new email project by using the Amazon Pinpoint console\.
 
-  ```
-  aws pinpoint create-app --create-application-request Name="My Email Project"
-  ```
+**To create a new Amazon Pinpoint project and verify an email address**
 
-  When the command runs successfully, you see output similar to the following example:
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-  ```
-  {
-      "ApplicationResponse": {
-          "Id": "28268e0b68c54257bc66a1085EXAMPLE",
-          "Name": "My Email Project"
-      }
-  }
-  ```
+1. On the **Projects** page, choose **Create a project**\.
 
-**Next:** [Verify an Identity »](tutorials-send-an-email-verify-identity.md)
+1. For **Project name**, type a name, and then choose **Create**\.
+**Note**  
+The project name can contain up to 64 alphanumeric characters\. It can also include the following characters: comma \(,\), period \(\.\), at sign \(@\), underscore \(\_\), equals sign \(=\), and plus sign \(\+\)\.
+
+1. Under **Messaging channels**, next to **Email**, choose **Configure**\.
+
+1. For **Email address**, type the email address that you want to verify, and then choose **Verify**\. Amazon Pinpoint sends an email to the address you specified\. Open the email, and then click the link in the message to verify your email address\.
+
+**Next:** [Upload a List of Segment Members to Amazon S3 »](tutorials-send-an-email-upload-contacts.md)

@@ -13,8 +13,8 @@ To experiment with alternative campaign strategies, set up your campaign as an A
 If you want to send a one\-time message without engaging a user segment or defining a schedule, you can simply [send a direct message](messages.md) instead of creating a campaign\.
 
 **Topics**
-+ [Step 1: Begin a New Campaign](campaigns-begin.md)
-+ [Step 2: Specify the Audience Segment for the Campaign](campaigns-segment.md)
++ [Step 1: Create a Campaign](campaigns-begin.md)
++ [Step 2: Specify the Audience for the Campaign](campaigns-segment.md)
 + [Step 3: Write the Message](campaigns-message.md)
 + [Step 4: Set the Campaign Schedule](campaigns-schedule.md)
 + [Step 5: Review and Launch the Campaign](campaigns-review.md)

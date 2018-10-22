@@ -5,7 +5,7 @@ Your monthly spend threshold sets how much you can spend each calendar month on 
 **Important**  
 Because Amazon Pinpoint is a distributed system, it stops sending SMS messages within a time interval of minutes of the spend limit being exceeded\. During that interval, if you continue to send SMS messages, you might incur costs that exceed your limit\.
 
-By default, the spend threshold is $1\.00 \(USD\)\. For information about SMS pricing, see [Amazon Pinpoint Pricing](aws.amazon.com/pinpoint/pricing/)\.
+By default, the spend threshold is $1\.00 \(USD\)\. For information about SMS pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/)\.
 
 Typically, AWS Support processes your case within 2 business days\. Depending on the spend limit you request and the complexity of your case, AWS Support might require an additional 3–5 days to ensure that your request can be processed\.
 
@@ -74,8 +74,12 @@ After AWS notifies you that your monthly spend threshold is increased, complete 
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose **Account settings**\.
+1. On the **Projects** page, choose a project that uses the SMS channel\.
 
-1. Under **General**, for **Account spending limit**, type the maximum amount, in USD, that you want to spend on SMS messages each calendar month\. You can specify a value that's less than or equal to your total monthly spend threshold\. By setting a lower value, you can control spending while retaining the capacity to scale up as needed\.
+1. In the navigation pane, under **Settings**, choose **SMS**\.
 
-1. Choose **Save**\.
+1. Next to **General**, choose **Edit**\.
+
+1. Under **Account\-level settings**, for **Account spend limit**, type the maximum amount, in US Dollars, that you want to spend on SMS messages each calendar month\. You can specify a value that's less than or equal to the total monthly spending limit provided by AWS Support\. By setting a lower value, you can control spending while retaining the capacity to scale up as needed\.
+
+1. Choose **Save changes**\.

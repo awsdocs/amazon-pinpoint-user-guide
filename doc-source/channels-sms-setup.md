@@ -1,72 +1,44 @@
 # Setting up the Amazon Pinpoint SMS Channel<a name="channels-sms-setup"></a>
 
-To send SMS messages with Amazon Pinpoint, you need an Amazon Pinpoint project in which the SMS channel is enabled\. If your project is based on a mobile app, create it by using AWS Mobile Hub\. Otherwise, create your project by using the AWS Command Line Interface \(AWS CLI\)\.
+To send SMS messages with Amazon Pinpoint, you need an Amazon Pinpoint project in which the SMS channel is enabled\.
 
 You can also enable the SMS channel for an existing project by using the **Settings** page in the Amazon Pinpoint console\. For more information, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
 
-## Creating an SMS Project with AWS Mobile Hub<a name="channels-sms-setup-mobilehub"></a>
+## Creating a New Project by Using the Amazon Pinpoint Console<a name="channels-sms-setup-mobilehub"></a>
 
-You can enable SMS messaging for a mobile app by creating a project with AWS Mobile Hub\. In the Mobile Hub console, create a project, and add the **Messaging & Analytics** feature\. Then, enable the SMS channel as part of that feature\. After you create a project in Mobile Hub, the project becomes available in Amazon Pinpoint\.
+The first step in setting up email in Amazon Pinpoint is to create a new project\. Next, you verify an email address identity\.
 
-For more information, see the following topics in the *AWS Mobile Developer Guide*:
-+ To create a project in Mobile Hub, see [Get Started](http://docs.aws.amazon.com/aws-mobile/latest/developerguide/getting-started.html)\.
-+ After you create a project, to enable SMS messaging, see [Add Messaging to Your Mobile App with Amazon Pinpoint](http://docs.aws.amazon.com/aws-mobile/latest/developerguide/add-aws-mobile-messaging.html)\.
+In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Before you can send email using Amazon Pinpoint, you must verify each identity that you plan to use as a "From", "Source", "Sender", or "Return\-Path" address to prove that you own it\. If your account is still in the Amazon Pinpoint sandbox, you also need to verify the identities that you plan to send emails to\.
 
-## Creating an SMS Project with the AWS CLI<a name="channels-sms-setup-cli"></a>
+**To create a new Amazon Pinpoint project and verify an email address**
 
-You can create an Amazon Pinpoint project that's enabled for SMS messaging by using the [AWS CLI](https://aws.amazon.com/cli/)\. The AWS CLI requires at least Python 2 version 2\.6\.5 or later, or Python 3 version 3\.3 or later\. For more information about installing and configuring the AWS CLI, see [Installing the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) in the *AWS Command Line Interface User Guide*\.
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-To create a project that's enabled for SMS, use the `create-app` and `update-sms-channel` commands, as shown by the following examples\.
+1. On the **Projects** page, choose **Create a project**\.
 
-**Example create\-app command**  
-Use the [http://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-app.html](http://docs.aws.amazon.com/cli/latest/reference/pinpoint/create-app.html) command to create an Amazon Pinpoint project:  
+1. For **Project name**, type a name, and then choose **Create**\.
+**Note**  
+The project name can contain up to 64 alphanumeric characters\. It can also include the following characters: comma \(,\), period \(\.\), at sign \(@\), underscore \(\_\), equals sign \(=\), and plus sign \(\+\)\.
 
-```
-$aws pinpoint create-app --create-application-request Name="My SMS Project"
-```
-The following response is displayed:  
+1. Under **Messaging channels**, next to **SMS**, choose **Configure**\.
 
-```
-{
-    "ApplicationResponse": {
-        "Id": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6",
-        "Name": "My SMS Project"
-    }
-}
-```
-Note the ID that's provided in the response because you'll use it when you enable the SMS channel\.
+1. Choose **Enable the SMS channel for this project**\.
 
-**Example update\-sms\-channel command**  
-Use the [http://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-sms-channel.html](http://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-sms-channel.html) command to enable the SMS channel for a project:  
+1. Under Account\-level settings, you can optionally change the following settings:
+   + **Default message type** – The category of messages you plan to send\. Choose **Transactional** for time\-sensitive content, such as alerts and one\-time passwords, or choose **Promotional** for marketing\-related content\.
+   + **Account spend limit** – The maximum amount of money, in US Dollars, that you want to spend sending SMS messages per calendar month\. If your monthly sending exceeds this limit, Amazon Pinpoint and other AWS services stop sending SMS messages from your account\.
+   + **Default sender ID** – The identity that appears on recipients' devices when they receive this message\. Support for sender ID capabilities varies by country or region\.
+**Important**  
+These settings apply to your entire AWS account\. When you change these settings, they apply to all other Amazon Pinpoint projects in your account, and to other AWS services that send SMS messages, such as Amazon SNS\.
 
-```
-$aws pinpoint update-sms-channel --application-id application-id --sms-channel-request Enabled=true
-```
-The following response is displayed:  
-
-```
-{
-    "SMSChannelResponse": {
-        "ApplicationId": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6",
-        "CreationDate": "2018-02-20T22:15:05.025Z",
-        "Enabled": true,
-        "Id": "sms",
-        "IsArchived": false,
-        "LastModifiedDate": "2018-02-20T22:15:05.025Z",
-        "Platform": "SMS",
-        "Version": 1
-    }
-}
-```
-
-After you create a project, it's available in the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+1. When you finish, choose **Save changes**\.
 
 ## Next Steps<a name="channels-sms-setup-next"></a>
 
 You've created a project that's enabled for SMS messaging\. Now you can use Amazon Pinpoint to send SMS messages\. 
 
+Some SMS options, such as dedicated origination numbers or sender IDs, are unavailable until you contact AWS Support\. For more information, see [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)\.
+
 To engage an audience segment with an SMS campaign, see [Amazon Pinpoint Campaigns](campaigns.md)\.
 
-To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.
-
-Some SMS options, such as dedicated origination numbers or sender IDs, are unavailable until you contact AWS Support\. For more information, see [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)\.
+To send an SMS message directly to a limited audience without creating a campaign, see [Send Test Messages with Amazon Pinpoint](messages.md)\.

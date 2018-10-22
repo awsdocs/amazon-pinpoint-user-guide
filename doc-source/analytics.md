@@ -10,7 +10,7 @@ You can create and monitor [funnels](analytics-funnels.md) to analyze how many u
 
 To analyze or store the analytics data outside of Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data to Amazon Kinesis](analytics-streaming.md)\.
 
-To report metrics from your mobile app, your app must be integrated with Amazon Pinpoint through one of the supported AWS Mobile SDKs\. For more information, see [Integrating Amazon Pinpoint With Your App](http://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk.html) in the *Amazon Pinpoint Developer Guide*\.
+To report metrics from your mobile app, your app must be integrated with Amazon Pinpoint through one of the supported AWS Mobile SDKs\. For more information, see [Integrating Amazon Pinpoint With Your App](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk.html) in the *Amazon Pinpoint Developer Guide*\.
 
 **Topics**
 + [Chart Reference for Amazon Pinpoint Analytics](analytics-charts.md)

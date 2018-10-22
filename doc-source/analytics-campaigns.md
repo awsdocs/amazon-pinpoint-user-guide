@@ -4,13 +4,17 @@ The charts on the **Campaigns** page provide information about all of the campai
 
 ## Viewing the Campaign Charts<a name="analytics-campaigns-view"></a>
 
-You can view the campaign charts in the Amazon Pinpoint console\. You can filter the charts on this page by date\.
+You can view the **Campaigns** charts in the Amazon Pinpoint console\. 
 
 **To view and filter the Campaigns charts**
 
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. On the **Pinpoint Projects** page, choose the project that you want to view campaign metrics for\.
+
 1. In the navigation pane, under **Analytics**, choose **Campaigns**\.
 
-1. *\(Optional\)* To filter the charts by a specific date or range of dates, choose **Last 30 days**\.
+1. \(Optional\) Choose **Last 30 days** to choose a range of dates\. When you choose a new date range, the charts update to show data for the specified time period\.
 
 ## Chart Descriptions<a name="analytics-campaigns-description"></a>
 
@@ -21,27 +25,10 @@ The **Campaigns** page includes a section that provides aggregated metrics for a
 The **Campaigns** page includes the following metrics, which are aggregated across all campaigns that were active during the selected time period\.
 
 **Active targetable endpoints**  
-Shows the total number of endpoints that have opened your app at least once in the past 30 days, and that haven't opted out of receiving messages from you\. This section includes the total number of active targetable endpoints, as well as the number of active targetable endpoints for each channel \(mobile push, email, and SMS\)\.
+Shows the total number of *targetable endpoints*\. Targetable endpoints are endpoints that have opened your app at least once in the past 30 days, and that haven't opted out of receiving messages from you\. This section includes the total number of active targetable endpoints, as well as the number of active targetable endpoints for each channel \(push notification, email, and SMS\)\.
 
-**Total targetable endpoints**  
-Shows the total number of endpoints that have ever used your app, and that haven't opted out of receiving messages from you\. This section includes the total number of targetable endpoints, as well as the number of targetable endpoints for each channel \(mobile push, email, and SMS\)\.
-
-*List of campaigns*  
-This table displays the following information for each campaign that was active during the selected time period:    
-**Campaign name**  
-The name of the campaign\.  
-**Channel**  
-The channel type of the campaign \(such as email, SMS, or mobile push\)\.  
-**Type**  
-The type of campaign \(such as standard or A/B test\)\.  
-**Schedule**  
-The schedule type for the campaign \(such as once, daily, hourly, or monthly\)\.  
-**Delivered**  
-The number of messages that were delivered to their intended recipients\.  
-**Delivery rate**  
-The number of messages that were delivered to their intended recipients, divided by the total number of messages you attempted to send\.  
-**Open rate**  
-The number of users that opened your app after receiving the message, divided by the total number of messages that were delivered\.
+**Campaigns**  
+Shows the total number of campaigns that were active in the time period you selected\. Also shows the number of endpoints that you sent messages to in the selected time period, and the delivery, open, and opt\-out rates for campaigns sent in the selected time period\.
 
 ### Metrics for Individual Campaigns<a name="analytics-campaigns-description-individual"></a>
 
@@ -86,34 +73,32 @@ The number of messages that were sent during this campaign run\. This number mig
 The number of messages sent from this campaign run that were delivered to their intended recipients\.  
 **Delivery rate**  
 The percentage of messages sent from this campaign run that were delivered\. Amazon Pinpoint calculates this rate by dividing **Messages delivered** by **Messages sent**\.  
-**Total opened**  
+**Total email opened**  
 The number of messages that were opened by their recipients\. Because of technical limitations, this value only includes recipients who opened the message in an email client that supports images\.  
-**Open rate**  
+**Email open rate**  
 The percentage of messages that were opened by their recipients\. Amazon Pinpoint calculates this rate by dividing **Total opened** by **Messages delivered**\.  
 **Bounce rate**  
 The percentage of messages that couldn't be delivered to their recipients\. This metric only measures hard bounces\. Amazon Pinpoint calculates this rate by dividing the number of emails that bounced during the campaign run by **Messages delivered**\.
 
-#### Mobile Push Campaigns<a name="analytics-campaigns-description-individual-push"></a>
+#### Push Notification Campaigns<a name="analytics-campaigns-description-individual-push"></a>
 
-When you select a standard campaign that uses the Mobile Push channel, you see the following charts:
+When you select a standard campaign that sends push notifications, you see the following charts:
 
-**Delivery count metrics**  
+**Campaign delivery counts**  
 Provides the following metrics that relate to the delivery of messages from this campaign:    
 **Endpoints messaged**  
-The number of unique mobile push endpoints that received a notification from this campaign\.  
+The number of unique push notification endpoints that received a notification from this campaign\.  
 **Messages sent**  
 The number of messages sent from the campaign\.  
 **Messages delivered**  
 The number of messages that were delivered to their intended recipients\. Amazon Pinpoint calculates this number by subtracting the number of messages that couldn't be delivered from the total number of messages you sent\.
 
-**Delivery rate metrics**  
+**Campaign engagement rates**  
 Provides the following metrics that relate to the delivery of messages from this campaign:    
 **Delivery rate**  
 The percentage of push notifications that were delivered to their intended recipients\. Amazon Pinpoint calculates this rate by dividing **Messages delivered** by **Messages sent**\.  
-**Open rate**  
-The percentage of notifications that led to the recipient opening your app\. Amazon Pinpoint calculates this rate by dividing the number of recipients who received a message from you and later opened your app by **Messages delivered**\.  
-**Direct open rate**  
-The number of notifications that recipients tapped to open your app\. Amazon Pinpoint calculates this metric by dividing the number of messages that recipients tapped to open your app by **Messages delivered**\.
+**Push open rate**  
+The percentage of notifications that led to the recipient opening your app\. Amazon Pinpoint calculates this rate by dividing the number of recipients who received a message from you and later opened your app by **Messages delivered**\.
 
 **Sessions per endpoint**  
 Shows the average number of times an endpoint opened your app during the selected time period\. Amazon Pinpoint calculates this number by finding the number of times endpoints targeted by this campaign opened your app, and dividing that by the number of unique endpoints targeted by the campaign\.
@@ -122,7 +107,7 @@ Shows the average number of times an endpoint opened your app during the selecte
 Shows the average number of purchases per endpoint during the selected time period\. Amazon Pinpoint calculates this number by finding the number of purchases made by endpoints targeted by this campaign, and dividing that by the number of unique endpoints targeted by the campaign\.
 
 **Campaign session heat map**  
-The days and times when users opened your app after receiving a mobile push notification that was sent by this campaign\. Darker rectangles represent greater numbers of users\. Times are based on each user's local time zone\.
+The days and times when users opened your app after receiving a push notification notification that was sent by this campaign\. Darker rectangles represent greater numbers of users\. Times are based on each user's local time zone\.
 
 **Campaign runs**  
 Provides the following metrics that relate to the timing and delivery of your messages each time this campaign ran\.    
@@ -136,9 +121,9 @@ The number of messages that were sent during this campaign run\. This number mig
 The number of messages sent from this campaign run that were delivered to their intended recipients\.  
 **Delivery rate**  
 The percentage of messages sent from this campaign run that were delivered\. Amazon Pinpoint calculates this rate by dividing **Messages delivered** by **Messages sent**\.  
-**Total opened**  
+**Total push opened**  
 The number of messages that led to their recipients opening your app\.  
-**Open rate**  
+**Push open rate**  
 The percentage of messages that led to their recipients opening your app\. Amazon Pinpoint calculates this rate by dividing **Total opened** by **Messages delivered**\.
 
 #### SMS Campaigns<a name="analytics-campaigns-description-individual-sms"></a>
@@ -156,7 +141,7 @@ The number of messages that were delivered to their intended recipients\. Amazon
 **Delivery rate**  
 The percentage of messages that were delivered to their intended recipients\. Amazon Pinpoint calculates this rate by dividing **Messages sent** by **Messages delivered**\.
 
-**SMS total cost**  
+**Total SMS spend**  
 Shows the total amount of money, in USD, that you spent sending SMS messages in the selected time period\.
 
 **Campaign runs**  

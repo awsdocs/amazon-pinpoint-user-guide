@@ -118,17 +118,19 @@ After AWS notifies you that your short code is registered with the wireless carr
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose **Account settings**\.
+1. On the **Projects** page, choose the a project that uses the SMS channel\.
 
-1. Under **Number settings**, choose the short code that AWS assigned to your account\.
+1. In the navigation pane, under **Settings**, choose **SMS**\. 
+
+1. Under **Short and Long Codes**, choose the short code that AWS assigned to your account\.
 
 1. Under **Default keywords**, verify that the messages for the *HELP* and *STOP* keywords match the values you provided to AWS Support\.
 
 1. Under **Registered keyword**, verify that the opt\-in keyword and message match the values you provided to AWS Support\.
 
-1. \(Optional\) If you want to specify additional keyword responses, or if you want to process inbound messages outside of Amazon Pinpoint, configure two\-way SMS settings\. For more information, see [Two\-Way SMS Settings](settings-account.md#settings-account-sms-number-2way)\.
+1. \(Optional\) If you want to specify additional keyword responses, or if you want to process inbound messages outside of Amazon Pinpoint, configure two\-way SMS settings\. For more information, see [Two\-Way SMS Settings](settings-sms.md#settings-account-sms-number-2way)\.
 
-1. When you finish making your changes, choose **Save**\.
+1. When you finish making changes, choose **Save**\.
 
 ## Next Steps<a name="channels-sms-awssupport-short-code-next"></a>
 
@@ -136,4 +138,4 @@ You've registered a short code with wireless carriers and reviewed your settings
 
 To engage an audience segment with an SMS campaign, see [Amazon Pinpoint Campaigns](campaigns.md)\.
 
-To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.
+To send an SMS message directly to a limited audience without creating a campaign, see [Send Test Messages with Amazon Pinpoint](messages.md)\.

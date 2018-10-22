@@ -8,30 +8,34 @@ You can view the **Demographics** charts in the Amazon Pinpoint console\. You ca
 
 **To view and filter the Demographics charts**
 
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. On the **Pinpoint Projects** page, choose the project that you want to view revenue metrics for\.
+
 1. In the navigation pane, under **Analytics**, choose **Demographics**\.
 
-1. *\(Optional\)* To filter the charts by a specific date or range of dates, choose **Last 30 days** \.
+1. \(Optional\) To filter the charts by a specific date or range of dates, choose **Last 30 days**, and then specify a date range\.
 
-1. *\(Optional\)* For **All channels**, choose a channel type to filter the charts by\.
+1. \(Optional\) To filter the charts by a specific channel, choose **All channels**, and then choose a channel\.
 
 ## Chart Descriptions<a name="analytics-demographics-description"></a>
 
 The **Demographics** page includes the following charts:
 
-**Platforms**  
-Shows the proportion of customers who use your app on various platforms \(such as iOS or Android\)\.
+**Platform**  
+Shows the proportion of customers who use your app on various platforms\.
 
-**App versions**  
+**App version**  
 Shows the proportion of app users who use various versions of your app\.
 
-**Models**  
+**Device model**  
 Shows the proportions of app users who use various device models \(such as iPhone X or Galaxy S9\)\.
 
-**Makes**  
+**Device make**  
 Shows the proportions of app users who use various device makes \(such as Apple or Samsung\)\.
 
-**Countries**  
-Shows the countries and regions where users of your apps are located\.
+**User location**  
+Shows Shows the countries and regions where users of your apps are located\.
 
-**Custom charts**  
+*Custom attributes*  
 Shows custom attributes that are reported by your app\.

@@ -64,11 +64,15 @@ After AWS notifies you that your sender ID is registered in the targeted countri
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose **Account settings**\.
+1. On the **Projects** page, choose the a project that uses the SMS channel\.
 
-1. Under **General**, for **Default sender ID**, type your sender ID\.
+1. In the navigation pane, under **Settings**, choose **SMS**\. 
 
-1. Choose **Save**\.
+1. Next to **General**, choose **Edit**\.
+
+1. Under **Account\-level settings**, for **Default sender ID**, type your sender ID\.
+
+1. Choose **Save changes**\.
 
 ## Next Steps<a name="channels-sms-awssupport-sender-id-next"></a>
 
@@ -76,4 +80,4 @@ You've registered a sender ID and updated your settings in the Amazon Pinpoint c
 
 To engage an audience segment with an SMS campaign, see [Amazon Pinpoint Campaigns](campaigns.md)\.
 
-To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.
+To send an SMS message directly to a limited audience without creating a campaign, see [Send Test Messages with Amazon Pinpoint](messages.md)\.

@@ -64,17 +64,19 @@ After AWS notifies you that your long code is registered in the targeted countri
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose **Account settings**\.
+1. On the **Projects** page, choose the a project that uses the SMS channel\.
 
-1. Under **Number settings**, choose the long code that AWS assigned to your account\. The console shows the **Number settings** page for your long code\. Under **Keywords**, the console provides:
-   + The keywords HELP and STOP, and their default response messages\. You can edit the response messages, but you can't edit the keywords\.
-   + The default registered keyword and its default response message\. You can edit both of these values\.
+1. In the navigation pane, under **Settings**, choose **SMS**\. 
 
-1. In the table that contains the keyword or response that you want to edit, choose **Edit**, and make your changes\.
+1. Under **Short and Long Codes**, choose the long code that AWS assigned to your account\.
 
-1. \(Optional\) If you want to specify additional keyword responses, or if you want to process inbound messages outside of Amazon Pinpoint, configure two\-way SMS settings\. For more information, see [Two\-Way SMS Settings](settings-account.md#settings-account-sms-number-2way)\.
+1. Under **Default keywords**, verify that the messages for the *HELP* and *STOP* keywords match the values you provided to AWS Support\.
 
-1. When you finish making your changes, choose **Save**\.
+1. Under **Registered keyword**, verify that the opt\-in keyword and message match the values you provided to AWS Support\.
+
+1. \(Optional\) If you want to specify additional keyword responses, or if you want to process inbound messages outside of Amazon Pinpoint, configure two\-way SMS settings\. For more information, see [Two\-Way SMS Settings](settings-sms.md#settings-account-sms-number-2way)\.
+
+1. When you finish making changes, choose **Save**\.
 
 ## Next Steps<a name="channels-sms-awssupport-long-code-next"></a>
 
@@ -82,4 +84,4 @@ You've registered a long code and updated your settings in the Amazon Pinpoint c
 
 To engage an audience segment with an SMS campaign, see [Amazon Pinpoint Campaigns](campaigns.md)\.
 
-To send an SMS message directly to a limited audience without creating a campaign, see [Direct Messages with Amazon Pinpoint](messages.md)\.
+To send an SMS message directly to a limited audience without creating a campaign, see [Send Test Messages with Amazon Pinpoint](messages.md)\.

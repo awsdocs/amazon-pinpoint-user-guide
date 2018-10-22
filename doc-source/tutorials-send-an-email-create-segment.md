@@ -1,4 +1,4 @@
-# Step 4: Create a Segment<a name="tutorials-send-an-email-create-segment"></a>
+# Step 3: Create a Segment<a name="tutorials-send-an-email-create-segment"></a>
 
 Now that you've uploaded a spreadsheet that contains the contact information for your customers, you can use that spreadsheet to create a new *segment* in Amazon Pinpoint\.
 
@@ -12,26 +12,28 @@ When you create a segment in Amazon Pinpoint, you can reuse it later in a differ
 
 1. Choose the project that you created in the first section of this topic\.
 
-1. In the navigation pane, choose **Segments**, and then choose **New segment**\.
+1. In the navigation pane, choose **Segments**, and then choose **Create a segment**\.
 
 1. On the **Create a segment** page, do the following:
 
+   1. Choose **Import a segment**\.
+
    1. For **Segment name**, type a name for the segment\.
 
-   1. Under **How would you like to define your segment**, choose **Import segment**\.
-
-   1. For **Amazon S3 URL**, type the following\. Replace `bucketName` with the name of the Amazon S3 bucket that you created in the previous section\. Replace `folderName` with the name of the folder that you created in the previous section\.
+   1. For **Amazon S3 URL**, type the following:
 
       ```
       s3://bucketName/folderName
       ```
 
-   1. Under **IAM role**, choose **Automatically create a role**\. For **Name for new role**, type **PinpointSegmentImportRole**\.
+      Replace `bucketName` with the name of the Amazon S3 bucket that you created in the previous section\. Replace `folderName` with the name of the folder that you created in the previous section\.
 
-   1. Under **What is the format of the file**, choose **CSV**\.
+   1. Under **IAM role**, choose **Automatically create a role**, and then type a name for the role\.
 
-   1. Choose **Import segment**\. The **Jobs** page appears\.
+   1. Under **What type of file are you importing?**, choose **Comma\-Separated Values \(CSV\)**\.
 
-1. Wait for a few minutes, and then refresh the page\. If the value in the **Status** column is **COMPLETED**, proceed to the next section\. Otherwise, repeat this step until the segment import process is complete\.
+   1. Choose **Create segment**\. The **Scheduled imports** page appears\.
+
+1. Wait for a few minutes, and then refresh the page\. If the value in the **Import status** column is **Completed**, proceed to the next section\. Otherwise, repeat this step until the segment import process is complete\.
 
 **Next:** [Create a Campaign »](tutorials-send-an-email-create-campaign.md)

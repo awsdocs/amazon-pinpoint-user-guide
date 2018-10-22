@@ -1,8 +1,8 @@
-# Step 3: Upload a List of Segment Members to Amazon S3<a name="tutorials-send-an-email-upload-contacts"></a>
+# Step 2: Upload a List of Segment Members to Amazon S3<a name="tutorials-send-an-email-upload-contacts"></a>
 
 To create a segment of customers in Amazon Pinpoint, you first have to upload a spreadsheet that contains those customers' contact details to an Amazon S3 *bucket*\. 
 
-In Amazon S3, a bucket is a container that you use to store files and folders\. Each bucket can have its own permission settings\. For example, you can set up a bucket so that its contents are accessible to anyone who has the address of the bucket\. Or you could set it up so that its contents are only available to you\. To learn more about Amazon S3, see [Introduction to Amazon S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html) in the *Amazon Simple Storage Service Developer Guide*\.
+In Amazon S3, a bucket is a container that you use to store files and folders\. Each bucket can have its own permission settings\. For example, you can set up a bucket so that its contents are accessible to anyone who has the address of the bucket\. Or you could set it up so that its contents are only available to you\. To learn more about Amazon S3, see [Introduction to Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
 **To create a list of contacts and upload it to Amazon S3**
 

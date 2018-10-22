@@ -1,16 +1,20 @@
 # Overview Charts<a name="analytics-overview"></a>
 
-The **Analytics Overview** page contains metrics related to application usage and campaign responses\.
+The **Analytics** page contains several charts that give you an overview of the application usage and campaign responses for your project\.
 
 ## Viewing the Analytics Overview Charts<a name="analytics-overview-view"></a>
 
-You can view the **Analytics Overview** charts in the Amazon Pinpoint console\. You can filter the charts on this page by date\.
+You can view the **Analytics** overview page in the Amazon Pinpoint console\. 
 
-**To view and filter the Overview charts**
+**To view and filter the Analytics overview charts**
+
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. On the **Pinpoint Projects** page, choose the project that you want to view the Analytics charts for\.
 
 1. In the navigation pane, choose **Analytics**\.
 
-1. *\(Optional\)* Choose **Last 30 days** to filter the charts by a specific date or range of dates\.
+1. \(Optional\) Choose **Last 30 days** to choose a range of dates\. When you choose a new date range, the charts update to show data for the specified time period\.
 
 ## Chart Descriptions<a name="analytics-overview-description"></a>
 
@@ -43,10 +47,7 @@ The revenue, in USD, that was reported by your app for each day in the selected 
 The **Campaign analytics** section contains several important metrics that help you understand the success of your campaigns\. The metrics in this section provide aggregated metrics for all the campaigns in the current application or project\.
 
 **Active targetable endpoints**  
-Shows the number of endpoints that are opted in to receive messages from you, and that have opened your app in the past 30 days\. This section displays the number of active targetable endpoints by channel \(mobile push, email, and SMS\), as well as the overall number of active endpoints that are opted in to at least one channel\.
-
-**Total targetable endpoints**  
-Shows the number of endpoints that are opted in to receive messages from you\. This section includes the number of targetable endpoints by channel \(mobile push, email, and SMS\), as well as the overall number of endpoints that are opted in to at least one channel\.
+Shows the number of endpoints that are opted in to receive messages from you, and that have opened your app in the past 30 days\. This section displays the number of active targetable endpoints by channel \(push notification, email, and SMS\), as well as the total number of active targetable endpoints\.
 
 **Campaigns**  
 Shows information about the campaigns that were active during the time period you selected\. This section includes the following information:    
@@ -56,10 +57,9 @@ The number of campaigns that were active during the selected time period\.
 The number of endpoints that received a message during the selected time period\.  
 **Delivery rate**  
 The percentage of targeted endpoints that received messages from you\. Amazon Pinpoint calculates this rate by dividing the number of messages that were delivered to their intended recipients by the total number of messages that you sent\.  
-**Open rate**  
-The percentage of recipients who opened your message\. The way that Amazon Pinpoint calculates this metric depends on the communication channel\.  
-For email messages, the open rate is the number of messages that were opened by their recipients, divided by the number of messages that were received by their recipients\.  
-For mobile push messages, the open rate is the number of recipients who opened your app as a result of receiving your message, divided by the number of recipients who received your message\.  
-Amazon Pinpoint doesn't provide an open rate for SMS messages\.  
+**Email open rate**  
+The number of email messages sent from this project that were opened by their recipients, divided by the number of messages that were received by their recipients\.  
+**Push open rate**  
+The number of recipients who opened your app as a result of receiving a push notification from this project, divided by the number of recipients who received the message\.  
 **Opt out rate**  
 The percentage of customers who opted out after receiving the message\. Amazon Pinpoint calculates this rate by dividing the number of recipients who received your message and opted out by the number of messages that were received by their intended recipients\. \(The recipients could have opted out by clicking an unsubscribe link in an email, or by replying to an SMS message with the keyword `STOP`\)\. 

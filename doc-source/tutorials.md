@@ -4,3 +4,4 @@ The tutorials in this section are intended to show Amazon Pinpoint users how to 
 
 **Topics**
 + [Send an Email Using Amazon Pinpoint](tutorials-send-an-email.md)
++ [Create a Segment](tutorials-create-a-segment.md)

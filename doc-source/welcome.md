@@ -4,7 +4,7 @@ Amazon Pinpoint is an AWS service that you can use to engage with your customers
 
 The information in this user guide is intended for all Amazon Pinpoint users, including marketers, business users, and developers\. This guide contains information that's especially helpful for users who mainly interact with Amazon Pinpoint by using the AWS Management Console\. If you're new to Amazon Pinpoint, start by reading [Getting Started with Amazon Pinpoint](gettingstarted.md)\.
 
-If you're an application developer, also refer to the [Amazon Pinpoint Developer Guide](http://docs.aws.amazon.com/pinpoint/latest/developerguide/) and the [Amazon Pinpoint API Reference](http://docs.aws.amazon.com/pinpoint/latest/apireference/)\. These documents provide information about using the features of Amazon Pinpoint programmatically\. They also contain information about integrating the features of Amazon Pinpoint into your applications\.
+If you're an application developer, also refer to the [Amazon Pinpoint Developer Guide](https://docs.aws.amazon.com/pinpoint/latest/developerguide/) and the [Amazon Pinpoint API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference/)\. These documents provide information about using the features of Amazon Pinpoint programmatically\. They also contain information about integrating the features of Amazon Pinpoint into your applications\.
 
 ## Amazon Pinpoint Features<a name="welcome-features"></a>
 
@@ -16,13 +16,13 @@ Reach the right audience for your messages by [defining audience segments](segme
 
 ### Engage Your Audience with Messaging Campaigns<a name="welcome-campaigns"></a>
 
-Engage your audience by [creating a messaging campaign](campaigns.md)\. A campaign sends tailored messages on a schedule that you define\. You can create campaigns that send mobile push, email, or SMS messages\.
+Engage your audience by [creating a messaging campaign](campaigns.md)\. A campaign sends tailored messages on a schedule that you define\. You can create campaigns that send push notifications, email, or SMS messages\.
 
 To experiment with alternative campaign strategies, set up your campaign as an A/B test, and analyze the results with Amazon Pinpoint analytics\.
 
-### Send Direct Messages<a name="welcome-transactional"></a>
+### Send Test Messages<a name="welcome-transactional"></a>
 
-Keep your customers informed by [sending direct mobile push and SMS messages](messages.md)—such as new account activation messages, order confirmations, and password reset notifications—to specific users\.
+Use the [Test messaging](messages.md) page to test your messages before you send campaigns to your customers\.
 
 ### Analyze User Behavior<a name="welcome-analyze"></a>
 
@@ -32,6 +32,6 @@ To analyze or store the analytics data outside of Amazon Pinpoint, you can confi
 
 ## Get Started<a name="welcome-getstarted"></a>
 
-Get started with Amazon Pinpoint by creating a project in AWS Mobile Hub\. Your Mobile Hub project becomes available in Amazon Pinpoint\. For more information, see [Getting Started with Amazon Pinpoint](gettingstarted.md)\. 
+Get started with Amazon Pinpoint by creating a new project that uses either the email, SMS, or push notification channel\. For more information about creating projects, see [Amazon Pinpoint Channels](channels.md)\. 
 
 Currently, Amazon Pinpoint is available in the US East \(N\. Virginia\) Region\.

@@ -6,7 +6,7 @@ This topic contains information about viewing SMS spending metrics in CloudWatch
 
 You can quickly determine how much money you've spent sending SMS messages in the current month by using the Metrics section of the CloudWatch console\. CloudWatch retains metrics for 15 months, so you can view real\-time data and analyze historical trends\.
 
-For more information about viewing metrics in CloudWatch, see [Using Amazon CloudWatch Metrics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the *Amazon CloudWatch User Guide*\.
+For more information about viewing metrics in CloudWatch, see [Using Amazon CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the *Amazon CloudWatch User Guide*\.
 
 **To view SMS spending metrics in CloudWatch**
 
@@ -26,13 +26,13 @@ The **SMSMonthToDateSpendUSD** metric doesn't appear until you send at least one
 
 In addition to viewing your monthly SMS spending metrics, you can also create alarms in CloudWatch that send you notifications when your SMS spending exceeds a certain amount\. You can set up CloudWatch to deliver these notifications to you by sending them to an Amazon SNS topic\.
 
-For more information about creating alarms in CloudWatch, see [Creating Amazon CloudWatch Alarms](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the *Amazon CloudWatch User Guide*\.
+For more information about creating alarms in CloudWatch, see [Creating Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the *Amazon CloudWatch User Guide*\.
 
 **To create an SMS spending alarm in CloudWatch**
 
 1. If you haven't already done so, create an Amazon SNS topic and subscribe an endpoint to it\. The endpoint that you subscribe to the topic should be the location where you want to receive spending notifications\. For example, if you want to receive spending notifications by email, subscribe your email address to the Amazon SNS topic\. If you want to receive spending notifications by text message, subscribe an SMS endpoint to the topic\.
 
-   For more information about creating and subscribing to topics, see [Getting Started with Amazon Simple Notification Service](http://docs.aws.amazon.com/sns/latest/dg/GettingStarted.html) in the *Amazon Simple Notification Service Developer Guide*\.
+   For more information about creating and subscribing to topics, see [Getting Started with Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/GettingStarted.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
 1. Open the CloudWatch console at [https://console\.aws\.amazon\.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)\.
 

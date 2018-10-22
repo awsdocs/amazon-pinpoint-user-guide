@@ -1,11 +1,16 @@
 # Amazon Pinpoint Settings<a name="settings"></a>
 
-Manage settings to tailor Amazon Pinpoint for your messaging use cases and requirements\. You can control aspects of your app users' experience, and you customize Amazon Pinpoint for your business needs\.
+Generally, you configure settings for each project\. These settings apply to all campaigns within the project by default\.
 
-Manage [account settings](settings-account.md) to configure SMS messaging options that take effect for all of your Amazon Pinpoint projects\. Account settings include your monthly SMS spending limit, sender ID, two\-way SMS response messages, and more\.
+You can also configure certain settings for individual campaigns\. When you change settings at the campaign level, those settings override the settings for the project that the campaign resides in\.
 
-Manage [project settings](settings-project.md) to specify the default settings for an individual project, including the frequency with which your app users receive messages and the times at which they receive messages\.
+**Note**  
+Some settings related to sending SMS messages apply to all projects in your Amazon Pinpoint account, and to other AWS services that send SMS messages\. These settings are shown in the **Account\-level settings** section of the **Edit SMS Settings** page\.
 
 **Topics**
-+ [Managing Account Settings in Amazon Pinpoint](settings-account.md)
-+ [Managing Project Settings in Amazon Pinpoint](settings-project.md)
++ [General Settings](settings-general.md)
++ [Email Settings](settings-email.md)
++ [SMS Settings](settings-sms.md)
++ [Push Notification Settings](settings-push.md)
++ [Mobile and Web App Analytics Settings](settings-analytics.md)
++ [Event Stream Settings](settings-event-streams.md)

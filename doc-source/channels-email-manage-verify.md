@@ -1,8 +1,8 @@
-# Verifying an Email Identity<a name="channels-email-manage-verify"></a>
+# Verifying Email Identities<a name="channels-email-manage-verify"></a>
 
-In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Before you can send email using Amazon Pinpoint, you must verify each identity that you'll use as a "From", "Source", "Sender", or "Return\-Path" address to prove that you own it\. If your account is still in the Amazon Pinpoint sandbox, you also need to verify the identities that you plan to send emails to\.
+In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Before you can send email using Amazon Pinpoint, you must verify each identity that you plan to use as a "From", "Source", "Sender", or "Return\-Path" address to prove that you own it\. If your account is still in the Amazon Pinpoint sandbox, you also need to verify the identities that you plan to send emails to\.
 
-Before you verify an identity, you must first create a project\. For information about creating projects, see [Creating an Amazon Pinpoint Project with Email Support](channels-email-setup-create.md)\.
+Before you verify an identity, you first have to create a project\. For information about creating projects, see [Creating an Amazon Pinpoint Project with Email Support](channels-email-setup-create.md)\.
 
 **Topics**
 + [Verifying an Email Address](#channels-email-manage-verify-email-address)
@@ -10,25 +10,21 @@ Before you verify an identity, you must first create a project\. For information
 
 ## Verifying an Email Address<a name="channels-email-manage-verify-email-address"></a>
 
-You can verify an email address by using the Amazon Pinpoint console\.
+If you've already created a project for sending email, you may have already verified an email address\. You can verify a different email address by using the Amazon Pinpoint console\.
 
 **To verify an email address**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
 1. On the **Projects** page, choose the project that you want to verify the identity in\. 
-**Note**  
-If you created the project in Mobile Hub, it appears in Amazon Pinpoint in lowercase letters, with all spaces removed, and with "\_MobileHub" added to the end of the name\. For example, if you created a project in Mobile Hub and named it "My New Project", it would appear in Amazon Pinpoint as "mynewproject\_MobileHub"\. If you create a project by using the API, the name isn't changed\.
 
-1. Choose **Settings**\.
+1. In the navigation pane, under **Settings**, choose **Email**\.
 
-1. On the **Channels** tab, under **Choose channels to enable**, choose **Email**\.
+1. Next to **Channel settings**, choose **Edit**\.
 
-1. Select the check box next to **Enable email channel**\.
+1. Under **Identity Type**, choose **Email address**, and then choose **New email address verification**\.
 
-1. Under **To use email messaging provide either an email address or email domain to start verifying your credentials**, choose **Email address**\.
-
-1. For **Email address**, type the email address that you want to verify, and then choose **Verify**\.
+1. For **Email address**, type the email address that you want to verify, and then choose **Verify Email**\.
 **Note**  
 The email address you specify must be one that you have access to, and that is able to receive email\.
 
@@ -46,30 +42,32 @@ When you verify an unlabeled address, you are verifying all addresses that could
 
 ## Verifying a Domain<a name="channels-email-manage-verify-domain"></a>
 
-When you verify a domain, you're verifying all email addresses that are associated with that domain\. Therefore, you don't need to verify email addresses from that domain individually\. For example, if you verify the domain *example\.com*, you can send email from *user1@example\.com*, *user2@example\.com*, or any other address in the *example\.com* domain\.
+When you verify a domain, you verify all of the email addresses that are associated with that domain\. Therefore, you don't need to verify email addresses from that domain individually\. For example, if you verify the domain *example\.com*, you can send email from *carlos@example\.com*, *john@example\.com*, and any other address in the *example\.com* domain\.
 
-Before you can use Amazon Pinpoint to send emails from a domain, you must verify the domain to confirm that you own it, and to prevent others from using it\.
+Before you can use Amazon Pinpoint to send emails from a domain, you have to verify the domain to confirm that you own it, and to prevent others from using it\.
 
 **Note**  
-In order to complete the verification process, you must be able to modify the DNS settings for the domain\. For more information about changing the DNS settings for your domain, see your hosting provider's documentation\.
+In order to complete the verification process, you have to modify the DNS settings for the domain\. For more information about changing the DNS settings for your domain, see the documentation for your DNS or web hosting provider\.
 
 **To verify a domain**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
 1. On the **Projects** page, choose the project that you want to verify the identity in\. 
-**Note**  
-If you created the project in Mobile Hub, it appears in Amazon Pinpoint in lowercase letters, with all spaces removed, and with "\_MobileHub" added to the end of the name\. For example, if you created a project in Mobile Hub and named it "My New Project", it would appear in Amazon Pinpoint as "mynewproject\_MobileHub"\. If you create a project by using the API, the name isn't changed\.
 
-1. Choose **Settings**\.
+1. In the navigation pane, under **Settings**, choose **Email**\.
 
-1. On the **Channels** tab, under **Choose channels to enable**, choose **Email**\.
+1. Next to **Channel settings**, choose **Edit**\.
 
-1. Select the check box next to **Enable email channel**\.
+1. Under **Identity Type**, choose **Domain**, and then choose **New domain verification**\.
 
-1. Under **To use email messaging provide either an email address or email domain to start verifying your credentials**, choose **Email domain**\.
+1. For **Domain**, enter the domain that you want to verify\.
 
-1. For **Email domain**, type the domain that you want to verify, and then choose **Verify**\. Make a note of the TXT record values that appear on the **Email domain verification** pop\-up\.
+1. For **Default FROM address**, enter the email address that should be used to send email on this domain\.
+
+1. Choose **Verify domain**\.
+
+1. Make a note of the record values under **TXT record for domain's DNS settings**\.
 
 1. Open the DNS configuration page for your email domain, and then add a new TXT record\. In the new TXT record, paste the **Name** and **Value** that you received in the previous step\.
 **Note**  

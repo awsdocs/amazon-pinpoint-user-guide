@@ -1,6 +1,6 @@
-# Managing Mobile Push Channels with Amazon Pinpoint<a name="channels-mobile-manage"></a>
+# Push Notification Settings<a name="settings-push"></a>
 
-Using the console, you can update the credentials that allow Amazon Pinpoint to send push notifications to iOS and Android devices\. You can provide credentials for the following push notification services, each of which is supported by an Amazon Pinpoint channel: 
+Using the console, you can update the credentials that allow Amazon Pinpoint to send push notifications to iOS, Android and Kindle Fire devices\. You can provide credentials for the following push notification services, each of which is supported by an Amazon Pinpoint channel: 
 + Firebase Cloud Messaging \(FCM\)
 + Apple Push Notification service \(APNs\)
 + Baidu Cloud Push
@@ -24,7 +24,7 @@ Using the console, you can update the credentials that allow Amazon Pinpoint to 
 
 1. When you finish, choose **Save**\.
 
-## Managing APNs Settings<a name="channels-mobile-manage-apns"></a>
+## Managing APNs Settings<a name="settings-push-manage-apns"></a>
 
 On the **Settings** page, for **APNs**, you can authorize Amazon Pinpoint to send push notifications to your iOS app by providing information about your APNs *key* or *certificate*:
 

@@ -2,7 +2,7 @@
 
 With Amazon Pinpoint, you can define a user segment by importing a file that contains information about the users who belong to the segment\. Importing segments is useful if you define user segments outside of Amazon Pinpoint but you want to engage your users with Amazon Pinpoint campaigns\.
 
-Unlike the dynamic segments that you create with the segment builder in the console, an imported segment is an unchanging set of *endpoints* or *users IDs*: 
+Unlike the dynamic segments that you create with the segment builder in the console, an imported segment is an unchanging set of *endpoints* or *user IDs*: 
 
 **Endpoint**  
 A destination that you can send messages to — such as an email address, mobile device identifier, or mobile phone number\. An endpoint definition can include attributes that describe the user or device that you send messages to\. It can also include a user ID\.   
@@ -17,6 +17,8 @@ An imported segment consists of endpoints, user IDs, or a combination of both\. 
 + Each endpoint that's associated with each user ID that you list in the imported file\.
 
 To import a file, you first upload it to an Amazon Simple Storage Service \(Amazon S3\) bucket\. Next, you provide Amazon Pinpoint with the name of the Amazon S3 bucket that contains the file\. Amazon Pinpoint retrieves the file from Amazon S3 and adds each endpoint or user ID in the file to a segment\.
+
+When you create a new segment, you can use an imported segment as the base segment\. You can then apply filters to the base segment to refine it according to your needs\.
 
 ## Segment Files<a name="segments-importing-examples"></a>
 
@@ -98,7 +100,7 @@ Amazon S3 is an AWS service that provides highly scalable cloud storage\. Amazon
 
 Before you import a segment, you must create an S3 bucket and upload your file to that bucket\. You can organize the files for different segments into separate folders\. When Amazon Pinpoint imports the endpoints or user IDs for a segment, it includes the files within all folders and subfolders that belong to the Amazon S3 location you specify\.
 
-For an introduction to creating buckets and uploading objects, see the [Amazon Simple Storage Service Getting Started Guide](http://docs.aws.amazon.com/AmazonS3/latest/gsg/)\.
+For an introduction to creating buckets and uploading objects, see the [Amazon Simple Storage Service Getting Started Guide](https://docs.aws.amazon.com/AmazonS3/latest/gsg/)\.
 
 Amazon Pinpoint can import the following types of files:
 + CSV
@@ -116,14 +118,13 @@ You can create a segment by importing the segment's endpoints or user IDs from A
 
 1. On the **Projects** page, choose the project that you want to add the segment to\.
 
-1. In the navigation menu, choose **Segments**\. The **Segments** page opens, which displays previously defined segments and the number of active users that belong to them\.
+1. In the navigation pane, choose **Segments**\.
 
-1. Choose **New segment**\.
+1. Choose **Create a segment**\.
+
+1. Under **Create a segment**, choose **Import a segment**\.
 
 1. For **Segment name**, type a name for your segment to make it easy to recognize later\.
-
-1. For **How would you like to define your segment**, choose **Import segment**\.  
-![\[The Import segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_import.png)![\[The Import segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Import segment button is selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For **Amazon S3 URL**, type the location of the Amazon S3 bucket that contains the file for your segment\. The address of the bucket must be in the following format:
 
@@ -134,16 +135,16 @@ You can create a segment by importing the segment's endpoints or user IDs from A
    Amazon Pinpoint imports the files from the path that you specify, and from any subfolders in that path\.
 
 1. For **IAM role**, complete one of the following steps:
-   + If you want to have Amazon Pinpoint create a role that allows it to read from an Amazon S3 bucket, choose **Automatically create a role**\. Then, for **Name for new role**, type a name for the role that you're creating\.
-   + If you've already created an IAM role that allows Amazon Pinpoint to read from an Amazon S3 bucket, choose **Choose a role from your account**\. Then, for **Role**, choose a role that contains the appropriate permissions\.
+   + If you want to have Amazon Pinpoint create a role that allows it to read from an Amazon S3 bucket, choose **Automatically create a role**\. Then, for **IAM role**, type a name for the role that you're creating\.
+   + If you've already created an IAM role that allows Amazon Pinpoint to read from an Amazon S3 bucket, choose **Choose a role from your account**\. Then, for **IAM role**, choose a role that contains the appropriate permissions\.
 
-   If you want to create the IAM role yourself, see [IAM Role for Importing Segments](http://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-import.html) in the *Amazon Pinpoint Developer Guide*\. After you create the role, specify it in the Amazon Pinpoint console\.
+   If you want to create the IAM role yourself, see [IAM Role for Importing Segments](https://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-import.html) in the *Amazon Pinpoint Developer Guide*\. After you create the role, specify it in the Amazon Pinpoint console\.
 
-1. For **What is the format of the file**, choose either **CSV** or **JSON**, depending on the format of your file\.
+1. Under **What is the format of the file**, choose either **JavaScript Object Notation \(JSON\)** or **Comma\-Separated Values \(CSV\)**, depending on the format the file that you uploaded to Amazon S3\.
 
-1. Choose **Import Segment**\. Amazon Pinpoint imports the endpoints and user IDs from the specified Amazon S3 bucket and adds them to your segment\.
+1. Choose **Create segment**\. Amazon Pinpoint imports the endpoints and user IDs from the specified Amazon S3 bucket and adds them to your segment\.
 
-   The **Jobs** page provides the status of your import\. Refresh your browser to see the current status\.  
+   The **Scheduled imports** tab on the Segments page provides the status of your import\. Refresh your browser to see the current status\.  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_job.png)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 ## Available Attributes<a name="segments-importing-available-attributes"></a>
@@ -165,14 +166,14 @@ For JSON files, a period in the attribute name indicates that the name following
 }
 ```
 
-The full JSON structure closely resembles the [Example EndpointRequest](http://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoint.html#rest-api-endpoint-schemas-requests) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the EndpointRequest schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
+The full JSON structure closely resembles the [Example EndpointRequest](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoint.html#rest-api-endpoint-schemas-requests) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the EndpointRequest schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
 
 You can replace attribute names that are shown in italics with any value\. For example, you can create custom attributes called `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`\.
 
 
 | Attribute | Description | 
 | --- | --- | 
-| Address | The unique destination of the endpoint, such as an email address, a mobile phone number, or a token for mobile push notifications\. | 
+| Address | The unique destination of the endpoint, such as an email address, a mobile phone number, or a token for push notifications\. | 
 | Attributes\.custom\_attribute | Custom attributes that your app reports to Amazon Pinpoint\. You can use these attributes as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\. | 
 | ChannelType | The channel type of the endpoint\. Acceptable values: GCM, APNS, SMS, or EMAIL\. | 
 | Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 

@@ -1,6 +1,6 @@
 # Managing Campaigns<a name="campaigns-managing"></a>
 
-Using Amazon Pinpoint, you can pause a campaign to suspend message deliveries, update its settings, copy it to make a new campaign, and more\.
+In the Amazon Pinpoint console, you update the settings for a campaign, delete a campaign, or copy an existing campaign to a new campaign\.
 
 **To manage a campaign**
 
@@ -8,13 +8,14 @@ Using Amazon Pinpoint, you can pause a campaign to suspend message deliveries, u
 
 1. On the **Projects** page, choose the project for which you want to manage campaigns\.
 
-1. In the navigation menu, choose **Campaigns**\.
+1. In the navigation pane, choose **Campaigns**\.
 
-1. On the **Campaigns** page, choose the campaign that you want to manage\.
+1. On the **Campaigns** page, choose the campaign that you want to manage\. Then, on the **Actions** menu, select the action that you want to take, as shown in the following image\.  
+![\[The Campaigns table with a single campaign selected and the Actions menu opened. The Actions menu shows the following options: View details, View analytics, Change settings, Duplicate, and Delete.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_actions_menu.png)![\[The Campaigns table with a single campaign selected and the Actions menu opened. The Actions menu shows the following options: View details, View analytics, Change settings, Duplicate, and Delete.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Campaigns table with a single campaign selected and the Actions menu opened. The Actions menu shows the following options: View details, View analytics, Change settings, Duplicate, and Delete.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
-On the **Campaign details** page, you can do the following:
-+ **Pause** – Stop sending messages until you resume the campaign\. This option is available only for recurring campaigns that you created\.
-+ **Copy to new campaign** – Copy the campaign to use its settings as a template for a new campaign, in which you can change or keep any of the original settings\.
-+ **Edit campaign** – Change the campaign's settings, such as the campaign name, the segment to which it sends messages, the message it delivers, and schedule settings \(except for the frequency\)\. If you are editing an A/B test campaign, you cannot edit the message or schedule treatments\.
-+ **Delete campaign** – Remove the campaign from Amazon Pinpoint and stop sending messages through the campaign\.
-+ View **Campaign analytics** – Go to the **Analytics** page to view analytics for the campaign\. 
+   On the **Actions** menu, you can do the following:
+   + **View details** – Shows the **Campaign details** page for the selected campaign\. On the **Campaign details** page, you can see information about the campaign, such as the campaign type, the number of endpoints targeted, and the number of messages delivered\.
+   + **View analytics** – Shows the **Campaign analytics** page for the selected campaign\. For more information about campaign analytics, see [Campaign Charts](analytics-campaigns.md)\.
+   + **Change settings** – Change the settings for the campaign, including the target segment, the message content, and the delivery time\. You can only choose this option for campaigns that haven't been sent yet\.
+   + **Duplicate** – Copy the campaign to use its settings as a template for a new campaign, in which you can change or keep any of the original settings\.
+   + **Delete** – Remove the campaign from Amazon Pinpoint and stop sending messages through the campaign\.

@@ -1,19 +1,19 @@
 # Validating Phone Numbers with Amazon Pinpoint<a name="channels-sms-verify"></a>
 
-Before you send an SMS message, you can use Amazon Pinpoint to verify whether the destination phone number is valid\. A valid phone number is:
+Before you send an SMS message, you can use Amazon Pinpoint to determine whether the destination phone number is valid\. A valid phone number is:
 + **Formatted correctly** – The number includes the country code, area code, and subscriber number\. For example, a valid US phone number is formatted as \+14085550100\.
 + **Assigned to a mobile phone** – Landline phone numbers are invalid destinations for SMS messages\.
 
-If you send an SMS message to an invalid number, the delivery fails\. You can verify phone numbers to increase the likelihood that your audience receives your messages\. You can improve your phone number records and your message deliverability in use cases such as the following\.
+If you send an SMS message to an invalid number, the delivery fails\. You can validate phone numbers to increase the likelihood that your audience receives your messages\. You can improve your phone number records and your message deliverability in use cases such as the following\.
 
 **Example Use Cases**
-+ If your audience members opt in to your SMS program by providing a number on your website, you can check the number at the time of submission\. Use your website's backend to verify the number with the Amazon Pinpoint API\. The API response states whether the number is invalid—for example, because it's formatted incorrectly or it's a landline number\. In such cases, your website can display a message that prompts the user to enter a valid number\.
-+ If you have a database of customer phone numbers, you can verify each number and take action on invalid entries\.
++ If your audience members opt in to your SMS program by providing a number on your website, you can check the number at the time of submission\. Use your website's backend to validate the number with the Amazon Pinpoint API\. The API response states whether the number is invalid—for example, because it's formatted incorrectly or it's a landline number\. In such cases, your website can display a message that prompts the user to enter a valid number\.
++ If you have a database of customer phone numbers, you can validate each number and take action on invalid entries\.
 + If you intend to send an SMS message but you determine that the destination number is invalid, you can message the recipient through a different channel\. For example, you can send an email if you know the recipient's email address\.
 
 The response from Amazon Pinpoint also includes data about the number\. Amazon Pinpoint obtains this data from wireless carriers\. It includes information such as the carrier that the number is registered with and the location where the number was originally registered\.
 
-To verify a number, issue an HTTP POST request to the `/v1/phone/number/validate/` URI in the Amazon Pinpoint API\. For information about supported methods, parameters, and schemas, see [Phone Number Validate](http://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-phone-number-validate.html) in the *Amazon Pinpoint API Reference*\.
+To validate a number, issue an HTTP POST request to the `/v1/phone/number/validate/` URI in the Amazon Pinpoint API\. For information about supported methods, parameters, and schemas, see [Phone Number Validate](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-phone-number-validate.html) in the *Amazon Pinpoint API Reference*\.
 
 ## Example Request with a Valid Phone Number<a name="channels-sms-verify-example-valid"></a>
 
@@ -22,10 +22,10 @@ The example in this section passes a correctly formatted phone number to the Ama
 A phone number is formatted correctly if it includes the country code, area code, and subscriber number\. Specifically, the number matches the E\.164 format\. E\.164 is a standard for the phone number structure used for international telecommunication\. Phone numbers that follow this format typically have up to 15 digits\. They are prefixed with the plus character \(\+\) and the country code\.
 
 **Example Request**  
-The following request includes the required HTTP headers and a simple JSON body\. The body specifies the number to verify with the `PhoneNumber` parameter:  
+The following request includes the required HTTP headers and a simple JSON body\. The body specifies the number to validate with the `PhoneNumber` parameter:  
 
 ```
-POST /v1/phone/number/verify/ HTTP/1.1
+POST /v1/phone/number/validate/ HTTP/1.1
 Host: pinpoint.us-east-1.amazonaws.com
 Content-Type: application/json
 X-Amz-Date: 20180420T162340Z
@@ -117,7 +117,7 @@ x-amzn-RequestId: c07d2cf1-471e-11e8-b276-57d2b8118b9d
     "OriginalPhoneNumber": "4085550100"
 }
 ```
-To detect invalid numbers, you can verify whether:  
+To detect invalid numbers, you can validate whether:  
 + The `PhoneType` attribute has a value of `MOBILE` or `PREPAID`\.
 + The country information matches what you expect\.
 + The cleansed phone number information matches the number that you want to message\.

@@ -36,7 +36,7 @@ After you send a message, Amazon Pinpoint automatically monitors how your custom
 
 ### Send Messages in Other Channels<a name="tutorials-send-an-email-next-steps-whats-next-other-channels"></a>
 
-If your customers consent to being contacted by other channels, such as SMS or mobile push notifications, you can use Amazon Pinpoint to send messages through those channels as well\. The process for sending through other channels is similar to the process that you used to send email in this tutorial\.
+If your customers consent to being contacted by other channels, such as SMS or push notifications, you can use Amazon Pinpoint to send messages through those channels as well\. The process for sending through other channels is similar to the process that you used to send email in this tutorial\.
 
 When you send messages by using other channels, you need to modify a few of the procedures in this tutorial:
 + When you create a new project, specify a different channel type\.

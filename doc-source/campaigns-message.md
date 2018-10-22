@@ -1,82 +1,69 @@
 # Step 3: Write the Message<a name="campaigns-message"></a>
 
-Write the message that your campaign delivers to your audience segment\. If you chose to create a standard campaign, you write a single message, which you can revise after you launch the campaign\.
+After you specify the target segment for the campaign, you can choose the channel for the campaign, and then write the message\. 
 
-If you chose to create an A/B test for your campaign's message, you define two or more *treatments*, which are variations of your message that the campaign sends to different portions of the segment\. You cannot revise your treatments after you launch the campaign\.
+If you set up the campaign as a standard campaign, you write a single message\. If you set up the campaign as an A/B test campaign, you define two or more *treatments*\. A treatment is a variation of your message that the campaign sends to different portions of the segment\.
 
 **Prerequisite**  
-Before you begin, complete [Step 2: Specify the Audience Segment for the Campaign](campaigns-segment.md)\.
+Before you begin, complete [Step 2: Specify the Audience for the Campaign](campaigns-segment.md)\.
 
-## Writing a Mobile Push Message<a name="campaigns-message-mobile"></a>
+## Set Up the Campaign<a name="campaigns-message-channel"></a>
 
-If you chose **Mobile push** as the channel type, write the push notification that your campaign sends to your user segment, and choose the action that occurs when a user opens the notification\.
+1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), specify the percentage of segment members who should receive each treatment\. An A/B test campaign can include up to five treatments\. Choose **Add another treatment** to add additional treatments\.
 
-**Choose the notification type**
-+ Choose the type of notification that your campaign delivers:  
-![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_messagetype.png)![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The options to create a standard notification or a silent notification.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
-  + **Standard notification** – A push notification with a title and message\. Users are alerted by their mobile devices when they receive the notification\.
-  + **Silent notification** – A custom JSON attribute\-value pair that Amazon Pinpoint sends to your app without alerting users\. Use silent notifications to send data that your app code is designed to receive and handle, for example to update the app's configuration or to show messages in the app\.
+1. On the **Create your message** page, under **Choose a channel for this campaign**, choose a channel that you want to use to send the campaign\.
 
-**To write a standard notification**
+   If you choose **Email**, see [Writing a Push Notification](#campaigns-message-email)\.
 
-1. If you previously saved a template that you want to use for your message, load it by choosing **Load template**\. The **Title** and **Message** are populated with the contents of the template\.
+   If you choose **SMS**, see [Writing a Push Notification](#campaigns-message-sms)\.
 
-1. For **Title**, type the title you want to display above the message\.
+   If you choose **Push notifications**, see [Writing a Push Notification](#campaigns-message-mobile)\.
 
-1. For **Message**, type the message body\. Your push notification can have up to 200 characters\. A character counter below the right edge of the field counts down from 200 as you enter the text of the message\.
+### Writing an Email Message<a name="campaigns-message-email"></a>
 
-   When you finish writing your message, you can save it as a template for later use by choosing **Save as template**\.
+This section contains information about writing an email message\.
 
-1. \(Optional\) For **Time To Live**, specify the length of time \(in seconds\) that the message is stored by the push notification services to which Amazon Pinpoint sends the message\. These services can include Apple Push Notification service \(APNs\), Firebase Cloud Messaging \(FCM\), and Google Cloud Messaging \(GCM\)\.
+1. Under **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
 
-   While storing the message, the push notification service attempts to deliver it until the delivery succeeds\. If you specify **0**, the message is not stored and delivery is attempted only once\. If this delivery fails, the message is discarded\.
-
-1. For **Action**, select the action you want to occur if the user opens the notification:
-   + **Open app** – Your app launches, or it becomes the foreground app if it has been sent to the background\.
-   + **Go to URL** – The default mobile browser on the user's device launches and opens a web page at the URL you specify\. For example, this action can be useful for sending users to a blog post\.
-   + **Deep link** – Your app opens and displays a designated user interface\. Deep link is an iOS and Android feature\. For example, this action can be useful to direct users to special promotions for in\-app purchases\.
-
-1. \(Optional\) In the **Media URLs** section, you can optionally provide URLs that point to media files that are displayed in your push notification\. The URLs must be publicly accessible so that the push notification services for Android or iOS can retrieve the images\.
-
-1. If you are creating an A/B test for the campaign message, complete steps under *Creating a Message A/B Test*\. Otherwise, choose **Next step**\.
-
-## Writing an Email Message<a name="campaigns-message-email"></a>
-
-If you chose **Email** as the channel type, write the email that your campaign sends to your user segment\.
-
-1. If you previously saved a template that you want to use for your message, load it by choosing **Load template**\. The **Subject** and **Message** are populated with the contents of the template\.
-
-1. For **Subject**, type the subject for your email\.
+1. For **Subject**, type the subject line for your email\.
 
 1. For **Message**, type the email body\. You can use the rich text editor to format your message:  
 ![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_editor.png)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
-   To write your message body as HTML, choose the source icon:  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_source.png)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+   If you want to manually enter the HTML content of your message, choose the **source** \(![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_source.png)\) icon\.
+**Note**  
+To include CSS formatting in your emails, use inline `span` elements\. For example, to make the text in a level 1 heading red, use the following HTML:  
 
-   When you finish writing your message, you can save it as a template for later use by choosing **Save as template**\.
+   ```
+   <h1><span style="color:red;">First-Level Heading</span></h1>
+   ```
+If you include style definitions in the `head` section of your message, or if you use `style` attributes directly within HTML elements \(for example, `<h1 style="color:red;"`\.\.\.\), the editor removes them without providing a warning\.
+
+1. \(Optional\) When you finish writing your message, you can save it as a template and use it again later by choosing **Save as a template**\.
 
 1. \(Optional\) Under **Plain text message**, type a version of your message for email clients that accept only plain text emails\.
 
-1. If you are creating an A/B test for the campaign message, complete steps under *Creating a Message A/B Test*\. Otherwise, choose **Next step**\.
+1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **Email details** section\.
 
-## Writing an SMS Message<a name="campaigns-message-sms"></a>
+1. Choose **Next**\.
 
-If you selected **SMS** as the channel type, write the text message that your campaign sends to your user segment\.
+### Writing an SMS Message<a name="campaigns-message-sms"></a>
 
-1. If you previously saved a template that you want to use for your message, load it by choosing **Load template**\. The **Message** is populated with the contents of the template\.
+This section contains information about writing an SMS message\.
 
 1. For **Message type**, choose one of the following:
    + **Promotional** – Noncritical messages, such as marketing messages\. Amazon Pinpoint optimizes the message delivery to incur the lowest cost\.
-   + **Transactional** – Critical messages that support customer transactions, such as one\-time passcodes for multi\-factor authentication\. Amazon Pinpoint optimizes the message delivery to achieve the highest reliability\.
+   + **Transactional** – Critical messages that support customer transactions, such as one\-time passwords for multi\-factor authentication\. Amazon Pinpoint optimizes the message delivery to achieve the highest reliability\.
 
    This campaign\-level setting overrides your default message type, which you set on the **Settings** page\.
 
+1. Under **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
+
 1. For **Message**, type the message body\. 
 
-   Your text message can have up to 160 characters\. A character counter below the right edge of the field counts down from 160 as you enter the text of the message\.
+   Your text message can have up to 160 characters\. A character counter below the left edge of the field counts down from 160 as you enter the text of the message\.
 
-   When you finish writing your message, you can save it as a template for later use by choosing **Save as template**\.
+   When you finish writing the message, you can save it as a template and use it again later by choosing **Save as template**\.
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
@@ -84,26 +71,51 @@ If you selected **SMS** as the channel type, write the text message that your ca
 
    This message\-level sender ID overrides your default sender ID, which you set on the **Settings** page\.
 
-1. If you are creating an A/B test for the campaign message, complete steps under *Creating a Message A/B Test*\. Otherwise, choose **Next step**\.
+1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **SMS details** section\.
 
-## Creating a Message A/B Test<a name="campaigns-message-abtest"></a>
+1. Choose **Next**\.
 
-For a campaign that includes an A/B test of the message, define two or more message treatments\.
+### Writing a Push Notification<a name="campaigns-message-mobile"></a>
 
-1. To help you start, Amazon Pinpoint provides two treatments\. If you want more treatments, choose **Add more**\.  
-![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_allocation.png)![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Amazon Pinpoint provides two treatments to get you started, and you can add more.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+This section contains information about writing a push notification and setting up the action that occurs when a recipient taps the notification\.
 
-1. For each treatment, do the following:
+**Choose the notification type**
++ For **Notification type**, choose one of the following options:
+  + **Standard notification** – A push notification with a title and message\. Recipients are alerted by their mobile devices when they receive the notification\.
+  + **Silent notification** – A custom JSON attribute\-value pair that Amazon Pinpoint sends to your app without producing notifications on recipients' devices\. Use silent notifications to send data that your app code is designed to receive and handle\. For example, you can use silent notifications to update the app's configuration or to show messages in an in\-app message center\.
 
-   1. Customize the treatment name to make it easy to recognize later\.
+#### To create a standard notification<a name="campaigns-message-mobile-standard"></a>
 
-   1. Define the message settings and write the message content\.
+**To write a standard notification**
 
-   1. Set the **Treatment allocation** to specify the percentage of users in the segment who will receive the message for the treatment\.
+1. Under **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
 
-      As you set the allocation for each treatment, the **Holdout** value adjusts to represent the total percentage of users who will not receive messages delivered by this campaign\.
+1. For **Title**, type the title you want to display above the message\.
 
-1. When you finish defining your treatments, choose **Next step**\.
+1. For **Message**, type the message body\. Your push notification can have up to 200 characters\. A character counter below the left edge of the field counts down from 200 as you add characters to the message\.
+
+1. \(Optional\) When you finish writing the message, you can save it as a template and use it again later by choosing **Save as template**\.
+
+1. For **Action**, select the action you want to occur when recipients tap the notification:
+   + **Open your app** – Your app launches, or it becomes the foreground app if it has been sent to the background\.
+   + **Go to a URL** – The default mobile browser on the user's device launches and opens a web page at the URL you specify\. For example, this action can be useful for sending users to a blog post\.
+   + **Open a deep link** – Your app opens to a specific page or component\. For example, this action can be useful to direct users to special promotions for in\-app purchases\.
+
+1. \(Optional\) Under **Media URLs**, you can optionally provide URLs that point to media files that are displayed in your push notification\. The URLs must be publicly accessible so that the push notification services for Android or iOS can retrieve the images\.
+
+1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **Push notification details** section\.
+
+1. Choose **Next**\.
+
+#### To create a silent notification<a name="campaigns-message-mobile-silent"></a>
+
+**To create a silent notification**
+
+1. Under **Message content**, enter the content of the silent message in JSON format\. The exact content of the message varies depending on the notification service you use and the values that your application expects to receive\.
+
+1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **Push notification details** section\.
+
+1. Choose **Next**\.
 
 ## Testing Messages<a name="campaigns-message-test"></a>
 
@@ -252,7 +264,7 @@ Additionally, some attributes—such as `src` or `href`—allow you to specify a
 
 To create a message that is personalized for each recipient, use message variables\. Message variables refer to specific *endpoint* attributes\. These attributes can include characteristics that you add to the endpoint resource, such as the recipient's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it substitutes the variables with the corresponding attribute values for the receiving endpoint\.
 
-For the attributes, see [Endpoint Attributes](http://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoints.html#rest-api-endpoints-attributes)\.
+For the attributes, see [Endpoint Attributes](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoints.html#rest-api-endpoints-attributes)\.
 
 To include a variable in your message, enclose the attribute name in double brackets, as in `{{Demographic.AppVersion}}`\.
 
@@ -270,7 +282,7 @@ Or:
 
 `Hey John Doe, congratulations on your new 5K PR of 20:52!`
 
-For examples of custom attributes for your app's code, see the [iOS example](http://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](http://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes)\.
+For examples of custom attributes for your app's code, see the [iOS example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes)\.
 
 **Next**  
 [Step 4: Set the Campaign Schedule](campaigns-schedule.md)

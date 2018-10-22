@@ -1,36 +1,24 @@
-# Step 1: Begin a New Campaign<a name="campaigns-begin"></a>
+# Step 1: Create a Campaign<a name="campaigns-begin"></a>
 
-Use the Amazon Pinpoint console to create a campaign\. You will:
-+ Choose the messaging channel \(mobile push, email, or SMS\)\.
-+ Choose the user segment for the campaign\.
-+ Write the message\.
-+ Define the schedule on which the campaign runs\.
-
-Optionally, you can set up your campaign as an A/B test to experiment with different treatments of the message or schedule\. As users respond to your campaign, you can view campaign analytics to compare the effectiveness of each treatment\.
+The first step in setting up a campaign is to create a new campaign\. When you create a new campaign, you give the campaign a name, and specify whether it should be a standard campaign or an A/B test campaign\. \(In an A/B test campaign, you create several versions of a message to compare their performance\.\)
 
 **To begin creating a campaign**
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose the project for which you want to create a campaign\.
+1. On the **Projects** page, choose the project that you want to create the campaign in\.
 
-1. In the navigation menu, choose **Campaigns**\. The **Campaigns** page opens, and it displays summary information for previously defined campaigns\.
+1. In the navigation pane, choose **Campaigns**\.
 
-1. Choose **New campaign**\. The **Create a campaign** page opens at the **Details** step\.  
-![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_details.png)![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Details page for creating a campaign.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+1. Choose **Create a campaign**\.
 
-1. For **Campaign name**, type a name to make the campaign easy to recognize later\.
+1. For **Campaign name**, type a descriptive name for the campaign\. Using a descriptive name makes it easier to find or search for the campaign later\.
 
-1. For **What messaging channel do you want to use?**, choose the channel you will use to deliver your message\. The channel must be enabled in your Amazon Pinpoint project\. For more information, see [Amazon Pinpoint Channels](channels.md)\.
-
-1. For **Choose the campaign type**, choose one of the following:
-   + **Standard campaign** – Sends a custom message to a specified segment according to a schedule that you define\.
+1. For **Campaign type**, choose one of the following options:
+   + **Standard campaign** – Sends a message to a segment on a schedule that you define\.
    + **A/B Test** – Behaves like a standard campaign, but enables you to define different treatments for the campaign's message or schedule\.
 
-1. If you choose to create an A/B test, for **Choose what you will test for**, choose whether you will test variations of the campaign's **Messages** or **Schedule**\.  
-![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_abselect.png)![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Options to create A/B test for messages or schedule.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
-
-1. Choose **Next step**\.
+1. Choose **Next**\.
 
 **Next**  
-[Step 2: Specify the Audience Segment for the Campaign](campaigns-segment.md)
+[Step 2: Specify the Audience for the Campaign](campaigns-segment.md)
