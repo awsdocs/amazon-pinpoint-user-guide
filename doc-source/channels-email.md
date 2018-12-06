@@ -12,3 +12,6 @@ As your email needs change, you can manage your email channel by [updating your 
 + [Setting up the Amazon Pinpoint Email Channel](channels-email-setup.md)
 + [Monitoring Email Activity with Amazon Pinpoint](channels-email-monitor.md)
 + [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)
++ [Sending Email in Amazon Pinpoint](channels-mobile-send.md)
++ [The Amazon Pinpoint Deliverability Dashboard](channels-email-deliverability-dashboard.md)
++ [Tips and Best Practices](channels-email-best-practices.md)

@@ -9,7 +9,10 @@ For information about short code pricing, see [Amazon Pinpoint Pricing](https://
 **Important**  
 If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. You can request to increase your spend threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
-After receiving your request, AWS works with the wireless carriers to provision your short code on your behalf\. This provisioning process typically takes 8–12 weeks to complete, but some carriers may require additional time to complete the process\.
+After receiving your request, AWS works with the wireless carriers to provision your short code on your behalf\. This provisioning process typically takes 8–12 weeks to complete, but some carriers may require additional time to complete the process\. 
+
+**Note**  
+The fees associated with using short codes begin immediately after we initiate your short code request with carriers\. You're responsible for paying these charges, even if the short code hasn't been completely provisioned yet\.
 
 To request a dedicated short code, complete the following steps\.
 

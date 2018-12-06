@@ -1,6 +1,11 @@
 # Supported Countries and Regions<a name="channels-sms-countries"></a>
 
-You can use Amazon Pinpoint to send SMS messages to the countries and regions listed in the following table\. This table also lists the countries and regions that support sender IDs and two\-way SMS\.
+You can use Amazon Pinpoint to send SMS messages to the countries and regions listed in the following table\. This table also lists the countries and regions that support sender IDs and [two\-way SMS messaging](channels-sms-two-way.md)\.
+
+Before you can use two\-way SMS messaging to receive messages, you have to obtain either a dedicated short code or a dedicated long code for the SMS channel\. For more information about requesting short and long codes, see [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)\.
+
+**Note**  
+You can purchase long codes directly through the Amazon Pinpoint console\. The long codes that you purchase through the console are intended for use with the [voice channel](channels-voice.md)\. However, if you purchase a long code that is based in the United States \(including Puerto Rico\) or Canada, you can also use it to send SMS messages\. If you need a long code for sending SMS messages in a different country or region, complete the procedures at [Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)\.
 
 
 | Country or region | ISO code | Supports sender IDs | Supports two\-way SMS | 

@@ -1,6 +1,6 @@
 # Getting Started with Amazon Pinpoint<a name="gettingstarted"></a>
 
-In only a few minutes, you can set up Amazon Pinpoint and start sending messages to your customers\. This section shows you how to create a project\. It also provides links to documentation that help you set up your communication channels, create segments, send campaigns, and view response metrics for your campaigns\.
+In only a few minutes, you can set up Amazon Pinpoint and start sending messages to your customers\. This section shows you how to create a project\. It also provides links to documentation that helps you set up your communication channels, create segments, send campaigns, and view response metrics for your campaigns\.
 
 ## Create a Project<a name="getting-started-create-project"></a>
 
@@ -10,13 +10,13 @@ In Amazon Pinpoint, projects are collections of settings, customer information, 
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. If this is your first time using Amazon Pinpoint, you see a page that introduces you to the features of the service\. In the **Get started** section, type a name for your project, and then choose **Create a project**\.  
-![\[The Create a segment page with the Build segment option selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/first_time_use.png)![\[The Create a segment page with the Build segment option selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Create a segment page with the Build segment option selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+1. If this is your first time using Amazon Pinpoint, you see a page that introduces you to the features of the service\. In the **Get started** section, enter a name for your project, and then choose **Create a project**\.  
+![\[The Create a project page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/first_time_use.png)![\[The Create a project page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Create a project page.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 **Note**  
 The project name can contain up to 64 alphanumeric characters\. It can also contain the following characters: comma \(,\), period \(\.\), at sign \(@\), underscore \(\_\), equals sign \(=\), and plus sign \(\+\)\. It can't contain spaces\.
 
 1. On the **Configure features** page, choose a message channel or analytics category to set up\. You can choose from the following options:
-   + **Email** – Set up a project that can send email from your email address\. Later, you can verify different address, or an entire domain\.
+   + **Email** – Set up a project that can send email from your email address\. Later, you can verify a different address, or an entire domain\.
    + **SMS** – Set up a project that can send SMS \(text\) messages\.
    + **Push notifications** – Set up your project to send notifications directly to users of your mobile apps\.
    + **Mobile app analytics** – View instructions for integrating your mobile apps with Amazon Pinpoint\.
@@ -31,7 +31,7 @@ The project name can contain up to 64 alphanumeric characters\. It can also cont
 
 ## Next Steps<a name="getting-started-next-steps"></a>
 
-Now that you've created a campaign, you're ready to start engaging with your customers\. You can now complete the following steps:
+Now that you've created a project, you're ready to start engaging with your customers\. You can now complete the following steps:
 
 1. \(Optional\) **Integrate your apps with Amazon Pinpoint** – If you plan to use Amazon Pinpoint to engage with users of your web and mobile apps, you should start by integrating Amazon Pinpoint with your apps\. When your customers use your apps, the apps automatically report data to Amazon Pinpoint\. You can use this data to create targeted customer groups for your communications\. 
 
@@ -49,6 +49,6 @@ Now that you've created a campaign, you're ready to start engaging with your cus
 
    When you use Amazon Pinpoint to send SMS messages, your account begins with a spending limit of $1\.00\. When you spend more than $1\.00 sending messages in a calendar month, Amazon Pinpoint stops sending additional messages until the next month\. You can request a higher spending limit by contacting AWS Support\. To learn more about increasing the spending limit for your account, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
-1. **View response metrics for your campaign** \- After you send campaigns and your customers interact with them \(for example, by opening or clicking messages\), you can use the charts in the **Analytics** section to track these responses\. 
+1. **View response metrics for your campaign** – After you send campaigns and your customers interact with them \(for example, by opening or clicking messages\), you can use the charts in the **Analytics** section to track these responses\. 
 
    To learn more about viewing metrics in Amazon Pinpoint, see [Amazon Pinpoint Analytics](analytics.md)\.

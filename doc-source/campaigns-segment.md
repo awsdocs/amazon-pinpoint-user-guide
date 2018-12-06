@@ -10,6 +10,8 @@ Before you begin, complete [Step 1: Create a Campaign](campaigns-begin.md)\.
 1. On the **Choose a segment** page, choose one of the following options:
    + **Use an existing segment** – Choose this option if you've already created a segment and you're ready to send your campaign to it\.
    + **Create a segment** – Choose this option if you haven't created any segments yet, or if you want to create a new segment for this campaign\. If you choose this option, create a segment by completing the procedures in [Building Segments](segments-building.md)\.
+**Note**  
+If you want to send your campaign when certain events occur \(as opposed to sending it at a specific time\), you have to use a dynamic segment \(as opposed to an imported segment\)\. To learn more, see [Building Segments](segments-building.md)\.
 
 1. \(Optional\) Under **Segment hold\-out**, specify the percentage of segment members who shouldn't receive this campaign\. Amazon Pinpoint chooses the appropriate number of segment members at random, and omits them from the campaign\. 
 

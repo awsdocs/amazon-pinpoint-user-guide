@@ -20,6 +20,12 @@ To import a file, you first upload it to an Amazon Simple Storage Service \(Amaz
 
 When you create a new segment, you can use an imported segment as the base segment\. You can then apply filters to the base segment to refine it according to your needs\.
 
+## Imported Segment Considerations<a name="segments-importing-considerations"></a>
+
+Consider the following factors when you create imported segments:
++ When you create a campaign, you have to choose a segment\. When you choose a dynamic segment, Amazon Pinpoint provides an estimate of the size of that segment\. However, when you choose an imported segment, Amazon Pinpoint can't provide an estimate\.
++ If you create a campaign that sends messages when certain events happen, you can't use imported segments\. Event\-based campaigns can only use dynamic segments\. For more information about creating dynamic segments, see [Building Segments](segments-building.md)\.
+
 ## Segment Files<a name="segments-importing-examples"></a>
 
 You define the endpoints or user IDs that belong to your segment in a comma\-separated values \(CSV\) or JSON file\. Then, you import the file into Amazon Pinpoint to create the segment\.

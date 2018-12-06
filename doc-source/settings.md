@@ -10,7 +10,7 @@ Some settings related to sending SMS messages apply to all projects in your Amaz
 **Topics**
 + [General Settings](settings-general.md)
 + [Email Settings](settings-email.md)
-+ [SMS Settings](settings-sms.md)
++ [SMS and Voice Settings](settings-sms.md)
 + [Push Notification Settings](settings-push.md)
 + [Mobile and Web App Analytics Settings](settings-analytics.md)
 + [Event Stream Settings](settings-event-streams.md)

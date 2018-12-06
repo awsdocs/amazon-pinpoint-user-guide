@@ -31,9 +31,10 @@ The email address you specify must be one that you have access to, and that is a
 1. Check the inbox of the address that you specified for a message from *no\-reply\-aws@amazon\.com*\. Open the message, and then click the link to verify your email address\.
 
 When you verify email addresses, consider the following:
-+ The *local part*of the email address \(the part that comes before the @ sign\) is case sensitive\. If you verify *user@example\.com*, you can't send from *USER@example\.com* unless you verify that address as well\.
++ Amazon Pinpoint has endpoints in multiple AWS Regions, and the verification status of the email address is separate for each region\. If you want to send email from the same identity in more than one region, you must verify that identity in each region\.
++ The *local part* of the email address \(the part that comes before the @ sign\) is case sensitive\. If you verify *user@example\.com*, you can't send from *USER@example\.com* unless you verify that address as well\.
 + Domain names are case insensitive\. If you verify *user@example\.com*, you can also send from *user@EXAMPLE\.com*\.
-+ You can verify up to 10,000 identities \(domains and email addresses, in any combination\) per AWS account\.
++ You can verify up to 10,000 identities \(domains and email addresses, in any combination\) in each AWS Region\.
 + You can apply labels to verified email addresses by adding a plus sign \(\+\) and a string of text after the local part of the address, and before the @ sign\. For example, to add *label1* to the address *user@example\.com*, use the modified address *user\+label1@example\.com*\.
 
   You can use as many labels as you want to on each verified address\. You can use labels in the From and Return\-Path fields to implement Variable Envelope Return Path \(VERP\)\. 
@@ -77,5 +78,6 @@ Some DNS providers automatically add the domain name to the end of each DNS reco
    Amazon Pinpoint automatically detects the TXT record within 72 hours\.
 
 When verifying your domain, consider the following:
-+ You can send from any subdomain of the verified domain without specifically verifying the subdomain\. For example, if you verify *example\.com*, you don't need to verify *a\.example\.com* or *a\.b\.example\.com*\. As specified in [RFC 1034](https://tools.ietf.org/html/rfc1034), each DNS label can have up to 63 characters, and the whole domain name must not exceed a total length of 255 characters\.
-+ You can verify up to 10,000 identities \(domains and email addresses, in any combination\) per AWS account\.
++ You can send from any subdomain of the verified domain without specifically verifying the subdomain\. For example, if you verify *example\.com*, you don't need to verify *a\.example\.com* or *a\.b\.example\.com*\. 
++ As specified in [RFC 1034](https://tools.ietf.org/html/rfc1034), each DNS label can have up to 63 characters, and the whole domain name must not exceed a total length of 255 characters\.
++ You can verify up to 10,000 identities \(domains and email addresses, in any combination\) in each AWS Region\.

@@ -13,9 +13,9 @@ Before you begin, complete [Step 2: Specify the Audience for the Campaign](campa
 
 1. On the **Create your message** page, under **Choose a channel for this campaign**, choose a channel that you want to use to send the campaign\.
 
-   If you choose **Email**, see [Writing a Push Notification](#campaigns-message-email)\.
+   If you choose **Email**, see [Writing an Email Message](#campaigns-message-email)\.
 
-   If you choose **SMS**, see [Writing a Push Notification](#campaigns-message-sms)\.
+   If you choose **SMS**, see [Writing an SMS Message](#campaigns-message-sms)\.
 
    If you choose **Push notifications**, see [Writing a Push Notification](#campaigns-message-mobile)\.
 
@@ -285,4 +285,4 @@ Or:
 For examples of custom attributes for your app's code, see the [iOS example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes)\.
 
 **Next**  
-[Step 4: Set the Campaign Schedule](campaigns-schedule.md)
+[Step 4: Choose When to Send the Campaign](campaigns-schedule.md)

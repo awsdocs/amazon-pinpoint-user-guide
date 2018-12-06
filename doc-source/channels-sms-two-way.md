@@ -31,19 +31,23 @@ After you receive a dedicated number from AWS Support, you can enable and config
 
 1. On the **Projects** page, choose the project that you want to manage two\-way SMS settings for\.
 
-1. In the navigation pane, under **Settings**, choose **SMS**\.
+1. In the navigation pane, under **Settings**, choose **SMS and voice**\.
 
-1. Under **Short Codes and Long Codes**, choose the phone number that you want to configure two\-way SMS for\.
+1. Under **Number settings**, choose the phone number that you want to configure two\-way SMS for\.
+**Note**  
+You can only enable two\-way SMS for a phone number if the value in the **SMS** column is *Enabled*\.
 
 1. Under **Two\-way SMS**, choose **Enable 2\-way SMS**\.
 
-1. Under Incoming messages destination, specify the Amazon SNS topic that receives your SMS messages with one of the following options:
-   + **Create a new topic** – Amazon Pinpoint creates a topic in your account\. 
+1. Under **Incoming messages destination**, specify the Amazon SNS topic that receives your SMS messages by choosing one of the following options:
+   + **Create a new Amazon SNS topic** – Amazon Pinpoint creates a topic in your account\.
    + **Choose an existing Amazon SNS topic** – Specify the ARN of a topic in your account\.
 
 1. Under **Two\-way SMS keywords**, you can add or edit keywords and response messages\. When your number receives an SMS message that contains one of these keywords, Amazon Pinpoint does the following:
    + Sends the message to your Amazon SNS topic\.
    + Responds with the keyword response message, if you specified one\.
+
+   To add a keyword, choose **Add another keyword**\.
 
 1. When you finish, choose **Save**\.
 

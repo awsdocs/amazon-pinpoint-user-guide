@@ -1,6 +1,6 @@
-# SMS Settings<a name="settings-sms"></a>
+# SMS and Voice Settings<a name="settings-sms"></a>
 
-On the **SMS** settings page, you can enable or disable the SMS channel\. You can also modify the SMS settings that apply to your entire AWS account\.
+On the **SMS and Voice** settings page, you can enable or disable the SMS channel\. You can also modify the SMS settings that apply to your entire AWS account, and view a list of phone numbers that you can use to deliver voice messages\. To learn more about sending voice messages, see the [Amazon Pinpoint SMS and Voice API Reference](https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/)\.
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
@@ -79,19 +79,23 @@ You can define keywords for messages that you want to receive and process outsid
 
 1. On the **Projects** page, choose the project that you want to manage two\-way SMS settings for\.
 
-1. In the navigation pane, under **Settings**, choose **SMS**\.
+1. In the navigation pane, under **Settings**, choose **SMS and voice**\.
 
-1. Under **Short Codes and Long Codes**, choose the phone number that you want to configure two\-way SMS for\.
+1. Under **Number settings**, choose the phone number that you want to configure two\-way SMS for\.
+**Note**  
+You can only enable two\-way SMS for a phone number if the value in the **SMS** column is *Enabled*\.
 
 1. Under **Two\-way SMS**, choose **Enable 2\-way SMS**\.
 
-1. Under Incoming messages destination, specify the Amazon SNS topic that receives your SMS messages with one of the following options:
-   + **Create a new topic** – Amazon Pinpoint creates a topic in your account\. 
+1. Under **Incoming messages destination**, specify the Amazon SNS topic that receives your SMS messages by choosing one of the following options:
+   + **Create a new Amazon SNS topic** – Amazon Pinpoint creates a topic in your account\.
    + **Choose an existing Amazon SNS topic** – Specify the ARN of a topic in your account\.
 
 1. Under **Two\-way SMS keywords**, you can add or edit keywords and response messages\. When your number receives an SMS message that contains one of these keywords, Amazon Pinpoint does the following:
    + Sends the message to your Amazon SNS topic\.
    + Responds with the keyword response message, if you specified one\.
+
+   To add a keyword, choose **Add another keyword**\.
 
 1. When you finish, choose **Save**\.
 

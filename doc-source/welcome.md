@@ -1,6 +1,6 @@
 # What Is Amazon Pinpoint?<a name="welcome"></a>
 
-Amazon Pinpoint is an AWS service that you can use to engage with your customers across multiple messaging channels\. You can send push notifications, emails, or text messages \(SMS\), depending on the purpose of your campaign\.
+Amazon Pinpoint is an AWS service that you can use to engage with your customers across multiple messaging channels\. You can use Amazon Pinpoint to send push notifications, emails, SMS text messages, and voice messages\.
 
 The information in this user guide is intended for all Amazon Pinpoint users, including marketers, business users, and developers\. This guide contains information that's especially helpful for users who mainly interact with Amazon Pinpoint by using the AWS Management Console\. If you're new to Amazon Pinpoint, start by reading [Getting Started with Amazon Pinpoint](gettingstarted.md)\.
 
@@ -16,7 +16,7 @@ Reach the right audience for your messages by [defining audience segments](segme
 
 ### Engage Your Audience with Messaging Campaigns<a name="welcome-campaigns"></a>
 
-Engage your audience by [creating a messaging campaign](campaigns.md)\. A campaign sends tailored messages on a schedule that you define\. You can create campaigns that send push notifications, email, or SMS messages\.
+Engage your audience by [creating a messaging campaign](campaigns.md)\. A campaign sends tailored messages on a schedule that you define\. You can create campaigns that send push notifications, email, SMS text messages, and voice messages\.
 
 To experiment with alternative campaign strategies, set up your campaign as an A/B test, and analyze the results with Amazon Pinpoint analytics\.
 
@@ -30,8 +30,10 @@ Gain insights about your audience and the effectiveness of your campaigns by usi
 
 To analyze or store the analytics data outside of Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
 
+## Regional Availability<a name="welcome-regions"></a>
+
+Amazon Pinpoint is available in the US East \(N\. Virginia\) and EU \(Ireland\) AWS Regions\.
+
 ## Get Started<a name="welcome-getstarted"></a>
 
-Get started with Amazon Pinpoint by creating a new project that uses either the email, SMS, or push notification channel\. For more information about creating projects, see [Amazon Pinpoint Channels](channels.md)\. 
-
-Currently, Amazon Pinpoint is available in the US East \(N\. Virginia\) Region\.
+Get started with Amazon Pinpoint by creating a new project\. For more information about creating projects, see [Amazon Pinpoint Channels](channels.md)\. 

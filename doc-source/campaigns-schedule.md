@@ -1,25 +1,98 @@
-# Step 4: Set the Campaign Schedule<a name="campaigns-schedule"></a>
+# Step 4: Choose When to Send the Campaign<a name="campaigns-schedule"></a>
 
-After you write your message, you can schedule when and how often the campaign sends your message to your segment\. By default, a campaign sends its message just once on the date and time you choose\.
+After you write your message, you can specify when the campaign should be sent\. You can choose to send the campaign immediately, at a scheduled date and time, on a recurring basis, or when certain events occur\.
 
-You create a recurring campaign by selecting a frequency, which sets the time interval between successive deliveries of the message\. A recurring campaign runs for a fixed duration, beginning and ending when you specify\. 
+Before you can complete the procedures in this section, you have to complete Step 3\.
 
-**Prerequisite**  
-Before you begin, complete [Step 3: Write the Message](campaigns-message.md)\.
+**Topics**
++ [Sending the Campaign Immediately](#campaigns-schedule-immediate)
++ [Sending the Campaign at a Specific Date and Time](#campaigns-schedule-once)
++ [Sending the Campaign on a Recurring Basis](#campaigns-schedule-recurring)
++ [Sending the Campaign When Events Occur](#campaigns-event-triggered)
 
-**To set a schedule**
+## Sending the Campaign Immediately<a name="campaigns-schedule-immediate"></a>
 
-1. Under **How often should this campaign be sent?**, choose the frequency with which the campaign runs\. The default selection is **Immediately**, but you can choose a recurring frequency \(such as **Weekly**\), or you can choose **Once** to send the message at a specific date and time\.
+If you want to send the campaign as soon as you finish creating it, you can choose to send the campaign immediately\.
 
-1. If you choose to send the message at a specific time or on a recurring basis, specify when the message is sent:
-   + If you chose **Once**, choose a **Start date and time**, as well as the **Time zone** that the start time is based on\. The date and time you choose represent the date and time at which Amazon Pinpoint sends your message\.
+**To send the campaign immediately**
 
-     If you want to ensure that the message arrives at the specified time in each recipient's time zone, choose **Use recipient's local time**\.
-   + If you chose a recurring frequency, specify a **Start date and time** and an **End date and time**\. Also specify the **Time zone** that the start and end times are based on\. The **Start date and time** represent the time at which Amazon Pinpoint sends the first message in the recurring campaign, and the **End date and time** represents the date and time at which Amazon Pinpoint sends the final message in the recurring campaign\.
+1. Under **When should the campaign be sent**, choose **At a specific time**\.
 
-     If you want to ensure that the campaign begins and ends at the specified time in each recipient's time zone, choose **Use recipient's local time**\.
+1. Under **How often should the campaign be sent**, choose **Immediately**\.
 
 1. Choose **Next** to continue to the final step\.
+
+## Sending the Campaign at a Specific Date and Time<a name="campaigns-schedule-once"></a>
+
+If you want to send a campaign only once, you can schedule it to be sent at a specific date and time\.
+
+**To send the campaign at a specific date and time**
+
+1. Under **When should the campaign be sent**, choose **At a specific time**\.
+
+1. Under **How often should the campaign be sent**, choose **Once**\. 
+
+1. For **Start date and time**, choose the date and time when Amazon Pinpoint should send the message\.
+
+1. Under **Time zone**, choose the time zone theat you want to use to schedule the campaign\. Optionally, choose **Use recipient's local time** to base the delivery time on each recipient's local time zone\.
+
+1. Choose **Next** to continue to the final step\.
+
+## Sending the Campaign on a Recurring Basis<a name="campaigns-schedule-recurring"></a>
+
+You can also schedule the campaign to be sent on a recurring basis\. You can specify the frequency, as well as the start and end dates for the campaign\.
+
+**To send the campaign on a recurring basis**
+
+1. Under **When should the campaign be sent**, choose **At a specific time**\.
+
+1. Under **How often should the campaign be sent**, choose how often Amazon Pinpoint should send the recurring campaign\. For example, to send the campaign once per week, choose **Weekly**\.
+
+1. For **Start date and time**, choose the date and time when Amazon Pinpoint should send the first message in the recurring series\.
+
+1. For **End date and time**, choose the date and time when Amazon Pinpoint should stop sending recurring messages\.
+
+1. Under **Time zone**, choose a time zone to base the start and end times on\. Optionally, choose **Use recipient's local time** to base the delivery time on each recipient's local time zone\.
+
+1. Choose **Next** to continue to the final step\.
+
+## Sending the Campaign When Events Occur<a name="campaigns-event-triggered"></a>
+
+If you want to send the campaign when customers take certain actions, you can configure the campaign to be sent when a specific event occurs\. For example, you can configure the campaign to be sent when a customer registers a new account, or when a customer adds an item to their shopping cart but doesn't purchase it\. To learn more about sending events from your apps to Amazon Pinpoint, see [Reporting Events in Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-events.html) in the *Amazon Pinpoint Developer Guide*\.
+
+**Note**  
+You can only send event\-based messages if your campaign uses dynamic segments \(as opposed to imported segments\)\. Messages from event\-based campaigns are only sent to customers whose apps run version 2\.7\.2 or later of the AWS Mobile SDK for Android or version 2\.6\.30 or later of the AWS Mobile SDK for iOS\.
+
+**To configure a campaign to be sent when an event occurs**
+
+1. Under **When should the campaign be sent**, choose **When an event occurs**\.
+
+1. For **Events**, choose the name of the event that triggers the execution of the campaign\.
+
+1. \(Optional\) For **Attributes** and **Metrics**, choose the specific characteristics that trigger the execution of the campaign\.
+**Tip**  
+The more event data you capture from your users, the more options you have when you set up event triggers\. Event attributes and metrics are only available if you've provided those values to Amazon Pinpoint\. To learn more about capturing event data, see [Reporting Events in Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-events.html) in the *Amazon Pinpoint Developer Guide*\.
+
+1. Under **Campaign Dates**, for **Start date and time**, choose a start date\. Amazon Pinpoint only sends the campaign if the event you specified earlier occurs after the start date\.
+**Note**  
+The **Start date and time** that you choose has to be at least 15 minutes in the future\.
+
+1. For **End date and time**, choose an end date\. Amazon Pinpoint only sends the campaign if the event you specified earlier occurs before the end date\.
+
+1. Under **Time zone**, choose a time zone to base the start and end dates on\.
+
+1. Choose **Next** to continue to the final step\.
+
+### Best Practices for Using Event\-Based Campaigns<a name="campaigns-event-triggered-best-practices"></a>
+
+There are a few limitations and best practices that you should consider when you create event\-based campaigns:
++ You can only create an event\-based campaign if you chose a dynamic segment \(as opposed to an imported segment\) in [Step 2](campaigns-segment.md)\.
++ Event\-based campaigns only consider events that are reported by recent versions of the AWS Mobile SDK\. Your apps should use the following versions of the SDK in order to work properly with event\-based campaigns: 
+  + AWS Mobile SDK for Android: version 2\.7\.2 or later
+  + AWS Mobile SDK for iOS: version 2\.6\.30 or later
+
+  Because of this restriction, we recommend that you set up your segments so that they only include customers who use a version of your app that runs a compatible version of the SDK\.
++ Choose your events carefully\. For example, if you send an event\-based campaign every time a `session.start` event occurs, you might quickly overwhelm your users with messages\. You can limit the number of messages that Amazon Pinpoint sends to a single endpoint in a 24\-hour period\. For more information, see [General Settings](settings-general.md)\.
 
 **Next**  
 [Step 5: Review and Launch the Campaign](campaigns-review.md)

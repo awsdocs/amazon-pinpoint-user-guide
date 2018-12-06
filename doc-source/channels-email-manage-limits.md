@@ -43,7 +43,7 @@ To apply for higher sending limits for Amazon Pinpoint, open a case in AWS Suppo
 
 1. Complete the sending limit increase request by providing the following information:
    + **Regarding** – Choose **Service Limit Increase**\.
-   + For **Limit Type** – Choose **Pinpoint**\.
+   + For **Limit Type** – Choose **Pinpoint Email**\.
    + **Region** – Select the AWS Region for which you are requesting a sending limit increase\. Your sending limits are separate for each AWS Region\. For supported regions, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *AWS General Reference*\.
    + **Limit** – Choose one of the following options:
      + Choose **Desired Daily Sending Quota** if you want to increase the number of messages you can send per day\.

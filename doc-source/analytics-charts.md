@@ -11,6 +11,7 @@ On the **Analytics** page, Amazon Pinpoint provides an overview of key metrics, 
 + [Events Charts](analytics-events.md)
 + [Demographics Charts](analytics-demographics.md)
 + [Campaign Charts](analytics-campaigns.md)
++ [Transactional Messaging Charts](analytics-transactional-email.md)
 
 ## Endpoints and Users in Charts<a name="analytics-endpoints-users"></a>
 
