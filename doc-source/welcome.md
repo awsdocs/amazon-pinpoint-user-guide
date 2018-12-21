@@ -8,7 +8,7 @@ If you're an application developer, also refer to the [Amazon Pinpoint Developer
 
 ## Amazon Pinpoint Features<a name="welcome-features"></a>
 
-This section describes the major features of Amazon Pinpoint\.
+This section describes the major features of Amazon Pinpoint and the tasks that you can perform by using them\.
 
 ### Define Audience Segments<a name="welcome-segments"></a>
 
@@ -26,13 +26,13 @@ Use the [Test messaging](messages.md) page to test your messages before you send
 
 ### Analyze User Behavior<a name="welcome-analyze"></a>
 
-Gain insights about your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends about your users' level of engagement, purchase activity, and demographics\. You can monitor your message traffic with metrics for messages sent and opened\. Through the Amazon Pinpoint API, your application can report custom data, which Amazon Pinpoint makes available for analysis\.
+Gain insights about your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends about your users' level of engagement, purchase activity, and demographics\. You can also monitor your message traffic with metrics for messages that are sent and opened\. Through the Amazon Pinpoint API, your application can report custom data, which Amazon Pinpoint makes available for analysis\.
 
-To analyze or store the analytics data outside of Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
+To analyze or store the analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
 
 ## Regional Availability<a name="welcome-regions"></a>
 
-Amazon Pinpoint is available in the US East \(N\. Virginia\) and EU \(Ireland\) AWS Regions\.
+Amazon Pinpoint is available in the US East \(N\. Virginia\), US West \(Oregon\), EU \(Frankfurt\), and EU \(Ireland\) AWS Regions\.
 
 ## Get Started<a name="welcome-getstarted"></a>
 

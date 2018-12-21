@@ -1,19 +1,19 @@
 # Monitoring Email Activity with Amazon Pinpoint<a name="channels-email-monitor"></a>
 
-For emails that you send as part of a campaign, Amazon Pinpoint provides options for monitoring your email activity\.
+For email that you send as part of a campaign, Amazon Pinpoint provides options for monitoring your email activity\.
 
 **Note**  
-To monitor email activity, you must use a campaign\. You can't monitor email activity outside of a campaign\.
+To monitor email activity, you must use a campaign\. You can't monitor email activity outside a campaign\.
 
 ## Amazon Pinpoint Analytics<a name="channels-email-monitor-analytics"></a>
 
-The console provides several campaign\-related metrics\. For example, you can view the number of email endpoints that you can target, the number of endpoints you've already sent messages to, and the open, click, and opt\-out rates for campaigns you've already sent\. You can view these metrics across all of your campaigns, or for individual campaigns\.
+The console provides several campaign\-related metrics\. For example, you can view the number of email endpoints that you can target and the number of endpoints that you've already sent messages to\. Also, you can view the open, click, and opt\-out rates for campaigns that you've already sent\. You can view these metrics across all your campaigns or for individual campaigns\.
 
 **To view campaign analytics in the Amazon Pinpoint console**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose the project that you want to view metrics for\.
+1. On the **All projects** page, choose the project that you want to view metrics for\.
 
 1. In the navigation pane, under **Analytics**, choose **Campaigns**\.
 

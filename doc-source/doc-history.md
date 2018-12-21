@@ -1,16 +1,17 @@
 # Document History for Amazon Pinpoint<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon Pinpoint\.
-+ **Latest documentation update: **December 3, 2018
++ **Latest documentation update: **December 21, 2018
 
 
 | Change | Description | Date | 
 | --- | --- | --- | 
+| Regional availability | Amazon Pinpoint is now available in the US West \(Oregon\) and EU \(Frankfurt\) AWS Regions\. | December 21, 2018 | 
 | Deliverability dashboard | Amazon Pinpoint now includes a [deliverability dashboard](channels-email-deliverability-dashboard.md), which you can use to identify issues that could impact the delivery of emails that you send by using Amazon Pinpoint\. | December 3, 2018 | 
 | Event triggers | You can now configure campaigns to be sent when specific events occur\. For example, if a customer adds an item to their cart but doesn't purchase it, you can send them an email\. To learn more about configuring campaigns to be sent when specific events occur, see [Step 4: Choose When to Send the Campaign](campaigns-schedule.md)\. | November 19, 2018 | 
 | Voice channel | You can use the new Amazon Pinpoint voice channel to create voice messages and deliver them to your customers over the phone\. Currently, you can only send voice messages by using the Amazon Pinpoint SMS and Voice API\. For more information, see [Amazon Pinpoint Voice Channel](channels-voice.md)\. | November 15, 2018 | 
 | Transactional email | You can now use Amazon Pinpoint to send email directly to individual recipients, without having to create segments or campaigns first\. For more information about sending transactional email, see [Sending Email in Amazon Pinpoint](channels-mobile-send.md)\. For more information about setting up the email channel, see [Email Settings](settings-email.md)\. | November 5, 2018 | 
-| EU \(Ireland\) Availability | Amazon Pinpoint is now available in the EU \(Ireland\) AWS Region\. | October 25, 2018 | 
+| EU \(Ireland\) availability | Amazon Pinpoint is now available in the EU \(Ireland\) AWS Region\. | October 25, 2018 | 
 | New console design | The Amazon Pinpoint console has been completely redesigned to make it easier to use\. We've also streamlined the project creation process so that you can create projects directly in the Amazon Pinpoint console, rather than having to create them in AWS Mobile Hub\. | October 4, 2018 | 
 | Advanced segmentation | Added the ability to [create dynamic segments](segments-building.md) that include advanced logic and comparisons\. | October 4, 2018 | 
 | Monitoring with CloudWatch | You can now use Amazon CloudWatch to monitor and analyze metrics related to your Amazon Pinpoint account\. | October 4, 2018 | 
