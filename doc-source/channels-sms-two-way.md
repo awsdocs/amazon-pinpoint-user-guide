@@ -29,13 +29,13 @@ After you receive a dedicated number from AWS Support, you can enable and config
 
 **To set up two\-way SMS**
 
-1. On the **Projects** page, choose the project that you want to manage two\-way SMS settings for\.
+1. On the **All projects** page, choose the project that you want to manage two\-way SMS settings for\.
 
 1. In the navigation pane, under **Settings**, choose **SMS and voice**\.
 
 1. Under **Number settings**, choose the phone number that you want to configure two\-way SMS for\.
 **Note**  
-You can only enable two\-way SMS for a phone number if the value in the **SMS** column is *Enabled*\.
+You can enable two\-way SMS for a phone number only if the value in the **SMS** column is *Enabled*\.
 
 1. Under **Two\-way SMS**, choose **Enable 2\-way SMS**\.
 
@@ -49,7 +49,7 @@ You can only enable two\-way SMS for a phone number if the value in the **SMS** 
 
    To add a keyword, choose **Add another keyword**\.
 
-1. When you finish, choose **Save**\.
+1. When you finish making changes, choose **Save**\.
 
 ## Example of a Two\-Way SMS Message Payload<a name="settings-account-sms-two-way-payload"></a>
 

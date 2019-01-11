@@ -1,11 +1,12 @@
 # Document History for Amazon Pinpoint<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon Pinpoint\.
-+ **Latest documentation update: **December 21, 2018
++ **Latest documentation update: **January 10, 2019
 
 
 | Change | Description | Date | 
 | --- | --- | --- | 
+| General settings | Added information about using the Amazon Pinpoint console to [delete a project](settings-general.md#settings-general-delete-project)\. | January 10, 2019 | 
 | Regional availability | Amazon Pinpoint is now available in the US West \(Oregon\) and EU \(Frankfurt\) AWS Regions\. | December 21, 2018 | 
 | Deliverability dashboard | Amazon Pinpoint now includes a [deliverability dashboard](channels-email-deliverability-dashboard.md), which you can use to identify issues that could impact the delivery of emails that you send by using Amazon Pinpoint\. | December 3, 2018 | 
 | Event triggers | You can now configure campaigns to be sent when specific events occur\. For example, if a customer adds an item to their cart but doesn't purchase it, you can send them an email\. To learn more about configuring campaigns to be sent when specific events occur, see [Step 4: Choose When to Send the Campaign](campaigns-schedule.md)\. | November 19, 2018 | 

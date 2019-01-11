@@ -89,14 +89,16 @@ If one of your dedicated IP addresses appears in this section, you should contac
 
 ## Predictive Inbox Placement Tests<a name="channels-email-deliverability-dashboard-pipt"></a>
 
-On the **Predictive inbox placement tests** tab of the Deliverability dashboard, you can perform tests that can help you predict how your messages will be handled by various email providers around the world\. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers\. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers\. After about 24 hours, the test is complete, and you can view the results of the test\.
+On the **Predictive inbox placement tests** tab of the Deliverability dashboard, you can perform tests that can help you predict how specific messages are handled by various email providers around the world\. When you perform a Predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers\. Amazon Pinpoint then sends that message to special email addresses on several major email domains\. After about 24 hours, the test is complete, and you can view the results of the test\.
 
-**Note**  
-Typically, we charge you for each message that you send using Amazon Pinpoint\. However, when you perform a predictive inbox placement test, we don't charge you for the emails that we send to these test email addresses\.
+**Important**  
+When you perform a Predictive inbox placement test, we send your message to a third party for delivery testing and analysis\. We impose our standard security requirements on this third party, and the contents of your emails are encrypted during transfer\. However, because it isn't necessary to use real data when you perform these tests, we recommend that you avoid sending sensitive, confidential, or personally identifiable information in the messages that you use in these tests\.
 
 Predictive inbox placement tests show you how different email providers handle specific messages\. Compare this to the information on the **Domain reputation** tab, which measures general trends related to all of the email sent from a specific domain\.
 
-The test results tell you how many of your messages arrived in these test recipients' inboxes on the various email providers\. It also tells you how many messages were sent to recipients' junk mail folders, and how many weren't delivered at all\. Performing predictive inbox placement tests help you identify deliverability problems that could arise as a result of the content of your email\.
+The test results tell you how many of your messages arrived in test recipients' inboxes on the various email providers\. It also tells you how many messages were sent to recipients' junk mail folders, and how many weren't delivered at all\. Performing predictive inbox placement tests help you identify deliverability problems that could arise as a result of the content of your email\.
+
+Your monthly Deliverability dashboard subscription includes 25 Predictive inbox placement tests per month, and you can purchase additional tests as needed\. For more information, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/)\.
 
 **To create a new predictive email placement test**
 
