@@ -32,7 +32,7 @@ To analyze or store the analytics data outside Amazon Pinpoint, you can configur
 
 ## Regional Availability<a name="welcome-regions"></a>
 
-Amazon Pinpoint is available in the US East \(N\. Virginia\), US West \(Oregon\), EU \(Frankfurt\), and EU \(Ireland\) AWS Regions\.
+Amazon Pinpoint is available in several AWS Regions\. For a list of supported Regions, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *Amazon Web Services General Reference*\.
 
 ## Get Started<a name="welcome-getstarted"></a>
 

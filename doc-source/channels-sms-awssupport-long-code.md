@@ -1,82 +1,71 @@
 # Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint<a name="channels-sms-awssupport-long-code"></a>
 
-A long code \(also referred to as a long virtual number, or LVN\) is a standard 10\-digit phone number\. Long codes are meant for low\-volume, person\-to\-person communication\. For example, in the United States and Canada, sending rates for long codes are restricted to 1 TPS\. Sending high\-volume traffic to a long code might prompt wireless carriers to block the messages by blacklisting the long code\. Long codes are useful for testing your SMS program before you invest in a short code\. With Amazon Pinpoint, long codes are supported only for two\-way SMS\.
+A long code \(also referred to as a long virtual number, or LVN\) is a standard phone number that contains up to 12 digits, depending on the country that it's based in\. Long codes are typically meant for low\-volume, person\-to\-person communication\. However, you can also use long codes for sending test messages, or for sending low volumes of messages to your customers\.
 
-You can request up to 5 long codes for each country that you'll send SMS messages to\.
+**Note**  
+In the United States and Canada, sending rates for long codes are restricted to 1 message per second\. This limit might be higher or lower in other countries and regions\. If you send a large volume of messages from a long code, wireless carriers might begin to block your messages\. If you [send SMS messages programmatically](https://docs.aws.amazon.com/pinpoint/latest/developerguide/send-messages-sms.html), your applications should limit the number of messages that they send per second\. 
 
-**Important**  
-If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is 1\.00 USD\. You can request to increase your spend threshold in the same support case that includes your request for a long code\. Or, you can submit a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+After we receive your request, we send you information about the costs associated with obtaining a long code in your country or region\. We also provide an estimate of the amount of time that's required to provision a long code in your country or region\. 
 
-After receiving your request, AWS registers your long code in the targeted countries on your behalf\. Typically, AWS Support processes your case within 2 business days\. Depending on the complexity of your case, AWS Support might require an additional 3–5 days to ensure that your request can be processed\.
+**Note**  
+If you're new to SMS messaging with Amazon Pinpoint, you should also request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
-To request a dedicated long code, complete the following steps\.
-
-## Step 1: Open an Amazon Pinpoint SMS Case<a name="channels-sms-awssupport-long-code-open"></a>
+## Step 1: Open a Service Limit Increase Case<a name="channels-sms-awssupport-long-code-open"></a>
 
 Open a case with AWS Support by completing the following steps\.
 
-1. Sign in to the AWS Management Console, and go to the [AWS Support Center](https://console.aws.amazon.com/support/home#/)\.
+**To request a dedicated long code**
 
-1. Choose **Create case**\.
+1. Sign in to the AWS Management Console at [https://console\.aws\.amazon\.com/](https://console.aws.amazon.com/)\.
 
-1. For **Regarding**, choose **Service Limit Increase**\.
+1. On the **Support** menu, choose **Support Center**, as shown in the following image\.  
+![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/console_region_selector.png)
 
-1. For **Limit Type**, choose **Pinpoint SMS**\.
+1. On the **My support cases** tab, choose **Create case**\.
 
-## Step 2: Specify Your Request<a name="channels-sms-awssupport-long-code-request"></a>
+1. Under **Create case**, choose **Service limit increase**\.
 
-Tell AWS Support that you're requesting a dedicated long code by completing the following steps\.
+1. Under **Case classification**, complete the following sections:
+   + For **Limit type**, choose **Pinpoint SMS**\.
+   + For **Link to site or app which will be sending SMS**, provide information about the website, application, or service that will send SMS messages\.
+   + For **Type of messages**, choose the type of messages that you plan to send using your long codes\.
+   + For **Targeted countries**, enter the country or region that you want to purchase long codes in\.
 
-1. For **Resource Type**, choose **Dedicated SMS Long Codes**\.
+1. Under **Requests**, complete the following sections:
+   + For **Resource Type**, choose **Dedicated SMS Long Codes**\.
+   + For **Limit**, choose the type of messages that you plan to send using this long code\.
+   + For **New limit value**, enter the number of long codes that you want to purchase\.
 
-1. For **Limit**, choose the type of message that you'll send with your long code:
-   + **One\-time Passwords/Two\-Factor Authentication** – Messages that provide passwords to authenticate with your website or application\.
-   + **Promotional/Marketing** – Noncritical messages that promote your business or service, such as special offers or announcements\.
-   + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
+1. Under **Case description**, for **Use case description**, provide the following information:
+   + The AWS Region that you use Amazon Pinpoint in\.
+   + A description of your use case\. Include information about the content that you plan to send, how you obtained your customers' contact information, why you requested the number of long codes that you specified earlier, and whether you plan to use the long codes that you obtain to send two\-way SMS messages\.
+   + The response that Amazon Pinpoint should automatically send customers when they respond to your messages with the keyword HELP\.
+   + The response that Amazon Pinpoint should automatically send customers when they respond to your messages with the keyword STOP\.
+   + The keyword that customers can send to your long code to opt in to receiving your messages, and the response that Amazon Pinpoint should automatically send customers when they send this keyword to your long code\.
 
-1. For **New limit value**, specify the number of long codes that you're requesting\. Typically, this value is **1**\. You can request up to 5 long codes for each country in your request\.
-
-1. \(Optional\) If you want to include multiple requests in this support case, choose **Add another request**\. Then, specify the type of request\.
-
-   If you include multiple requests, provide the required information for each\. For the required information, see the other sections in [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)\.
-
-## Step 3: Describe Your SMS Use Case<a name="channels-sms-awssupport-long-code-usecase"></a>
-
-Describe how you'll use your dedicated long code by completing the following steps\.
-
-1. For **Link to site or app which will be sending SMS**, identify the website or application where your audience members will opt in to receive your SMS messages\.
-
-1. For **Type of messages**, choose the type of message that you'll send using your long code: **Transactional**, **Promotional**, or **One Time Passwords**\.
-
-1. For **Targeted Countries**, specify the countries that you're requesting a long code for\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
-
-   If your list of countries exceeds the character limit for this text box, you can instead specify your countries in the **Use Case Description** box\.
-
-1. For **Use Case Description**, provide the following details:
-   + The AWS Region where you'll use Amazon Pinpoint to send SMS messages with your long code\.
-   + Because long codes are supported only for two\-way SMS, confirm that you require your long code for two\-way SMS purposes\. 
+1. Under **Contact options**, for **Preferred contact language**, choose whether you want to receive communications for this case in **English** or **Japanese**\.
 
 1. When you finish, choose **Submit**\.
 
-## Step 4: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-long-code-settings"></a>
+## Step 2: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-long-code-settings"></a>
 
-After AWS notifies you that your long code is registered in the targeted countries, complete the following steps\.
+After AWS notifies you that your long codes have been registered, complete the following steps\.
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose the a project that uses the SMS channel\.
+1. On the **All projects** page, choose a project that the SMS channel is enabled in\.
 
-1. In the navigation pane, under **Settings**, choose **SMS**\. 
+1. In the navigation pane, under **Settings**, choose **SMS and voice**\. 
 
-1. Under **Short and Long Codes**, choose the long code that AWS assigned to your account\.
+1. Under **Number settings**, choose the long code\.
 
-1. Under **Default keywords**, verify that the messages for the *HELP* and *STOP* keywords match the values you provided to AWS Support\.
+1. Under **Default keywords**, verify that the responses for the *HELP* and *STOP* keywords match the values that you specified in your request\.
 
-1. Under **Registered keyword**, verify that the opt\-in keyword and message match the values you provided to AWS Support\.
+1. Under **Registered keyword**, verify that the opt\-in keyword and response match the values that you specified in your request\.
 
-1. \(Optional\) If you want to specify additional keyword responses, or if you want to process inbound messages outside of Amazon Pinpoint, configure two\-way SMS settings\. For more information, see [Two\-Way SMS Settings](settings-sms.md#settings-account-sms-number-2way)\.
+1. \(Optional\) If you want to specify additional keyword responses, or if you want to process inbound messages outside of Amazon Pinpoint, you can enable two\-way SMS\. For more information, see [Two\-Way SMS Settings](settings-sms.md#settings-account-sms-number-2way)\.
 
-1. When you finish making changes, choose **Save**\.
+1. When you finish, choose **Save**\.
 
 ## Next Steps<a name="channels-sms-awssupport-long-code-next"></a>
 
