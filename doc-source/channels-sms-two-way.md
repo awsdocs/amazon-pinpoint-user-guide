@@ -42,6 +42,8 @@ You can enable two\-way SMS for a phone number only if the value in the **SMS** 
 1. Under **Incoming messages destination**, specify the Amazon SNS topic that receives your SMS messages by choosing one of the following options:
    + **Create a new Amazon SNS topic** – Amazon Pinpoint creates a topic in your account\.
    + **Choose an existing Amazon SNS topic** – Specify the ARN of a topic in your account\.
+**Note**  
+Amazon Pinpoint currently doesn't support the use of encrypted Amazon SNS topics for two\-way SMS messaging\. You have to choose a topic that isn't encrypted\.
 
 1. Under **Two\-way SMS keywords**, you can add or edit keywords and response messages\. When your number receives an SMS message that contains one of these keywords, Amazon Pinpoint does the following:
    + Sends the message to your Amazon SNS topic\.

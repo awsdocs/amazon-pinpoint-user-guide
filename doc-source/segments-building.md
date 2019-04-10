@@ -1,6 +1,6 @@
 # Building Segments<a name="segments-building"></a>
 
-Dynamic segments are based on the data that your apps provide to Amazon Pinpoint\. When you create a dynamic segment, you choose the criteria that define that segment\. For example, you could specify all customers who use version 2\.0 of your app on an Android device, and who have used your app within the past 30 days\. Amazon Pinpoint continuously re\-evaluates your segments as your app records new customer interactions\. As a result, the size and membership of each segment changes over time\.
+Dynamic segments are based on the data that your apps provide to Amazon Pinpoint, after you integrate your apps with Amazon Pinpoint\. When you create a dynamic segment, you choose the criteria that define that segment\. For example, you could specify all customers who use version 2\.0 of your app on an Android device, and who have used your app within the past 30 days\. Amazon Pinpoint continuously re\-evaluates your segments as your app records new customer interactions\. As a result, the size and membership of each segment changes over time\. For information about integrating your apps with Amazon Pinpoint, see [Integrating Amazon Pinpoint with Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.
 
 ## Segment Groups<a name="segments-building-groups"></a>
 
@@ -22,20 +22,20 @@ There are two steps involved in creating a dynamic segment\. First, you set up t
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose the project to which you want to add the segment\.
+1. On the **All projects** page, choose the project to which you want to add the segment\.
 
-1. In the navigation menu, choose **Segments**\. The **Segments** page opens, which displays previously defined segments and the number of active users that belong to them\.
+1. In the navigation pane, choose **Segments**\. The **Segments** page opens and displays segments that you previously defined\.
 
 1. Choose **Create a segment**\.
 
-1. Under **Create a segment**, choose **Build segment**\.  
+1. Under **Create a segment**, choose **Build a segment**\.  
 ![\[The Create a segment page with the Build segment option selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_build.png)![\[The Create a segment page with the Build segment option selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Create a segment page with the Build segment option selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For **Segment name**, type a name for the segment to make it easy to recognize later\.
 
 ### Step 2: Configure Segment Groups<a name="segment-building-procedure-step-2"></a>
 
-1. Under **Segment Group 1**, next to **Endpoints that are in**, choose one of the following options:
+1. Under **Segment group 1**, next to **Include endpoints that are in**, choose one of the following options:
    + **any** – If you use more than one segment as a base segment, your new segment contains endpoints that are in at least one of the segments you select\.
    + **all** – If you use more than one segment as a base segment, your new segment only contains endpoints that are in all of the selected segments\.
 
@@ -45,7 +45,7 @@ The menu doesn't close when you select the first base segment\. If you want to u
 ![\[The Segment group 1 section with two base segments selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_groups.png)![\[The Segment group 1 section with two base segments selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Segment group 1 section with two base segments selected.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 
 1. For **Add a filter**, choose the type of filter you want to add to the segment\. You can choose from the following options:
-   + **Filter by channel** – Use this option to filter the segment based on the channel of the recipient's endpoint\. For example, when you choose **EMAIL**, your segm ent only contains endpoints that can receive email\.
+   + **Filter by channel** – Use this option to filter the segment based on the channel of the recipient's endpoint\. For example, when you choose **EMAIL**, your segment only contains endpoints that can receive email\.
    + **Filter by endpoint** – Use this option to filter by endpoint\-specific attributes\. When you select this option, you specify how recently the endpoint was active, or how long it's been inactive\. After that, you can optionally specify additional attributes associated with that endpoint\. For example, this filter could include all customers who were active within the past 7 days who used an iPhone to access your app, as shown in the following image\.  
 ![\[An Endpoint filter that is set up to include all customers who were active within the past 7 days and who use iPhones.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_filter_endpoint.png)![\[An Endpoint filter that is set up to include all customers who were active within the past 7 days and who use iPhones.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[An Endpoint filter that is set up to include all customers who were active within the past 7 days and who use iPhones.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
 

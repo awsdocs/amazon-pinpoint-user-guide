@@ -2,7 +2,7 @@
 
 After you write your message, you can specify when the campaign should be sent\. You can choose to send the campaign immediately, at a scheduled date and time, on a recurring basis, or when certain events occur\.
 
-Before you can complete the procedures in this section, you have to complete Step 3\.
+Before you can complete the procedures in this section, you have to complete [Step 3](campaigns-message.md)\.
 
 **Topics**
 + [Sending the Campaign Immediately](#campaigns-schedule-immediate)
@@ -34,7 +34,7 @@ If you want to send a campaign only once, you can schedule it to be sent at a sp
 
 1. For **Start date and time**, choose the date and time when Amazon Pinpoint should send the message\.
 
-1. Under **Time zone**, choose the time zone theat you want to use to schedule the campaign\. Optionally, choose **Use recipient's local time** to base the delivery time on each recipient's local time zone\.
+1. Under **Time zone**, choose the time zone that you want to use to schedule the campaign\. Optionally, choose **Use recipient's local time** to base the delivery time on each recipient's local time zone\.
 
 1. Choose **Next** to continue to the final step\.
 

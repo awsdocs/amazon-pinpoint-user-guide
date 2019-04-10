@@ -93,7 +93,7 @@ The procedures for updating the DNS records for a domain vary depending on which
 
 | DNS/Hosting Provider | Documentation Link | 
 | --- | --- | 
-|  Amazon Route 53  |  [Creating Records by Using the Amazon Route 53 Console](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-creating.html)  | 
+|  Amazon Route 53  |  [Creating Records by Using the Amazon Route 53 Console](Amazon Route 53 Developer Guideresource-record-sets-creating.html)  | 
 |  GoDaddy  |  [Add a CNAME record](https://www.godaddy.com/help/add-a-cname-record-19236) \(external link\)  | 
 |  Dreamhost  |  [How do I add custom DNS records?](https://help.dreamhost.com/hc/en-us/articles/215414867-How-do-I-add-custom-DNS-records-) \(external link\)  | 
 |  Cloudflare  |  [How do I add a CNAME record?](https://support.cloudflare.com/hc/en-us/articles/200169046-How-do-I-add-a-CNAME-record-) \(external link\)  | 
