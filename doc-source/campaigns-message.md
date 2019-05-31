@@ -23,25 +23,17 @@ Before you begin, complete [Step 2: Specify the Audience for the Campaign](campa
 
 This section contains information about writing an email message\.
 
-1. Under **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
+1. Under **Email details**, for **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
 
-1. For **Subject**, type the subject line for your email\.
+1. For **Subject**, enter the subject line for your email message\.
 
-1. For **Message**, type the email body\. You can use the rich text editor to format your message:  
-![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_editor.png)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The icons in the email message rich text editor.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
-
-   If you want to manually enter the HTML content of your message, choose the **source** \(![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_source.png)\) icon\.
-**Note**  
-To include CSS formatting in your emails, use inline `span` elements\. For example, to make the text in a level 1 heading red, use the following HTML:  
-
-   ```
-   <h1><span style="color:red;">First-Level Heading</span></h1>
-   ```
-If you include style definitions in the `head` section of your message, or if you use `style` attributes directly within HTML elements \(for example, `<h1 style="color:red;"`\.\.\.\), the editor removes them without providing a warning\.
+1. For **Message**, enter the email body\.
+**Tip**  
+You can enter the email body by using either HTML or Design view\. With HTML view, you can manually enter HTML content for the email body, including formatting, links, and other features that you want to include in the message\. With Design view, you can use a rich text editor to enter the content of the email body and use the toolbar to apply formatting and add links and other features to the message\. To switch between views, choose **HTML** or **Design** in the area above the message editor\.
 
 1. \(Optional\) When you finish writing your message, you can save it as a template and use it again later by choosing **Save as a template**\.
 
-1. \(Optional\) Under **Plain text message**, type a version of your message for email clients that accept only plain text emails\.
+1. \(Optional\) Under **Plain text version**, type a version of your message for email clients that accept only plain text email\.
 
 1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **Email details** section\.
 
@@ -55,21 +47,21 @@ This section contains information about writing an SMS message\.
    + **Promotional** – Noncritical messages, such as marketing messages\. Amazon Pinpoint optimizes the message delivery to incur the lowest cost\.
    + **Transactional** – Critical messages that support customer transactions, such as one\-time passwords for multi\-factor authentication\. Amazon Pinpoint optimizes the message delivery to achieve the highest reliability\.
 
-   This campaign\-level setting overrides your default message type, which you set on the **Settings** page\.
+   This campaign\-level setting overrides your default message type, which you set on the SMS settings page for the project\.
 
-1. Under **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
+1. For **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
 
-1. For **Message**, type the message body\. 
+1. For **Message**, type the message body\. Your text message can have up to 160 characters\.
 
-   Your text message can have up to 160 characters\. A character counter below the left edge of the field counts down from 160 as you enter the text of the message\.
+   
 
-   When you finish writing the message, you can save it as a template and use it again later by choosing **Save as template**\.
+1. When you finish writing the message, you can save it as a template and use it again later by choosing **Save as a template**\.
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
    Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
 
-   This message\-level sender ID overrides your default sender ID, which you set on the **Settings** page\.
+   This message\-level sender ID overrides your default sender ID, which you set on the SMS settings page for the project\.
 
 1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **SMS details** section\.
 
@@ -88,13 +80,13 @@ This section contains information about writing a push notification and setting 
 
 **To write a standard notification**
 
-1. Under **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
+1. For **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\.
 
-1. For **Title**, type the title you want to display above the message\.
+1. For **Title**, enter the title you want to display above the message\.
 
-1. For **Message**, type the message body\. Your push notification can have up to 200 characters\. A character counter below the left edge of the field counts down from 200 as you add characters to the message\.
+1. For **Message**, enter the message body\. Your push notification can have up to 200 characters\. A character counter below the left edge of the field counts down from 200 as you add characters to the message\.
 
-1. \(Optional\) When you finish writing the message, you can save it as a template and use it again later by choosing **Save as template**\.
+1. \(Optional\) When you finish writing the message, you can save it as a template and use it again later by choosing **Save as a template**\.
 
 1. For **Action**, select the action you want to occur when recipients tap the notification:
    + **Open your app** – Your app launches, or it becomes the foreground app if it has been sent to the background\.
@@ -111,7 +103,7 @@ This section contains information about writing a push notification and setting 
 
 **To create a silent notification**
 
-1. Under **Message content**, enter the content of the silent message in JSON format\. The exact content of the message varies depending on the notification service you use and the values that your application expects to receive\.
+1. For **Message content**, enter the content of the silent message in JSON format\. The exact content of the message varies depending on the notification service you use and the values that your application expects to receive\.
 
 1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **Push notification details** section\.
 
@@ -141,37 +133,42 @@ There are two ways to send a test message: you can send it to an existing segmen
 
 **To send a test message to a segment**
 
-1. Under the message editor, choose **Test campaign message**\.
+1. Under the message editor, choose **Send a test message**\.
 
-1. On the **Test campaign** dialog box, under **Send test to**, choose **A segment**\.
+1. In the **Send a test message** dialog box, under **Send a test message to**, choose **A segment**\.
 
-1. Use the drop\-down list to choose the segment you want to send the test message to\.
+1. Use the drop\-down list to choose the segment that you want to send the test message to\.
 **Note**  
 Amazon Pinpoint automatically removes all segments that contain 100 endpoints or more from this list\.
 
-1. Choose **Send test campaign**\.
+1. Choose **Send message**\.
 
 **To send a test message to specific recipients**
 
 1. Under the message editor, choose **Send a test message**\.
 
-1. On the **Test campaign** dialog box, under **Send test to**, choose one of the options in the following table\.    
+1. In the **Send a test message** dialog box, under **Send a test message to**, choose one of the options in the following table\.    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-message.html)
 
-1. Choose **Send test campaign**\.
+1. Choose **Send message**\.
 
 ### Previewing an Email Without Sending It<a name="campaigns-message-test-preview"></a>
 
-Amazon Pinpoint can generate a preview of an email message without sending it\. This feature is helpful when you want to quickly verify that a message renders as you expect it to before you send a test\. 
+The Design view in the Amazon Pinpoint message editor shows a preview of an email message as it would appear if it was rendered by your web browser\.
 
-Note that this preview only shows how the message would appear if it were rendered by your web browser\. As a best practice, you should still send test emails to several recipients and view those test messages using a variety of devices and email clients\.
+If you're working in HTML view, instead of Design view, you can display a preview of an email message side\-by\-side with the HTML content of the message\. This feature is helpful when you want to verify that a message renders as you expect, before you send a test\. 
+
+Note that this preview only shows how the message would appear if it was rendered by your web browser\. As a best practice, you should still send test emails to several recipients and view those test messages by using a variety of devices and email clients\.
 
 **To preview an email**
-+ Under the message editor, choose **Preview message**\. A preview of your email appears in a new window\.
+
+1. In the area above the HTML view of the message editor, choose **No preview**, and then choose **Preview**\. Amazon Pinpoint displays a preview pane next to the HTML editor\.
+
+1. \(Optional\) To display the HTML content and the preview in a larger window, choose **Fullscreen** in the area above the message editor\.
 
 ## Message Templates<a name="campaigns-message-templates"></a>
 
-To save your message and reuse it in a separate campaign or direct message, choose **Save as template** and provide a template name\. Then, you can load the template for any message by choosing **Load template** and selecting it from a list of saved templates\. Amazon Pinpoint populates your message with the template's content\. Then, you can send the message as\-is or customize as needed\.
+To save your message and reuse it in a separate campaign or direct message, choose **Save as a template** and provide a template name\. Then, you can load the template for any message by selecting it from a list of saved templates\. Amazon Pinpoint populates your message with the template's content\. Then, you can send the message as\-is or customize as needed\.
 
 You can base a template on any supported message type, and you can use the same template for other message types\. For example, you can write a push notification message, save it as a template, and use that template for an SMS message\. Note that if you use a single template for multiple message types, Amazon Pinpoint loads the content differently for each type\. For example, if you base a template on a mobile push message, and you load this template for an email message, the push notification *title* is used as the email *subject*\. The correlations between message parts are as follows:
 
@@ -200,71 +197,9 @@ You can base a template on any supported message type, and you can use the same 
 | Message type | Title | Subject | 
 | Message body | Message body | Plain text message | 
 
-### Email Template Restrictions<a name="campaigns-message-templates-restrictions"></a>
-
-Email templates can only include the HTML elements and attributes listed in the following table\.
-
-
-| Allowed Elements | Allowed Attributes | 
-| --- | --- | 
-| a | dir, href, style, title | 
-| b | dir, style, title | 
-| blockquote | cite, dir, style, title | 
-| br | dir, style, title | 
-| caption | dir, style, title | 
-| cite | dir, style, title | 
-| code | dir, style, title | 
-| col | dir, span, style, title | 
-| colgroup | dir, span, style, title | 
-| dd | dir, style, title | 
-| div | dir, style, title | 
-| dl | dir, style, title | 
-| dt | dir, style, title | 
-| em | dir, style, title | 
-| h1 | dir, style, title | 
-| h2 | dir, style, title | 
-| h3 | dir, style, title | 
-| h4 | dir, style, title | 
-| h5 | dir, style, title | 
-| h6 | dir, style, title | 
-| i | dir, style, title | 
-| img | alt, dir, height, src, style, title, width | 
-| li | dir, style, title, value | 
-| ol | dir, reversed, start, style, title, type | 
-| p | dir, style, title | 
-| pre | dir, style, title | 
-| q | cite, dir, style, title | 
-| small | dir, style, title | 
-| span | dir, style, title | 
-| strike | dir, style, title | 
-| strong | dir, style, title | 
-| sub | dir, style, title | 
-| sup | dir, style, title | 
-| table | dir, style, title | 
-| tbody | dir, style, title | 
-| td | colspan, dir, rowspan, style, title | 
-| tfoot | dir, style, title | 
-| th | abbr, colspan, dir, rowspan, scope, sorted, style, title | 
-| thead | dir, style, title | 
-| tr | dir, style, title | 
-| u | dir, style, title | 
-| ul | dir, style, title | 
-
-Additionally, some attributes—such as `src` or `href`—allow you to specify a protocol\. If your HTML templates include these attributes, they can only specify certain protocols\. The allowed protocols for these attributes are listed in the following table\.
-
-
-| Element/attribute | Allowed protocols | 
-| --- | --- | 
-| <a href="\.\.\."> | ftp, http, https, mailto | 
-| <blockquote cite="\.\.\."> | http, https | 
-| <img src="\.\.\."> | http, https | 
-| <q cite="\.\.\."> | http, https | 
-
 ## Message Variables<a name="campaigns-message-variables"></a>
 
-To create a message that is personalized for each recipient, use message variables\. Message variables refer to specific *endpoint* attributes\. These attributes can include characteristics that you add to the endpoint resource, such as the recipient's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it substitutes the variables with the corresponding attribute values for the receiving endpoint\.
-
-For the attributes, see [Endpoint Attributes](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoints.html#rest-api-endpoints-attributes)\.
+To create a message that is personalized for each recipient, use message variables\. Message variables refer to specific *endpoint* attributes\. These attributes can include characteristics that you add to the endpoint resource, such as the recipient's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it substitutes the variables with the corresponding attribute values for the receiving endpoint\. For information about the attributes that you can use, see [Endpoint Properties](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-properties) in the *Amazon Pinpoint API Reference*\.
 
 To include a variable in your message, enclose the attribute name in double brackets, as in `{{Demographic.AppVersion}}`\.
 
@@ -282,7 +217,7 @@ Or:
 
 `Hey John Doe, congratulations on your new 5K PR of 20:52!`
 
-For examples of custom attributes for your app's code, see the [iOS example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes)\.
+For examples of custom attributes for your app's code, see the [iOS example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes) in the *Amazon Pinpoint Developer Guide*\.
 
 **Next**  
 [Step 4: Choose When to Send the Campaign](campaigns-schedule.md)

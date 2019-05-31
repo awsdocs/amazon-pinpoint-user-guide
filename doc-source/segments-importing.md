@@ -5,7 +5,7 @@ With Amazon Pinpoint, you can define a user segment by importing a file that con
 Unlike the dynamic segments that you create with the segment builder in the console, an imported segment is an unchanging set of *endpoints* or *user IDs*: 
 
 **Endpoint**  
-A destination that you can send messages to — such as an email address, mobile device identifier, or mobile phone number\. An endpoint definition can include attributes that describe the user or device that you send messages to\. It can also include a user ID\.   
+A destination that you can send messages to, such as an email address, mobile device identifier, or mobile phone number\. An endpoint definition can include attributes that describe the user or device that you send messages to\. It can also include a user ID\.   
 You can define a segment by importing a list of endpoint definitions\. Amazon Pinpoint creates the segment, and it updates any endpoints that you previously added to Amazon Pinpoint with the new information\.
 
 **User ID**  
@@ -15,8 +15,6 @@ You can define a segment by importing user IDs only if you've added the endpoint
 An imported segment consists of endpoints, user IDs, or a combination of both\. When you use Amazon Pinpoint to send a message to the segment, the potential destinations include:
 + Each endpoint that you list in the imported file\.
 + Each endpoint that's associated with each user ID that you list in the imported file\.
-
-To import a file, you first upload it to an Amazon Simple Storage Service \(Amazon S3\) bucket\. Next, you provide Amazon Pinpoint with the name of the Amazon S3 bucket that contains the file\. Amazon Pinpoint retrieves the file from Amazon S3 and adds each endpoint or user ID in the file to a segment\.
 
 When you create a new segment, you can use an imported segment as the base segment\. You can then apply filters to the base segment to refine it according to your needs\.
 
@@ -31,10 +29,10 @@ Consider the following factors when you create imported segments:
 You define the endpoints or user IDs that belong to your segment in a comma\-separated values \(CSV\) or JSON file\. Then, you import the file into Amazon Pinpoint to create the segment\.
 
 When you import a segment, remember the following:
-+ If you're importing new endpoints, the `Address` and `ChannelType` attributes are required\.
-+ If you're updating existing endpoints, the `Id` attribute is required for each endpoint that you want to update\.
 + Amazon Pinpoint can't import compressed files\.
 + The files that you import must use UTF\-8 character encoding\.
++ If you're importing new endpoints, the `Address` and `ChannelType` attributes are required\.
++ If you're updating existing endpoints, the `Id` attribute is required for each endpoint that you want to update\.
 + Your endpoint definitions can include only certain attributes\. For a list, see [Available Attributes](#segments-importing-available-attributes)\.
 
 ### Example Segment Files<a name="segments-importing-examples"></a>
@@ -100,27 +98,57 @@ You can also import user IDs that are listed in a newline\-delimited JSON file, 
 ```
 As you can see in the example endpoint definitions, the user ID `example-user-id-1` is associated with one endpoint\. The user IDs `example-user-id-2` and `example-user-id-3` are associated with two endpoints each\. Therefore, the segment that's created by importing this file could be used to message up to five endpoints\.
 
-## Uploading Segment Files to Amazon S3<a name="segments-importing-addtos3"></a>
-
-Amazon S3 is an AWS service that provides highly scalable cloud storage\. Amazon S3 stores data as objects within buckets, and those objects can be grouped into folders\.
-
-Before you import a segment, you must create an S3 bucket and upload your file to that bucket\. You can organize the files for different segments into separate folders\. When Amazon Pinpoint imports the endpoints or user IDs for a segment, it includes the files within all folders and subfolders that belong to the Amazon S3 location you specify\.
-
-For an introduction to creating buckets and uploading objects, see the [Amazon Simple Storage Service Getting Started Guide](https://docs.aws.amazon.com/AmazonS3/latest/gsg/)\.
-
-Amazon Pinpoint can import the following types of files:
-+ CSV
-+ Newline\-delimited JSON
-
-Amazon Pinpoint can import only one of these formats per segment, so the Amazon S3 path you specify should contain only one format type\.
-
 ## Importing a Segment<a name="segments-importing-procedure"></a>
 
-You can create a segment by importing the segment's endpoints or user IDs from Amazon S3\.
+There are two ways to import segments into Amazon Pinpoint: you can upload files directly from your computer, or you can import files that are stored in an Amazon S3 bucket\.
+
+Uploading files from your computer is generally the easier method of importing segments, especially if you already have the customer data on your computer\. However, you can only import 10 files at a time, and you can only upload files that are smaller than 1 gigabyte \(GB\)\.
+
+If you need to import more than 10 files at one time, or if you need to upload files that are larger than 1 GB, then you should import files from Amazon S3\. The Amazon S3 import option is also useful if you already have processes that send customer data files to Amazon S3 for storage\.
+
+This section includes procedures for importing segments by using both of these methods\.
+
+### Importing a Segment by Uploading a File From Your Computer<a name="segments-importing-procedure-direct-import"></a>
+
+You can create segments by uploading up to 10 files directly from your computer\. The files that you upload can be in CSV or JSON format\. You can upload files in any combination of formats\. For example, you can upload one JSON file and three CSV files\.
 
 **To import a segment**
 
-1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. On the **All projects** page, choose the project that you want to add the segment to\.
+
+1. In the navigation pane, choose **Segments**\.
+
+1. Choose **Create a segment**\.
+
+1. Under **Create a segment**, choose **Import a segment**\.
+
+1. Under **Import method**, choose **Upload files from your computer**\.
+
+1. Under **Files to import**, select **Choose files**\. Select the file or files that you want to import\.
+**Note**  
+You can also drag files from your computer's file explorer and drop them directly on the **Drop files here** area\.
+
+1. When you upload files to Amazon Pinpoint, you have to provide a segment name for each file that you import\. Under **Segment names**, enter a segment name for each file that you want to import, as shown in the following image\.  
+![\[\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments-import-names.png)
+**Note**  
+By default, Amazon Pinpoint provides a segment name that is equal to the name of the imported file, but without the file extension\. You can change these default values to any name\.  
+You can use the same name for multiple segments\. If you do, Amazon Pinpoint creates a distinct segment for each file, and assigns a unique ID to each file\. The creation date is also slightly different for each file that you import\. You can use these factors to distinguish between segments that have the same name\.
+
+1. When you finish, choose **Create segment**\.
+
+### Importing a Segment From a File Stored in Amazon S3<a name="segments-importing-procedure-s3-import"></a>
+
+Before you use this procedure to import a segment, you first have to create an Amazon S3 bucket and upload your file to that bucket\. You can organize the files for different segments into separate folders\. When Amazon Pinpoint imports the endpoints or user IDs for a segment, it includes the files within all folders and subfolders that belong to the Amazon S3 location you specify\.
+
+For an introduction to creating buckets and uploading objects, see the [Amazon Simple Storage Service Getting Started Guide](https://docs.aws.amazon.com/AmazonS3/latest/gsg/)\.
+
+Amazon Pinpoint can import only one file format \(CSV or JSON\) per segment, so the Amazon S3 path that you specify should only contain files of a single type\.
+
+**To import a segment**
+
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
 1. On the **All projects** page, choose the project that you want to add the segment to\.
 
@@ -148,10 +176,7 @@ You can create a segment by importing the segment's endpoints or user IDs from A
 
 1. Under **What type of file are you importing**, choose either **JavaScript Object Notation \(JSON\)** or **Comma\-Separated Values \(CSV\)**, depending on the format the file that you uploaded to Amazon S3\.
 
-1. Choose **Create segment**\. Amazon Pinpoint imports the endpoints and user IDs from the specified Amazon S3 bucket and adds them to your segment\.
-
-   The **Scheduled imports** tab on the **Segments** page provides the status of your import\. Refresh your browser to see the current status\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments_job.png)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+1. Choose **Create segment**\.
 
 ## Available Attributes<a name="segments-importing-available-attributes"></a>
 
@@ -172,7 +197,7 @@ For JSON files, a period in the attribute name indicates that the name following
 }
 ```
 
-The full JSON structure closely resembles the [Example EndpointRequest](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-endpoint.html#rest-api-endpoint-schemas-requests) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the EndpointRequest schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
+The full JSON structure closely resembles the [example Endpoint request](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-schemas) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the Endpoint request schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
 
 You can replace attribute names that are shown in italics with any value\. For example, you can create custom attributes called `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`\.
 
@@ -181,7 +206,7 @@ You can replace attribute names that are shown in italics with any value\. For e
 | --- | --- | 
 | Address | The unique destination of the endpoint, such as an email address, a mobile phone number, or a token for push notifications\. | 
 | Attributes\.custom\_attribute | Custom attributes that your app reports to Amazon Pinpoint\. You can use these attributes as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\. | 
-| ChannelType | The channel type of the endpoint\. Acceptable values: GCM, APNS, SMS, or EMAIL\. | 
+| ChannelType | The channel type of the endpoint\. Acceptable values are:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/segments-importing.html) | 
 | Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 
 | Demographic\.Locale | The locale of the endpoint in ISO 15897 format\. For example, en\_US \(English language locale for the United States\) or zh\_CN \(Chinese locale for China\)\. | 
 | Demographic\.Make | The manufacturer of the endpoint device, such as Apple or Samsung\. | 
@@ -190,19 +215,19 @@ You can replace attribute names that are shown in italics with any value\. For e
 | Demographic\.Platform | The operating system of the endpoint device, such as ios or android\. | 
 | Demographic\.PlatformVersion | The platform version of the endpoint device\. | 
 | Demographic\.Timezone | The time zone of the endpoint\. It's specified as a [tz database value](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), such as America/Los\_Angeles\. | 
-| EffectiveDate | The time at which the endpoint was last updated, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 20171011T150548Z\. | 
+| EffectiveDate | The time when the endpoint was last updated, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 20171011T150548Z\. | 
 | Id | The unique ID of the endpoint\. | 
 | Location\.City | The city where the endpoint is located\. | 
 | Location\.Country | The three\-letter code for the country or region where the endpoint is located, in ISO 3166\-1 alpha\-3 format\. For example, USA \(United States\) or CHN \(China\)\. For a complete list of ISO 3166\-1 alpha\-3 abbreviations, see the [ISO website](https://www.iso.org/obp/ui/#search/code/)\. | 
-| Location\.Latitude | The latitude of the endpoint location, rounded to one decimal place\. | 
-| Location\.Longitude | The longitude of the endpoint location, rounded to one decimal place\. | 
+| Location\.Latitude | The latitude coordinate of the endpoint location, rounded to one decimal place\. | 
+| Location\.Longitude | The longitude coordinate of the endpoint location, rounded to one decimal place\. | 
 | Location\.PostalCode | The postal or ZIP code of the endpoint\. | 
 | Location\.Region | The region of the endpoint location, such as a state or province\. | 
 | Metrics\.custom\_attribute | Custom metrics, such as the number of sessions or number of items left in a cart, to use for segmentation purposes\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\.These custom values can only be numeric\. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as the average or sum, on them\. | 
-| OptOut | Indicates whether a user has opted out of receiving messages\. Acceptable values: ALL \(the user has opted out of all messages\) or NONE \(the user hasn't opted out and receives all messages\)\. | 
+| OptOut | Indicates whether a user has opted out of receiving messages\. Acceptable values are: ALL \(the user has opted out of all messages\) or NONE \(the user hasn't opted out and receives all messages\)\. | 
 | RequestId | The unique ID of the most recent request to update the endpoint\. | 
 | User\.UserAttributes\.custom\_attribute | Custom attributes that are specific to the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. You can specify up to 20 custom attributes per endpoint\. | 
 | User\.UserId | The unique ID of the user\. | 
 
 **Note**  
-You can specify up to 20 custom attributes per endpoint for `Attributes`, `Metrics` and `User.UserAttributes`\. However, you can create no more than 40 custom attributes per AWS account\.
+You can specify up to 20 custom attributes per endpoint for `Attributes`, `Metrics`, and `User.UserAttributes`\. However, you can create no more than 40 custom attributes per AWS account\.

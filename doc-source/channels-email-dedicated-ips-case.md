@@ -4,11 +4,9 @@ This section describes how to request and relinquish dedicated IP addresses by s
 
 ## Best Practices for Working with Dedicated IP Addresses<a name="channels-email-dedicated-ips-case-best-practices"></a>
 
-Although there's no minimum commitment, we recommend that you lease at least one dedicated IP address in each AWS Region where Amazon Pinpoint is available\. Leasing a dedicated IP address in each Region helps to improve the availability of Amazon Pinpoint by providing geographical redundancy\.
+Although there's no minimum commitment, we recommend that you lease more than one dedicated IP address in each AWS Region where you use Amazon Pinpoint\. Each AWS Region consists of multiple physical locations, called *Availability Zones*\. When you lease more than one dedicated IP address, we distribute those addresses as evenly as possible across the Availability Zones in the AWS Region that you specified in your request\. Distributing your dedicated IP addresses across Availability Zones in this way increases the availability and redundancy of your dedicated IP addresses\.
 
-Additionally, each AWS Region consists of at least three physical locations \(*Availability Zones*\)\. When you lease more than one dedicated IP address, we distribute the addresses as evenly as possible across the Availability Zones in the AWS Region that you specified\.
-
-For more information about AWS Regions and Availability Zones, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)\.
+For a list of all of the Regions where Amazon Pinpoint is currently available, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *Amazon Web Services General Reference*\. To learn more about the number of Availability Zones that are available in each Region, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)\.
 
 ## Requesting Dedicated IP Addresses<a name="channels-email-dedicated-ips-case-request"></a>
 
@@ -79,7 +77,7 @@ The process of relinquishing a dedicated IP address can't be reversed\. If you r
 **Note**  
 Dedicated IP addresses are unique to each AWS Region, so it's important to select the Region that the dedicated IP address is associated with\.
    + For **Limit**, choose **Desired Maximum Send Rate**\.
-   + For **New limit value**, enter any number\. The number that you enter here isn't important—you specify the number of dedicated IPs that you want to relinquish in the next step\.
+   + For **New limit value**, enter any number\. The number that you enter here isn't important—you specify the number of dedicated IP addresses that you want to relinquish in the next step\.
 **Note**  
 A single dedicated IP address can only be used in a single AWS Region\. If you want to relinquish dedicated IP addresses that you used in other AWS Regions, choose **Add another request**\. Then complete the **Region**, **Limit**, and **New limit value** fields for the additional Region\. Repeat this process for each dedicated IP address that you want to relinquish\.
 

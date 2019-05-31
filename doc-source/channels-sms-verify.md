@@ -13,7 +13,7 @@ If you send an SMS message to an invalid number, the delivery fails\. You can va
 
 The response from Amazon Pinpoint also includes data about the number\. Amazon Pinpoint obtains this data from wireless carriers\. It includes information such as the carrier that the number is registered with and the location where the number was originally registered\.
 
-To validate a number, issue an HTTP POST request to the `/v1/phone/number/validate/` URI in the Amazon Pinpoint API\. For information about supported methods, parameters, and schemas, see [Phone Number Validate](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-phone-number-validate.html) in the *Amazon Pinpoint API Reference*\.
+To validate a number, send an HTTP POST request to the `/v1/phone/number/validate/` URI in the Amazon Pinpoint API\. For information about supported methods, parameters, and schemas, see [Phone Number Validate](https://docs.aws.amazon.com/pinpoint/latest/apireference/phone-number-validate.html) in the *Amazon Pinpoint API Reference*\.
 
 ## Example Request with a Valid Phone Number<a name="channels-sms-verify-example-valid"></a>
 
@@ -67,7 +67,7 @@ x-amzn-RequestId: 3015d110-44b7-11e8-8e9f-dd939118442c
     "OriginalCountryCodeIso2": "US"
 }
 ```
-The response states that the `PhoneType` is `MOBILE`\. Because the phone number is formatted correctly and assigned to a mobile phone, it's a valid destination for SMS messages\.  
+The response indicates that the `PhoneType` is `MOBILE`\. Because the phone number is formatted correctly and assigned to a mobile phone, it's a valid destination for SMS messages\.  
 The `PhoneType` attribute is useful for determining whether you can send an SMS message to the phone number\. Each possible `PhoneType` value has a corresponding `PhoneTypeCode` integer:  
 
 

@@ -18,13 +18,13 @@ In Amazon Pinpoint, a campaign refers to a single message that you send to a seg
 
    1. Under **Choose a channel for this campaign**, choose **Email**\.
 
-   1. For **Message content**, choose **Create a new message**\.
+   1. Under **Email details**, for **Message content**, choose **Create a new message**\.
 
-   1. For **Subject**, type the subject line of the email\. 
+   1. For **Subject**, enter the subject line of the email\. 
 
-   1. For **Message**, type the body of the email\.
+   1. For **Message**, enter the body of the email\.
 **Tip**  
-You can modify the HTML body of your message directly by choosing the **edit HTML** \(![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/campaigns_email_editor_edit_html.png)\) button in the message editor\.  
+You can enter the email body by using either HTML or Design view\. With HTML view, you can manually enter HTML content for the email body, including formatting, links, and other features that you want to include in the message\. With Design view, you can use a rich text editor to enter the content of the email body and use the toolbar to apply formatting and add links and other features to the message\. To switch between views, choose **HTML** or **Design** in the area above the message editor\.  
 You can also include personalized content in your message\. You do this by adding the name of an attribute from the spreadsheet that you imported into Amazon Pinpoint\. When you specify an attribute in this way, surround the attribute name with two sets of curly braces\. For example, you could include the recipient's first name in the body of the message by typing `{{User.UserAttributes.FirstName}}` in the body of the message\.
 
    1. When you finish, choose **Next**\.

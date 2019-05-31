@@ -16,6 +16,11 @@ Amazon's trademarks and trade dress may not be used in
 ## Contents
 + [What Is Amazon Pinpoint?](welcome.md)
 + [Getting Started with Amazon Pinpoint](gettingstarted.md)
+   + [Step 1: Create and Configure a Project](gettingstarted-create-project.md)
+   + [Step 2: Import Customer Data and Create a Segment](gettingstarted-import-customer-data.md)
+   + [Step 3: Create and Schedule a Campaign](gettingstarted-create-campaign.md)
+   + [Step 4: View Campaign Analytics](gettingstarted-analytics.md)
+   + [Next Steps](gettingstarted-next-steps.md)
 + [Amazon Pinpoint Tutorials](tutorials.md)
    + [Send an Email Using Amazon Pinpoint](tutorials-send-an-email.md)
       + [Step 1: Create a New Amazon Pinpoint Project](tutorials-send-an-email-new-project.md)
