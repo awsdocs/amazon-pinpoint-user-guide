@@ -67,6 +67,12 @@ Some of the fields on the request form are marked as "optional\." However, AWS S
 
 1. When you finish, choose **Submit**\. 
 
+The AWS Support team provides an initial response to your request within 24 hours\.
+
+In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. If we’re able to do so, we'll grant your request within this 24\-hour period\. However, if we need to obtain additional information from you, it might take longer to resolve your request\.
+
+We might not be able to grant your request if your use case doesn’t align with our policies\.
+
 ## Step 2: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-spend-threshold-settings"></a>
 
 After we notify you that your monthly spend threshold has been increased, you have to adjust the spending limit for your account in the Amazon Pinpoint console\.

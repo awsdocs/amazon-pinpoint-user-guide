@@ -3,7 +3,7 @@
 A long code \(also referred to as a long virtual number, or LVN\) is a standard phone number that contains up to 12 digits, depending on the country that it's based in\. Long codes are typically meant for low\-volume, person\-to\-person communication\. However, you can also use long codes for sending test messages, or for sending low volumes of messages to your customers\.
 
 **Note**  
-In the United States and Canada, sending rates for long codes are restricted to 1 message per second\. This limit might be higher or lower in other countries and regions\. If you send a large volume of messages from a long code, wireless carriers might begin to block your messages\. If you [send SMS messages programmatically](https://docs.aws.amazon.com/pinpoint/latest/developerguide/send-messages-sms.html), your applications should limit the number of messages that they send per second\. 
+In the United States and Canada, sending rates for long codes are restricted to 1 message per second\. This limit is set by the phone carriers, and isn't a limitation of Amazon Pinpoint\. This limit might be higher or lower in other countries and regions\. If you send a large volume of messages from a long code, wireless carriers might begin to block your messages\. If you [send SMS messages programmatically](https://docs.aws.amazon.com/pinpoint/latest/developerguide/send-messages-sms.html), your applications should limit the number of messages that they send each second\.
 
 After we receive your request, we send you information about the costs associated with obtaining a long code in your country or region\. We also provide an estimate of the amount of time that's required to provision a long code in your country or region\. 
 
@@ -46,6 +46,12 @@ Open a case with AWS Support by completing the following steps\.
 1. Under **Contact options**, for **Preferred contact language**, choose whether you want to receive communications for this case in **English** or **Japanese**\.
 
 1. When you finish, choose **Submit**\.
+
+After we receive your request, we provide an initial response within 24 hours\. We might contact you to request additional information\.
+
+If we're able to provide you with a long code, we send you information about the costs associated with obtaining it\. We also provide an estimate of the amount of time that's required to provision the long code\. In many countries, we can provide you with a dedicated long code within 24 hours\. However, in some countries and regions, it can take several weeks to obtain a dedicated long code for the SMS channel\.
+
+In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. We might not be able to grant your request if your use case doesn’t align with our policies\.
 
 ## Step 2: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-long-code-settings"></a>
 

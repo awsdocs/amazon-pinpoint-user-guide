@@ -9,11 +9,6 @@ For information about short code pricing, see [Amazon Pinpoint Pricing](https://
 **Important**  
 If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. You can request to increase your spend threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
-After we receive your request, we send you information about the costs associated with obtaining a short code in the country or region that you specified in your request\. We also provide an estimate of the amount of time that's required to provision a short code in your country or region\. It usually takes between 8–12 weeks to provision a short code, although this delay can be much shorter or much longer depending on the country or region where the short code is based\.
-
-**Note**  
-The fees associated with using short codes begin immediately after we initiate your short code request with carriers\. You're responsible for paying these charges, even if the short code hasn't been completely provisioned yet\.
-
 ## Step 1: Open a Service Limit Increase Case<a name="channels-sms-awssupport-short-code-open"></a>
 
 Open a case with AWS Support by completing the following steps\.
@@ -92,9 +87,19 @@ Mobile carriers require us to provide all of the information listed above in ord
 
 1. When you finish, choose **Submit**\.
 
+After we receive your request, we provide an initial response within 24 hours\. We might contact you to request additional information\. If we're able to provide you with a short code, we send you information about the costs associated with obtaining a short code in the country or region that you specified in your request\. We also provide an estimate of the amount of time that's required to provision a short code in your country or region\. It usually takes several weeks to provision a short code, although this delay can be much shorter or much longer depending on the country or region where the short code is based\.
+
+**Note**  
+The fees associated with using short codes begin immediately after we initiate your short code request with carriers\. You're responsible for paying these charges, even if the short code hasn't been completely provisioned yet\.
+
+In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. We might not be able to grant your request if your use case doesn’t align with our policies\.
+
 ## Step 2: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-short-code-settings"></a>
 
 After we notify you that your short code has been provisioned, complete the following steps\.
+
+**Note**  
+You can't complete this steps until we've obtained the short code and associated it with your account\.
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 

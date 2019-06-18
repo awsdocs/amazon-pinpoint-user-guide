@@ -1,11 +1,12 @@
 # Document History for Amazon Pinpoint<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon Pinpoint\.
-+ **Latest documentation update:** April 25, 2019
++ **Latest documentation update:** June 13, 2019
 
 
 | Change | Description | Date | 
 | --- | --- | --- | 
+| Deliverability dashboard | The Deliverability dashboard now includes deliverability for individual campaigns\. It also lets you easily create alarms that notify you when your bounce, complaint, inbox placement, or IP blacklist rates reach specific values\. | June 13, 2019 | 
 | Regional availability | Amazon Pinpoint is now available in the AWS Asia Pacific \(Mumbai\) and Asia Pacific \(Sydney\) Regions\. | April 25, 2019 | 
 | General settings | Added information about using the Amazon Pinpoint console to [delete a project](settings-general.md#settings-general-delete-project)\. | January 10, 2019 | 
 | Regional availability | Amazon Pinpoint is now available in the AWS US West \(Oregon\) and EU \(Frankfurt\) Regions\. | December 21, 2018 | 

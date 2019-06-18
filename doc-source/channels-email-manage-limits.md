@@ -64,6 +64,12 @@ You are not required to provide a website URL\. However, providing a website URL
 
 1. When you finish, choose **Submit**\.
 
+The AWS Support team provides an initial response to your request within 24 hours\.
+
+In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. If we’re able to do so, we'll grant your request within this 24\-hour period\. However, if we need to obtain additional information from you, it might take longer to resolve your request\.
+
+We might not be able to grant your request if your use case doesn’t align with our policies\.
+
 ### Checking the Status of Your Request<a name="channels-email-setup-check-request-status"></a>
 
 After you submit your request, we review your case\. Allow one full business day for processing\.

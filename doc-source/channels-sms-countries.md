@@ -56,7 +56,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Costa Rica | CR |  |  | 
 | Croatia | HR |  | Yes | 
 | Cyprus | CY | Yes |  | 
-| Czech Republic | CZ | Yes\[[1](#sms-support-note-1)\] | Yes | 
+| Czech Republic | CZ |  | Yes | 
 | Democratic Republic of the Congo | CD |  |  | 
 | Denmark | DK | Yes | Yes | 
 | Djibouti | DJ | Yes |  | 
@@ -95,7 +95,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Hungary | HU |  | Yes | 
 | Iceland | IS | Yes |  | 
 | India | IN | Yes\[[1](#sms-support-note-1)\] | Yes | 
-| Indonesia | ID | Yes\[[1](#sms-support-note-1)\] | Yes | 
+| Indonesia | ID |  | Yes | 
 | Iraq | IQ |  |  | 
 | Ireland | IE | Yes | Yes | 
 | Israel | IL | Yes | Yes | 
@@ -146,17 +146,17 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | New Zealand | NZ |  | Yes | 
 | Nicaragua | NI |  |  | 
 | Niger | NE | Yes |  | 
-| Nigeria | NG | Yes\[[1](#sms-support-note-1)\] |  | 
+| Nigeria | NG |  |  | 
 | Norway | NO | Yes | Yes | 
 | Oman | OM | Yes\[[1](#sms-support-note-1)\] |  | 
 | Pakistan | PK |  |  | 
 | Palau | PW |  |  | 
-| Palestinian Territories | PS | Yes\[[1](#sms-support-note-1)\]\[[3](#sms-support-note-3)\] |  | 
+| Palestinian Territories | PS |  |  | 
 | Panama | PA |  |  | 
 | Papua New Guinea | PG | Yes |  | 
 | Paraguay | PY | Yes |  | 
 | Peru | PE | No |  | 
-| Philippines | PH | Yes\[[1](#sms-support-note-1)\] | Yes | 
+| Philippines | PH |  | Yes | 
 | Poland | PL | Yes | Yes | 
 | Portugal | PT | Yes | Yes | 
 | Puerto Rico | PR |  | Yes | 
@@ -192,13 +192,13 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Switzerland | CH | Yes | Yes | 
 | Taiwan | TW |  | Yes | 
 | Tajikistan | TJ | Yes |  | 
-| Tanzania | TZ | Yes\[[1](#sms-support-note-1)\] |  | 
+| Tanzania | TZ |  |  | 
 | Thailand | TH | Yes | Yes | 
 | Togo | TG | Yes |  | 
 | Tonga | TO | Yes |  | 
 | Trinidad and Tobago | TT | Yes |  | 
 | Tunisia | TN | Yes |  | 
-| Turkey | TR | Yes\[[1](#sms-support-note-1)\] | Yes | 
+| Turkey | TR |  | Yes | 
 | Turkmenistan | TM | Yes |  | 
 | Turks and Caicos Islands | TC | Yes |  | 
 | Uganda | UG | Yes |  | 

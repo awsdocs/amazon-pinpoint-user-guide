@@ -44,7 +44,11 @@ You can request a sender ID by creating a new case in the AWS Support Center\.
 
    1. For **New limit value**, type the number of sender IDs that you're requesting\. Typically, this value is **1**\.
 
-We respond to your request within 24 hours of the time when we receive it\. However, it can take several weeks to fully provision your sender ID, depending on the country or region where you're registering the short code\. In our response to your request, we provide an estimate of the amount of time that it will take to provision your request\.
+After we receive your request, we provide an initial response within 24 hours\. We might contact you to request additional information\.
+
+If we're able to provide you with a Sender ID, we send you an estimate of the amount of time that's required to provision it\. In many countries, we can provide you with a Sender ID within 2–4 weeks\. However, in some countries and regions, it can take several weeks to obtain a Sender ID\.
+
+In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. We might not be able to grant your request if your use case doesn’t align with our policies\.
 
 ## Step 2: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-sender-id-settings"></a>
 
