@@ -18,9 +18,9 @@ For more information about viewing metrics in CloudWatch, see [Using Amazon Clou
 
 1. Choose **Metrics with no dimensions**\.
 
-1. Select **SMSMonthToDateSpendUSD**\. The chart updates to display the amount of money that you've spent sending SMS messages in the current month using both Amazon Pinpoint and Amazon SNS\.
+1. Select **SMSMonthToDateSpentUSD**\. The chart updates to display the amount of money that you've spent sending SMS messages in the current month using both Amazon Pinpoint and Amazon SNS\.
 **Note**  
-The **SMSMonthToDateSpendUSD** metric doesn't appear until you send at least one SMS message through Amazon Pinpoint or Amazon SNS\.
+The **SMSMonthToDateSpentUSD** metric doesn't appear until you send at least one SMS message through Amazon Pinpoint or Amazon SNS\.
 
 ## Create an SMS Spending Alarm<a name="channels-sms-monitor-spending-alarms"></a>
 
@@ -40,9 +40,9 @@ For more information about creating alarms in CloudWatch, see [Creating Amazon C
 
 1. Choose **Create Alarm**\.
 
-1. Under **SNS Metrics**, choose **Metrics with no dimensions**, and then select **SMSMonthToDateSpendUSD**\. Choose **Next**\.
+1. Under **SNS Metrics**, choose **Metrics with no dimensions**, and then select **SMSMonthToDateSpentUSD**\. Choose **Next**\.
 **Note**  
-The **SMSMonthToDateSpendUSD** metric doesn't appear until you send at least one SMS message through Amazon Pinpoint or Amazon SNS\.
+The **SMSMonthToDateSpentUSD** metric doesn't appear until you send at least one SMS message through Amazon Pinpoint or Amazon SNS\.
 
 1. Under **Alarm Threshold**, complete the following steps: 
    + For **Name**, type a name for the alarm\. 
