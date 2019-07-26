@@ -1,14 +1,22 @@
 # Document History for Amazon Pinpoint<a name="doc-history"></a>
 
-The following table describes the documentation for this release of Amazon Pinpoint\.
-+ **Latest documentation update:** June 13, 2019
+The following table describes important changes in each release of the *Amazon Pinpoint User Guide* after December 2018\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
++ **Latest documentation update:** July 25, 2019
+
+| Change | Description | Date | 
+| --- |--- |--- |
+| [Analytics](#doc-history) | For campaigns that send email, push notifications, or SMS messages, we replaced the endpoints messaged metric with metrics and charts that show the number of unique endpoints that a campaign was sent to in a 24\-hour period\. For campaigns that send push notifications, we replaced the event count metrics for sessions per unique endpoint and purchases per unique endpoint with metrics and charts that show the number of times an app was opened and the number of units that were purchased in a 24\-hour period after a campaign was sent\. All the new metrics and charts are available for both standard and A/B test campaigns\. | July 25, 2019 | 
+| [Deliverability dashboard](#doc-history) | The Deliverability dashboard now includes deliverability for individual campaigns\. It also lets you easily create alarms that notify you when your bounce, complaint, inbox placement, or IP blacklist rates reach specific values\. | June 13, 2019 | 
+| [Regional availability](#doc-history) | Amazon Pinpoint is now available in the AWS Asia Pacific \(Mumbai\) and Asia Pacific \(Sydney\) Regions\. | April 25, 2019 | 
+| [General settings](#doc-history) | Added information about using the Amazon Pinpoint console to [delete a project](https://docs.aws.amazon.com/pinpoint/latest/userguide/settings-general.html#settings-general-delete-project)\. | January 10, 2019 | 
+
+## Earlier Updates<a name="doc-releases-archive"></a>
+
+The following table describes important changes in each release of the *Amazon Pinpoint User Guide* through December 2018\.
 
 
 | Change | Description | Date | 
 | --- | --- | --- | 
-| Deliverability dashboard | The Deliverability dashboard now includes deliverability for individual campaigns\. It also lets you easily create alarms that notify you when your bounce, complaint, inbox placement, or IP blacklist rates reach specific values\. | June 13, 2019 | 
-| Regional availability | Amazon Pinpoint is now available in the AWS Asia Pacific \(Mumbai\) and Asia Pacific \(Sydney\) Regions\. | April 25, 2019 | 
-| General settings | Added information about using the Amazon Pinpoint console to [delete a project](settings-general.md#settings-general-delete-project)\. | January 10, 2019 | 
 | Regional availability | Amazon Pinpoint is now available in the AWS US West \(Oregon\) and EU \(Frankfurt\) Regions\. | December 21, 2018 | 
 | Deliverability dashboard | Amazon Pinpoint now includes a [deliverability dashboard](channels-email-deliverability-dashboard.md), which you can use to identify issues that could impact the delivery of emails that you send by using Amazon Pinpoint\. | December 3, 2018 | 
 | Event triggers | You can now configure campaigns to be sent when specific events occur\. For example, if a customer adds an item to their cart but doesn't purchase it, you can send them an email\. To learn more about configuring campaigns to be sent when specific events occur, see [Step 4: Choose When to Send the Campaign](campaigns-schedule.md)\. | November 19, 2018 | 
@@ -22,7 +30,6 @@ The following table describes the documentation for this release of Amazon Pinpo
 | Analytics chart references | The Analytics section now includes several new and updated reports\. We've added [documentation](analytics-charts.md) that gives you additional information about each metric\. | June 12, 2018 | 
 | Testing campaigns | You can now [test your messages](campaigns-message.md#campaigns-message-test) by sending them to a segment or to a list of individual recipients\. | May 7, 2018 | 
 | Define segments by importing user IDs | Define a segment by [importing a file that contains a list of user IDs](segments-importing.md)\. When you send a message to the segment, the potential destinations include each endpoint that's associated with each user ID in the file\. | May 7, 2018 | 
-| Phone number verification for SMS | Use the Amazon Pinpoint API to [verify a phone number](channels-sms-verify.md) to determine whether it is a valid destination for SMS messages\. | April 23, 2018 | 
 | Self\-managed opt\-outs and dashboard exports | You can configure your SMS account settings so that you can [manage SMS opt\-outs outside of Amazon Pinpoint](settings-sms.md#settings-account-sms-self-managed-opt-out)\. You can also [export Amazon Pinpoint dashboards](analytics-charts.md#analytics-exporting) for further analysis\. | March 28, 2018 | 
 | Email project creation and identity verification | Added information about [creating email projects](channels-email-setup-create.md) and [verifying identities used to send email](channels-email-manage-verify.md)\. | March 21, 2018 | 
 | SMS best practices | Added [a best practices guide](channels-sms-best-practices.md) that contains tips and information related to SMS campaigns\. | February 23, 2018 | 

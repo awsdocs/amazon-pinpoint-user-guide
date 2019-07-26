@@ -32,7 +32,7 @@ After you send a message, Amazon Pinpoint automatically monitors how your custom
 
 1. In the navigation pane, under **Analytics**, choose **Campaigns**\.
 
-1. In the list of campaigns at the bottom of the page, choose a campaign\. The campaign details page appears\. This page tells you how many messages were sent, how many were delivered, how many bounced, and how many were opened\. It also tells you the date and time when each campaign run occurred\. If you sent the message once, you only see information for one campaign run\. If you sent a message on a recurring basis, you see information for each time Amazon Pinpoint sent the message\.
+1. In the list of campaigns at the bottom of the page, choose a campaign\. The campaign details page appears\. This page tells you how many messages were sent, how many were delivered, how many bounced, and how many were opened\. It also tells you the date and time when each campaign run occurred\. If you sent the message once, you see information for only one campaign run\. If you sent a message on a recurring basis, you see information for each time Amazon Pinpoint sent the message\.
 
 ### Send Messages in Other Channels<a name="tutorials-send-an-email-next-steps-whats-next-other-channels"></a>
 
@@ -40,6 +40,6 @@ If your customers consent to being contacted by other channels, such as SMS or p
 
 When you send messages by using other channels, you need to modify a few of the procedures in this tutorial:
 + When you create a new project, specify a different channel type\.
-+ When you upload a list of segment members, include their mobile numbers \(for SMS messages\) or their app tokens \(for push notifications\)\.
++ When you upload a list of segment members, include their mobile phone numbers \(for SMS messages\) or their app tokens \(for push notifications\)\.
 
 For more information about other messaging channels in Amazon Pinpoint, see [Amazon Pinpoint Channels](channels.md)\.

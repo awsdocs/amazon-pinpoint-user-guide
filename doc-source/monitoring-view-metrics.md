@@ -1,6 +1,6 @@
 # View Amazon Pinpoint Metrics in CloudWatch<a name="monitoring-view-metrics"></a>
 
-You can monitor metrics for Amazon Pinpoint by using the CloudWatch console or the CloudWatch API\. The following procedures show you how to access the metrics using these different options\. 
+You can monitor metrics for Amazon Pinpoint by using the Amazon CloudWatch console or the Amazon CloudWatch API\. The following procedure shows you how to access the metrics by using the CloudWatch console\. 
 
 **To view metrics using the CloudWatch console**
 
@@ -12,4 +12,4 @@ You can monitor metrics for Amazon Pinpoint by using the CloudWatch console or t
 
 1. Choose a metric to add it to the chart\. 
 
-You can also use CloudWatch to create alarms that send you notifications related to changes in these metrics\. For more information, see [Create CloudWatch Alarms for Amazon Pinpoint Metrics](monitoring-create-alarms.md)\.
+You can also use CloudWatch to create alarms that send you notifications about changes in these metrics\. For more information, see [Create CloudWatch Alarms for Amazon Pinpoint Metrics](monitoring-create-alarms.md)\.

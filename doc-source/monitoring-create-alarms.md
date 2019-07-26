@@ -1,9 +1,9 @@
 # Create CloudWatch Alarms for Amazon Pinpoint Metrics<a name="monitoring-create-alarms"></a>
 
-In CloudWatch, you can create alarms that send notifications when specific metrics exceed a particular value\. For example, you could set an alarm that sends you an email when the **ImportedEndpointFailure** metric exceeds a certain value\. In this example, if the number of endpoint import failures exceeds the threshold that you specified, you receive an email alerting you of the issue\. This section contains procedures for setting up an alarm for Amazon Pinpoint metrics in the CloudWatch console\.
+In Amazon CloudWatch, you can create alarms that send notifications when specific metrics exceed a particular value\. For example, you could set an alarm that sends you an email when the **ImportedEndpointFailure** metric exceeds a certain value\. In this example, if the number of endpoint import failures exceeds the threshold that you specified, you receive an email alerting you of the issue\. This section contains procedures for setting up an alarm for Amazon Pinpoint metrics in the CloudWatch console\.
 
 **Important**  
-Before you can complete the procedures in this section, you first have to create an Amazon SNS topic and subscribe an endpoint to it\. For more information, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) and [Subscribe to a Topic](https://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
+Before you can complete the procedures in this section, you have to create an Amazon SNS topic and subscribe an endpoint to it\. For more information, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) and [Subscribe to a Topic](https://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
 **To create an alarm for Amazon Pinpoint metrics in the CloudWatch console**
 

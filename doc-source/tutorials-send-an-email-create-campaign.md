@@ -8,7 +8,7 @@ In Amazon Pinpoint, a campaign refers to a single message that you send to a seg
 
 1. In the navigation pane, choose **Campaigns**, and then choose **Create a campaign**\.
 
-1. For **Campaign name**, type a name for the campaign\. 
+1. For **Campaign name**, enter a name for the campaign\. 
 
 1. Under **Campaign type**, choose **Standard campaign**, and then choose **Next**\.
 
@@ -32,7 +32,7 @@ You can also include personalized content in your message\. You do this by addin
 1. On the **Schedule your campaign** page, for **How often should this campaign be sent?**, choose **Immediately**, and then choose **Next**\.
 **Note**  
 You can also choose to schedule the delivery of your message for a specific date and time\. To schedule the delivery of your message, choose **Once**, and then specify the date and time when you want Amazon Pinpoint to send the email\.   
-If you want to send the message on a recurring basis, choose one of the other schedule options \(**Hourly**, **Daily**, **Weekly**, or **Monthly**\), and then specify the start and end times\.
+If you want to send the message on a recurring basis, choose one of the other schedule options, such as **Daily** or **Weekly**, and then specify the start and end times\.
 
 1. On the **Review and launch** page, confirm that the campaign is set up correctly, and then choose **Launch campaign**\.
 

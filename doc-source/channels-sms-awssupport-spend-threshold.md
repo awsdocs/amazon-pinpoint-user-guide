@@ -7,7 +7,7 @@ Because Amazon Pinpoint is a distributed system, it stops sending SMS messages w
 
 We set the spending limit for all new accounts at $1\.00 \(USD\) per month\. This limit is intended to let you test the message\-sending capabilities of Amazon Pinpoint\. This limit also helps to reduce the risk of sending large campaigns before you're actually ready to use Amazon Pinpoint for your production workloads\. Finally, this limit is necessary to prevent malicious users from abusing Amazon Pinpoint\.
 
-AWS Support typically processes your case within 2 business days\. Depending on the spending limit that you request and the complexity of your case, AWS Support might require an additional 3–5 days to ensure that your request can be processed\.
+If you’d like to request an increase to the SMS spending limit for your account, open a Service Limit Increase case in the AWS Support Center\. The AWS Support team provides an initial response to your request within 24 hours\.
 
 ## Step 1: Open an Amazon Pinpoint SMS Case<a name="channels-sms-awssupport-spend-threshold-open"></a>
 

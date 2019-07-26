@@ -8,7 +8,7 @@ You can send push notifications through Apple Push Notification service \(APNs\)
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose a project in which the push notification channel is enabled\.
+1. On the **All projects** page, choose a project in which the push notification channel is enabled\.
 
 1. In the navigation pane, choose **Test messaging**\.
 

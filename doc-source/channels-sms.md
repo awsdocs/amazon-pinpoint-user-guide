@@ -21,4 +21,3 @@ When you configure SMS channel settings in Amazon Pinpoint, your changes apply t
 + [Using Two\-Way SMS Messaging in Amazon Pinpoint](channels-sms-two-way.md)
 + [Supported Countries and Regions](channels-sms-countries.md)
 + [SMS Best Practices](channels-sms-best-practices.md)
-+ [Validating Phone Numbers with Amazon Pinpoint](channels-sms-verify.md)

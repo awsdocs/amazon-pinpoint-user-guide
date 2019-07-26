@@ -4,7 +4,7 @@ Amazon Pinpoint is an AWS service that you can use to engage with your customers
 
 The information in this user guide is intended for all Amazon Pinpoint users, including marketers, business users, and developers\. This guide contains information that's especially helpful for users who mainly interact with Amazon Pinpoint by using the AWS Management Console\. If you're new to Amazon Pinpoint, start by reading [Getting Started with Amazon Pinpoint](gettingstarted.md)\.
 
-If you're an application developer, also refer to the [Amazon Pinpoint Developer Guide](https://docs.aws.amazon.com/pinpoint/latest/developerguide/) and the [Amazon Pinpoint API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference/)\. These documents provide information about using the features of Amazon Pinpoint programmatically\. They also contain information about integrating the features of Amazon Pinpoint into your applications\.
+If you're an application developer, also refer to the [Amazon Pinpoint Developer Guide](https://docs.aws.amazon.com/pinpoint/latest/developerguide/) and the [Amazon Pinpoint API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference/)\. These documents provide information about using the features of Amazon Pinpoint programmatically\. They also contain information about integrating Amazon Pinpoint features into your applications\.
 
 ## Amazon Pinpoint Features<a name="welcome-features"></a>
 
@@ -22,11 +22,11 @@ To experiment with alternative campaign strategies, set up your campaign as an A
 
 ### Send Test Messages<a name="welcome-transactional"></a>
 
-Use the [Test messaging](messages.md) page to test your messages before you send campaigns to your customers\.
+Use the **Test messaging** page to [test your messages](messages.md) before you send campaigns to your customers\.
 
 ### Analyze User Behavior<a name="welcome-analyze"></a>
 
-Gain insights about your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends about your users' level of engagement, purchase activity, and demographics\. You can also monitor your message traffic with metrics for messages that are sent and opened\. Through the Amazon Pinpoint API, your application can report custom data, which Amazon Pinpoint makes available for analysis\.
+Gain insight into your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends in your users' level of engagement, purchase activity, demographics, and more\. You can also monitor your message traffic by viewing metrics such as the total number of messages that you sent for a campaign or project\. Through the Amazon Pinpoint API, your application can also report custom data, which Amazon Pinpoint makes available for analysis\.
 
 To analyze or store the analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
 
@@ -34,8 +34,8 @@ To analyze or store the analytics data outside Amazon Pinpoint, you can configur
 
 Amazon Pinpoint is available in several AWS Regions in North America, Europe, Asia, and Oceania\. In each Region, AWS maintains multiple Availability Zones\. These Availability Zones are physically isolated from each other, but are united by private, low\-latency, high\-throughput, and highly redundant network connections\. These Availability Zones enable us to provide very high levels of availability and redundancy, while also minimizing latency\.
 
-For a list of all the Regions where Amazon Pinpoint is currently available, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *Amazon Web Services General Reference*\. To learn more about the number of Availability Zones that are available in each Region, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)\.
+To learn more about AWS Regions, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html) in the *Amazon Web Services General Reference*\. For a list of all the Regions where Amazon Pinpoint is currently available and the endpoint for each Region, see [AWS Service Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *Amazon Web Services General Reference*\. To learn more about the number of Availability Zones that are available in each Region, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)\.
 
 ## Get Started<a name="welcome-getstarted"></a>
 
-Get started with Amazon Pinpoint by creating a new project\. For more information about creating projects, see [Amazon Pinpoint Channels](channels.md)\. 
+Get started with Amazon Pinpoint by [creating a new project](gettingstarted.md) or [completing a tutorial](tutorials.md)\. 
