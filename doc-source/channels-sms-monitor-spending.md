@@ -1,10 +1,10 @@
 # Monitoring SMS Spending Activity with Amazon Pinpoint<a name="channels-sms-monitor-spending"></a>
 
-This topic contains information about viewing SMS spending metrics in Amazon CloudWatch\. It also explains how to set up a CloudWatch alarm that sends you a notification when your monthly SMS spending exceeds a certain amount\.
+This topic provides information about viewing SMS spending metrics in Amazon CloudWatch\. It also explains how to set up a CloudWatch alarm that sends you a notification when your monthly SMS spending exceeds a certain amount\.
 
 ## View Your Monthly SMS Spending by Using CloudWatch<a name="channels-sms-monitor-spending-metrics"></a>
 
-To quickly determine how much money you've spent sending SMS messages during the current month, you can use the Metrics section of the CloudWatch console\. CloudWatch retains metrics data for 15 months, so you can view real\-time data and you can analyze historical trends\.
+To quickly determine how much money you've spent sending SMS messages during the current month, you can use the Metrics section of the CloudWatch console\. CloudWatch retains metrics data for 15 months, so you can view real\-time data and analyze historical trends\.
 
 For more information about viewing metrics in CloudWatch, see [Using Amazon CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the *Amazon CloudWatch User Guide*\.
 
@@ -59,7 +59,7 @@ The **SMSMonthToDateSpentUSD** metric doesn't appear until you send at least one
    + For **Whenever SMSMonthToDateSpentUSD is**, specify whether you want the metric to be greater than, greater than or equal to, or equal to the threshold in order to trigger the alarm\. Then, under **than**, enter the threshold value, which is the dollar amount \(in US Dollars\) that you want to trigger the alarm\.
 
 1. Under **Additional configuration**, complete the following steps:
-   + For **Datapoints to alarm**, enter the number of periods \(datapoints\) during which the spending amount must exceed the threshold to trigger the alarm\.
+   + For **Datapoints to alarm**, enter the number of evaluation periods \(datapoints\) during which the spending amount must exceed the threshold to trigger the alarm\.
    + For **Missing data treatment**, choose **Treat missing data as ignore \(maintain the alarm state\)**\.
 
 1. Choose **Next**\.
@@ -72,4 +72,4 @@ The **SMSMonthToDateSpentUSD** metric doesn't appear until you send at least one
 
 1. Enter a name and, optionally, a description for the alarm, and then choose **Next**\.
 
-1. Under **Preview and create**, review and confirm that the alarm settings are what you want, and then choose choose **Create alarm**\.
+1. Under **Preview and create**, review and confirm that the alarm settings are what you want, and then choose **Create alarm**\.

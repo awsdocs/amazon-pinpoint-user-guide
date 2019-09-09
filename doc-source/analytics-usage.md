@@ -9,17 +9,17 @@ Some of the charts and metrics on the **Usage** page refer to *endpoints*, while
 
 Complete the following steps to view the **Usage** charts and metrics on the Amazon Pinpoint console\. You can filter the data by date and by endpoint attributes\.
 
-**To view and filter the Usage charts**
+**To view and filter the Usage charts and metrics**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **All projects** page, choose the project that you want to view usage metrics for\.
+1. On the **All projects** page, choose the project that you want to view usage data for\.
 
 1. In the navigation pane, under **Analytics**, choose **Usage**\.
 
 1. \(Optional\) To apply a filter that displays the data for a specific date or range of dates, use the date selector at the top of the page to choose the dates for the time period that you want\. After you choose new dates, the page updates to show the data for the selected time period\.
 
-1. \(Optional\) To apply a filter that displays data for only those users or endpoints that have specific attributes, choose the attribute from the **Endpoint Attributes** list, and then choose the attribute value from the **Endpoint Attribute Values** list\. To further filter the data, repeat this step for each additional attribute and attribute value\.
+1. \(Optional\) To apply a filter that displays data for only those users or endpoints that have specific attributes, choose the attribute from the **Endpoint Attributes** list\. Then choose the attribute value from the **Endpoint Attribute Values** list\. To further filter the data, repeat this step for each additional attribute and attribute value that you want to filter the data by\.
 
 ## Chart Descriptions<a name="analytics-usage-description"></a>
 
@@ -53,7 +53,7 @@ Shows the number of new user IDs that were created in Amazon Pinpoint for each d
 Shows the percentage of users who opened your app 8 days prior, and then opened it again at some point in the following 7 days\. This chart also provides the average 7\-day retention rate for the entire time period, and the percentage change in the 7\-day retention rate from the beginning to the end of the time period\.
 
 **Sticky factor**  
-Shows the portion of monthly active endpoints that were active on each day of the selected time period\. For example, a sticky factor of 0\.25 indicates that 25% of active endpoints from the previous 30 days were active on the chosen day\. This chart also shows the average sticky factor for the entire time period, as well as the percentage change in the sticky factor rate from the beginning to the end of the time period\.
+Shows the portion of monthly active endpoints that were active on each day of the selected time period\. For example, a sticky factor of 0\.25 indicates that 25% of active endpoints from the previous 30 days were active on the chosen day\. This chart also shows the average sticky factor for the entire time period, and the percentage change in the sticky factor rate from the beginning to the end of the time period\.
 
 ### Session Metrics<a name="analytics-usage-description-sessions"></a>
 

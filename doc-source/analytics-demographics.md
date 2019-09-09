@@ -1,16 +1,16 @@
 # Demographics Charts<a name="analytics-demographics"></a>
 
-The charts on the **Demographics** page help you understand characteristics of your customers and the devices that your customers use to access your app\. If you've configured your app to report custom metrics to Amazon Pinpoint, this page shows the data for those metrics\.
+The charts on the **Demographics** page help you understand characteristics of your customers and the devices that they use to access your app\. If you've configured your app to report custom metrics to Amazon Pinpoint, this page shows the data for those metrics\.
 
 ## Viewing the Demographics Charts<a name="analytics-demographics-view"></a>
 
-Complete the following steps to view the **Demographics** charts on the Amazon Pinpoint console\. You can filter the charts by channel and by date\.
+Complete the following steps to view the **Demographics** charts on the Amazon Pinpoint console\. You can filter the data by channel and by date\.
 
 **To view and filter the Demographics charts**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **All projects** page, choose the project that you want to view demographic metrics for\.
+1. On the **All projects** page, choose the project that you want to view demographic data for\.
 
 1. In the navigation pane, under **Analytics**, choose **Demographics**\.
 

@@ -28,7 +28,7 @@ Use the **Test messaging** page to [test your messages](messages.md) before you 
 
 Gain insight into your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends in your users' level of engagement, purchase activity, demographics, and more\. You can also monitor your message traffic by viewing metrics such as the total number of messages that you sent for a campaign or project\. Through the Amazon Pinpoint API, your application can also report custom data, which Amazon Pinpoint makes available for analysis\.
 
-To analyze or store the analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
+To analyze or store analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
 
 ## Regional Availability<a name="welcome-regions"></a>
 

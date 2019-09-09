@@ -8,7 +8,7 @@ In the United States and Canada, sending rates for long codes are restricted to 
 After we receive your request, we send you information about the costs associated with obtaining a long code in your country or region\. We also provide an estimate of the amount of time that's required to provision a long code in your country or region\. 
 
 **Note**  
-If you're new to SMS messaging with Amazon Pinpoint, you should also request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+If you're new to SMS messaging with Amazon Pinpoint, you should also request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. For more information, see [Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
 ## Step 1: Open a Service Limit Increase Case<a name="channels-sms-awssupport-long-code-open"></a>
 

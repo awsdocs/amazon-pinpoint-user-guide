@@ -36,7 +36,7 @@ This message\-level setting overrides the default message type that you set on t
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
-   Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+   Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
    This message\-level sender ID overrides your default sender ID, which you set on the **Settings** page\.
 

@@ -7,7 +7,7 @@ You can only use short codes to send messages to recipients in the same country 
 For information about short code pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/#Dedicated_Short_Codes)\.
 
 **Important**  
-If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. You can request to increase your spend threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. You can request to increase your spend threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
 ## Step 1: Open a Service Limit Increase Case<a name="channels-sms-awssupport-short-code-open"></a>
 

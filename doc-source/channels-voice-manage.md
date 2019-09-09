@@ -36,6 +36,12 @@ To remove these limits from your account, you can request to have your account r
 
 1. When you finish, choose **Submit**\. 
 
+The AWS Support team provides an initial response to your request within 24 hours\.
+
+In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. If we’re able to do so, we'll grant your request within this 24\-hour period\. However, if we need to obtain additional information from you, it might take longer to resolve your request\.
+
+We might not be able to grant your request if your use case doesn’t align with our policies\.
+
 ## Requesting Phone Numbers for the Voice Channel<a name="channels-voice-manage-request-phone-numbers"></a>
 
 You can use the Amazon Pinpoint console to request phone numbers to use for making voice calls\. These phone numbers are *dedicated*—that is, they're reserved for use only by your Amazon Pinpoint account\. You can request local phone numbers that are based in a variety of countries or regions\.

@@ -1,6 +1,6 @@
 # Chart Reference for Amazon Pinpoint Analytics<a name="analytics-charts"></a>
 
-The **Analytics** pages on the Amazon Pinpoint console provide overviews of key metrics as well as dashboards that provide details about campaigns, demographics, funnels, usage, revenue, and more\. You can filter these dashboards by date for further analysis\. You can also filter some dashboards by other attributes, such as event or channel\.
+The **Analytics** pages on the Amazon Pinpoint console provide overviews of key metrics\. They also provide dashboards that give details about campaigns, demographics, funnels, usage, revenue, and more\. You can filter these dashboards by date for further analysis\. You can also filter some dashboards by other attributes, such as event or channel attributes\.
 
 **Topics**
 + [Endpoints and Users in Amazon Pinpoint Analytics](#analytics-endpoints-users)
@@ -17,11 +17,11 @@ The **Analytics** pages on the Amazon Pinpoint console provide overviews of key 
 
 Some of the charts and metrics in these dashboards provide data about *endpoints*\. Others provide data about *users*\.
 
-An *endpoint* is a destination that you can send messages to—such as a user's mobile device, email address, or phone number\. Before you can see data about endpoints, your application must register endpoints with Amazon Pinpoint or you must import your endpoint definitions into Amazon Pinpoint\.
+An *endpoint* is a destination that you can send messages to—such as a user's mobile device, email address, or phone number\. Before you can see data about endpoints, your application must register endpoints with Amazon Pinpoint, or you must import your endpoint definitions into Amazon Pinpoint\.
 
 A *user* is an individual who has a unique user ID\. This ID can be associated with one or more endpoints\. For example, if a person uses your app on more than one device, your app could assign that person's user ID to the endpoint for each device\. Before you can see data about users, your application must assign user IDs to endpoints, or you must import endpoint definitions that include user IDs\.
 
-For information about registering endpoints and assigning user IDs within a mobile app, see [Registering Endpoints \(iOS\)](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html) or [Registering Endpoints \(Android\) ](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html)in the *Amazon Pinpoint Developer Guide*\. For information about registering endpoints and assigning user IDs by using the AWS SDK for Java, see [Adding Endpoints](https://docs.aws.amazon.com/pinpoint/latest/developerguide/endpoints.html) in the *Amazon Pinpoint Developer Guide*\. For information about importing endpoint definitions, see [Importing Segments](segments-importing.md)\.
+For information about registering endpoints and assigning user IDs within a mobile app, see [Registering Endpoints in Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-endpoints.html) in the *Amazon Pinpoint Developer Guide*\. For information about registering endpoints and assigning user IDs for other types of applications, see [Adding Endpoints to Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/audience-define-endpoints.html) in the *Amazon Pinpoint Developer Guide*\. For information about importing endpoint definitions, see [Importing Segments](segments-importing.md)\.
 
 ## Exporting Dashboards<a name="analytics-exporting"></a>
 

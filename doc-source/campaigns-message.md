@@ -29,7 +29,7 @@ This section contains information about writing an email message\.
 
 1. For **Message**, enter the email body\.
 **Tip**  
-You can enter the email body by using either HTML or Design view\. With HTML view, you can manually enter HTML content for the email body, including formatting, links, and other features that you want to include in the message\. With Design view, you can use a rich text editor to enter the content of the email body and use the toolbar to apply formatting and add links and other features to the message\. To switch between views, choose **HTML** or **Design** in the area above the message editor\.
+You can enter the email body by using either HTML or Design view\. With HTML view, you can manually enter HTML content for the email body, including formatting, links, and other features that you want to include in the message\. With Design view, you can use a rich text editor to enter the content of the email body and use the toolbar to apply formatting and add links and other features to the message\. To switch views, choose **HTML** or **Design** in the area above the message editor\.
 
 1. \(Optional\) When you finish writing your message, you can save it as a template and use it again later by choosing **Save as a template**\.
 
@@ -53,13 +53,11 @@ This section contains information about writing an SMS message\.
 
 1. For **Message**, type the message body\. Your text message can have up to 160 characters\.
 
-   
-
 1. When you finish writing the message, you can save it as a template and use it again later by choosing **Save as a template**\.
 
 1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
-   Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+   Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
    This message\-level sender ID overrides your default sender ID, which you set on the SMS settings page for the project\.
 
@@ -156,7 +154,7 @@ Amazon Pinpoint automatically removes all segments that contain 100 endpoints or
 
 The Design view in the Amazon Pinpoint message editor shows a preview of an email message as it would appear if it was rendered by your web browser\.
 
-If you're working in HTML view, instead of Design view, you can display a preview of an email message side\-by\-side with the HTML content of the message\. This feature is helpful when you want to verify that a message renders as you expect, before you send a test\. 
+If you're working in HTML view, instead of Design view, you can display a preview of an email message next to the HTML content of the message\. This feature is helpful when you want to verify that a message renders as you expect, before you send a test\. 
 
 Note that this preview only shows how the message would appear if it was rendered by your web browser\. As a best practice, you should still send test emails to several recipients and view those test messages by using a variety of devices and email clients\.
 
