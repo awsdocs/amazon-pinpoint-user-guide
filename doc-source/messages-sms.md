@@ -6,7 +6,7 @@ To send a test SMS message, you have to use a project in which the SMS channel i
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **All projects** page, choose a project in which the push notification channel is enabled\.
+1. On the **All projects** page, choose a project in which the SMS channel is enabled\.
 
 1. In the navigation pane, choose **Test messaging**\.
 
@@ -15,12 +15,12 @@ To send a test SMS message, you have to use a project in which the SMS channel i
 1. On the **Test messaging** page, choose **SMS**\.
 
 1. For **Destination type**, choose one of the following destinations for your message:
-   + **Phone numbers** – Each destination is the recipient's phone number\.
+   + **Phone numbers** – Each destination is a recipient's phone number\.
    + **Endpoint IDs** – Each destination is a unique ID assigned to an Amazon Pinpoint *endpoint* resource\.
 
-1. Depending on your selection for **Destination type**, type one or more **Endpoint IDs** or **Phone numbers**\. You can type up to 15 values\. Use commas to separate multiple values\.
+1. Depending on your selection for **Destination type**, enter one or more **Endpoint IDs** or **Phone numbers**\. You can enter up to 15 values\. Use commas to separate multiple values\.
 
-   If you use phone numbers as the destination type, specify each number in E\.164 format\. E\.164 is a standard for the phone number structure used for international telecommunication\. Phone numbers that follow this format typically have up to 15 digits, and they are prefixed with the plus character \(\+\) and the country code\. For example, a US phone number in E\.164 format appears as \+12065550100\.
+   If you use phone numbers as the destination type, specify each number in E\.164 format\. E\.164 is a standard for the phone number structure that's used for international telecommunication\. Phone numbers that follow this format typically have up to 15 digits, and they are prefixed with the plus character \(\+\) and the country code\. For example, a US phone number in E\.164 format appears as \+12065550100\.
 
 1. For **Message type**, choose one of the following:
    + **Promotional** – Noncritical messages, such as marketing messages\. Amazon Pinpoint optimizes the message delivery to incur the lowest cost\.
@@ -30,11 +30,11 @@ This message\-level setting overrides the default message type that you set on t
 
 1. Under **Message**, for **Message content**, choose whether you want to **Create a new message** or **Use an existing template**\. 
 
-   If you choose to use an existing template, choose a template from the **Template** menu\.
+   If you choose to use an existing template, choose the template from the **Template** list\.
 
-   If you choose to create a new message, specify the content of message in the **Message** field\. You can also modify the body of the message if you choose an existing template\.
+   If you choose to create a new message, specify the content of the message in the **Message** field\. You can also modify the body of the message if you choose an existing template\.
 
-1. \(Optional\) For **Sender ID**, type a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
+1. \(Optional\) For **Sender ID**, enter a custom ID that contains up to 11 alphanumeric characters, including at least one letter and no spaces\. The sender ID is displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
 
    Support for sender IDs varies by country and/or region\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 

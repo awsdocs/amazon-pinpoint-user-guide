@@ -1,30 +1,20 @@
-# Message Templates<a name="messages-templates"></a>
+# Amazon Pinpoint Message Templates<a name="messages-templates"></a>
 
-To save your message and reuse it in a separate campaign or test message, choose **Save as template** and provide a template name\. Then, you can load the template for any message by choosing **Load template** and selecting it from a list of saved templates\. Amazon Pinpoint populates your message with the template's content\. Then, you can send the message as\-is or customize as needed\.
+If you frequently design and send a certain type of message, such as a weekly newsletter or an appointment reminder, you can create and save it as a message template\. You can then use the template as a starting point each time you need to create that type of message, instead of designing and writing the message again\.
 
-You can base a template on any supported message type, and you can use the same template for other message types\. For example, you can write a push notification message, save it as a template, and use that template for an SMS message\. Note that if you use a single template for multiple message types, Amazon Pinpoint loads the content differently for each type\. For example, if you base a template on a push notification, and you load this template for an email message, the push notification *title* is used as the email *subject*\. The correlations between message parts are as follows:
+A *message template* is a set of content that you can create, save, and then reuse in messages that you send for any of your Amazon Pinpoint projects\. When you create a template, you specify the content that you want to reuse in various components of messages that are based on the template\. These components, referred to as *template parts*, can be the subject or title of a message, the body of a message, or both\. For push notifications, template parts can also specify settings such as a custom sound to play or an image to display when a recipient receives a push notification that's based on the template\.
 
+When you create a message, you can choose to use an existing template for the message\. If you choose a template, Amazon Pinpoint populates the message with the content and settings in the template\. You can then send the message as it is or customize it as necessary\.
 
-**Mobile push templates**  
+You can create the following types of message templates in Amazon Pinpoint:
++ Email templates for email messages
++ Push notification templates for push notifications
++ SMS templates for SMS text messages
 
-| The push notification \. \. \.  | Is used as the email \. \. \. | Is used as the SMS \. \. \. | 
-| --- | --- | --- | 
-| Title | Subject | Not used | 
-| Message body | Plain text message | Message body | 
+You can use these types of templates in campaign messages, transactional messages, direct messages, and test messages\.
 
-
-**Email templates**  
-
-| The email \. \. \. | Is used as the push notification \. \. \.  | Is used as the SMS \. \. \. | 
-| --- | --- | --- | 
-| Subject | Title | Not used | 
-| Message body \(HTML\) | Not used | Not used | 
-| Plain text message | Message body | Message body | 
-
-
-**SMS templates**  
-
-| The SMS \. \. \. | Is used as the push notification \. \. \.  | Is used as the email \. \. \. | 
-| --- | --- | --- | 
-| Message type | Title | Subject | 
-| Message body | Message body | Plain text message | 
+**Topics**
++ [Creating Email Templates](message-templates-creating-email.md)
++ [Creating Push Notification Templates](message-templates-creating-push.md)
++ [Creating SMS Templates](message-templates-creating-sms.md)
++ [Managing Message Templates](message-templates-managing.md)

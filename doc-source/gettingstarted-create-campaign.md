@@ -2,7 +2,7 @@
 
 A *campaign* is a messaging initiative that engages a specific audience segment\. A campaign sends tailored messages on the days and times that you specify\. You can use the console to create a campaign that sends messages through the email, push notification, or SMS channels\.
 
-In this section, you create an email campaign\. You create a new campaign, choose your target segment, and load a responsive email template into it\. You then save the HTML content as a template so that you can easily use it again later\. When you finish setting up the message, you choose the day and time when you want the message to be sent\.
+In this section, you create an email campaign\. You create a new campaign, choose your target segment, and create a responsive email message for the campaign\. When you finish setting up the message, you choose the day and time when you want the message to be sent\.
 
 ## Step 3\.1: Create the Campaign and Choose a Segment<a name="gettingstarted-create-campaign-setup"></a>
 
@@ -20,9 +20,13 @@ You can quickly save this file to your computer by right\-clicking the link, and
 
 1. Choose **Create a campaign**\.
 
-1. Under **Campaign name**, for **Campaign details**, enter a name for the campaign\.
+1. Under **Campaign details**, for **Campaign name**, enter a name for the campaign\.
 
-1. Under **Campaign type**, choose **Standard campaign**\. Choose **Next**\.
+1. For **Campaign type**, choose **Standard campaign**\.
+
+1. For **Choose a channel for this campaign**, choose **Email**\.
+
+1. Choose **Next**\.
 
 1. On the **Choose a segment** page, choose **Use an existing segment**\. Then, for **Segment**, choose the targeted segment that you created in [Step 2\.3](gettingstarted-import-customer-data.md#gettingstarted-import-customer-data-create-targeted-segment)\. Choose **Next**\.
 
@@ -34,9 +38,9 @@ This sample file uses responsive HTML to create a message that renders properly 
 
 **To create the message**
 
-1. On the **Create your message** page, under **Choose a channel for the campaign**, choose **Email**\.
+1. On the **Create your message** page, under **Message content**, choose **Create a new message**\.
 
-1. Under **Subject**, enter a subject line for the email\.
+1. For **Subject**, enter a subject line for the email\.
 
 1. Under **Message**, erase the sample HTML code that's shown in the editor\. Paste the HTML code that you copied in the first step in this section\.
 
@@ -46,17 +50,9 @@ This sample file uses responsive HTML to create a message that renders properly 
 
    You can experiment with other attribute names\. Refer to the column headers in the spreadsheet that you imported in [Step 2\.2](gettingstarted-import-customer-data.md#gettingstarted-import-customer-data-import-segment) for complete list of attribute names that you can specify in your message\.
 **Tip**  
-You can use the **Design** mode to edit the content of the message without having to edit the HTML code\. On the **HTML** menu, choose **Design**, as shown in the following image\.  
+You can use Design view to edit the content of the message without having to edit the HTML code\. To use this view, choose **Design** from the view selector above the message editor, as shown in the following image\.  
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/gettingstarted-create-campaign-design-menu.png)
-
-1. \(Optional\) When you finish editing the message, choose **Save as a template**\. Then, on the **Save as a template** window, do the following:
-   + For **How do you want to save this template**, choose **Save as a new template**\.
-   + For **Template name**, type a name for the template\.
-
-   When you finish, choose **Save**\.
-
-   This step lets you save the message as a template\. When you save a message as a template, you can easily use it again later\.
 
 1. Choose **Next**\.
 

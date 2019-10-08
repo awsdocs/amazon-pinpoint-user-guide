@@ -49,7 +49,7 @@ If you delete a project, Amazon Pinpoint deletes all project\-specific settings,
 
 When you delete a project, Amazon Pinpoint deletes all project\-specific settings for the push notification and two\-way SMS messaging channels, and all segments, campaigns, and project\-specific analytics that are stored in Amazon Pinpoint, such as the following:
 + Segments – All segment settings and data\. For dynamic segments, this includes segment groups and filters that you defined\. For imported segments, this includes endpoints, user IDs, and other data that you imported, and any filters that you applied\.
-+ Campaigns – All messages, message treatments, message templates and variables, schedules, analytics, and other settings\.
++ Campaigns – All messages, message treatments and variables, schedules, analytics, and other settings\.
 + Analytics – For campaigns, this includes all engagement metrics, such as the number of endpoints targeted, the number of messages sent, and delivery rates\. For mobile and web apps, this includes all event data that wasn’t streamed to another AWS service such as Amazon Kinesis, all funnels, and all application usage, revenue, and demographic metrics\. Before you delete a project, we recommend that you export this data to another location\. For more information, see [Exporting Dashboards](analytics-charts.md#analytics-exporting)\.
 
 Note that account\-level settings and data for your Amazon Pinpoint account and your AWS account aren't deleted\. This includes:

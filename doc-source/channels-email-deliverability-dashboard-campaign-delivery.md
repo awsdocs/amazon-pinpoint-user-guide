@@ -1,6 +1,6 @@
 # Campaign Delivery Metrics<a name="channels-email-deliverability-dashboard-campaign-delivery"></a>
 
-The **Campaign delivery metrics** section contains information about inbox placement rates for the email that you sent from your domains\. However, unlike the [Domain reputation](channels-email-deliverability-dashboard-domain.md) page, the **Campaign delivery metrics** page contains information about specific Amazon Pinpoint campaigns, as opposed to information for entire domains\.
+The **Campaign delivery metrics** section contains information about inbox placement rates for the email that you sent from your domains\. However, unlike the [Domain reputation](channels-email-deliverability-dashboard-domain.md) page, the **Campaign delivery metrics** page contains information about specific email campaigns, as opposed to information for entire domains\.
 
 When you choose a domain and a date range, you see a table that contains the following information:
 + **Preview** – A small image that shows the content of the email\. Hover over the image to see a larger preview\.
@@ -33,4 +33,4 @@ The campaign details page also includes a larger preview of body of the email\. 
 
 ## Sending IP Addresses<a name="channels-email-deliverability-dashboard-campaign-delivery-sending-ip"></a>
 
-This section lists all of the IP addresses that Amazon Pinpoint used when sending the selected message to your recipients\.
+This section lists all the IP addresses that Amazon Pinpoint and Amazon SES used when sending the selected message to your recipients\.

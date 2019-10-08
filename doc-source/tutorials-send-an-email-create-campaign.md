@@ -24,7 +24,7 @@ In Amazon Pinpoint, a campaign refers to a single message that you send to a seg
 
    1. For **Message**, enter the body of the email\.
 **Tip**  
-You can enter the email body by using either HTML or Design view\. With HTML view, you can manually enter HTML content for the email body, including formatting, links, and other features that you want to include in the message\. With Design view, you can use a rich text editor to enter the content of the email body and use the toolbar to apply formatting and add links and other features to the message\. To switch between views, choose **HTML** or **Design** in the area above the message editor\.  
+You can enter the email body by using either HTML or Design view\. In the HTML view, you can manually enter HTML content for the email body, including formatting, links, and other features that you want to include in the message\. In the Design view, you can use a rich text editor to enter the content, and you can use the formatting toolbar to apply formatting and add links and other features to the content\. To switch views, choose **HTML** or **Design** from the view selector above the message editor\.  
 You can also include personalized content in your message\. You do this by adding the name of an attribute from the spreadsheet that you imported into Amazon Pinpoint\. When you specify an attribute in this way, surround the attribute name with two sets of curly braces\. For example, you could include the recipient's first name in the body of the message by typing `{{User.UserAttributes.FirstName}}` in the body of the message\.
 
    1. When you finish, choose **Next**\.

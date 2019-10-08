@@ -1,10 +1,10 @@
 # IP Reputation<a name="channels-email-deliverability-dashboard-ip-address"></a>
 
-The **IP address reputation** page contains information about the blacklist activities for the dedicated IP addresses that you use to send email by using Amazon Pinpoint\. 
+The **IP address reputation** page contains information about the blacklist activities for the dedicated IP addresses that you use to send email by using Amazon Pinpoint and Amazon Simple Email Service \(Amazon SES\)\. 
 
 ## Overview<a name="channels-email-deliverability-dashboard-ip-address-overview"></a>
 
-The **Overview** tab lists every dedicated IP address that's associated with your Amazon Pinpoint account, as shown in the following image\.
+The **Overview** tab lists every dedicated IP address that's associated with your Amazon Pinpoint and Amazon SES accounts, as shown in the following image\.
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/channels-email-deliverability-dashboard-ip-address.png)
 

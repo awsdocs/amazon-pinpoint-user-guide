@@ -24,7 +24,6 @@ If the value in the **Local address required** column is *Yes*, then you have to
 | Canada | No | Yes | 
 | Cayman Islands | No | No | 
 | Chile | No | No | 
-| China | No | No | 
 | Colombia | No | No | 
 | Cambodia | Yes | No | 
 | Croatia | Yes | No | 
