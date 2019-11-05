@@ -18,7 +18,7 @@ Using the console, you can update the credentials that allow Amazon Pinpoint to 
 
 1. On the **Edit push notifications** page, you can update your credentials for the following services:
    + **APNs** – Requires an authentication token signing key or a TLS certificate, which you get from your Apple developer account\. For more information, see the next section, *Managing APNs Settings*\.
-   + **FCM** – Requires an API key \(also referred to as a *server key*\), which you get from the Firebase console\. For more information about obtaining FCM credentials, see [Credentials](https://firebase.google.com/docs/cloud-messaging/concept-options#credentials) in the Firebase documentation\.
+   + **FCM** – Requires a Web API Key \(also referred to as an *API\_KEY* or *server key*\), which you get from the Firebase console\. For more information about obtaining FCM credentials, see [Credentials](https://firebase.google.com/docs/cloud-messaging/concept-options#credentials) in the Firebase documentation\.
    + **Baidu Cloud Push** – Requires an API key and a secret key, which you get from your Baidu Cloud Push project\.
    + **Amazon Device Messaging** – Requires the OAuth credentials \(Client ID and Client Secret\) from your Amazon Developer account\. For more information, see [Obtain Credentials](https://developer.amazon.com/public/apis/engage/device-messaging/tech-docs/adm-obtaining-credentials) in the Amazon Device Messaging developer documentation\.
 

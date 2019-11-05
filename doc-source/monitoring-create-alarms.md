@@ -1,30 +1,39 @@
 # Create CloudWatch Alarms for Amazon Pinpoint Metrics<a name="monitoring-create-alarms"></a>
 
-In CloudWatch, you can create alarms that send notifications when specific metrics exceed a particular value\. For example, you could set an alarm that sends you an email when the **ImportedEndpointFailure** metric exceeds a certain value\. In this example, if the number of endpoint import failures exceeds the threshold that you specified, you receive an email alerting you of the issue\. This section contains procedures for setting up an alarm for Amazon Pinpoint metrics in the CloudWatch console\.
+In Amazon CloudWatch, you can create an alarm that sends a notification when the value of a certain metric is within or outside a threshold that you define\. For example, you can create an alarm that notifies you if more than a certain number of campaign messages weren't sent due to a temporary issue\. In this example, the alarm sends a notification if the value of the **CampaignSendMessageTemporaryFailure** metric is greater than the value that you specify\. 
 
-**Important**  
-Before you can complete the procedures in this section, you first have to create an Amazon SNS topic and subscribe an endpoint to it\. For more information, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) and [Subscribe to a Topic](https://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
+This topic explains how to create an alarm for an Amazon Pinpoint metric by using the CloudWatch console\. For more information about creating alarms, including detailed information about alarm configuration settings, see [Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the *Amazon CloudWatch User Guide*\.
 
-**To create an alarm for Amazon Pinpoint metrics in the CloudWatch console**
+**To create an alarm for an Amazon Pinpoint metric**
 
 1. Open the CloudWatch console at [https://console\.aws\.amazon\.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)\.
 
-1. Choose **Alarms**, and then choose the **Create Alarm** button\. The **Create Alarm** wizard appears\. 
+1. In the navigation pane, choose **Alarms**\.
 
-1. In the **Pinpoint Metrics** section, choose the metric you want to create an alarm for\. Choose **Next**\. 
+1. Choose **Create alarm**\.
 
-1. In the **Alarm Threshold** section, do the following:
-   + Type a **Name** and a **Description** for the alarm\.
-   + Specify the value that causes CloudWatch to raise an alarm, as shown in the following image\.  
-![\[The Alarm Threshold section of the CloudWatch alarm creation wizard. The alarm is set to trigger whenever the ImportedEndpointFailure metric is greater than or equal to 10 for 1 out of 1 consecutive datapoints.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/monitoring-cw-alarm-trigger.png)![\[The Alarm Threshold section of the CloudWatch alarm creation wizard. The alarm is set to trigger whenever the ImportedEndpointFailure metric is greater than or equal to 10 for 1 out of 1 consecutive datapoints.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Alarm Threshold section of the CloudWatch alarm creation wizard. The alarm is set to trigger whenever the ImportedEndpointFailure metric is greater than or equal to 10 for 1 out of 1 consecutive datapoints.\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+1. Choose **Select metric**\.
 
-1. In the **Actions** section, do the following:
-   + For **Whenever this alarm**, choose **State is ALARM**\. This setting tells CloudWatch to send a notification when the state of the alarm is `ALARM` \(as opposed to `OK` or `INSUFFICIENT`\)\.
-   + For **Send notification to**, choose the Amazon SNS topic that should be notified when the alarm is triggered, as shown in the following image\.  
-![\[The Actions section of the CloudWatch alarm creation wizard. In this example, whenever the state of the alarm is ALARM, CloudWatch sends a notification to an Amazon SNS topic called "ops-team".\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/monitoring-send-notification.png)![\[The Actions section of the CloudWatch alarm creation wizard. In this example, whenever the state of the alarm is ALARM, CloudWatch sends a notification to an Amazon SNS topic called "ops-team".\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)![\[The Actions section of the CloudWatch alarm creation wizard. In this example, whenever the state of the alarm is ALARM, CloudWatch sends a notification to an Amazon SNS topic called "ops-team".\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/)
+1. On the **All metrics** tab, choose **Pinpoint**, and then choose the type of metric that you want to create an alarm for\. The types of available metrics depends on the Amazon Pinpoint features that you use\.
 
-1. Choose **Create Alarm**\.
-**Note**  
-There are additional settings that you can configure when you create a CloudWatch alarm\. For additional information about configuring CloudWatch alarms, see [Create or Edit a CloudWatch Alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html) in the *Amazon CloudWatch User Guide*\.
+1. Select the metric that you want to create an alarm for, and then choose **Select metric**\. The **Specify metric and conditions** page appears, showing a graph and other information about the metric\.
 
-For more information about using CloudWatch and alarms, see the [CloudWatch Documentation](https://aws.amazon.com/documentation/cloudwatch)\.
+1. Under **Conditions**, complete the following steps:
+   + For **Threshold type**, choose **Static**\.
+   + For **Whenever **metric** is**, specify whether you want the value of the metric to be greater than, greater than or equal to, less than, or less than or equal to the threshold to trigger the alarm\. Then, under **than**, enter the threshold value that you want to trigger the alarm\.
+
+1. Under **Additional configuration**, complete the following steps:
+   + For **Datapoints to alarm**, enter the number of evaluation periods \(datapoints\) during which the metric value must meet the threshold conditions to trigger the alarm\.
+   + For **Missing data treatment**, choose what you want the alarm to do if some data is missing\.
+
+1. Choose **Next**\.
+
+1. Under **Notification**, complete the following steps:
+   + For **Whenever this alarm state is**, choose **in Alarm**\.
+   + For **Select an SNS topic**, choose or create an Amazon Simple Notification Service \(Amazon SNS\) topic that you want the alarm notification to be sent to\.
+
+1. Choose **Next**\.
+
+1. Enter a name and, optionally, a description for the alarm, and then choose **Next**\.
+
+1. Under **Preview and create**, review and confirm that the alarm settings are what you want, and then choose **Create alarm**\.

@@ -1,12 +1,12 @@
 # Step 2: Upload a List of Segment Members to Amazon S3<a name="tutorials-send-an-email-upload-contacts"></a>
 
-To create a segment of customers in Amazon Pinpoint, you first have to upload a spreadsheet that contains those customers' contact details to an Amazon S3 *bucket*\. 
+To create a segment of customers that you can use with this tutorial in Amazon Pinpoint, you first have to upload a spreadsheet that contains those customers' contact details to an Amazon S3 *bucket*\. 
 
 In Amazon S3, a bucket is a container that you use to store files and folders\. Each bucket can have its own permission settings\. For example, you can set up a bucket so that its contents are accessible to anyone who has the address of the bucket\. Or you could set it up so that its contents are only available to you\. To learn more about Amazon S3, see [Introduction to Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
 **To create a list of contacts and upload it to Amazon S3**
 
-1. In a spreadsheet application, create a spreadsheet that contains information about the contacts that you want to send the email to\. Use the following template as an example\. Change the values in the **Address**, **User\.UserAttributes\.FirstName**, and **User\.UserAttributes\.LastName** fields to represent the people who you want to contact\. Don't change the column headings or the values in the **ChannelType** column\.    
+1. In a spreadsheet application, create a spreadsheet that contains information about the contacts that you want to send email to\. Use the following template as an example\. Change the values in the **Address**, **User\.UserAttributes\.FirstName**, and **User\.UserAttributes\.LastName** fields to represent the people who you want to contact\. Don't change the column headings or the values in the **ChannelType** column\.    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/tutorials-send-an-email-upload-contacts.html)
 **Note**  
 You can include additional fields if necessary\. For a list of other fields you can specify, see the table in [Available Attributes](segments-importing.md#segments-importing-available-attributes)\.

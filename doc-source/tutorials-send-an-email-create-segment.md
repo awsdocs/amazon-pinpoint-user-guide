@@ -18,9 +18,9 @@ When you create a segment in Amazon Pinpoint, you can reuse it later in a differ
 
    1. Choose **Import a segment**\.
 
-   1. For **Segment name**, type a name for the segment\.
+   1. For **Segment name**, enter a name for the segment\.
 
-   1. For **Amazon S3 URL**, type the following:
+   1. For **Amazon S3 URL**, enter the following:
 
       ```
       s3://bucketName/folderName

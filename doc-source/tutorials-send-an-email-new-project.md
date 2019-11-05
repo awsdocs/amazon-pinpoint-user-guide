@@ -10,14 +10,14 @@ The procedure in this section shows you how to create a new email project by usi
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose **Create a project**\.
+1. On the **All projects** page, choose **Create a project**\.
 
-1. For **Project name**, type a name, and then choose **Create**\.
+1. For **Project name**, enter a name, and then choose **Create**\.
 **Note**  
 The project name can contain up to 64 alphanumeric characters\. It can also include the following characters: comma \(,\), period \(\.\), at sign \(@\), underscore \(\_\), equals sign \(=\), and plus sign \(\+\)\.
 
 1. Under **Messaging channels**, next to **Email**, choose **Configure**\.
 
-1. For **Email address**, type the email address that you want to verify, and then choose **Verify**\. Amazon Pinpoint sends an email to the address you specified\. Open the email, and then click the link in the message to verify your email address\.
+1. For **Email address**, enter the email address that you want to verify, and then choose **Verify**\. Amazon Pinpoint sends an email to the address you specified\. Open the email, and then click the link in the message to verify your email address\.
 
 **Next:** [Upload a List of Segment Members to Amazon S3 »](tutorials-send-an-email-upload-contacts.md)

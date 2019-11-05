@@ -12,12 +12,12 @@ Your dedicated origination number is assigned to your AWS account, and it's avai
 + 
 
 **A dedicated sender ID**  
-A *sender ID* is a custom ID that is shown as the sender on the recipient's device\. For example, you can use your business brand to make the message source easier to recognize\. Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+A *sender ID* is a custom ID that is shown as the sender on the recipient's device\. For example, you can use your business brand to make the message source easier to recognize\. Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
 When you create your case in the AWS Support Center, include all the information that's required for the type of request you're submitting\. Otherwise, AWS Support contacts you to obtain this information before proceeding\. By submitting a detailed case, you help ensure that your case is fulfilled without delays\. For the details that are required for specific types of SMS requests, see the following topics\.
 
 **Topics**
-+ [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)
++ [Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)
 + [Requesting Dedicated Short Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-short-code.md)
 + [Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)
 + [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)

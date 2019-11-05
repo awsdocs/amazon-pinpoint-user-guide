@@ -49,7 +49,7 @@ Finally, the GSM 03\.38 character set also includes the following non\-printed c
 
 ## Restrictions for Specific Countries or Regions<a name="channels-sms-limitations-country-specific"></a>
 
-Amazon Pinpoint is currently unable to send SMS messages to a small number of countries, including Cuba, Iran, North Korea, Syria, and Sudan\. For a complete list of countries and regions that you can send SMS messages to, see [Supported Countries and Regions](channels-sms-countries.md)\.
+Amazon Pinpoint is currently unable to send SMS messages to a small number of countries, including Cuba, Iran, North Korea, Syria, and Sudan\. For a complete list of countries and regions that you can send SMS messages to, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
 Most countries and regions place restrictions on the type of content that you can send using SMS\. These restrictions vary, but the following types of content are restricted in most countries or regions:
 + Pornographic content

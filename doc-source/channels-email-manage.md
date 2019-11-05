@@ -7,3 +7,4 @@ You have the following options for managing your email channel with Amazon Pinpo
 **Topics**
 + [Updating Email Settings](channels-email-manage-update.md)
 + [Managing Email Sending Limits](channels-email-manage-limits.md)
++ [Global Suppression List](channels-email-manage-suppression-list.md)

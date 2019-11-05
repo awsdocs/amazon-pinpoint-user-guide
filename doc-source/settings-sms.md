@@ -29,7 +29,7 @@ The Amazon Pinpoint console provides several options to help you update and mana
    + **Account\-level settings** – Change these settings to modify the SMS settings for your AWS account\. These settings apply to your entire Amazon Pinpoint account and to all AWS services that you can use to send SMS messages, such as Amazon Simple Notification Service\. You can change the following settings:
      + **Default message type** – Choose the type of SMS messages that you plan to send\. If you plan to send time\-sensitive content, such as alerts and one\-time passwords, choose **Transactional**\. If you plan to send marketing\-related content, choose **Promotional**\.
      + **Account spend limit** – Specify the maximum amount of money, in US Dollars, that you want to spend sending SMS messages during each calendar month\.
-     + **Default sender ID** – Optionally, specify the sender ID that you plan to use to send SMS messages\. A sender ID is an alphanumeric identifier that appears on recipients' devices when they receive messages from you\. Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+     + **Default sender ID** – Optionally, specify the sender ID that you plan to use to send SMS messages\. A sender ID is an alphanumeric identifier that appears on recipients' devices when they receive messages from you\. Support for sender IDs varies by country or region\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
 1. When you finish making changes, choose **Save changes**\.
 

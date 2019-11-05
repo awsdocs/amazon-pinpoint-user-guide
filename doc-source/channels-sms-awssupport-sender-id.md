@@ -1,17 +1,22 @@
 # Requesting Sender IDs for SMS Messaging with Amazon Pinpoint<a name="channels-sms-awssupport-sender-id"></a>
 
-A sender ID is a custom name that's displayed as the message sender on the receiving device\. For example, you can use your business brand to make the message source easier to recognize\.
+In SMS messaging, a *sender ID* is a name that appears as the message sender on recipients' devices\. Sender IDs are a useful way to identify yourself to the recipients of your messages\.
 
-Support for sender IDs varies by country or region\. For example, messages delivered to U\.S\. phone numbers don't display the sender ID\. For the countries and regions that support sender IDs, see [Supported Regions and Countries](https://docs.aws.amazon.com/sns/latest/dg/sms_supported-countries.html)\.
+Support for sender IDs varies by country\. For example, carriers in the United States don't support sender IDs at all, but carriers in India require senders to use sender IDs\. For a complete list of countries that support sender IDs, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
 **Important**  
-If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 \(USD\)\. You can request to increase your spend threshold in the same support case that includes your request for a sender ID\. Or, if you prefer, you can open a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+Some countries require you to register sender IDs before you use them to send messages\. Depending on the country, this registration process might take several weeks\. The countries that require pre\-registered sender IDs are indicated in the table on the [Supported Countries](channels-sms-countries.md) page\.
 
-When we receive your request for a sender ID, we respond within 24 business hours\. It typically takes 2–4 weeks to provision a sender ID, but in some countries and regions, it might take longer\. When we respond to your request, we provide an estimate of the amount of time it will take to obtain your sender ID\.
+If you're sending messages to recipients in a country where sender IDs are supported, and that country doesn't require you to register your sender ID, you don't have to perform any additional steps\. You can start sending messages that include sender ID values immediately\.
+
+You only need to complete the procedures on this page if you plan to send messages to a country where registration of sender IDs is required\.
 
 ## Step 1: Open an Amazon Pinpoint SMS Case<a name="channels-sms-awssupport-sender-id-open"></a>
 
-You can request a sender ID by creating a new case in the AWS Support Center\.
+If you plan to send messages to recipients a country where sender IDs are required, you can request a sender ID by creating a new case in the AWS Support Center\.
+
+**Note**  
+If you plan to send messages to recipients in a country where sender IDs are allowed but not required, you don't need to open a case in the Support Center\. You can start sending messages that use sender IDs immediately\. 
 
 **To request a sender ID**
 
@@ -23,18 +28,18 @@ You can request a sender ID by creating a new case in the AWS Support Center\.
 
 1. Under **Case classification**, do the following:
 
-   1. For **Limit Type**, choose **Pinpoint SMS**\.
+   1. For **Limit type**, choose **Pinpoint SMS**\.
 
    1. For **Link to site or app which will be sending SMS**, identify the website or application where your audience members opt in to receive your SMS messages\.
 
    1. For **Type of messages**, choose the type of message that you plan to send using your sender ID:
-      + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
-      + **Promotional** – Noncritical messages that promote your business or service, such as special offers or announcements\.
       + **One Time Password** – Messages that provide passwords to authenticate with your website or application\.
+      + **Promotional** – Noncritical messages that promote your business or service, such as special offers or announcements\.
+      + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
 
-   1. For **Targeted Countries**, specify the countries where you want to register a sender ID\. Support for sender IDs and sender ID registration requirements vary by country\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+   1. For **Targeted Countries**, specify the countries where you want to register a sender ID\. Support for sender IDs and sender ID registration requirements vary by country\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
-      If your list of countries exceeds the character limit for this text box, you can instead specify the countries in the **Use Case Description** box\.
+      If the list of countries exceeds the character limit for this text box, you can instead list the countries in the **Case description** section\.
 
 1. Under **Requests**, do the following:
 
@@ -44,9 +49,20 @@ You can request a sender ID by creating a new case in the AWS Support Center\.
 
    1. For **New limit value**, type the number of sender IDs that you're requesting\. Typically, this value is **1**\.
 
+1. Under **Case description**, for **Use case description**, provide the following information:
+   + The sender ID that you want to register\.
+   + The template that you plan to use for your SMS messages\.
+   + The number of messages that you plan to send to each recipient per month\.
+   + Information about how your customers opt in to receiving messages from you\.
+   + The name of your company or organization\.
+   + The address that's associated with your company or organization\.
+   + The country where your company or organization is based\.
+   + A phone number for your company or organization\.
+   + The URL of the website for your company or organization\.
+
 After we receive your request, we provide an initial response within 24 hours\. We might contact you to request additional information\.
 
-If we're able to provide you with a Sender ID, we send you an estimate of the amount of time that's required to provision it\. In many countries, we can provide you with a Sender ID within 2–4 weeks\. However, in some countries and regions, it can take several weeks to obtain a Sender ID\.
+If we're able to provide you with a Sender ID, we send you an estimate of the amount of time that's required to provision it\. In many countries, we can provide you with a Sender ID within 2–4 weeks\. However, in some countries, it can take several weeks to obtain a Sender ID\.
 
 In order to prevent our systems from being used to send unsolicited or malicious content, we have to consider each request carefully\. We might not be able to grant your request if your use case doesn’t align with our policies\.
 

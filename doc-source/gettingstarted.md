@@ -17,8 +17,7 @@ If you're a software developer or system administrator, you might also find the 
 This tutorial shows you how to complete all of the following steps by using the Amazon Pinpoint console:
 + Importing customer data from a file\.
 + Creating a segment that targets specific users based on their attributes\.
-+ Creating an template for sending responsive HTML emails\.
-+ Creating a email campaign and scheduling it to be sent at a specific time\.
++ Creating an email campaign and scheduling it to be sent at a specific time\.
 + Viewing email delivery and response data by using the analytics dashboards that are built into Amazon Pinpoint\.
 
 **Time Required**  

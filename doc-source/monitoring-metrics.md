@@ -1,6 +1,6 @@
 # Amazon Pinpoint Metrics That Are Exported to CloudWatch<a name="monitoring-metrics"></a>
 
-The following sections describe the metrics that Amazon Pinpoint exports to CloudWatch\.
+The following topics describe the metrics that Amazon Pinpoint exports to CloudWatch\.
 
 **Topics**
 + [Metrics Related to Message Delivery](#monitoring-metrics-delivery)

@@ -6,7 +6,7 @@ When you send SMS messages using Amazon Pinpoint, you can identify yourself to y
 
 A sender ID is an alphabetic name that identifies the sender of an SMS message\. When you send an SMS message using a sender ID, and the recipient is in an area where sender ID authentication is supported, your sender ID appears on the recipient’s device instead of a phone number\. A sender ID provides SMS recipients with more information about the sender than a phone number or short code provides\.
 
-Sender IDs are supported in several countries and regions around the world\. In some places, if you're a business that sends SMS messages to individual customers, you must use a sender ID that's pre\-registered with a regulatory agency or industry group\. For a complete list of countries and regions that support or require sender IDs, see [Supported Countries and Regions](channels-sms-countries.md)\.
+Sender IDs are supported in several countries and regions around the world\. In some places, if you're a business that sends SMS messages to individual customers, you must use a sender ID that's pre\-registered with a regulatory agency or industry group\. For a complete list of countries and regions that support or require sender IDs, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
 **Advantages**
 

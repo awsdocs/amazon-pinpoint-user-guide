@@ -1,4 +1,4 @@
-# Requesting Increases to Your Monthly SMS Spend Threshold for Amazon Pinpoint<a name="channels-sms-awssupport-spend-threshold"></a>
+# Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint<a name="channels-sms-awssupport-spend-threshold"></a>
 
 Your spending limit determines how much money you can spend sending SMS messages through Amazon Pinpoint each month\. When Amazon Pinpoint determines that sending an SMS message would incur a cost that exceeds your spending limit for the current month, it stops publishing SMS messages within minutes\.
 
@@ -7,7 +7,7 @@ Because Amazon Pinpoint is a distributed system, it stops sending SMS messages w
 
 We set the spending limit for all new accounts at $1\.00 \(USD\) per month\. This limit is intended to let you test the message\-sending capabilities of Amazon Pinpoint\. This limit also helps to reduce the risk of sending large campaigns before you're actually ready to use Amazon Pinpoint for your production workloads\. Finally, this limit is necessary to prevent malicious users from abusing Amazon Pinpoint\.
 
-AWS Support typically processes your case within 2 business days\. Depending on the spending limit that you request and the complexity of your case, AWS Support might require an additional 3–5 days to ensure that your request can be processed\.
+To request an increase to the SMS spending limit for your account, open a Service Limit Increase case in the AWS Support Center\.
 
 ## Step 1: Open an Amazon Pinpoint SMS Case<a name="channels-sms-awssupport-spend-threshold-open"></a>
 
@@ -35,9 +35,9 @@ Some of the fields on the request form are marked as "optional\." However, AWS S
       + **Promotional** – Noncritical messages that promote your business or service, such as special offers or announcements\.
       + **One Time Passwords** – Messages that provide passwords that your customers use to authenticate with your website or application\.
 
-   1. For **Targeted Countries**, specify the countries that you send SMS messages to\. For more information, see [Supported Countries and Regions](channels-sms-countries.md)\.
+   1. For **Targeted Countries**, specify the countries that you send SMS messages to\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
-      If your list of countries exceeds the character limit for this text box, you can instead specify your countries in the **Use Case Description** box\.
+      If your list of countries exceeds the character limit for this text box, you can instead list the countries in the **Use Case Description** box\.
 
 1. In the **Requests** section, do the following:
 
@@ -56,7 +56,7 @@ Some of the fields on the request form are marked as "optional\." However, AWS S
    + The service that's provided by your website or app, and how your SMS messages contribute to that service\.
    + How users sign up to voluntarily receive your SMS messages on your website, app, or other location\.
 
-   If your requested spend threshold \(the value you specified for **New limit value**\) exceeds $10,000 \(USD\), provide the following additional details for each country that you're messaging:
+   If your requested spending limit \(the value you specified for **New limit value**\) exceeds $10,000 \(USD\), provide the following additional details for each country that you're messaging:
    + Whether you're using a sender ID or short code\. If you're using a sender ID, provide:
      + The sender ID\.
      + Whether the sender ID is registered with wireless carriers in the country\.
@@ -75,7 +75,7 @@ We might not be able to grant your request if your use case doesn’t align with
 
 ## Step 2: Update Your SMS Settings in the Amazon Pinpoint Console<a name="channels-sms-awssupport-spend-threshold-settings"></a>
 
-After we notify you that your monthly spend threshold has been increased, you have to adjust the spending limit for your account in the Amazon Pinpoint console\.
+After we notify you that your monthly spending limit has been increased, you have to adjust the spending limit for your account in the Amazon Pinpoint console\.
 
 **To adjust your spending limit in the console**
 

@@ -3,7 +3,7 @@
 Amazon Pinpoint includes support for *two\-way SMS*, which allows you to receive messages from your customers\. You can configure Amazon Pinpoint to automatically send responses to your customers based on the content of the messages they send you\.
 
 **Note**  
-Two\-way SMS is only available in certain countries and regions\. For more information about two\-way SMS support by country or region, see [Supported Countries and Regions](channels-sms-countries.md)\.
+Two\-way SMS is only available in certain countries and regions\. For more information about two\-way SMS support by country or region, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
 ## Two\-Way SMS Use Cases<a name="channels-sms-two-way-use-cases"></a>
 

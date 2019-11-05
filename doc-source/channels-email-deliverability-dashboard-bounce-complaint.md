@@ -1,6 +1,6 @@
 # Bounce and Complaint Rates<a name="channels-email-deliverability-dashboard-bounce-complaint"></a>
 
-On the **Bounce and complaint rates** page, you can find important metrics related to the bounce and complaint rates for your entire Amazon Pinpoint account\.
+On the **Bounce and complaint rates** page, you can find important metrics related to the bounce and complaint rates for your combined Amazon Pinpoint and Amazon Simple Email Service \(Amazon SES\) account\.
 
 A *bounce* occurs when an email that you send can't be delivered because of a permanent issue\. For example, a bounce might occur if the recipient's address doesn't exist, or if the recipient's email providers is blocking email from your domain or IP address\. Email providers consider a high bounce rate to be a negative sign, because it indicates that you're sending email to people who haven't explicitly opted to receive messages from you\. A high bounce rate could have a negative impact on the delivery of your emails\.
 
@@ -15,7 +15,7 @@ You can use the **Bounce and complaint rates** page to keep track of these accou
 The **Overview** tab contains information about the bounce and complaint rates for account\.
 
 **Note**  
-This page shows bounce and complaint metrics for your entire AWS account in the current AWS Region\. If you use both Amazon SES and Amazon Pinpoint to send email, this page shows the combined bounce and complaint metrics for both services\.
+This page shows bounce and complaint metrics for your entire AWS account in the current AWS Region\. If you use both Amazon Pinpoint and Amazon SES to send email, this page shows the combined bounce and complaint metrics for both services\.
 
 ### Summary<a name="channels-email-deliverability-dashboard-bounce-complaint-overview-summary"></a>
 
@@ -23,7 +23,7 @@ This section shows the status of your account\. The following is a list of possi
 + **Healthy** – There are no issues currently impacting your account\.
 + **Under review** – Your account is under review\. If the issues that caused us to place your account under review aren't resolved by the end of the review period, we might pause your account's ability to send email\.
 + **Pending end of review decision** – Your account is under review\. Because of the nature of the issues that caused us to place your account under review, we need to perform a manual review of your account before we take any further action\.
-+ **Sending paused** – We've paused your account's ability to send email\. While your account's ability to send email is paused, you won't be able to send email using Amazon Pinpoint\. You can request that we review this decision\.
++ **Sending paused** – We've paused your account's ability to send email\. While your account's ability to send email is paused, you won't be able to send email using Amazon Pinpoint or Amazon SES\. You can request that we review this decision\.
 + **Pending sending pause** – Your account is under review\. The issues that caused us to place your account under review haven't been resolved\. In this situation, we typically pause your account's ability to send email\. However, because of the nature of your account, we need to review your account before any further action is taken\.
 
 The number that's shown under **Emails sent** is the number of emails that we considered in making this determination\. The number under **Sent over period** is the period of time during which you sent those emails\.
