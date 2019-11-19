@@ -88,6 +88,8 @@ Amazon's trademarks and trade dress may not be used in
    + [Creating Email Templates](message-templates-creating-email.md)
    + [Creating Push Notification Templates](message-templates-creating-push.md)
    + [Creating SMS Templates](message-templates-creating-sms.md)
+   + [Creating Voice Templates](message-templates-creating-voice.md)
+   + [Adding Personalized Content to Message Templates](message-templates-personalizing.md)
    + [Managing Message Templates](message-templates-managing.md)
 + [Amazon Pinpoint Campaigns](campaigns.md)
    + [Step 1: Create a Campaign](campaigns-begin.md)

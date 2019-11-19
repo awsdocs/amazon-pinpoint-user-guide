@@ -1,10 +1,11 @@
 # Document History for Amazon Pinpoint<a name="doc-history"></a>
 
 The following table describes important changes in each release of the *Amazon Pinpoint User Guide* after December 2018\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
-+ **Latest documentation update:** October 31, 2019
++ **Latest documentation update:** November 18, 2019
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Templates](#doc-history) | You can now create, view, and manage [message templates](https://docs.aws.amazon.com/pinpoint/latest/userguide/messages-templates.html) for voice messages\. You can also specify default values for message variables that you use in any type of message template\. | November 18, 2019 | 
 | [Journeys](#doc-history) | Your Amazon Pinpoint projects can now include [journeys](https://docs.aws.amazon.com/pinpoint/latest/userguide/journeys.html)—multi\-step campaign messaging workflows\. | October 31, 2019 | 
 | [Templates](#doc-history) | You can now create, view, and manage all the [message templates](https://docs.aws.amazon.com/pinpoint/latest/userguide/messages-templates.html) for your Amazon Pinpoint account from a single location\. You can use these templates in messages that you send for any of your Amazon Pinpoint projects\. | October 7, 2019 | 
 | [Analytics](#doc-history) | For campaigns that send email, push notifications, or SMS messages, we replaced the endpoints messaged metric with metrics and charts that show the number of unique endpoints that a campaign was sent to in a 24\-hour period\. For campaigns that send push notifications, we replaced the event count metrics for sessions per unique endpoint and purchases per unique endpoint with metrics and charts that show the number of times an app was opened and the number of units that were purchased in a 24\-hour period after a campaign was sent\. All the new metrics and charts are available for both standard and A/B test campaigns\. | July 25, 2019 | 

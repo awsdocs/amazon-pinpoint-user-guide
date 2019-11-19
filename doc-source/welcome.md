@@ -12,7 +12,7 @@ This section describes the major features of Amazon Pinpoint and the tasks that 
 
 ### Define Audience Segments<a name="welcome-segments"></a>
 
-Reach the right audience for your messages by [defining audience segments](segments.md)\. A segment designates which users receive the messages that are sent from a campaign\. You can define dynamic segments based on data that's reported by your application, such as operating system or mobile device type\. You can also import static segments that you define outside of Amazon Pinpoint\.
+Reach the right audience for your messages by [defining audience segments](segments.md)\. A segment designates which users receive the messages that are sent from a campaign or journey\. You can define dynamic segments based on data that's reported by your application, such as operating system or mobile device type\. You can also import static segments that you define outside of Amazon Pinpoint\.
 
 ### Engage Your Audience with Messaging Campaigns<a name="welcome-campaigns"></a>
 
@@ -22,7 +22,7 @@ To experiment with alternative campaign strategies, set up your campaign as an A
 
 ### Provide Consistent Messaging with Templates<a name="welcome-templates"></a>
 
-Design consistent messages and reuse content more effectively by [creating and using message templates](messages-templates.md)\. A message template contains content and settings that you want to reuse in messages that you send for any of your Amazon Pinpoint projects\. You can use message templates in email messages, push notifications, and SMS messages\.
+Design consistent messages and reuse content more effectively by [creating and using message templates](messages-templates.md)\. A message template contains content and settings that you want to reuse in messages that you send for any of your Amazon Pinpoint projects\. You can use message templates in email messages, push notifications, SMS messages, and voice messages\.
 
 ### Send Test Messages<a name="welcome-transactional"></a>
 
@@ -30,7 +30,7 @@ Test the design and deliverability of your messages by [sending test messages](m
 
 ### Create User Journeys<a name="welcome-journeys"></a>
 
-Create multi\-step Journeys that send messages to your customers based on their attributes, behaviors, and activities\.
+Create multi\-step journeys that send messages to your customers based on their attributes, behaviors, and activities\.
 
 ### Analyze User Behavior<a name="welcome-analyze"></a>
 

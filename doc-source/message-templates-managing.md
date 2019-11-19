@@ -9,7 +9,7 @@ The **Message templates** page on the Amazon Pinpoint console provides a single 
 + [Editing a Message Template](#message-templates-managing-edit)
 + [Deleting a Message Template](#message-templates-managing-delete)
 
-For information about creating a message template, see [Creating Email Templates](message-templates-creating-email.md), [Creating Push Notification Templates](message-templates-creating-push.md), or [Creating SMS Templates](message-templates-creating-sms.md), depending on the type of template that you want to create\.
+For information about creating a message template, see [Creating Email Templates](message-templates-creating-email.md), [Creating Push Notification Templates](message-templates-creating-push.md), [Creating SMS Templates](message-templates-creating-sms.md), or [Creating Voice Templates](message-templates-creating-voice.md), depending on the type of template that you want to create\.
 
 ## Viewing Your Collection of Message Templates<a name="message-templates-managing-view-all"></a>
 
@@ -63,9 +63,7 @@ To quickly create a new message template that's similar to an existing template,
 
 1. When you finish entering the name, choose **Duplicate template**\. The template page opens and displays all the content and settings for the template that you copied\.
 
-1. Choose **Edit**\.
-
-1. In the message details section, make the changes that you want\.
+1. Choose **Edit**, and then make any changes that you want\.
 
 1. When you finish making changes, choose **Update**\.
 
@@ -85,13 +83,13 @@ If you edit a template, Amazon Pinpoint doesn't apply the changes to any existin
 
 1. Choose **Edit**\.
 
-1. Make the changes that you want\. You can change any of the content, except the name of the template\. To change the name of the template, [create a copy of the template](#message-templates-managing-copy), save the copy with the name that you want, and then delete the original template\.
+1. Make the changes that you want\. You can change any of the template's content or settings, except the name of the template\. To change the name of the template, [create a copy of the template](#message-templates-managing-copy), save the copy with the name that you want, and then delete the original template\.
 
 1. When you finish making changes, choose **Update**\.
 
 ## Deleting a Message Template<a name="message-templates-managing-delete"></a>
 
-If you want to remove a message template from Amazon Pinpoint completely, you can delete the template\. If you delete a template, it won't affect any existing messages that use the template, such as a campaign messages that are scheduled to be sent at a later time\.
+If you want to remove a message template from Amazon Pinpoint completely, you can delete the template\. If you delete a template, it won't affect any existing messages that use the template, such as campaign messages that are scheduled to be sent at a later time\.
 
 **Warning**  
 If you delete a template, Amazon Pinpoint deletes all the content and settings for the template, and the template becomes unavailable for all future messages\. You can't recover a template after you delete it\. 
