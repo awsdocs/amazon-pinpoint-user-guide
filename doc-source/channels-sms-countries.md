@@ -45,7 +45,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Cameroon | CM | Yes |  | 
 | Canada | CA |  | Yes | 
 | Cape Verde | CV | Yes |  | 
-| Cayman Islands | KY | No |  | 
+| Cayman Islands | KY |  |  | 
 | Central African Republic | CF | Yes |  | 
 | Chad | TD | Yes |  | 
 | Chile | CL |  | Yes | 
@@ -102,12 +102,12 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Italy | IT | Yes | Yes | 
 | Ivory Coast | CI |  |  | 
 | Jamaica | JM | Yes |  | 
-| Japan | JP | Yes[2](#sms-support-note-2) | Yes | 
+| Japan | JP |  | Yes | 
 | Jordan | JO | Yes[1](#sms-support-note-1) |  | 
 | Kazakhstan | KZ |  |  | 
 | Kenya | KE |  |  | 
 | Kiribati | KI |  |  | 
-| Kuwait | KW |  |  | 
+| Belarus | KW | Yes[1](#sms-support-note-1) |  | 
 | Kyrgyzstan | KG |  |  | 
 | Laos | LA |  |  | 
 | Latvia | LV | Yes | Yes | 
@@ -155,7 +155,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Panama | PA |  |  | 
 | Papua New Guinea | PG | Yes |  | 
 | Paraguay | PY | Yes |  | 
-| Peru | PE | No |  | 
+| Peru | PE |  |  | 
 | Philippines | PH |  | Yes | 
 | Poland | PL | Yes | Yes | 
 | Portugal | PT | Yes | Yes | 
@@ -220,8 +220,6 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 **Notes**
 
 1. <a name="sms-support-note-1"></a>Senders are required to use a pre\-registered alphabetic sender ID\. To request a sender ID from AWS Support, see [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might contact you for additional information after you submit your sender ID request\.
-
-1. <a name="sms-support-note-2"></a>All carriers in Japan except KDDI support sender ID\.
 
 ## Sender ID Support<a name="channels-sms-countries-sender-id"></a>
 

@@ -230,4 +230,4 @@ You can replace attribute names that are shown in italics with any value\. For e
 | User\.UserId | The unique ID of the user\. | 
 
 **Note**  
-You can specify up to 20 custom attributes per endpoint for `Attributes`, `Metrics`, and `User.UserAttributes`\. However, you can create no more than 40 custom attributes per AWS account\.
+You can specify up to 20 custom attributes per endpoint for `Attributes`, `Metrics`, and `User.UserAttributes`\. However, you can create no more than 40 custom attributes per project\.

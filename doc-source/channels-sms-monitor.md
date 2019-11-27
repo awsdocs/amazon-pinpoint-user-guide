@@ -6,7 +6,7 @@ Amazon Pinpoint provides the following options for monitoring your SMS activity\
 
 To monitor your SMS activity, such as the number of successful and failed message deliveries, you can configure Amazon Pinpoint to stream SMS event data to Amazon Kinesis Data Streams or Amazon Kinesis Data Firehose\. Then, you can use the Kinesis platform to analyze your SMS data\. For more information, see [Streaming Amazon Pinpoint Events to Kinesis](analytics-streaming.md#analytics-streaming-kinesis)\.
 
-For examples of the event data that Amazon Pinpoint streams to Kinesis, see [Event Data](http://docs.aws.amazon.com/pinpoint/latest/developerguide/analytics-streaming.html#analytics-streaming-data) in the *Amazon Pinpoint Developer Guide*\.
+For examples of the event data that Amazon Pinpoint streams to Kinesis, see [SMS Events](http://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams-data-sms.html) in the *Amazon Pinpoint Developer Guide*\.
 
 ## Amazon Pinpoint Analytics<a name="channels-sms-monitor-analytics"></a>
 

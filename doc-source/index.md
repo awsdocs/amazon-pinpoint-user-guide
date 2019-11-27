@@ -118,7 +118,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Campaign Charts](analytics-campaigns.md)
       + [Transactional Messaging Charts](analytics-transactional-messages.md)
    + [Creating Funnel Charts with Amazon Pinpoint](analytics-funnels.md)
-   + [Streaming App and Campaign Events with Amazon Pinpoint](analytics-streaming.md)
+   + [Streaming Events with Amazon Pinpoint](analytics-streaming.md)
 + [Amazon Pinpoint Settings](settings.md)
    + [General Settings](settings-general.md)
    + [Email Settings](settings-email.md)

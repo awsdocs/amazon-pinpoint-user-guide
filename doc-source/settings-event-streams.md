@@ -1,12 +1,12 @@
 # Event Stream Settings<a name="settings-event-streams"></a>
 
-Use the **Event stream** settings page to enable or disable streaming of app usage and campaign engagement data, known as *event* data, for the current project to supported AWS services\. If you enable streaming, you can also choose the type of stream and the AWS Identity and Access Management role that you want to use\. 
+Use the **Event stream** settings page to enable or disable streaming of usage and engagement data, known as *event* data, for the current project to supported AWS services\. If you enable streaming, you can also choose the type of stream and the AWS Identity and Access Management role that you want to use\. 
 
 **To set up event streaming**
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **All projects** page, choose the app for which you want to set up data streaming\.
+1. On the **All projects** page, choose the project that you want to set up data streaming for\.
 
 1. In the navigation pane, under **Settings**, choose **Event stream**\.
 
@@ -28,4 +28,4 @@ If you haven't already created an Amazon Kinesis stream, go to the Amazon Kinesi
 
 1. Choose **Save**\.
 
-As Amazon Pinpoint receives events from your app and generates campaign events, it sends this data to your Kinesis stream\. For more information about the data that Amazon Pinpoint sends for an event, see [Event Data](https://docs.aws.amazon.com/pinpoint/latest/developerguide/analytics-streaming.html#analytics-streaming-data) in the *Amazon Pinpoint Developer Guide*\.
+As Amazon Pinpoint receives events for your project, it sends this data to your Kinesis stream\. For information about the data that Amazon Pinpoint sends for an event, see [Streaming Amazon Pinpoint Events to Kinesis](https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams.html) in the *Amazon Pinpoint Developer Guide*\.
