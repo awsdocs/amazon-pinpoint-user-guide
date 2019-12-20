@@ -49,7 +49,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Central African Republic | CF | Yes |  | 
 | Chad | TD | Yes |  | 
 | Chile | CL |  | Yes | 
-| China | CN |  | Yes | 
+| China | CN |  | For support, [contact sales](https://aws.amazon.com/contact-us/aws-sales/)\. | 
 | Colombia | CO |  |  | 
 | Comoros | KM | Yes |  | 
 | Cook Islands | CK | Yes |  | 
@@ -107,7 +107,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Kazakhstan | KZ |  |  | 
 | Kenya | KE |  |  | 
 | Kiribati | KI |  |  | 
-| Belarus | KW | Yes[1](#sms-support-note-1) |  | 
+| Kuwait | KW | Yes[1](#sms-support-note-1) |  | 
 | Kyrgyzstan | KG |  |  | 
 | Laos | LA |  |  | 
 | Latvia | LV | Yes | Yes | 
@@ -210,7 +210,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Uzbekistan | UZ | Yes |  | 
 | Vanuatu | VU | Yes |  | 
 | Venezuela | VE |  |  | 
-| Vietnam | VN |  |  | 
+| Vietnam | VN | Yes[1](#sms-support-note-1) |  | 
 | Virgin Islands, British | VG | Yes |  | 
 | Virgin Islands, US | VI | Yes |  | 
 | Yemen | YE | Yes |  | 

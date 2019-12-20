@@ -1,6 +1,6 @@
 # Creating Push Notification Templates<a name="message-templates-creating-push"></a>
 
-A *push notification template* is a type of message template that contains content and settings that you want to create, save, and reuse in push notifications that you send for any of your Amazon Pinpoint projects\. When you create a push notification that’s based on a template, Amazon Pinpoint populates the notification with the content and settings that you defined in the template\. You can then send the push notification as it is or customize it\. You can use a push notification template in push notifications that you send from campaigns, or to a limited audience as direct or test messages\.
+A *push notification template* is a type of message template that contains content and settings that you want to create, save, and reuse in push notifications that you send for any of your Amazon Pinpoint projects\. When you create a push notification that’s based on a template, Amazon Pinpoint populates the notification with the content and settings that you defined in the template\. You can use a push notification template in push notifications that you send from campaigns, or to a limited audience as direct or test messages\.
 
 When you create a push notification template, you specify the content and settings that you want to reuse in various components of push notifications that are based on the template\. These components, referred to as *template parts*, can contain text \(such as the title or body of a notification\) or settings \(such as a custom sound to play when a recipient receives a notification\)\. 
 
@@ -12,25 +12,26 @@ To customize a template for specific push notification channels, you can create 
 
 1. In the navigation pane, choose **Message templates**\.
 
-1. Choose **Create a template**\.
+1. Choose **Create template**\.
 
 1. Under **Channel**, choose **Push notifications**\.
 
 1. Under **Template details**, for **Template name**, enter a name for the template\. The name has to begin with a letter or number\. It can contain up to 128 characters\. The characters can be letters, numbers, underscores \(\_\), or hyphens \(‐\)\.
 
-1. \(Optional\) For **Template description**, enter a brief description of the template\. The description can contain up to 500 characters\.
+1. \(Optional\) For **Version description**, enter a brief description of the template\. The description can contain up to 500 characters\.
 
 1. Under **Push notification details**, choose **Standard message**\.
 
    An additional option is to create a template that's formatted as a *raw message*\. A *raw message* is a type of push notification that specifies all of a notification's content and settings as a JSON object\. This type of notification can be useful for cases such as sending custom data to a mobile app for processing by that app, instead of the push notification service\.
 
-   If you choose the **Raw message** option, the message editor displays an outline of the code to use for the template\. In the message editor, enter the settings that you want to use for each push notification service, including any optional settings—such as images, sounds, and actions—that you want to specify for the template\. For more information, see the documentation for the push notification services that you use\. When you finish entering all the raw message content, skip to step 10\.
+   If you choose the **Raw message** option, the message editor displays an outline of the code to use for the template\. In the message editor, enter the settings that you want to use for each push notification service, including any optional settings—such as images, sounds, and actions—that you want to specify for the template\. For more information, see the documentation for the push notification services that you use\. When you finish entering all the raw message content, skip to [step 10](#step10)\.
 
 1. Choose any of the following options to specify the default content and settings for standard push notifications that use the template:
    + For **Title**, enter the title that you want to display above the notification message on a recipient's device\.
    + For **Body**, enter the text that you want to display in the body of the notification message\.
 **Tip**  
-You can include personalized content in the title and body of the template\. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created for the project, such as an attribute that stores a user's first name\. By using message variables, you can display different content for each recipient of a push notification that uses the template\. To use a message variable, add the name of an existing attribute to the template\. Enclose the name in two sets of curly braces and use the exact capitalization of the name—for example, \{\{Attributes\.FirstName\}\}\. For more information, see [Adding Personalized Content to Message Templates](message-templates-personalizing.md)\.
+You can include personalized content in the title and body of the template\. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created for the project, such as an attribute that stores a user's first name\. By using message variables, you can display different content for each recipient of a push notification that uses the template\.   
+To use a message variable, add the name of an existing attribute to the template\. Enclose the name in two sets of curly braces, and use the exact capitalization of the name—for example, \{\{User\.UserAttributes\.FirstName\}\}\. For more information, see [Adding Personalized Content to Message Templates](message-templates-personalizing.md)\.
    + For **Custom alert sound**, enter the name of the audio file that contains the custom sound that you want to play when a recipient receives the push notification\. This name has to match the name of an audio file on a recipient's device\.
    + For **Action**, choose what you want a recipient's device to do if the recipient taps the push notification:
      + **Open your app** – Open your app or bring it to the foreground if it was sent to the background\.
@@ -62,6 +63,10 @@ In addition to the standard content and settings, you can choose the following o
    + **Android icon** – Enter the URL of the large icon image to display in the content view of the push notification\.
    + **Android small icon** – Enter the URL of the small icon image to display in the status bar and in the content view of the push notification\.
 
-1. \(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\. To specify default values for variables, expand the **Default personalization values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
+1. <a name="step10"></a>\(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\.
+
+   To specify default values for variables, expand the **Default personalization values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
 
 1. When you finish entering content and settings for the template, choose **Create**\.
+
+If you want to test the template before you use it in a push notification that you send to users, you can [send a test notification](messages-mobile.md) that uses the template\.

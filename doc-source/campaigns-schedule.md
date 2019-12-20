@@ -61,7 +61,7 @@ You can also schedule the campaign to be sent on a recurring basis\. You can spe
 If you want to send the campaign when customers take certain actions, you can configure the campaign to be sent when a specific event occurs\. For example, you can configure the campaign to be sent when a customer registers a new account, or when a customer adds an item to their shopping cart but doesn't purchase it\. To learn more about sending events from your apps to Amazon Pinpoint, see [Reporting Events in Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-events.html) in the *Amazon Pinpoint Developer Guide*\.
 
 **Note**  
-You can only send event\-based messages if your campaign uses dynamic segments \(as opposed to imported segments\)\. Messages from event\-based campaigns are only sent to customers whose apps run version 2\.7\.2 or later of the AWS Mobile SDK for Android or version 2\.6\.30 or later of the AWS Mobile SDK for iOS\.
+You can send event\-based messages only if your campaign uses dynamic segments \(as opposed to imported segments\)\. In addition, if you integrate your app with Amazon Pinpoint by using an AWS Mobile SDK, messages from event\-based campaigns are sent only to customers whose apps are running AWS Mobile SDK for Android version 2\.7\.2 or later, or AWS Mobile SDK for iOS version 2\.6\.30 or later\.
 
 **To configure a campaign to be sent when an event occurs**
 
@@ -71,13 +71,13 @@ You can only send event\-based messages if your campaign uses dynamic segments \
 
 1. \(Optional\) For **Attributes** and **Metrics**, choose the specific characteristics that trigger the execution of the campaign\.
 **Tip**  
-The more event data you capture from your users, the more options you have when you set up event triggers\. Event attributes and metrics are only available if you've provided those values to Amazon Pinpoint\. To learn more about capturing event data, see [Reporting Events in Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-events.html) in the *Amazon Pinpoint Developer Guide*\.
+The more event data you capture from your users, the more options you have when you set up event triggers\. Event attributes and metrics are available only if you've provided those values to Amazon Pinpoint\. To learn more about capturing event data, see [Reporting Events in Your Application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-events.html) in the *Amazon Pinpoint Developer Guide*\.
 
-1. Under **Campaign Dates**, for **Start date and time**, choose a start date\. Amazon Pinpoint only sends the campaign if the event you specified earlier occurs after the start date\.
+1. Under **Campaign Dates**, for **Start date and time**, choose a start date\. Amazon Pinpoint sends the campaign only if the event that you specified earlier occurs after the start date\.
 **Note**  
 The **Start date and time** that you choose has to be at least 15 minutes in the future\.
 
-1. For **End date and time**, choose an end date\. Amazon Pinpoint only sends the campaign if the event you specified earlier occurs before the end date\.
+1. For **End date and time**, choose an end date\. Amazon Pinpoint sends the campaign only if the event that you specified earlier occurs before the end date\.
 
 1. Under **Time zone**, choose a time zone to base the start and end dates on\.
 
@@ -86,12 +86,12 @@ The **Start date and time** that you choose has to be at least 15 minutes in the
 ### Best Practices for Using Event\-Based Campaigns<a name="campaigns-event-triggered-best-practices"></a>
 
 There are a few limitations and best practices that you should consider when you create event\-based campaigns:
-+ You can only create an event\-based campaign if you chose a dynamic segment \(as opposed to an imported segment\) in [Step 2](campaigns-segment.md)\.
-+ Event\-based campaigns only consider events that are reported by recent versions of the AWS Mobile SDK\. Your apps should use the following versions of the SDK in order to work properly with event\-based campaigns: 
-  + AWS Mobile SDK for Android: version 2\.7\.2 or later
-  + AWS Mobile SDK for iOS: version 2\.6\.30 or later
++ You can create an event\-based campaign only if you chose a dynamic segment \(as opposed to an imported segment\) in [Step 2](campaigns-segment.md)\.
++ If you integrate your app with Amazon Pinpoint by using an AWS Mobile SDK, your app should use the following versions of the SDK in order to work properly with event\-based campaigns: 
+  + AWS Mobile SDK for Android version 2\.7\.2 or later
+  + AWS Mobile SDK for iOS version 2\.6\.30 or later
 
-  Because of this restriction, we recommend that you set up your segments so that they only include customers who use a version of your app that runs a compatible version of the SDK\.
+  Because of this restriction, we recommend that you set up your segments to only include customers who use a version of your app that runs a compatible version of the SDK\.
 + Choose your events carefully\. For example, if you send an event\-based campaign every time a `session.start` event occurs, you might quickly overwhelm your users with messages\. You can limit the number of messages that Amazon Pinpoint sends to a single endpoint in a 24\-hour period\. For more information, see [General Settings](settings-general.md)\.
 
 **Next**  

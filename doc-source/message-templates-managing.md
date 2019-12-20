@@ -5,11 +5,13 @@ The **Message templates** page on the Amazon Pinpoint console provides a single 
 **Topics**
 + [Viewing Your Collection of Message Templates](#message-templates-managing-view-all)
 + [Opening a Message Template](#message-templates-managing-open)
-+ [Copying a Message Template](#message-templates-managing-copy)
 + [Editing a Message Template](#message-templates-managing-edit)
++ [Copying a Message Template](#message-templates-managing-copy)
 + [Deleting a Message Template](#message-templates-managing-delete)
 
 For information about creating a message template, see [Creating Email Templates](message-templates-creating-email.md), [Creating Push Notification Templates](message-templates-creating-push.md), [Creating SMS Templates](message-templates-creating-sms.md), or [Creating Voice Templates](message-templates-creating-voice.md), depending on the type of template that you want to create\.
+
+For information about viewing and managing versions of templates, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
 
 ## Viewing Your Collection of Message Templates<a name="message-templates-managing-view-all"></a>
 
@@ -30,7 +32,7 @@ The **Message templates** page displays a list of all the message templates for 
 
 ## Opening a Message Template<a name="message-templates-managing-open"></a>
 
-By using the **Message templates** page, you can quickly find and open a specific message template to view the contents of the template and information about the template\. For example, you can view when the template was created and when the template was last updated\. After you open a template, you can also edit the template\.
+By using the **Message templates** page, you can quickly find and open a specific message template to view the contents of the template and information about the template\. For example, you can view current and previous versions of the template, and determine when the template was last updated\. After you open a template, you can also [edit the template](#message-templates-managing-edit)\.
 
 **To open a message template**
 
@@ -38,12 +40,33 @@ By using the **Message templates** page, you can quickly find and open a specifi
 
 1. In the navigation pane, choose **Message templates**\.
 
-1. On the **Message templates** page, choose the template that you want to open\. The template page opens and displays the contents of the template and information about the template\.
+1. On the **Message templates** page, choose the template that you want to open\.  The template page opens and displays information about the template\. It also displays the contents of the active version of the template\.
 
-1. \(Optional\) To edit the template, choose **Edit**, and then make the changes that you want\. When you finish making changes, choose **Update**\.
+1. To view a different version of the template, use the version selector under **Template details** to choose the version that you want to view\.
 
-**Note**  
-If you edit a template, Amazon Pinpoint doesn't apply the changes to any existing messages that use the previous version of the template\. This includes messages that haven’t been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This means that your changes won't affect any existing messages that use the template\.
+## Editing a Message Template<a name="message-templates-managing-edit"></a>
+
+You can open a message template for editing in two ways: while you're authoring a message that uses the template, and by using the **Message templates** page\. This topic explains how to open and edit a template by using the **Message templates** page\.
+
+If you edit a template, Amazon Pinpoint might apply your changes to existing messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on whether you edit the active version of the template and how you configured the messages that use the template\. For more information, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
+
+**To edit a message template**
+
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. In the navigation pane, choose **Message templates**\.
+
+1. On the **Message templates** page, choose the template that you want to edit\. The template page opens and displays information about the template\. It also displays the contents and settings for the active version of the template\.
+
+1. Choose **Edit**\.
+
+1. Under **Template details**, use the version selector to choose the version of the template that you want to use as a starting point for your changes\. If you choose the most recent version of the template, you can save your changes directly to that version of the template\. Otherwise, you can save your changes as a new version of the template\.
+
+1. Make the changes that you want\. You can change any of the template's content or settings, except the name of the template\. To change the name of the template, you can [create a copy of the template](#message-templates-managing-copy), save the copy with the name that you want, and then optionally delete the original template\.
+
+1. When you finish making changes, do one of the following:
+   + To save your changes as a new version of the template, choose **Save as new version**\. To help ensure that your changes don't affect any existing messages, we recommend that you choose this option\.
+   + To save your changes as an update to the most recent version of the template, choose **Update version**\. This option is available only if you chose the most recent version of the template in step 5\. If you choose this option, your changes might affect existing messages that use the template\.
 
 ## Copying a Message Template<a name="message-templates-managing-copy"></a>
 
@@ -61,38 +84,16 @@ To quickly create a new message template that's similar to an existing template,
 
 1. For **Template name**, enter a name for the template copy\. The name has to begin with a letter or number\. It can contain up to 128 characters\. The characters can be letters, numbers, underscores \(\_\), or hyphens \(‐\)\. 
 
-1. When you finish entering the name, choose **Duplicate template**\. The template page opens and displays all the content and settings for the template that you copied\.
+1. When you finish entering the name, choose **Duplicate template**\. The template page opens and displays all the content and settings for the active version of the template that you copied\.
 
-1. Choose **Edit**, and then make any changes that you want\.
-
-1. When you finish making changes, choose **Update**\.
-
-## Editing a Message Template<a name="message-templates-managing-edit"></a>
-
-You can open a message template for editing in two ways: while you're authoring a message that uses the template, and by using the **Message templates** page\. This topic explains how to open and edit a template by using the **Message templates** page\.
-
-If you edit a template, Amazon Pinpoint doesn't apply the changes to any existing messages that use the previous version of the template\. This includes messages that haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This means that your changes won't affect any existing messages that use the template\.
-
-**To edit a message template**
-
-1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
-
-1. In the navigation pane, choose **Message templates**\.
-
-1. On the **Message templates** page, choose the template that you want to edit\. The template page opens and displays the contents of the template and information about the template\.
-
-1. Choose **Edit**\.
-
-1. Make the changes that you want\. You can change any of the template's content or settings, except the name of the template\. To change the name of the template, [create a copy of the template](#message-templates-managing-copy), save the copy with the name that you want, and then delete the original template\.
-
-1. When you finish making changes, choose **Update**\.
+1. \(Optional\) To change the template copy, choose **Edit**, make the changes that you want, and then choose **Save as new version**\.
 
 ## Deleting a Message Template<a name="message-templates-managing-delete"></a>
 
-If you want to remove a message template from Amazon Pinpoint completely, you can delete the template\. If you delete a template, it won't affect any existing messages that use the template, such as campaign messages that are scheduled to be sent at a later time\.
+If you want to remove a message template from Amazon Pinpoint completely, you can delete the template\. If you delete a template, it doesn't affect any existing messages that use the template, such as campaign messages that are scheduled to be sent at a later time\.
 
 **Warning**  
-If you delete a template, Amazon Pinpoint deletes all the content and settings for the template, and the template becomes unavailable for all future messages\. You can't recover a template after you delete it\. 
+If you delete a template, Amazon Pinpoint deletes all versions, content, and settings for the template\. In addition, the template becomes unavailable for all future messages\. You can't recover a template after you delete it\. 
 
 **To delete a message template**
 

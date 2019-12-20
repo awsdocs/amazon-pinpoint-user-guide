@@ -1,14 +1,14 @@
 # Send Test Messages with Amazon Pinpoint<a name="messages"></a>
 
-With Amazon Pinpoint, you can send *test messages*, which are one\-time messages that you send to a specific set of recipients without creating a campaign\. Sending a test message is useful if you want to test the deliverability of your messages, or to see how your message appears to recipients\. We charge you for each test message that you send, just as if it were a normal campaign message\. However, unlike campaign messages, we don't bill you based on your monthly targeted audience \(MTA\) when you send test messages\.
+With Amazon Pinpoint, you can send *test messages*, which are one\-time messages that you send to a specific set of recipients\. Sending a test message is useful if you want to test the deliverability of a message, or see how a message appears to recipients\. You can send a test message by using any channel that Amazon Pinpoint supports\.
 
-When you use the Amazon Pinpoint console to send test messages, you can send your messages to up to 15 recipients\. You can't send test messages to segments—you have to send them to individual users\. Amazon Pinpoint delivers test messages immediately—you can't schedule the delivery of test messages\. Finally, test messages don't generate messaging metrics, such as open, click, or bounce rates\. If you want to send a message to a segment, schedule the delivery of a message, or obtain metrics for your messages, you should [create a campaign](campaigns.md) instead of sending a test message\.
+We charge you for each test message that you send\. However, we don't bill you based on your monthly targeted audience \(MTA\) when you send test messages\.
 
-You can send test messages by using any channel that's supported by Amazon Pinpoint\.
+When you use the Amazon Pinpoint console to send a test message, you can send the message to up to 15 recipients\. You can't send a test message to a segment—you have to send it to individual users\. In addition, Amazon Pinpoint delivers a test message immediately—you can't schedule the delivery of a test message\. Finally, a test message doesn't generate messaging metrics, such as open, click, or bounce rates\. If you want to send a message to a segment, schedule the delivery of a message, or obtain metrics for a message, you should [create a campaign](campaigns.md) instead of sending a test message\.
 
-Send test messages by using the **Test messaging** page on the Amazon Pinpoint console\.
+To send a test message from the Amazon Pinpoint console, use the **Test messaging** page on the console\.
 
-**To access the Test messaging page**
+**To open the Test messaging page**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 

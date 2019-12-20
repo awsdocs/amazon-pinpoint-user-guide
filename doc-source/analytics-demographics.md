@@ -29,7 +29,7 @@ Shows the proportion of users who use your app on various platforms\.
 Shows the proportion of users who use various versions of your app\.
 
 **Device model**  
-Shows the proportion of users who use your app on various device models, such as iPhone X or Galaxy S9\.
+Shows the proportion of users who use your app on various device models, such as iPhone or Galaxy S9\.
 
 **Device make**  
 Shows the proportion of users who use your app on various makes of devices, such as Apple or Samsung\.

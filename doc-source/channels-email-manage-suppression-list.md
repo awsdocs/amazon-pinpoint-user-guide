@@ -7,7 +7,7 @@ When you attempt to send a message to an address that's on the suppression list,
 If an email address is on the global suppression list, but you know that the address is valid, you can complete the procedure in this section to remove the address from the suppression list\.
 
 **Note**  
-This capability isn't available in the Amazon Pinpoint console in the Asia Pacific \(Mumbai\) and EU \(Frankfurt\) AWS Regions\. However, because the same suppression list applies to all Regions, you can access the Amazon Pinpoint console from a different Region, and then use the following steps to remove email addresses from the suppression list\.
+This capability isn't available in the Amazon Pinpoint console in the Asia Pacific \(Mumbai\) and Europe \(Frankfurt\) AWS Regions\. However, because the same suppression list applies to all Regions, you can access the Amazon Pinpoint console from a different Region, and then use the following steps to remove email addresses from the suppression list\.
 
 **To remove an address from the suppression list**
 

@@ -43,8 +43,8 @@ To send email using the SMTP interface, you have to connect your application to 
 | US West \(Oregon\) | email\-smtp\.us\-west\-2\.amazonaws\.com | 
 | Asia Pacific \(Mumbai\) | email\-smtp\.ap\-south\-1\.amazonaws\.com | 
 | Asia Pacific \(Sydney\) | email\-smtp\.ap\-southeast\-2\.amazonaws\.com  | 
-| EU \(Frankfurt\) | email\-smtp\.eu\-central\-1\.amazonaws\.com | 
-| EU \(Ireland\) | email\-smtp\.eu\-west\-1\.amazonaws\.com | 
+| Europe \(Frankfurt\) | email\-smtp\.eu\-central\-1\.amazonaws\.com | 
+| Europe \(Ireland\) | email\-smtp\.eu\-west\-1\.amazonaws\.com | 
 
 The Amazon Pinpoint SMTP endpoint requires all connections to be encrypted using Transport Layer Security \(TLS\)\. Amazon Pinpoint supports two mechanisms for establishing a TLS\-encrypted connection: STARTTLS and TLS Wrapper\. Check the documentation for your software to determine whether it supports STARTTLS, TLS Wrapper, or both\.
 
