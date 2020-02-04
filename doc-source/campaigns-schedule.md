@@ -85,7 +85,7 @@ The **Start date and time** that you choose has to be at least 15 minutes in the
 
 ### Best Practices for Using Event\-Based Campaigns<a name="campaigns-event-triggered-best-practices"></a>
 
-There are a few limitations and best practices that you should consider when you create event\-based campaigns:
+There are a few restrictions and best practices that you should consider when you create event\-based campaigns:
 + You can create an event\-based campaign only if you chose a dynamic segment \(as opposed to an imported segment\) in [Step 2](campaigns-segment.md)\.
 + If you integrate your app with Amazon Pinpoint by using an AWS Mobile SDK, your app should use the following versions of the SDK in order to work properly with event\-based campaigns: 
   + AWS Mobile SDK for Android version 2\.7\.2 or later

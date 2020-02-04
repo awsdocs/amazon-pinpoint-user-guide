@@ -24,9 +24,9 @@ The project name can contain up to 64 alphanumeric characters\. It can also incl
 
 1. Under **Account\-level settings**, you can optionally change the following settings:
    + **Default message type** – The category of messages that you plan to send\. Choose **Transactional** for time\-sensitive content, such as alerts and one\-time passwords, or choose **Promotional** for marketing\-related content\.
-   + **Account spending limit** – The maximum amount of money, in US Dollars, that you want to spend sending SMS messages per calendar month\. If your monthly spending exceeds this limit, Amazon Pinpoint and other AWS services stop sending SMS messages from your account\.
+   + **Account spending limit** – The maximum amount of money, in US Dollars, that you want to spend sending SMS messages per calendar month\. If your monthly spending exceeds this value, Amazon Pinpoint and other AWS services stop sending SMS messages from your account\.
 **Note**  
-If you haven't used Amazon Pinpoint or Amazon SNS to send SMS messages from your AWS account, your account will have a default spending limit of USD$1\.00\. You can request an increase to this account\-wide limit\. For more information, see [Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+If you haven't used Amazon Pinpoint or Amazon SNS to send SMS messages from your AWS account, your account will have a default spending quota of $1\.00 \(USD\)\. You can request an increase to this account\-wide quota\. For more information, see [Requesting Increases to Your Monthly SMS Spending Quota for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
    + **Default sender ID** – The identity that appears on recipients' devices when they receive messages\. Support for sender ID capabilities varies by country or region\.
 **Important**  
 These settings apply to your entire AWS account\. When you change these settings, they apply to all other Amazon Pinpoint projects in your account, and to other AWS services that you use to send SMS messages, such as Amazon SNS\.

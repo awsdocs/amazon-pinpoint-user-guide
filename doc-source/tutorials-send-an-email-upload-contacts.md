@@ -9,7 +9,7 @@ In Amazon S3, a bucket is a container that you use to store files and folders\. 
 1. In a spreadsheet application, create a spreadsheet that contains information about the contacts that you want to send email to\. Use the following template as an example\. Change the values in the **Address**, **User\.UserAttributes\.FirstName**, and **User\.UserAttributes\.LastName** fields to represent the people who you want to contact\. Don't change the column headings or the values in the **ChannelType** column\.    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/tutorials-send-an-email-upload-contacts.html)
 **Note**  
-You can include additional fields if necessary\. For a list of other fields you can specify, see the table in [Available Attributes](segments-importing.md#segments-importing-available-attributes)\.
+You can include additional fields if necessary\. For a list of other fields you can specify, see the table in [Supported Attributes](segments-importing.md#segments-importing-available-attributes)\.
 
 1. Replace the values in the template with names and email addresses of people you want to contact\.
 **Important**  

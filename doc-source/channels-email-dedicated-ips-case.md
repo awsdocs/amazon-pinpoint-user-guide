@@ -6,11 +6,11 @@ This section describes how to request and relinquish dedicated IP addresses by s
 
 Although there's no minimum commitment, we recommend that you lease more than one dedicated IP address in each AWS Region where you use Amazon Pinpoint\. Each AWS Region consists of multiple physical locations, called *Availability Zones*\. When you lease more than one dedicated IP address, we distribute those addresses as evenly as possible across the Availability Zones in the AWS Region that you specified in your request\. Distributing your dedicated IP addresses across Availability Zones in this way increases the availability and redundancy of your dedicated IP addresses\.
 
-For a list of all of the Regions where Amazon Pinpoint is currently available, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region) in the *Amazon Web Services General Reference*\. To learn more about the number of Availability Zones that are available in each Region, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)\.
+For a list of all the Regions where Amazon Pinpoint is currently available, see [Amazon Pinpoint Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/pinpoint.html) in the *Amazon Web Services General Reference*\. To learn more about the number of Availability Zones that are available in each Region, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)\.
 
 ## Requesting Dedicated IP Addresses<a name="channels-email-dedicated-ips-case-request"></a>
 
-The following steps show how to request dedicated IP addresses by creating a Service Limit Increase case in the AWS Support Center\. You can use this process to request as many dedicated IP addresses as you need\.
+The following steps show how to request dedicated IP addresses by creating a case in the AWS Support Center\. You can use this process to request as many dedicated IP addresses as you need\.
 
 **To request dedicated IP addresses**
 
@@ -21,22 +21,22 @@ The following steps show how to request dedicated IP addresses by creating a Ser
 
 1. On the **My support cases** tab, choose **Create case**\.
 
-1. Under **Create case**, choose **Service limit increase**\.
+1. Under **Create case**, choose **Service quota increase**\.
 
 1. Under **Case classification**, complete the following sections:
-   + For **Limit type**, choose **Pinpoint Email**\.
+   + For **Quota type**, choose **Pinpoint Email**\.
    + For **Mail Type**, choose the type of email that you plan to send using your dedicated IP addresses\. If multiple values apply, choose the option that applies to the majority of the email that you plan to send\.
    + For **Website URL**, enter the URL of your website\. Providing this information helps us better understand the type of content that you plan to send\.
-   + For **My email sending complies with the AWS Service Terms and AUP**, choose the option that applies to your use case\.
-   + For **I only send to recipients who have specifically requested my mail**, choose the option that applies to your use case\.
-   + For **I have a process to handle bounces and complaints**, choose the option that applies to your use case\.
+   + For **Describe in detail how you will only send to recipients who have specifically requested your mail**, explain how you will ensure that you use your dedicated IP addresses to send email only to recipients who want to receive email from you\.
+   + For **Describe in detail the process that you will follow when you receive bounce and complaint notifications**, explain how you will process bounces and complaints about the email that you plan to send using your dedicated IP addresses\.
+   + For **Will you comply with AWS Service Terms and AUP**, choose the option that applies to your use case\.
 
 1. Under **Requests**, complete the following sections:
    + For **Region**, choose the AWS Region that your request applies to\.
-   + For **Limit**, choose **Desired Maximum Email Send Rate**\.
-   + For **New limit value**, enter the maximum number of messages that you need to be able to send per second\. We use the value that you provide to calculate the number of dedicated IP addresses that you need to implement your use case\. For this reason, the estimate that you provide should be as accurate as possible\.
+   + For **Quota**, choose **Desired Maximum Email Send Rate**\.
+   + For **New quota value**, enter the maximum number of messages that you need to be able to send per second\. We use this value to calculate the number of dedicated IP addresses that you need to implement for your use case\. For this reason, the estimate that you provide should be as accurate as possible\.
 **Note**  
-A single dedicated IP address can only be used in the AWS Region that you chose in this step\. If you want to request dedicated IP addresses for use in another AWS Region, choose **Add another request**\. Then complete the **Region**, **Limit**, and **New limit value** fields for the additional Region\. Repeat this process for each Region that you want to use dedicated IP addresses in\.
+A single dedicated IP address can be used only in the AWS Region that you choose in this step\. If you want to request dedicated IP addresses for use in another AWS Region, choose **Add another request**\. Then complete the **Region**, **Quota**, and **New quota value** fields for the additional Region\. Repeat this process for each Region that you want to use dedicated IP addresses in\.
 
 1. Under **Case description**, for **Use case description**, state that you want to request dedicated IP addresses\. If you want to request a specific number of dedicated IP addresses, mention that as well\. If you don't specify a number of dedicated IP addresses, we provide the number of dedicated IP addresses that are necessary to meet the sending rate requirement that you specified in the previous step\.
 
@@ -63,25 +63,23 @@ The process of relinquishing a dedicated IP address can't be reversed\. If you r
 
 1. On the **My support cases** tab, choose **Create case**\.
 
-1. Under **Create case**, choose **Service limit increase**\.
+1. Under **Create case**, choose **Service quota increase**\.
 
 1. Under **Case classification**, complete the following sections:
-   + For **Limit type**, choose **Pinpoint Email**\.
+   + For **Quota type**, choose **Pinpoint Email**\.
    + For **Mail Type**, choose any value\. 
-   + For **My email sending complies with the AWS Service Terms and AUP**, choose the option that applies to your use case\.
-   + For **I only send to recipients who have specifically requested my mail**, choose the option that applies to your use case\.
-   + For **I have a process to handle bounces and complaints**, choose the option that applies to your use case\.
+   + For **Will you comply with the AWS Service Terms and AUP**, choose the option that applies to your use case\.
 
 1. Under **Requests**, complete the following sections:
    + For **Region**, choose the AWS Region that your request applies to\.
 **Note**  
 Dedicated IP addresses are unique to each AWS Region, so it's important to select the Region that the dedicated IP address is associated with\.
-   + For **Limit**, choose **Desired Maximum Send Rate**\.
-   + For **New limit value**, enter any number\. The number that you enter here isn't important—you specify the number of dedicated IP addresses that you want to relinquish in the next step\.
+   + For **Quota**, choose **Desired Maximum Email Send Rate**\.
+   + For **New quota value**, enter any number\. The number that you enter here isn't important—you specify the number of dedicated IP addresses that you want to relinquish in the next step\.
 **Note**  
-A single dedicated IP address can only be used in a single AWS Region\. If you want to relinquish dedicated IP addresses that you used in other AWS Regions, choose **Add another request**\. Then complete the **Region**, **Limit**, and **New limit value** fields for the additional Region\. Repeat this process for each dedicated IP address that you want to relinquish\.
+A single dedicated IP address can be used in only a single AWS Region\. If you want to relinquish dedicated IP addresses that you used in other AWS Regions, choose **Add another request**\. Then complete the **Region**, **Quota**, and **New quota value** fields for the additional Region\. Repeat this process for each dedicated IP address that you want to relinquish\.
 
-1. Under **Case Description**, for **Use case description**, mention that you want to relinquish existing dedicated IP addresses\. If you currently lease more than one dedicated IP address, include the number of dedicated IP addresses that you want to relinquish\.
+1. Under **Case Description**, for **Use case description**, indicate that you want to relinquish existing dedicated IP addresses\. If you currently lease more than one dedicated IP address, include the number of dedicated IP addresses that you want to relinquish\.
 
 1. Under **Contact options**, for **Preferred contact language**, choose whether you want to receive communications for this case in **English** or **Japanese**\.
 

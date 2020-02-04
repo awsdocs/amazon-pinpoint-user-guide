@@ -26,6 +26,8 @@ If an attribute value doesn't exist for a recipient, Amazon Pinpoint can replace
 
 If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\. For example: `Hi Mary, congratulations on your new record of 20:52!`
 
+We recommend that you specify a default value for each variable that you include in a template\.
+
 ## Adding Message Variables<a name="message-templates-add-variables"></a>
 
 You can add message variables to a new template when you create the template, or to an existing template\. If you add variables to an existing template, Amazon Pinpoint doesn't necessarily apply the changes to any existing messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on the version of the template that you add variables to and how you configured the messages that use the template\. For more information, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
@@ -47,6 +49,8 @@ You can add message variables to a new template when you create the template, or
 1. Repeat the preceding step for each message variable that you want to add\.
 
 1. \(Optional\) To specify a default value for a message variable, expand the **Default personalization values** section\. Then, in the list of variables, enter the default value that you want to use for the variable\.
+
+   Although this step is optional, we recommend that you do this for each variable in the template\.
 
 1. When you finish, do one of the following:
    + If you added message variables to a new template, choose **Create**\.
@@ -71,13 +75,13 @@ The following table indicates the name to use in a message variable for each sup
 | Attributes\.custom\_attribute | A custom attribute that describes the endpoint\. | 
 | ChannelType | The channel to use when sending messages or push notifications to the endpoint\. For example:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-personalizing.html) | 
 | CreationDate | The date and time when the endpoint was added to the project, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 2019\-06\-30T11:45:25\.220Z for 11:45 AM UTC June 30, 2019\. | 
-| Demographic\.AppVersion | The version number of the mobile app that's associated with the endpoint\. | 
+| Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 
 | Demographic\.Locale | The locale of the endpoint, in the following format: the [ISO 639\-1 alpha\-2](https://en.wikipedia.org/wiki/ISO_639-1) code, followed by an underscore \(\_\), followed by an [ISO 3166\-1 alpha\-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) value\. For example, en\_US is the English language locale for the United States\. | 
-| Demographic\.Make | The manufacturer of the endpoint's device, such as apple or samsung\. | 
-| Demographic\.Model | The model name or number of the endpoint's device, such as iPhone or SM\-G900F\. | 
-| Demographic\.ModelVersion | The model version of the endpoint's device\. | 
-| Demographic\.Platform | The operating system on the endpoint's device, such as ios or android\. | 
-| Demographic\.PlatformVersion | The version of the operating system on the endpoint's device\. | 
+| Demographic\.Make | The manufacturer of the endpoint device, such as apple or samsung\. | 
+| Demographic\.Model | The model name or number of the endpoint device, such as iPhone or SM\-G900F\. | 
+| Demographic\.ModelVersion | The model version of the endpoint device\. | 
+| Demographic\.Platform | The operating system on the endpoint device, such as ios or android\. | 
+| Demographic\.PlatformVersion | The version of the operating system on the endpoint device\. | 
 | Demographic\.Timezone | The endpoint's time zone, as a [tz database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) value\. For example, America/Los\_Angeles for Pacific Time \(North America\)\. | 
 | EffectiveDate | The date and time when the endpoint was last updated, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 2019\-08\-23T10:54:35\.220Z for 10:54 AM UTC August 23, 2019\. | 
 | EndpointStatus | Whether to send messages or push notifications to the endpoint: ACTIVE, send messages to the endpoint; or, INACTIVE, don't send messages to the endpoint\. | 
@@ -87,9 +91,9 @@ The following table indicates the name to use in a message variable for each sup
 | Location\.Latitude | The latitude coordinate of the endpoint's location, rounded to one decimal place\. | 
 | Location\.Longitude | The longitude coordinate of the endpoint's location, rounded to one decimal place\. | 
 | Location\.PostalCode | The postal or ZIP code for the area where the endpoint is located\. | 
-| Location\.Region | The name of the region where the endpoint is located\. For locations in the United States, this value is the name of a state\. | 
+| Location\.Region | The name of the region, such as a state or province, where the endpoint is located\. | 
 | Metrics\.custom\_attribute | A custom, numeric metric that your application reports to Amazon Pinpoint for the endpoint\. | 
 | OptOut | Whether the user opted out of receiving messages and push notifications from you: ALL, the user opted out and doesn't want to receive any messages or push notifications; or, NONE, the user hasn't opted out and wants to receive all messages and push notifications\. | 
 | RequestId | The unique identifier for the most recent request to update the endpoint\. | 
 | User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. | 
-| User\.UserId | The unique identifier for the user\. | 
+| User\.UserId | A unique identifier for the user\. | 

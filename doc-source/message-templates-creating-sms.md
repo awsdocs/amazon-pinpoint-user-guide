@@ -23,10 +23,10 @@ When you create an SMS template, you specify the settings and content that you w
 You can include personalized content in the body of the template\. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created for the project, such as an attribute that stores a user's first name\. By using message variables, you can display different content for each recipient of a message that uses the template\.  
 To use a message variable, add the name of an existing attribute to the template\. Enclose the name in two sets of curly braces, and use the exact capitalization of the name—for example, `{{User.UserAttributes.FirstName}}`\. For more information, see [Adding Personalized Content to Message Templates](message-templates-personalizing.md)\.
 
-1. \(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\.
+1. \(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\. Although this step is optional, we recommend that you do this for each variable in the template\.
 
    To specify default values for variables, expand the **Default personalization values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
 
 1. When you finish entering content and settings for the template, choose **Create**\.
 
-If you want to test the template before you use it in a message that you send to users, you can [send a test message](messages-sms.md) that uses the template\.
+If you want to test the template before you use it in a message that you send to users, you can [send a test message](messages-sms.md) that uses the template\. If you do this, ensure that you first complete step 8 to specify default values for all the variables in the template\. Otherwise, the message might not be sent or it might not render correctly\.

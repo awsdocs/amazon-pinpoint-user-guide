@@ -29,10 +29,10 @@ You can also include personalized content in the subject and body of the templat
 
 1. \(Optional\) Under **Plain text version**, enter the content that you want to display in the body of messages that use the template and are sent to recipients whose email applications don't display HTML content\.
 
-1. \(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\.
+1. \(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\. Although this step is optional, we recommend that you do this for each variable in the template\.
 
    To specify default values for variables, expand the **Default personalization values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
 
 1. When you finish entering content and settings for the template, choose **Create**\.
 
-If you want to test the template before you use it in an email message that you send to users, you can [send a test message](messages-email.md) that uses the template\.
+If you want to test the template before you use it in an email message that you send to users, you can [send a test message](messages-email.md) that uses the template\. If you do this, ensure that you first complete step 9 to specify default values for all the variables in the template\. Otherwise, the message might not be sent or it might not render correctly\.

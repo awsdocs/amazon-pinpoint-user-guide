@@ -49,7 +49,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Central African Republic | CF | Yes |  | 
 | Chad | TD | Yes |  | 
 | Chile | CL |  | Yes | 
-| China | CN |  | For support, [contact sales](https://aws.amazon.com/contact-us/aws-sales/)\. | 
+| China[2](#sms-support-note-2) | CN |  | For support, [contact sales](https://aws.amazon.com/contact-us/aws-sales/)\. | 
 | Colombia | CO |  |  | 
 | Comoros | KM | Yes |  | 
 | Cook Islands | CK | Yes |  | 
@@ -62,7 +62,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Djibouti | DJ | Yes |  | 
 | Dominica | DM | Yes |  | 
 | Dominican Republic | DO |  |  | 
-| East Timor | TL |  |  | 
+| Timor\-Leste | TL |  |  | 
 | Ecuador | EC |  |  | 
 | Egypt | EG | Yes[1](#sms-support-note-1) |  | 
 | El Salvador | SV |  |  | 
@@ -220,6 +220,8 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 **Notes**
 
 1. <a name="sms-support-note-1"></a>Senders are required to use a pre\-registered alphabetic sender ID\. To request a sender ID from AWS Support, see [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might contact you for additional information after you submit your sender ID request\.
+
+1. <a name="sms-support-note-2"></a>Senders are required to use a pre\-registered template for each type of message that they plan to send\. If a sender doesn’t meet this requirement, their messages will be blocked\. To register a template, open an Amazon Pinpoint SMS case with AWS Support\. When you create the case, provide the same information that you would provide to request a sender ID\. For more information, see [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet additional, specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might ask you for additional information\.
 
 ## Sender ID Support<a name="channels-sms-countries-sender-id"></a>
 

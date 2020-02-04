@@ -20,34 +20,36 @@ If you plan to send messages to recipients in a country where sender IDs are all
 
 **To request a sender ID**
 
-1. Sign in to the AWS Management Console, and go to the [AWS Support Center](https://console.aws.amazon.com/support/home#/)\.
+1. Sign in to the AWS Management Console at [https://console\.aws\.amazon\.com/](https://console.aws.amazon.com/)\.
 
-1. Choose **Create case**\.
+1. On the **Support** menu, choose **Support Center**\.
 
-1. Under **Create case**, choose **Service limit increase**\.
+1. On the **My support cases** tab, choose **Create case**\.
+
+1. Choose **Service quota increase**\.
 
 1. Under **Case classification**, do the following:
 
-   1. For **Limit type**, choose **Pinpoint SMS**\.
+   1. For **Quota type**, choose **Pinpoint SMS**\.
 
-   1. For **Link to site or app which will be sending SMS**, identify the website or application where your audience members opt in to receive your SMS messages\.
+   1. For **Provide a link to the site or app which will be sending SMS messages**, identify the website or application where your audience members opt in to receive your SMS messages\.
 
-   1. For **Type of messages**, choose the type of message that you plan to send using your sender ID:
-      + **One Time Password** – Messages that provide passwords to authenticate with your website or application\.
+   1. For **What type of messages do you plan to send**, choose the type of message that you plan to send using your sender ID:
+      + **One Time Password** – Messages that provide passwords that your customers use to authenticate with your website or application\.
       + **Promotional** – Noncritical messages that promote your business or service, such as special offers or announcements\.
-      + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or transaction alerts\. Transactional messages must not contain promotional content\.
+      + **Transactional** – Important informational messages that support customer transactions, such as order confirmations or account alerts\. Transactional messages must not contain promotional or marketing content\.
 
-   1. For **Targeted Countries**, specify the countries where you want to register a sender ID\. Support for sender IDs and sender ID registration requirements vary by country\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
+   1. For **Which countries do you plan to send messages to**, specify the countries where you want to register a sender ID\. Support for sender IDs and sender ID registration requirements vary by country\. For more information, see [Supported Countries and Regions \(SMS Channel\)](channels-sms-countries.md)\.
 
-      If the list of countries exceeds the character limit for this text box, you can instead list the countries in the **Case description** section\.
+      If the list of countries exceeds the number of characters allowed by this text box, you can instead list the countries in the **Case description** section\.
 
 1. Under **Requests**, do the following:
 
-   1. For **Resource Type**, choose **General Limits**\.
+   1. For **Resource Type**, choose **General Quotas**\.
 
-   1. For **Limit**, choose **SenderID Registration**\.
+   1. For **Quota**, choose **SenderID Registration**\.
 
-   1. For **New limit value**, type the number of sender IDs that you're requesting\. Typically, this value is **1**\.
+   1. For **New quota value**, enter the number of sender IDs that you're requesting\. Typically, this value is **1**\.
 
 1. Under **Case description**, for **Use case description**, provide the following information:
    + The sender ID that you want to register\.

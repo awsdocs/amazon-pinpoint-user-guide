@@ -1,7 +1,7 @@
 # Amazon Pinpoint User Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -45,7 +45,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Monitoring Email Activity with Amazon Pinpoint](channels-email-monitor.md)
       + [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)
          + [Updating Email Settings](channels-email-manage-update.md)
-         + [Managing Email Sending Limits](channels-email-manage-limits.md)
+         + [Managing Email Sending Quotas](channels-email-manage-limits.md)
          + [Global Suppression List](channels-email-manage-suppression-list.md)
       + [Sending Email in Amazon Pinpoint](channels-mobile-send.md)
          + [Sending Email by Using the Amazon Pinpoint SMTP Interface](channels-email-send-smtp.md)
@@ -65,7 +65,7 @@ Amazon's trademarks and trade dress may not be used in
       + [SMS Limits and Restrictions in Amazon Pinpoint](channels-sms-limitations.md)
       + [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)
       + [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)
-         + [Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)
+         + [Requesting Increases to Your Monthly SMS Spending Quota for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)
          + [Requesting Dedicated Short Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-short-code.md)
          + [Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)
          + [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)

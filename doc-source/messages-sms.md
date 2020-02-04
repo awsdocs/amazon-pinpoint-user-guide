@@ -1,6 +1,6 @@
 # Sending a Test SMS Message<a name="messages-sms"></a>
 
-To send a test SMS message, you have to use a project in which the SMS channel is enabled\. To learn how to create a new project with SMS support, see [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)\. To learn how to add SMS support to an existing project, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
+To send a test SMS message, you have to use a project that has the SMS channel enabled\. To learn how to create a new project and enable the SMS channel for it, see [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)\. To learn how to enable the SMS channel for an existing project, see [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)\.
 
 **To send a test SMS message**
 

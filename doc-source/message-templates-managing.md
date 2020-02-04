@@ -40,7 +40,7 @@ By using the **Message templates** page, you can quickly find and open a specifi
 
 1. In the navigation pane, choose **Message templates**\.
 
-1. On the **Message templates** page, choose the template that you want to open\.  The template page opens and displays information about the template\. It also displays the contents of the active version of the template\.
+1. On the **Message templates** page, choose the template that you want to open\. The template page opens and displays information about the template\. It also displays the contents of the active version of the template\.
 
 1. To view a different version of the template, use the version selector under **Template details** to choose the version that you want to view\.
 

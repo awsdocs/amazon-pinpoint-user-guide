@@ -3,11 +3,13 @@
 To help you manage the development and use of individual message templates, Amazon Pinpoint supports versioning for all types of message templates\. Versioning provides a way for you to create a history of changes to a template—each version is a snapshot of a template at a certain point in time\. Versioning also provides a way for you to control the contents and settings of messages that use a template\.
 
 Each time you change a template, you can specify whether you want to save your changes as a new version of the template or as an update to the most recent, existing version of the template\. As you design, develop, and refine a template, each of these versions serves as a snapshot that can help you track the progress and status of the template\. That is to say, you can use versioning to store, track, and manage a template as it changes over time\. You can:
-+ **Track the history of a template** – For each template, Amazon Pinpoint provides a list of versions of the template\. This list displays the name of each version and it indicates when each version was last changed\. The list is sorted in descending chronological order with the most recent version listed first\.
++ **Track the history of a template** – For each template, Amazon Pinpoint provides a list of versions of the template\. This list displays the name of each version, and it indicates when each version was last changed\. The list is sorted in descending chronological order with the most recent version listed first\.
 + **View and compare versions of a template** – By using the version list, you can browse previous versions of a template\. If you choose a version from the list, Amazon Pinpoint displays the contents and settings that are stored in that version\.
 + **Restore a previous version of a template** – If you find issues in the most recent version of a template, you can open and edit a previous version that doesn't contain the issues\. You can then save that previous version as a new version of the template\. The new version then becomes the most recent version of the template\.
 
-You can also use versioning to control which version of a template can be used in messages\. You do this by designating a specific version as the *active version* of a template\. The *active version* is typically the version that's been most recently reviewed and approved for use in messages, depending on your organization’s workflow for developing and managing templates\. When you designate a version as the active version, you enable that version for use in messages\. As a template changes over time, you can subsequently designate a different version as the active version, and you can change that designation multiple times\. 
+You can also use versioning to control which version of a template can be used in messages\. You do this by designating a specific version as the *active version* of a template\. The *active version* is typically the version that's been most recently reviewed and approved for use in messages, depending on your organization’s workflow for developing and managing templates\. 
+
+When you designate a version as the active version, you enable that version for use in messages\. As a template changes over time, you can designate a different version as the active version, and you can change that designation multiple times\. 
 
 **Topics**
 + [How Versioning Works](#message-templates-versioning-overview)
@@ -22,27 +24,27 @@ In a typical development workflow, a message template has many versions\. These 
 
 ### Version Numbering<a name="message-templates-versioning-overview-numbering"></a>
 
-When you create a template, there is only one version of the template—*Version 1*\. Each time you subsequently change a template, you specify whether you want to save your changes as a new version of the template or as an update to the most recent version of the template\. 
+When you create a template, there is only one version of the template—*Version 1*\. Each time you subsequently change a template, you specify whether you want to save your changes as a new version of the template, or as an update to the most recent version of the template\. 
 
-If you save your changes as a new version, Amazon Pinpoint automatically increments the version number by 1 and assigns that version number to the version—*Version 1* for the first version, *Version 2* for the subsequent version, *Version 3* for the third version, and so on\. Version numbers are never reused\. You can save as many as 5,000 versions of a template\.
+If you save your changes as a new version, Amazon Pinpoint automatically increments the version number by 1 and assigns that version number to the version—*Version 1* for the first version, *Version 2* for the second version, *Version 3* for the third version, and so on\. Version numbers are never reused\. You can save as many as 5,000 versions of a template\.
 
 If you save your changes as an update to the most recent version, Amazon Pinpoint overwrites the most recent version to include your changes\. To ensure that you have an accurate view of a template’s history, you can overwrite only the most recent version of a template by using the Amazon Pinpoint console\. You can't overwrite any earlier versions of a template by using the console\.
 
 ### Current and Active Versions<a name="message-templates-versioning-overview-version-types"></a>
 
-To support long\-term, continuous development of templates, two versions of a template can be current at the same time: the latest version, which is the version that was most recently changed; and, the active version, which is the version that can be used in messages\.
+To support long\-term, continuous development of templates, two versions of a template can be current at the same time\. They are: the *latest* version, which is the version that was most recently changed; and, the *active* version, which is the version that can be used in messages\.
 
 Depending on your organization's workflow, the active version is typically the version that's been most recently reviewed and approved for use in messages\. It isn't necessarily the latest version of a template\. In addition, any version other than the active version is considered a draft or archival version of a template\. This means that you can use only the active version of a template in messages that you create by using the Amazon Pinpoint console\.
 
 For example, you might create several versions of a template as you design and develop the template\. When the latest version of the template is complete and approved for use in messages, you can designate that version as the active version of the template\. You can then use that active version of the template in messages\. If you later decide to change the template, you can create additional versions for those changes, without affecting the active version of the template or any existing messages that use the template\. 
 
-Of all the versions of a template, one version has to be designated as the active version of the template\. As a template changes over time, you can subsequently designate a different version as the active version, and you can change that designation multiple times\. 
+Of all the versions of a template, one version has to be designated as the active version of the template\. As a template changes over time, you can designate a different version as the active version, and you can change that designation multiple times\. 
 
 ### Version Settings for Messages<a name="message-templates-versioning-overview-versions-messages"></a>
 
 To use a specific version of a template in a message, the version must be the active version of the template when you create the message or when Amazon Pinpoint sends the message\. This depends on how you configure a message to use a template\. When you create a message and choose a template for it, you have two options:
-+ **Use the version that’s currently active** – If you choose this option, Amazon Pinpoint always sends the same message content and settings, as specified in the version of the template that's active when you create the message\. This means that the message remains the same, regardless of any changes that you make to the template at a later time\.
-+ **Use the version that’s active when the message is sent** – If you choose this option, Amazon Pinpoint automatically updates the message content and settings to match whichever version of the template is active when it sends the message\. This means that the message changes, if you designate a different version as the active version after you create the message\.
++ **Use the version that’s currently active** – If you choose this option, Amazon Pinpoint always sends the same message content and settings, as specified in the version of the template that's active when you create the message\. This means that the message remains the same, regardless of any changes that you make to the template later\.
++ **Use the version that’s active when the message is sent** – If you choose this option, Amazon Pinpoint automatically updates the message content and settings to match whichever version of the template is active when it sends the message\. This means that the message changes if you designate a different version as the active version after you create the message\.
 
 For example, if you do the following:
 
@@ -52,11 +54,11 @@ For example, if you do the following:
 
 1. Create a message that uses the template and schedule that message to be sent at a later time\.
 
-1. Change the template several more times\.
+1. Change the template several times\.
 
 1. Designate a new version \(*Version 5*\) as the active version of the template\.
 
-Amazon Pinpoint does the following when it sends the message:
+Amazon Pinpoint does the following for each option when it sends the message:
 + **Use the version that’s currently active** – If you chose this option for the message, Amazon Pinpoint uses the content and settings specified by *Version 1* of the template\. It does this because *Version 1* was the active version of the template when the message was created\.
 + **Use the version that’s active when the message is sent** – If you chose this option for the message, Amazon Pinpoint automatically updates the message to use the content and settings specified by *Version 5* of the template\. It does this because *Version 5* is the active version of the template when the message is sent\.
 
@@ -80,7 +82,9 @@ By using the **Message templates** page, you can quickly find and open a specifi
 
 ## Viewing the Active Version of a Message Template<a name="message-templates-versioning-view-active"></a>
 
-You can view the active version of a message template in two ways: while you're creating a message that uses the template, and by using the **Message templates** page\. To view the active version of a template while you're creating a message, choose the template for the message\. Amazon Pinpoint automatically displays a preview of the active version of the template\. To view the active version of a template by using the **Message templates** page, follow the steps in this topic\.
+You can view the active version of a message template in two ways: while you're creating a message that uses the template, and by using the **Message templates** page\. To view the active version of a template while you're creating a message, choose the template for the message\. Amazon Pinpoint automatically displays a preview of the active version of the template\. 
+
+To view the active version of a template by using the **Message templates** page, follow the steps in this topic\.
 
 **To view the active version of a message template**
 
@@ -100,7 +104,7 @@ Before you designate a version as the active version of a template, it's a good 
 
 It's also a good idea to verify that the differences between the current and proposed active versions won't affect existing messages in unexpected or unwanted ways\. If you designate a different version as the active version, Amazon Pinpoint might apply your change to existing messages that use the template and haven't been sent yet\. This depends on how you configured the messages that use the template\. For more information, see [Version Settings for Messages](#message-templates-versioning-overview-versions-messages)\.
 
-If the template is being used in messages that haven't been sent yet, compare the version that's currently active to the version that you want to make active\. Also, review any journey activities and campaigns that use the template\. Then, edit the template as necessary to address any issues that you find, before you designate a different version as the active version\.
+If the template is being used in messages that haven't been sent yet, compare the version that's currently active to the version that you want to make active\. Also, review any journey activities and campaigns that use the template\. Then, edit the template as necessary to address any issues that you find before you designate a different version as the active version\.
 
 If you're concerned about the effects of designating a different version as the active version, you can [create a copy of the template](message-templates-managing.md#message-templates-managing-copy) instead\. You can then edit and use the template copy in new messages\.
 
@@ -126,7 +130,7 @@ It's also a good idea to verify that your changes won't affect existing messages
 
 To determine how your changes might affect existing messages, review the contents and settings for the version of the template that's currently active\. Also, review any journey activities and campaigns that use the template\. Then, consider the changes that you plan to make and ensure that your changes align with your goals for existing messages that use the template\. 
 
-Finally, if you're concerned about the effects of editing the active version of the template, you can [create a copy of the template](message-templates-managing.md#message-templates-managing-copy) instead\. You can then edit and use the template copy in messages that you subsequently create\.
+Finally, if you're concerned about the effects of editing the active version of the template, you can [create a copy of the template](message-templates-managing.md#message-templates-managing-copy) instead\. You can then edit and use the template copy in messages that you create later\.
 
 **To edit the active version of a message template**
 

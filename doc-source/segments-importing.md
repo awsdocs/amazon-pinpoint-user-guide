@@ -33,7 +33,7 @@ When you import a segment, remember the following:
 + The files that you import must use UTF\-8 character encoding\.
 + If you're importing new endpoints, the `Address` and `ChannelType` attributes are required\.
 + If you're updating existing endpoints, the `Id` attribute is required for each endpoint that you want to update\.
-+ Your endpoint definitions can include only certain attributes\. For a list, see [Available Attributes](#segments-importing-available-attributes)\.
++ Your endpoint definitions can include only certain attributes\. For a list, see [Supported Attributes](#segments-importing-available-attributes)\.
 
 ### Example Segment Files<a name="segments-importing-examples"></a>
 
@@ -44,11 +44,11 @@ The example files in this section are based on the following data:
 
 | ChannelType | Address | Location\.Country | Demographic\.Platform | Demographic\.Make | User\.UserId | 
 | --- | --- | --- | --- | --- | --- | 
-| SMS | \+12365550182 | CAN | Android | LG | example\-user\-id\-1 | 
-| APNS | 1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f | USA | iOS | Apple | example\-user\-id\-2 | 
-| EMAIL | john\.stiles@example\.com | USA | iOS | Apple | example\-user\-id\-2 | 
-| GCM | 4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c | CHN | Android | Google | example\-user\-id\-3 | 
-| EMAIL | wang\.xiulan@example\.com | CHN | Android | OnePlus | example\-user\-id\-3 | 
+| SMS | \+12365550182 | CA | Android | LG | example\-user\-id\-1 | 
+| APNS | 1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f | US | iOS | Apple | example\-user\-id\-2 | 
+| EMAIL | john\.stiles@example\.com | US | iOS | Apple | example\-user\-id\-2 | 
+| GCM | 4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c | CN | Android | Google | example\-user\-id\-3 | 
+| EMAIL | wang\.xiulan@example\.com | CN | Android | OnePlus | example\-user\-id\-3 | 
 
 Each row in this table represents an individual endpoint\. Note that the user IDs `example-user-id-2` and `example-user-id-3` are assigned to two endpoints each\.
 
@@ -57,25 +57,25 @@ You can import endpoints that are defined in a CSV file, as in the following exa
 
 ```
 ChannelType,Address,Location.Country,Demographic.Platform,Demographic.Make,User.UserId
-SMS,2065550182,CAN,Android,LG,example-user-id-1
-APNS,1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f,USA,iOS,Apple,example-user-id-2
-EMAIL,john.stiles@example.com,USA,iOS,Apple,example-user-id-2
-GCM,4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c,CHN,Android,Google,example-user-id-3
-EMAIL,wang.xiulan@example.com,CHN,Android,OnePlus,example-user-id-3
+SMS,2065550182,CA,Android,LG,example-user-id-1
+APNS,1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f,US,iOS,Apple,example-user-id-2
+EMAIL,john.stiles@example.com,US,iOS,Apple,example-user-id-2
+GCM,4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c,CN,Android,Google,example-user-id-3
+EMAIL,wang.xiulan@example.com,CN,Android,OnePlus,example-user-id-3
 ```
-The first line is the header, which contains the endpoint attributes\. For the supported attributes, see [Available Attributes](#segments-importing-available-attributes)\.  
+The first line is the header, which contains the endpoint attributes\. For a complete list of possible attributes, see [Supported Attributes](#segments-importing-available-attributes)\.  
 The subsequent lines define the endpoints by providing values for each attribute in the header\.  
 To include a comma, line break, or double quote in a value, enclose the value in double quotes, as in `"aaa,bbb"`\. For more information about the CSV format, see [RFC 4180 Common Format and MIME Type for Comma\-Separated Values \(CSV\) Files](https://tools.ietf.org/html/rfc4180)\.
 You can import endpoints that are defined in a newline\-delimited JSON file\. In this format, each line is a complete JSON object that contains an individual endpoint definition, as in the following example:  
 
 ```
-{"ChannelType":"SMS","Address":"2065550182","Location":{"Country":"CAN"},"Demographic":{"Platform":"Android","Make":"LG"},"User":{"UserId":"example-user-id-1"}}
-{"ChannelType":"APNS","Address":"1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f","Location":{"Country":"USA"},"Demographic":{"Platform":"iOS","Make":"Apple"},"User":{"UserId":"example-user-id-2"}}
-{"ChannelType":"EMAIL","Address":"john.stiles@example.com","Location":{"Country":"USA"},"Demographic":{"Platform":"iOS","Make":"Apple"},"User":{"UserId":"example-user-id-2"}}
-{"ChannelType":"GCM","Address":"4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c","Location":{"Country":"CHN"},"Demographic":{"Platform":"Android","Make":"Google"},"User":{"UserId":"example-user-id-3"}}
-{"ChannelType":"EMAIL","Address":"wang.xiulan@example.com","Location":{"Country":"CHN"},"Demographic":{"Platform":"Android","Make":"OnePlus"},"User":{"UserId":"example-user-id-3"}}
+{"ChannelType":"SMS","Address":"2065550182","Location":{"Country":"CA"},"Demographic":{"Platform":"Android","Make":"LG"},"User":{"UserId":"example-user-id-1"}}
+{"ChannelType":"APNS","Address":"1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f","Location":{"Country":"US"},"Demographic":{"Platform":"iOS","Make":"Apple"},"User":{"UserId":"example-user-id-2"}}
+{"ChannelType":"EMAIL","Address":"john.stiles@example.com","Location":{"Country":"US"},"Demographic":{"Platform":"iOS","Make":"Apple"},"User":{"UserId":"example-user-id-2"}}
+{"ChannelType":"GCM","Address":"4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c","Location":{"Country":"CN"},"Demographic":{"Platform":"Android","Make":"Google"},"User":{"UserId":"example-user-id-3"}}
+{"ChannelType":"EMAIL","Address":"wang.xiulan@example.com","Location":{"Country":"CN"},"Demographic":{"Platform":"Android","Make":"OnePlus"},"User":{"UserId":"example-user-id-3"}}
 ```
-For the supported attributes, see [Available Attributes](#segments-importing-available-attributes)\.
+For a complete list of possible attributes, see [Supported Attributes](#segments-importing-available-attributes)\.
 
 **Example File with User IDs**  
 You can also import user IDs that are listed in a CSV file, as in the following example:  
@@ -133,7 +133,7 @@ You can also drag files from your computer's file explorer and drop them directl
 1. When you upload files to Amazon Pinpoint, you have to provide a segment name for each file that you import\. Under **Segment names**, enter a segment name for each file that you want to import, as shown in the following image\.  
 ![\[\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/segments-import-names.png)
 **Note**  
-By default, Amazon Pinpoint provides a segment name that is equal to the name of the imported file, but without the file extension\. You can change these default values to any name\.  
+By default, Amazon Pinpoint provides a segment name that is equal to the name of the imported file, but without the file name extension\. You can change these default values to any name\.  
 You can use the same name for multiple segments\. If you do, Amazon Pinpoint creates a distinct segment for each file, and assigns a unique ID to each file\. The creation date is also slightly different for each file that you import\. You can use these factors to distinguish between segments that have the same name\.
 
 1. When you finish, choose **Create segment**\.
@@ -178,11 +178,11 @@ Amazon Pinpoint can import only one file format \(CSV or JSON\) per segment, so 
 
 1. Choose **Create segment**\.
 
-## Available Attributes<a name="segments-importing-available-attributes"></a>
+## Supported Attributes<a name="segments-importing-available-attributes"></a>
 
-The table in this section provides the attributes that you can specify in the endpoint definitions that you import into Amazon Pinpoint\. If you import segments by using CSV files, the headers in the file should match the names shown in the **Attributes** column\.
+The table in this section lists and describes the attributes that you can specify in endpoint definitions that you import into Amazon Pinpoint\. If you import segments by using CSV files, the headers in the file should match the names shown in the **Attribute** column\.
 
-For JSON files, a period in the attribute name indicates that the name following the period is an object that's nested in a parent object with a name equal to the value preceding the period\. For example, a JSON file that contains the `Demographic.Make` and `Demographic.Model` attributes has the following structure:
+For JSON files, a period in the attribute name indicates that the name following the period is an object that's nested in a parent object with a name that's equal to the value preceding the period\. For example, a JSON file that contains the `Demographic.Make` and `Demographic.Model` attributes has the following structure:
 
 ```
 {
@@ -199,35 +199,35 @@ For JSON files, a period in the attribute name indicates that the name following
 
 The full JSON structure closely resembles the [example Endpoint request](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-schemas) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the Endpoint request schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
 
-You can replace attribute names that are shown in italics with any value\. For example, you can create custom attributes called `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`\.
+You can replace attribute names that are shown as `custom_attribute` with any value\. For example, if you want to store users' first and last names in attributes named `FirstName` and `LastName`, you can create custom attributes named `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`, respectively\.
 
 
 | Attribute | Description | 
 | --- | --- | 
-| Address | The unique destination of the endpoint, such as an email address, a mobile phone number, or a token for push notifications\. | 
-| Attributes\.custom\_attribute | Custom attributes that your app reports to Amazon Pinpoint\. You can use these attributes as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\. | 
-| ChannelType | The channel type of the endpoint\. Acceptable values are:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/segments-importing.html) | 
+| Address | The unique destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token\. | 
+| Attributes\.custom\_attribute | A custom attribute that describes the endpoint\. You can use this type of attribute as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\. | 
+| ChannelType | The channel to use when sending messages or push notifications to the endpoint\. For example:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/segments-importing.html) | 
 | Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 
-| Demographic\.Locale | The locale of the endpoint in ISO 15897 format\. For example, en\_US \(English language locale for the United States\) or zh\_CN \(Chinese locale for China\)\. | 
-| Demographic\.Make | The manufacturer of the endpoint device, such as Apple or Samsung\. | 
-| Demographic\.Model | The model of the endpoint device, such as iPhone\. | 
+| Demographic\.Locale | The locale of the endpoint, in the following format: the [ISO 639\-1 alpha\-2](https://en.wikipedia.org/wiki/ISO_639-1) code, followed by an underscore \(\_\), followed by an [ISO 3166\-1 alpha\-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) value\. For example, en\_US is the English language locale for the United States\. | 
+| Demographic\.Make | The manufacturer of the endpoint device, such as apple or samsung\. | 
+| Demographic\.Model | The model name or number of the endpoint device, such as iPhone or SM\-G900F\. | 
 | Demographic\.ModelVersion | The model version of the endpoint device\. | 
-| Demographic\.Platform | The operating system of the endpoint device, such as ios or android\. | 
-| Demographic\.PlatformVersion | The platform version of the endpoint device\. | 
-| Demographic\.Timezone | The time zone of the endpoint\. It's specified as a [tz database value](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), such as America/Los\_Angeles\. | 
-| EffectiveDate | The time when the endpoint was last updated, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 20171011T150548Z\. | 
-| Id | The unique ID of the endpoint\. | 
+| Demographic\.Platform | The operating system on the endpoint device, such as ios or android\. | 
+| Demographic\.PlatformVersion | The version of the operating system on the endpoint device\. | 
+| Demographic\.Timezone | The endpoint's time zone, as a [tz database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) value\. For example, America/Los\_Angeles for Pacific Time \(North America\)\. | 
+| EffectiveDate | The date and time when the endpoint was last updated, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 2019\-08\-23T10:54:35\.220Z for 10:54 AM UTC August 23, 2019\. | 
+| Id | A unique identifier for the endpoint\. | 
 | Location\.City | The city where the endpoint is located\. | 
-| Location\.Country | The three\-letter code for the country or region where the endpoint is located, in ISO 3166\-1 alpha\-3 format\. For example, USA \(United States\) or CHN \(China\)\. For a complete list of ISO 3166\-1 alpha\-3 abbreviations, see the [ISO website](https://www.iso.org/obp/ui/#search/code/)\. | 
-| Location\.Latitude | The latitude coordinate of the endpoint location, rounded to one decimal place\. | 
-| Location\.Longitude | The longitude coordinate of the endpoint location, rounded to one decimal place\. | 
-| Location\.PostalCode | The postal or ZIP code of the endpoint\. | 
-| Location\.Region | The region of the endpoint location, such as a state or province\. | 
-| Metrics\.custom\_attribute | Custom metrics, such as the number of sessions or number of items left in a cart, to use for segmentation purposes\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\.These custom values can only be numeric\. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as the average or sum, on them\. | 
-| OptOut | Indicates whether a user has opted out of receiving messages\. Acceptable values are: ALL \(the user has opted out of all messages\) or NONE \(the user hasn't opted out and receives all messages\)\. | 
-| RequestId | The unique ID of the most recent request to update the endpoint\. | 
-| User\.UserAttributes\.custom\_attribute | Custom attributes that are specific to the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. You can specify up to 20 custom attributes per endpoint\. | 
-| User\.UserId | The unique ID of the user\. | 
+| Location\.Country | The two\-character code, in [ISO 3166\-1 alpha\-2 format](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), for the country or region where the endpoint is located\. For example, US for the United States\. | 
+| Location\.Latitude | The latitude coordinate of the endpoint's location, rounded to one decimal place\. | 
+| Location\.Longitude | The longitude coordinate of the endpoint's location, rounded to one decimal place\. | 
+| Location\.PostalCode | The postal or ZIP code for the area where the endpoint is located\. | 
+| Location\.Region | The name of the region, such as a state or province, where the endpoint is located\. | 
+| Metrics\.custom\_attribute | A custom numeric metric that your application reports to Amazon Pinpoint for the endpoint—for example, the number of sessions or number of items left in a cart—to use for segmentation purposes\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\.These custom values can only be numeric\. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as average or sum, on them\. | 
+| OptOut | Indicates whether a user opted out of receiving messages and push notifications from you\. Acceptable values are: ALL, the user opted out and doesn't want to receive any messages or push notifications; or, NONE, the user hasn't opted out and wants to receive all messages and push notifications\. | 
+| RequestId | The unique identifier for the most recent request to update the endpoint\. | 
+| User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. You can specify up to 20 custom attributes per endpoint\. | 
+| User\.UserId | A unique identifier for the user\. | 
 
 **Note**  
 You can specify up to 20 custom attributes per endpoint for `Attributes`, `Metrics`, and `User.UserAttributes`\. However, you can create no more than 40 custom attributes per project\.

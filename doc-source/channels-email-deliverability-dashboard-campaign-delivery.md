@@ -3,7 +3,7 @@
 The **Campaign delivery metrics** section contains information about inbox placement rates for the email that you sent from your domains\. However, unlike the [Domain reputation](channels-email-deliverability-dashboard-domain.md) page, the **Campaign delivery metrics** page contains information about specific email campaigns, as opposed to information for entire domains\.
 
 When you choose a domain and a date range, you see a table that contains the following information:
-+ **Preview** – A small image that shows the content of the email\. Hover over the image to see a larger preview\.
++ **Preview** – A small image that shows the content of the email\. Pause on the image to see a larger preview\.
 + **Last send date** – The date and time when the message was last sent\.
 + **Subject** – The subject line of the email\.
 + **Sender address** – The sender \("From"\) address for the message\.
@@ -26,7 +26,7 @@ This section contains the following information about the campaign:
 + **Inbox placement** – The percentage of emails sent from the campaign that arrived in recipients' inboxes \(as opposed to their junk mail folders\)\.
 + **Spam placement** – The percentage of emails sent from the campaign that arrived in recipients' junk mail folders\.
 + **Read** – The percentage of emails that were opened by their recipients\.
-+ **Read and deleted** – The percentage of emails that were opened by their recipients and subsequently deleted\.
++ **Read and deleted** – The percentage of emails that were opened by their recipients and then deleted\.
 + **Deleted** – The percentage of emails that were deleted by their recipients without being read\.
 
 The campaign details page also includes a larger preview of body of the email\. Amazon Pinpoint automatically removes identifying information from this preview image\.

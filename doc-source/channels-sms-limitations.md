@@ -1,8 +1,8 @@
 # SMS Limits and Restrictions in Amazon Pinpoint<a name="channels-sms-limitations"></a>
 
-The SMS protocol is subject to several restrictions and limitations\. For example, there are technical limitations that limit the length of each SMS message\. There are also restrictions on the type of content that you can send using SMS\. This topic discusses several of these limitations\. 
+The SMS protocol is subject to several limitations and restrictions\. For example, there are technical limitations that limit the length of each SMS message\. There are also restrictions on the type of content that you can send using SMS\. This topic discusses several of these limitations and restrictions\. 
 
-When you send SMS messages using Amazon Pinpoint, you should consider these limits and restrictions\. For best results, you should also implement the techniques discussed in [SMS Best Practices](channels-sms-best-practices.md)\.
+When you send SMS messages using Amazon Pinpoint, you should consider these limitations and restrictions\. For best results, you should also implement the techniques discussed in [SMS Best Practices](channels-sms-best-practices.md)\.
 
 ## Character Limits<a name="channels-sms-limitations-characters"></a>
 

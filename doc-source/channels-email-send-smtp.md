@@ -6,7 +6,7 @@ For example, you can use common programming libraries, such as the `System.Net.M
 
 You can also configure email server applications, such as Postfix or Sendmail, to send email through the Amazon Pinpoint SMTP interface\. This solution can be useful if you want to use your existing email server, but you also want to use the features of Amazon Pinpoint, such as bounce and complaint event publishing or the analytics charts in the Amazon Pinpoint console\.
 
-You might also be able to configure desktop email applications, such as Mozilla Thunderbird, to send email using the Amazon Pinpoint SMTP interface\. However, this solution is only useful in limited situations, because most email clients require you to set up an incoming mail server, which Amazon Pinpoint doesn't offer\. See the documentation for your email client to determine if it requires you to enter the address of an incoming mail server, also referred to as an *IMAP server*\.
+You might also be able to configure desktop email applications, such as Mozilla Thunderbird, to send email using the Amazon Pinpoint SMTP interface\. However, this solution is only useful in certain situations, because most email clients require you to set up an incoming mail server, which Amazon Pinpoint doesn't offer\. See the documentation for your email client to determine if it requires you to enter the address of an incoming mail server, also referred to as an *IMAP server*\.
 
 ## Obtaining SMTP Credentials<a name="channels-email-send-smtp-credentials"></a>
 

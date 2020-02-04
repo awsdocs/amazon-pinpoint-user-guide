@@ -24,7 +24,7 @@ Even when you have your customers' best interests in mind, you may still encount
 + Implement a double opt\-in strategy\. When users sign up to receive email from you, send them a message with a confirmation link, and don't start sending them email until they confirm their address by clicking that link\. A double opt\-in strategy helps reduce the number of hard bounces resulting from typographical errors\.
 + When collecting email addresses with a web\-based form, perform minimal validation on those addresses upon submission\. For example, ensure that the addresses you collect are well\-formed \(that is, they are in the format recipient@example\.com\), and that they refer to domains with valid MX records\.
 + Use caution when allowing user\-defined input to be passed to Amazon SES unchecked\. Forums registrations and form submissions present unique risks because the content is completely user\-generated, and spammers can fill out forms with their own content\. It's your responsibility to ensure that you only send email with high\-quality content\.
-+ it's highly unlikely that a standard alias \(such as *postmaster@*, *abuse@*, or *noc@*\) will ever sign up for your email intentionally\. Ensure that you only send messages to real people who actually want to receive them\. This rule is especially true for standard aliases, which are customarily reserved for email watchdogs\.
++ It's highly unlikely that a standard alias \(such as *postmaster@*, *abuse@*, or *noc@*\) will ever sign up for your email intentionally\. Ensure that you only send messages to real people who actually want to receive them\. This rule is especially true for standard aliases, which are customarily reserved for email watchdogs\.
 
 ## Compliance<a name="channels-email-best-practices-compliance"></a>
 + Be aware of the email marketing and anti\-spam laws and regulations in the countries and regions you send email to\. You're responsible for ensuring that the email you send complies with these laws\. This guide doesn't cover these laws, so it's important that you research them\. For a list of laws, see [Email Spam Legislation by Country](https://en.wikipedia.org/wiki/Email_spam_legislation_by_country) on Wikipedia\.
@@ -64,9 +64,9 @@ When you receive complaints, it's vital that you respond to them appropriately b
 
 ## Message Quality<a name="channels-email-best-practices-quality"></a>
 
-Email receivers use *content filters* to detect certain attributes in your messages to identify whether your message is legitimate\. These content filters automatically review the content of your messages to identify common traits of unwanted to malicious messages\. Amazon Pinpoint uses content filtering technologies to help detect and block messages that contain malware before they are sent\.
+Email receivers use *content filters* to detect certain characteristics of messages and determine whether a message is legitimate\. These content filters automatically review the content of messages to identify common traits of unwanted to malicious messages\. Amazon Pinpoint uses content filtering technologies to help detect and block messages that contain malware before they are sent\.
 
-If an email receiver's content filters determine that your message contains the characteristics of spam or malicious email, your message will most likely be flagged and diverted from recipients' inboxes\.
+If an email receiver's content filters determine that your message has characteristics of spam or malicious email, your message will most likely be flagged and diverted from recipients' inboxes\.
 
 Remember the following when designing your email:
 + Modern content filters are intelligent, continuously adapting and changing\. They don't rely on a predefined set of rules\. Third\-party services such as [ReturnPath](https://returnpath.com/) or [Litmus](https://litmus.com/) can help identify content in your email that may trigger content filters\.

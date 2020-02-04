@@ -57,7 +57,7 @@ This section contains the following information:
 + **Transient failure** – The number of messages that weren't sent because of a temporary failure\.
 + **Service failure** – The number of messages that weren't sent because of an issue with the Amazon Pinpoint service\.
 + **Unknown failure** – The number of messages that weren't sent because of an unknown reason\.
-+ **Throttled** – The number of messages that weren't sent because sending them would exceed the sending limits for your Amazon Pinpoint account\.
++ **Throttled** – The number of messages that weren't sent because sending them would exceed the sending quotas for your Amazon Pinpoint account\.
 
 ## Engagement Metrics<a name="journeys-metrics-engagement"></a>
 

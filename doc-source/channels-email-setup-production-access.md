@@ -6,4 +6,4 @@ We use a sandbox environment to help protect our customers from fraud and abuse\
 + You can send a maximum of 200 messages per 24\-hour period\.
 + You can send a maximum of one message per second\.
 
-To remove these restrictions, see [Opening a Sending Limits Increase Case](channels-email-manage-limits.md#channels-email-manage-limits-increase-case)\.
+To learn how to remove these restrictions, see [Requesting a Quota Increase](channels-email-manage-limits.md#channels-email-manage-limits-increase-case)\.

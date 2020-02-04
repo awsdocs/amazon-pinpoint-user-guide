@@ -1,6 +1,6 @@
 # Sending a Test Email Message<a name="messages-email"></a>
 
-To send a test email message, you have to use a project in which the email channel is enabled\. To learn how to create a new project with email support, see [Setting up the Amazon Pinpoint Email Channel](channels-email-setup.md)\. To learn how to add email support to an existing project, see [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)\.
+To send a test email message, you have to use a project that has the email channel enabled\. To learn how to create a new project and enable the email channel for it, see [Setting up the Amazon Pinpoint Email Channel](channels-email-setup.md)\. To learn how to enable the email channel for an existing project, see [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)\.
 
 **To send a test email message**
 
@@ -24,8 +24,7 @@ To send a test email message, you have to use a project in which the email chann
 
    If you choose to create a new message, specify a subject in the **Subject** field, and a message body in the **Message** field\.
 **Tip**  
-You can enter the message body by using either HTML or Design view\. In the HTML view, you can manually enter HTML content for the message body, including formatting, links, and other features that you want to include in the message\. In the Design view, you can use a rich text editor to enter the content of the message body, and use the formatting toolbar to apply formatting and add links and other features to the message body\. To switch views, choose **HTML** or **Design** from the view selector above the message editor\.  
-You can also include personalized content in your message\. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created for the project, such as an attribute that stores a user's first name\. By using message variables, you can display different content for each recipient of a message\. To use a message variable, add the name of an existing attribute to the message\. Enclose the name in two sets of curly braces, and use the exact capitalization of the name—for example, `{{User.UserAttributes.FirstName}}`\.
+You can enter the message body by using either HTML or Design view\. In the HTML view, you can manually enter HTML content for the message body, including formatting, links, and other features that you want to include in the message\. In the Design view, you can use a rich text editor to enter the content of the message body\. You can use the formatting toolbar to apply formatting and add links and other features to the message body\. To switch views, choose **HTML** or **Design** from the view selector above the message editor\.
 
    In the field below the message editor, optionally enter the content that you want to display in the body of messages that are sent to recipients whose email applications don't display HTML content\.
 

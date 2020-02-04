@@ -63,10 +63,10 @@ In addition to the standard content and settings, you can choose the following o
    + **Android icon** – Enter the URL of the large icon image to display in the content view of the push notification\.
    + **Android small icon** – Enter the URL of the small icon image to display in the status bar and in the content view of the push notification\.
 
-1. <a name="step10"></a>\(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\.
+1. <a name="step10"></a>\(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\. Although this step is optional, we recommend that you do this for each variable in the template\.
 
    To specify default values for variables, expand the **Default personalization values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
 
 1. When you finish entering content and settings for the template, choose **Create**\.
 
-If you want to test the template before you use it in a push notification that you send to users, you can [send a test notification](messages-mobile.md) that uses the template\.
+If you want to test the template before you use it in a push notification that you send to users, you can [send a test notification](messages-mobile.md) that uses the template\. If you do this, ensure that you first complete step 10 to specify default values for all the variables in the template\. Otherwise, the push notification might not be sent or it might not render correctly\.

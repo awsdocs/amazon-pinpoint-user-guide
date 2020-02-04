@@ -18,7 +18,7 @@ New Amazon Pinpoint customers are placed in a "sandbox" environment\. When your 
 
 We put new accounts in the sandbox in order to prevent unscrupulous users from creating multiple accounts and using them to send unsolicited or malicious email\. In order to have your account removed from the sandbox, you have to demonstrate that you follow industry best practices, and that your email sending practices abide by the policies in the [AWS Service Terms](https://aws.amazon.com/service-terms/) and [AWS Acceptable Use Policy](https://aws.amazon.com/agreement/) documents\.
 
-For information about having your account removed from the sandbox, see [Opening a Sending Limits Increase Case](channels-email-manage-limits.md#channels-email-manage-limits-increase-case)\.
+For information about having your account removed from the sandbox, see [Managing Email Sending Quotas](channels-email-manage-limits.md)\.
 
 ### View Your Response Metrics<a name="tutorials-send-an-email-next-steps-whats-next-metrics"></a>
 

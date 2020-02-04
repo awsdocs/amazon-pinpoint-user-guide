@@ -2,13 +2,13 @@
 
 On the **Bounce and complaint rates** page, you can find important metrics related to the bounce and complaint rates for your combined Amazon Pinpoint and Amazon Simple Email Service \(Amazon SES\) account\.
 
-A *bounce* occurs when an email that you send can't be delivered because of a permanent issue\. For example, a bounce might occur if the recipient's address doesn't exist, or if the recipient's email providers is blocking email from your domain or IP address\. Email providers consider a high bounce rate to be a negative sign, because it indicates that you're sending email to people who haven't explicitly opted to receive messages from you\. A high bounce rate could have a negative impact on the delivery of your emails\.
+A *bounce* occurs when an email that you send can't be delivered because of a permanent issue\. For example, a bounce might occur if the recipient's address doesn't exist, or if the recipient's email providers is blocking email from your domain or IP address\. Email providers consider a high bounce rate to be a negative sign\. This is because it indicates that you're sending email to people who haven't explicitly opted to receive messages from you\. A high bounce rate could have a negative impact on the delivery of your emails\.
 
-A *complaint* occurs when a customer receives an email from you and reports it to their email provider as unwanted \(such as by using the *Report Spam* feature in their email client\)\. Email providers consider complaints to be a very serious sign that your domain is sending unsolicited email\. For this reason, a high complaint rate can have a very negative impact on the delivery of your email\.
+A *complaint* occurs when a customer receives an email from you and reports it to their email provider as an unwanted email \(for example, by using the *Report Spam* feature in their email client\)\. Email providers consider complaints to be a serious sign that your domain is sending unsolicited email\. For this reason, a high complaint rate can have a very negative impact on the delivery of your email\.
 
 High bounce and complaint rates often indicate that a sender is sending unsolicited email to their recipients\. For this reason, email providers carefully consider your bounce and complaint rates when they determine whether to send your email to the inbox or to the junk mail folder\.
 
-You can use the **Bounce and complaint rates** page to keep track of these account\-wide metrics\. On this page, you can also create alarms that notify you when your bounce or complaint rates reach certain limits\.
+You can use the **Bounce and complaint rates** page to keep track of these account\-wide metrics\. On this page, you can also create alarms that notify you when your bounce or complaint rates reach certain thresholds\.
 
 ## Overview<a name="channels-email-deliverability-dashboard-bounce-complaint-overview"></a>
 
@@ -23,7 +23,7 @@ This section shows the status of your account\. The following is a list of possi
 + **Healthy** – There are no issues currently impacting your account\.
 + **Under review** – Your account is under review\. If the issues that caused us to place your account under review aren't resolved by the end of the review period, we might pause your account's ability to send email\.
 + **Pending end of review decision** – Your account is under review\. Because of the nature of the issues that caused us to place your account under review, we need to perform a manual review of your account before we take any further action\.
-+ **Sending paused** – We've paused your account's ability to send email\. While your account's ability to send email is paused, you won't be able to send email using Amazon Pinpoint or Amazon SES\. You can request that we review this decision\.
++ **Sending paused** – We've paused your account's ability to send email\. While your account's ability to send email is paused, you aren't able to send email using Amazon Pinpoint or Amazon SES\. You can request that we review this decision\.
 + **Pending sending pause** – Your account is under review\. The issues that caused us to place your account under review haven't been resolved\. In this situation, we typically pause your account's ability to send email\. However, because of the nature of your account, we need to review your account before any further action is taken\.
 
 The number that's shown under **Emails sent** is the number of emails that we considered in making this determination\. The number under **Sent over period** is the period of time during which you sent those emails\.
@@ -74,7 +74,7 @@ On the **Alarms** tab, you can create alarms that send you notifications when th
       + **Bounce rate**
       + **Complaint rate**
 
-   1. Configure the values that cause the alarm to be triggered\. For example, if you want to be notified when the bounce rate for your account is 5% or greater, choose **>=**, and then enter a value of **5**, as shown in the following image\.  
+   1. Configure the values that cause the alarm to be triggered\. For example, if you want to be notified when the bounce rate for your account is 5% or greater, choose **>=**\. Then enter a value of **5**, as shown in the following image\.  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/deliverability_dashboard_bounce_alarms_threshold.png)
 
    1. Specify the amount of time that has to elapse before the alarm is triggered\. For example, you can configure the alarm so that it only sends a notification when the bounce rate exceeds a certain rate and stays at that rate for more than 2 hours\. In this example, next to **for at least**, enter a value of **2**\. Then, next to **consecutive period\(s\) of**, choose **1 hour**, as shown in the following image\.  

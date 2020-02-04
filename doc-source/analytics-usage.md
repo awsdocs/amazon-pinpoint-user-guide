@@ -19,7 +19,12 @@ Complete the following steps to view the **Usage** charts and metrics on the Ama
 
 1. \(Optional\) To apply a filter that displays the data for a specific date or range of dates, use the date selector at the top of the page to choose the dates for the time period that you want\. After you choose new dates, the page updates to show the data for the selected time period\.
 
-1. \(Optional\) To apply a filter that displays data for only those users or endpoints that have specific attributes, choose the attribute from the **Endpoint Attributes** list\. Then choose the attribute value from the **Endpoint Attribute Values** list\. To further filter the data, repeat this step for each additional attribute and attribute value that you want to filter the data by\.
+1. \(Optional\) To apply a filter that displays data for only those users or endpoints that have specific attributes, expand the **Filters** section\. Then choose an attribute from the **Endpoint Attributes** list\. After you choose an attribute, choose an attribute value from the **Endpoint Attribute Values** list\.
+**Note**  
+To provide you with the best possible experience, we hide this filter if you haven't used it in the past 90 days\.  
+If the **Filters** section shows a message stating that the filter is unavailable, choose **More information**, and then choose **Enable filters**\. When you do, we restore the filter for your account in the current AWS Region\. Depending on the amount of data that's associated with your account, this process can take up to 72 hours to complete\.
+
+   To further filter the data, repeat this step for each additional attribute and attribute value that you want to filter the data by\.
 
 ## Chart Descriptions<a name="analytics-usage-description"></a>
 

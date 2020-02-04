@@ -7,9 +7,9 @@ You can only use short codes to send messages to recipients in the same country 
 For information about short code pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/#Dedicated_Short_Codes)\.
 
 **Important**  
-If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spend threshold that meets the expected demands of your SMS use case\. By default, your monthly spend threshold is $1\.00 USD\. You can request to increase your spend threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spending Limit for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spending threshold that meets the expected demands of your SMS use case\. By default, your monthly spending threshold is $1\.00 \(USD\)\. You can request to increase your spending threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spending Quota for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
-## Step 1: Open a Service Limit Increase Case<a name="channels-sms-awssupport-short-code-open"></a>
+## Step 1: Open a Support Case<a name="channels-sms-awssupport-short-code-open"></a>
 
 Open a case with AWS Support by completing the following steps\.
 
@@ -22,18 +22,18 @@ Open a case with AWS Support by completing the following steps\.
 
 1. On the **My support cases** tab, choose **Create case**\.
 
-1. Under **Create case**, choose **Service limit increase**\.
+1. Choose **Service quota increase**\.
 
 1. Under **Case classification**, complete the following sections:
-   + For **Limit type**, choose **Pinpoint SMS**\.
-   + For **Link to site or app which will be sending SMS**, provide information about the website, application, or service that will send SMS messages\.
-   + For **Type of messages**, choose the type of messages that you plan to send using your short code\.
-   + For **Targeted countries**, enter the country or region that you want to purchase short codes in\.
+   + For **Quota type**, choose **Pinpoint SMS**\.
+   + For **Provide a link to the site or app which will be sending SMS messages**, provide information about the website, application, or service that will send SMS messages\.
+   + For **What type of messages do you plan to send**, choose the type of messages that you plan to send using your short code\.
+   + For **Which countries do you plan to send messages to**, enter the country or region that you want to purchase short codes in\.
 
 1. Under **Requests**, complete the following sections:
    + For **Resource Type**, choose **Dedicated SMS Short Codes**\.
-   + For **Limit**, choose the type of messages that you plan to send using this short code\.
-   + For **New limit value**, enter the number of short codes that you want to purchase\.
+   + For **Quota**, choose the type of messages that you plan to send using this short code\.
+   + For **New quota value**, enter the number of short codes that you want to purchase\.
 
 1. Under **Case description**, for **Use case description**, provide the following information:
 

@@ -16,12 +16,18 @@ Complete the following steps to view the **Events** charts and metrics on the Am
 
 1. \(Optional\) To apply a filter that displays the data for a specific date or range of dates, use the date selector at the top of the page to choose the dates for the time period that you want\. After you choose new dates, the page updates to show the data for the selected time period\.
 
-1. \(Optional\) To apply a filter that displays the data for only specific types of events, choose the event type from the **Event** list\. Then choose the event attributes or metrics and values from the **Event Attributes and Metrics** and **Event Attribute Values** lists\. To further filter the data, repeat this step for each additional event that you want to filter the data by\.
+1. \(Optional\) To apply additional filters, expand the **Filters** section\.
 **Note**  
 To provide you with the best possible experience, we hide these filters if you haven't used them in the past 90 days\.  
-If the filter section shows a message stating that the filters are unavailable, choose **More information**, and then choose **Enable filters**\. When you do, we will restore the filters for your account in the current AWS Region\. Depending on the amount of data that's associated with your account, this process can take up to 72 hours to complete\.
+If the **Filters** section shows a message stating that the filters are unavailable, choose **More information**, and then choose **Enable filters**\. When you do, we restore the filters for your account in the current AWS Region\. Depending on the amount of data that's associated with your account, this process can take up to 72 hours to complete\.
 
-1. \(Optional\) To apply a filter that displays data for only those endpoints that have specific attributes, choose the attribute from the **Endpoint Attributes** list\. Then choose the attribute value from the **Endpoint Attribute Values** list\. To further filter the data, repeat this step for each additional attribute and attribute value that you want to filter the data by\.
+   If the additional filters are available, do any of the following:
+   + To apply a filter that displays the data for only a specific type of event, choose the event type from the **Event** list\. After you choose an event type, choose event attributes or metrics and a value from the **Event Attributes and Metrics** and **Event Attribute Values** lists\.
+
+     The **Event** list displays the types of events that your app reported during the past 14 days\. If your app didn't report any events during that time period, only the **All event types** option is available and you can't filter the data by a specific type of event\.
+   + To apply a filter that displays data for only those endpoints that have a specific attribute, choose the attribute from the **Endpoint Attributes** list\. After you choose an attribute, choose an attribute value from the **Endpoint Attribute Values** list\.
+
+   To further filter the data, repeat this step for each additional event or attribute that you want to filter the data by\.
 
 ## Chart Descriptions<a name="analytics-events-description"></a>
 

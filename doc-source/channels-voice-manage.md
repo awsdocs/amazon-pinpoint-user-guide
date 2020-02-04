@@ -1,6 +1,6 @@
 # Managing the Amazon Pinpoint Voice Channel<a name="channels-voice-manage"></a>
 
-You can use the Amazon Pinpoint console to change some of the settings and limits that apply to the voice channel\. For example, you can request production access for your account, or lease dedicated phone numbers for sending voice messages\.
+You can use the Amazon Pinpoint console to change some of the settings that apply to the voice channel\. For example, you can request production access for your account, or lease dedicated phone numbers for sending voice messages\.
 
 **Topics**
 + [Requesting Production Access](#channels-voice-manage-sandbox)
@@ -9,30 +9,35 @@ You can use the Amazon Pinpoint console to change some of the settings and limit
 
 ## Requesting Production Access<a name="channels-voice-manage-sandbox"></a>
 
-When you first start using the voice channel, your account is in the *sandbox*\. While your account is in the sandbox, certain limits apply to your account\. For more information about these limits, see [Voice Limits](https://docs.aws.amazon.com/pinpoint/latest/developerguide/limits.html#limits-voice) in the *Amazon Pinpoint Developer Guide*\.
+When you first start using the voice channel, your account is in the *sandbox*\. While your account is in the sandbox, certain quotas apply to your account\. For more information about these quotas, see [Voice Quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html#quotas-voice) in the *Amazon Pinpoint Developer Guide*\.
 
-To remove these limits from your account, you can request to have your account removed from the sandbox\. When your account is removed from the sandbox, it has *production access*\.
+To remove these quotas from your account, you can request to have your account removed from the sandbox\. When your account is removed from the sandbox, it has *production access*\.
 
 **To request production access**
 
-1. [Create a new case in Support Center](https://console.aws.amazon.com/support/v1#/case/create)\.
+1. Sign in to the AWS Management Console at [https://console\.aws\.amazon\.com/](https://console.aws.amazon.com/)\.
 
-1. Choose **Create case**\.
+1. On the **Support** menu, choose **Support Center**\.
 
-1. For **Regarding**, choose **Service Limit Increase**\.
+1. On the **My support cases** tab, choose **Create case**\.
 
-1. For **Limit Type**, choose **Pinpoint Voice**\.
+1. Choose **Service quota increase**\.
 
-1. For **Region**, choose the AWS Region that you use to send voice messages\.
+1. Under **Case classification**, for **Quota type**, choose **Pinpoint Voice**\.
 
-1. For **Limit**, choose **Production Access**\.
+1. For **How do you obtain consent to send voice messages to your customers**, explain how users sign up to voluntarily receive your voice messages\.
 
-1. For **New limit value**, type the maximum amount in USD that you want to spend on voice messages each calendar month\.
+1. For **How can customers opt out of receiving messages from you**, explain how you ensure that you send voice messages only to recipients who want to receive voice messages from you\.
 
-1. For **Use Case Description**, provide the following details:
+1. Under **Requests**, for **Region**, choose the AWS Region that you use to send voice messages\.
+
+1. For **Quota**, verify that **Production Access** is selected\.
+
+1. For **New quota value**, enter the maximum amount in USD that you want to spend on voice messages each calendar month\.
+
+1. Under **Case description**, for **Use case description**, provide the following details:
    + The website or app of the company or service that will send voice messages\.
    + The service that's provided by your website or app, and how your voice messages contribute to that service\.
-   + Information about how users sign up to voluntarily receive your voice messages\.
 
 1. When you finish, choose **Submit**\. 
 
@@ -58,7 +63,7 @@ You can use the Amazon Pinpoint console to request phone numbers to use for maki
 
 1. For **Target country or region**, choose the country or region that the long code should be based in\. The long code that you receive uses the local number format for the country or region you selected\.
 **Note**  
-Currently, you can only lease long codes for a limited number of countries and regions by using the Amazon Pinpoint console\. To obtain a long code for a country that isn't listed in the **Target country or region** list, open a new **Account and Billing Support** case in the [AWS Support Center](https://console.aws.amazon.com/support/v1#/case/create)\.
+Currently, you can lease long codes for a only limited number of countries and regions by using the Amazon Pinpoint console\. To obtain a long code for a country that isn't listed in the **Target country or region** list, open a new **Account and Billing Support** case in the [AWS Support Center](https://console.aws.amazon.com/support/v1#/case/create)\.
 
 1. For **Quantity**, choose the number of phone numbers that you want to lease\.
 

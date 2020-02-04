@@ -1,6 +1,6 @@
 # The Amazon Pinpoint Deliverability Dashboard<a name="channels-email-deliverability-dashboard"></a>
 
-The Deliverability dashboard helps you identify and address issues that could impact the delivery of emails that you send\. By addressing the issues that the Deliverability dashboard identifies, you can increase the chances that the emails you send from Amazon Pinpoint and Amazon Simple Email Service \(Amazon SES\) arrive in your customers' inboxes, instead of their junk mail folders\.
+The Deliverability dashboard helps you identify and address issues that could impact the delivery of the emails that you send\. By addressing the issues that the Deliverability dashboard identifies, you can increase the chances that the emails you send from Amazon Pinpoint and Amazon Simple Email Service \(Amazon SES\) arrive in your customers' inboxes, instead of their junk mail folders\.
 
 **Important**  
 There are additional fees associated with using the Deliverability dashboard\. To learn more about these fees, see the [Amazon Pinpoint Pricing page](https://aws.amazon.com/pinpoint/pricing/)\.

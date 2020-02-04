@@ -143,25 +143,23 @@ This section contains information about writing a push notification and setting 
 
 ## Use Message Variables<a name="campaigns-message-variables"></a>
 
-To create a message that's personalized for each recipient, use message variables\. Message variables refer to specific endpoint attributes\. These attributes can include characteristics that you add to the endpoint resource, such as the recipient's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it replaces the variables with the corresponding attribute values for the receiving endpoint\. For information about the attributes that you can use, see [Endpoint Properties](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-properties) in the *Amazon Pinpoint API Reference*\.
+To create a message that's personalized for each recipient, use message variables\. Message variables refer to specific user attributes\. These attributes can include characteristics that you create and store for users, such as the user's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it replaces the variables with the corresponding attribute values for the recipient\. For information about the attributes that you can use, see [Endpoint Properties](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-properties) in the *Amazon Pinpoint API Reference*\.
 
 To include a variable in your message, enclose the attribute name in two sets of curly braces, as in `{{Demographic.AppVersion}}`\.
 
-Often, the most useful endpoint attribute for message variables is `{{Attributes.customAttributeName}}`, where `customAttributeName` refers to custom attributes that you add to the endpoint\. By using custom attributes for your variables, you can display personalized messages that are unique for each recipient\.
+Often, the most useful attributes for message variables are custom attributes that you create and store for users\. By using custom attributes for your variables, you can display personalized messages that are unique for each recipient\.
 
-For example, if your app is a fitness app for runners and it includes custom attributes for the user's name, activity, and personal record, you could use variables in the following message:
+For example, if your app is a fitness app for runners and it includes custom attributes for each user's first name, preferred activity, and personal record, you could use variables in the following message:
 
-`Hey {{Attributes.userName}}, congratulations on your new {{Attributes.activity}} PR of {{Attributes.personalRecord}}!`
+`Hey {{User.UserAttributes.FirstName}}, congratulations on your new {{User.UserAttributes.Activity}} record of {{User.UserAttributes.PersonalRecord}}!`
 
-When Amazon Pinpoint delivers this message, the content varies for each recipient after the variables are substituted\. Possible final messages are:
+When Amazon Pinpoint sends this message, the content varies for each recipient after the variables are substituted\. Possible final messages are:
 
-`Hey Jane Doe, congratulations on your new half marathon PR of 1:42:17!`
+`Hi Jane Doe, congratulations on your new half marathon record of 1:42:17!`
 
 Or:
 
-`Hey John Doe, congratulations on your new 5K PR of 20:52!`
-
-For examples of custom attributes for your app's code, see the [iOS example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-ios-register.html#mobile-sdk-ios-custom-attributes) or the [Android example](https://docs.aws.amazon.com/pinpoint/latest/developerguide/mobile-sdk-android-register.html#mobile-sdk-android-custom-attributes) in the *Amazon Pinpoint Developer Guide*\.
+`Hi John Doe, congratulations on your new 5K record of 20:52!`
 
 ## Test the Message<a name="campaigns-message-test"></a>
 
@@ -187,7 +185,7 @@ It's often helpful to send a test message to actual recipients in order to make 
 
 When you send test messages, consider the following factors:
 + You're charged for sending test messages as if they were regular campaign messages\. For example, if you send 10,000 test emails in a month, you're charged $1\.00 \(USD\) for sending the test emails\. For more information about pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/)\.
-+ Test messages count toward your account's sending limits\. For example, if your account is authorized to send 10,000 emails per 24\-hour period, and you send 100 test emails, you can send up to 9,900 additional emails in the same 24\-hour period\.
++ Test messages count toward your account's sending quotas\. For example, if your account is authorized to send 10,000 emails per 24\-hour period, and you send 100 test emails, you can send up to 9,900 additional emails in the same 24\-hour period\.
 + When you send a test message to specific users, you can specify up to 10 addresses\. Use commas to separate multiple addresses\.
 **Note**  
 The word "address" \(as it's used in this section\) can refer to any of the following: an email address, a mobile phone number, an endpoint ID, or a device token\.

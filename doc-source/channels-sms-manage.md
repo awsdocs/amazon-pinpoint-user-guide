@@ -1,6 +1,6 @@
 # Managing the Amazon Pinpoint SMS Channel<a name="channels-sms-manage"></a>
 
-Use the Amazon Pinpoint console to enable the SMS channel and manage SMS settings, such as your default message type \(transactional or promotional\) and your monthly spending limit\.
+Use the Amazon Pinpoint console to enable the SMS channel and manage SMS settings, such as your default message type \(transactional or promotional\) and your monthly spending quota\.
 
 To update your SMS settings, use the **SMS settings** page\. For more information, see [SMS and Voice Settings](settings-sms.md)\.
 
