@@ -30,8 +30,8 @@ To customize a template for specific push notification channels, you can create 
    + For **Title**, enter the title that you want to display above the notification message on a recipient's device\.
    + For **Body**, enter the text that you want to display in the body of the notification message\.
 **Tip**  
-You can include personalized content in the title and body of the template\. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created for the project, such as an attribute that stores a user's first name\. By using message variables, you can display different content for each recipient of a push notification that uses the template\.   
-To use a message variable, add the name of an existing attribute to the template\. Enclose the name in two sets of curly braces, and use the exact capitalization of the name—for example, \{\{User\.UserAttributes\.FirstName\}\}\. For more information, see [Adding Personalized Content to Message Templates](message-templates-personalizing.md)\.
+You can include personalized content in the title and body of the template\. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created, such as an attribute that stores a user's first name\. By using message variables, you can display different content for each recipient of a push notification that uses the template\.   
+To use a message variable, choose the name of an existing attribute from the **Attribute finder**\. Amazon Pinpoint creates a message variable for the attribute and copies it to your clipboard\. Paste the variable in the location that you want\. For more information, see [Adding Personalized Content to Message Templates](message-templates-personalizing.md)\.
    + For **Custom alert sound**, enter the name of the audio file that contains the custom sound that you want to play when a recipient receives the push notification\. This name has to match the name of an audio file on a recipient's device\.
    + For **Action**, choose what you want a recipient's device to do if the recipient taps the push notification:
      + **Open your app** – Open your app or bring it to the foreground if it was sent to the background\.
@@ -63,9 +63,9 @@ In addition to the standard content and settings, you can choose the following o
    + **Android icon** – Enter the URL of the large icon image to display in the content view of the push notification\.
    + **Android small icon** – Enter the URL of the small icon image to display in the status bar and in the content view of the push notification\.
 
-1. <a name="step10"></a>\(Optional\) If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\. Although this step is optional, we recommend that you do this for each variable in the template\.
+1. <a name="step10"></a>If you added personalized content to the template by using message variables, specify a default value for each variable\. If you do this, Amazon Pinpoint replaces the variable with the value that you specify, if a corresponding value doesn't exist for a recipient\. We recommend that you do this for each variable in the template\.
 
-   To specify default values for variables, expand the **Default personalization values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
+   To specify default values for variables, expand the **Default attribute values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\.
 
 1. When you finish entering content and settings for the template, choose **Create**\.
 

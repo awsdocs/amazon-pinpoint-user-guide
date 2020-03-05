@@ -48,7 +48,7 @@ A single dedicated IP address can be used only in the AWS Region that you choose
 
 After you submit the form, we evaluate your request\. If we grant your request, we reply to your case in Support Center to confirm that your new dedicated IP addresses are associated with your account\. 
 
-## Relinquish Dedicated IP Addresses<a name="channels-email-dedicated-ips-case-relinquish"></a>
+## Relinquishing Dedicated IP Addresses<a name="channels-email-dedicated-ips-case-relinquish"></a>
 
 If you no longer need dedicated IP addresses that are associated with your account, you can relinquish them by completing the following steps\.
 

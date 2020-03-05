@@ -20,23 +20,29 @@ Engage your audience by [creating a messaging campaign](campaigns.md)\. A campai
 
 To experiment with alternative campaign strategies, set up your campaign as an A/B test, and analyze the results with Amazon Pinpoint analytics\.
 
+### Create User Journeys<a name="welcome-journeys"></a>
+
+Create custom, multi\-step experiences for your customers by designing and building journeys\. With journeys, you can send messages to your customers based on their attributes, behaviors, and activities\. When you build a journey, you design an automated workflow of activities that perform a variety of different actions—for example, sending an email message to participants, waiting for a certain period of time, or splitting participants based on actions that they take, such as clicking a link in a message\.
+
 ### Provide Consistent Messaging with Templates<a name="welcome-templates"></a>
 
 Design consistent messages and reuse content more effectively by [creating and using message templates](messages-templates.md)\. A message template contains content and settings that you want to reuse in messages that you send for any of your Amazon Pinpoint projects\. You can use message templates in email messages, push notifications, SMS messages, and voice messages\.
 
-### Send Test Messages<a name="welcome-transactional"></a>
+### Deliver Personalized Content<a name="welcome-ml-models-rm"></a>
 
-Test the design and deliverability of your messages by [sending test messages](messages.md) before you send campaigns to your customers\.
+Send content that's customized for each recipient of a message\. Using message variables and attributes, you can deliver dynamic, personalized content in messages that you send from campaigns and journeys\.
 
-### Create User Journeys<a name="welcome-journeys"></a>
-
-Create multi\-step journeys that send messages to your customers based on their attributes, behaviors, and activities\.
+To streamline development, you can also use message variables and attributes to [add personalized content to message templates](message-templates-personalizing.md)\. With message templates, this content can come from attributes that you create directly in Amazon Pinpoint or a machine learning model that you create in Amazon Personalize\. By connecting message templates to models in Amazon Personalize, you can [use machine learning](ml-models.md) to send relevant promotions or recommendations to each recipient of a message\.
 
 ### Analyze User Behavior<a name="welcome-analyze"></a>
 
-Gain insight into your audience and the effectiveness of your campaigns by using the analytics that Amazon Pinpoint provides\. You can view trends in your users' level of engagement, purchase activity, demographics, and more\. You can also monitor your message traffic by viewing metrics such as the total number of messages that you sent for a campaign or project\. Through the Amazon Pinpoint API, your application can also report custom data, which Amazon Pinpoint makes available for analysis\.
+Gain insight into your audience and the effectiveness of your campaigns and messaging activities by [using the analytics](analytics.md) that Amazon Pinpoint provides\. You can view trends in your users' level of engagement, purchase activity, demographics, and more\. You can also monitor your message traffic by viewing metrics such as the total number of messages that you sent for a campaign or project\. Through the Amazon Pinpoint API, your application can also report custom data, which Amazon Pinpoint makes available for analysis\.
 
-To analyze or store analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
+To analyze or store analytics data outside Amazon Pinpoint, configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
+
+### Send Test Messages<a name="welcome-transactional"></a>
+
+Test the design and deliverability of your messages by [sending test messages](messages.md) before you send messages to your customers\.
 
 ## Regional Availability<a name="welcome-regions"></a>
 

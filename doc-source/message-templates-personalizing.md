@@ -2,7 +2,7 @@
 
 To deliver dynamic, personalized content in messages that use a template, add *message variables* to the message template\. A *message variable* is a placeholder that refers to a specific attribute that you or Amazon Pinpoint created to store information about your users\. Each attribute typically corresponds to a characteristic of a user, such as a user's first name or the city where they live\. By adding message variables to templates, you can use these attributes to deliver custom content to each recipient of a message that uses a template\.
 
-If a template contains message variables, Amazon Pinpoint automatically replaces each variable with the current, corresponding value of the attribute for each recipient\. It does this each time it sends a message that uses the template\. This means that you can send personalized content to each recipient without creating multiple, customized versions of a message or message template\. You can also feel confident that the message contains the latest information that you have for a recipient\.
+If a template contains message variables, Amazon Pinpoint replaces each variable with the current, corresponding value of the attribute for each recipient\. It does this each time it sends a message that uses the template\. This means that you can send personalized content to each recipient without creating multiple, customized versions of a message or message template\. You can also feel confident that the message contains the latest information that you have for a recipient\.
 
 For example, if your project is a fitness application for runners and it includes attributes for each user's first name, preferred activity, and personal record, you could use the following text and message variables in a template:
 
@@ -24,13 +24,15 @@ If an attribute value doesn't exist for a recipient, Amazon Pinpoint can replace
 **Example 2**  
 `Hi John, congratulations on your new running record of 20:52!`
 
-If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\. For example: `Hi Mary, congratulations on your new record of 20:52!`
+If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint omits all text for the variable when it sends a message to that recipient\. For example:
 
-We recommend that you specify a default value for each variable that you include in a template\.
+`Hi Mary, congratulations on your new record of 20:52!`
+
+As a best practice, we recommend that you specify a default value for each variable that you include in a template\.
 
 ## Adding Message Variables<a name="message-templates-add-variables"></a>
 
-You can add message variables to a new template when you create the template, or to an existing template\. If you add variables to an existing template, Amazon Pinpoint doesn't necessarily apply the changes to any existing messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on the version of the template that you add variables to and how you configured the messages that use the template\. For more information, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
+You can add message variables to a new template when you create the template, or to an existing template\. If you add variables to an existing template, Amazon Pinpoint doesn't necessarily apply the changes to messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on the version of the template that you add variables to and how you configured the messages that use the template\. For more information, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
 
 **To add a message variable to a message template**
 
@@ -40,17 +42,38 @@ You can add message variables to a new template when you create the template, or
 
 1. On the **Message templates** page, do one of the following: 
    + To create a new template and add a message variable to it, choose **Create template**\. Then, on the template page, enter a name for the template and, optionally, a description of the template\.
-   + To add a message variable to an existing template, choose the template that you want to add a variable to\. Then, on the template page, choose **Edit**\. Under **Template details**, use the version selector to choose the version of the template that you want to use as a starting point for adding a variable to the template\. If you choose the most recent version of the template, you can save your changes directly to that version of the template\. Otherwise, you can save your changes as a new version of the template\.
+   + To add a message variable to an existing template, choose the template that you want to add a variable to\. Then, on the template page, choose **Edit**\. Under **Template details**, use the version selector to choose the version of the template that you want to use as a starting point\. If you choose the most recent version, you can save your changes directly to that version of the template\. Otherwise, you can save your changes as a new version of the template\.
 
-1. In the message details section, determine where you want to add a message variable\. Then add the name of the attribute whose value you want to display in that location\. Enclose the name in two sets of curly braces and use the exact capitalization of the name—for example, `{{User.UserAttributes.FirstName}}`\. For information about attributes that you can use, see the next topic in this section\.
+1. In the message details section, determine where you want to add a message variable\. You can add a variable to the body of any type of template\. For email and push notification templates, you can also add a variable to the message subject or title\. 
 
-   You can add a variable to the message body of any type of template\. For email and push notification templates, you can also add a variable to the message subject or title\.
+1. In the **Attribute finder**, expand the section for the type of attribute that you want to add a message variable for\. You can choose from the following types of attributes:  
+**Standard attributes**  
+These are attributes that Amazon Pinpoint creates automatically for any project\. This means that you can use them in messages that you send for any project\. For detailed information about each of these attributes, see [Supported Attributes](#message-templates-variables)\.  
+To add a variable for a standard attribute, choose the attribute from the list\.  
+**Custom attributes**  
+These are attributes that you optionally create for individual projects\. Because these attributes might not be available for some of your projects, Amazon Pinpoint might not be able to replace the variable with a value for each and every recipient of a message that uses the template\. To help you avoid this issue, Amazon Pinpoint provides options to help you choose an attribute that exists for specific projects or all of your projects\.  
+To add a variable for a custom attribute:  
 
-1. Repeat the preceding step for each message variable that you want to add\.
+   1. Choose **Load custom attributes**\. In the window that appears, Amazon Pinpoint lists all the projects that you created custom attributes for\. To see which attributes are used by one or more projects, select each project\. The right pane of the window lists all the custom attributes that you created for the selected projects\.
 
-1. \(Optional\) To specify a default value for a message variable, expand the **Default personalization values** section\. Then, in the list of variables, enter the default value that you want to use for the variable\.
+   1. Do one of the following:
+      + To use an attribute that exists in one or more specific projects, select each project\.
+      + To use an attribute that exists in all of your projects, select **All shared custom attributes**\.
 
-   Although this step is optional, we recommend that you do this for each variable in the template\.
+   1. Choose **Load custom attributes**\.
+
+   1. In the **Attribute finder**, choose the attribute that you want to add a variable for\.  
+**Recommended attributes**  
+These are attributes that you optionally create for your account when you configure Amazon Pinpoint to retrieve personalized recommendations from a recommender model\. For information about using recommender models, see [Machine Learning Models](ml-models.md)\. You can add variables for this type of attribute to email templates, push notification templates, and SMS templates\. You can't add them to voice templates\.  
+To add a variable for a recommended attribute, choose the attribute from the list\. If the **Attribute finder** doesn't list any recommended attributes, you have to first connect the template to a recommender model\. To do this, choose **Connect model**\. Next, select the model that you want to retrieve recommendations from when you send messages that use the template\. Then choose **Connect model**\.
+
+1. When you choose an attribute from the **Attribute finder**, Amazon Pinpoint creates a message variable for the attribute and copies it to your clipboard\. Paste the variable in the location that you want\.
+
+   After you paste the variable, Amazon Pinpoint displays it as the name of the associated attribute, enclosed in two sets of curly braces—for example, `{{User.UserAttributes.FirstName}}`\.
+
+1. Repeat steps 4 through 6 for each message variable that you want to add\.
+
+1. To specify a default value for a message variable, expand the **Default attribute values** section\. Then, in the list of variables, enter the default value that you want to use for the variable\. We recommend that you do this for each variable in the template\. Otherwise, Amazon Pinpoint might not be able to send a message that uses the template or the message might display in unexpected or unwanted ways\.
 
 1. When you finish, do one of the following:
    + If you added message variables to a new template, choose **Create**\.
@@ -59,20 +82,20 @@ You can add message variables to a new template when you create the template, or
 
 ## Supported Attributes<a name="message-templates-variables"></a>
 
-Each project can have standard attributes and custom attributes\. Standard attributes are attributes that Amazon Pinpoint provides automatically for any project\. Custom attributes are attributes that you optionally define for a project\. There are three types of custom attributes:
+Each project can have standard attributes and custom attributes\. Standard attributes are attributes that Amazon Pinpoint creates automatically for any project\. Custom attributes are attributes that you optionally create for a project\. There are three types of custom attributes:
 + **User attributes** – These attributes describe a user—for example, a user's first name, last name, and birth date\. A *user* is an individual who has a unique user ID for a project\.
 + **Endpoint attributes** – These attributes describe a specific endpoint for a user\. An *endpoint* is a destination that you can send messages to—such as an email address, phone number, or mobile device\. Each user can be associated with one or more endpoints\. For example, if you communicate with a user by email, SMS, and phone, the user could be associated with three endpoints—one for the user's email address, another for the user's mobile phone number, and another for the user's home \(landline\) phone number\.
 + **Metric attributes** – These attributes are numeric metrics that your application reports to Amazon Pinpoint for individual endpoints, such as the number of sessions for a mobile app or the number of items left in a cart\.
 
-You can use any standard or custom attribute in a message variable\.
+In addition to custom and standard attributes that you or Amazon Pinpoint creates for your projects, Amazon Pinpoint supports *recommended attributes*\. A *recommended attribute* is an attribute that temporarily stores personalized recommendations for users or endpoints\. Amazon Pinpoint retrieves these recommendations from recommender models that you configure it to use\. Recommended attributes aren't associated with specific projects\. Instead, they're associated with your Amazon Pinpoint account\. For information about using recommender models, see [Machine Learning Models](ml-models.md)\.
 
-The following table indicates the name to use in a message variable for each supported attribute, and it describes each attribute\. In the table, attributes that include *custom\_attribute* indicate the name to use for a custom attribute\. In those cases, replace *custom\_attribute* with the name of the custom attribute that you want a variable to use\. For example, if your project stores users' first names in a custom user attribute named `FirstName` and you want to display a user's first name in a message, insert a `{{User.UserAttributes.FirstName}}` variable where you want a user's first name to appear in the message\.
+You can use any standard, custom, or recommended attribute in a message variable\. The following table indicates the text that appears in the message variable for each supported attribute, and it describes each attribute\. In the table, *custom\_attribute* indicates text that appears in a variable for a custom attribute\. In those cases, replace *custom\_attribute* with the name of the custom attribute\. For example, if your project stores users' first names in a custom user attribute named `FirstName` and you add a variable for that attribute, the text for the variable is `{{User.UserAttributes.FirstName}}`\.
 
 
 | Attribute | Description | 
 | --- | --- | 
 | Address | The destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token\. | 
-| Attributes\.custom\_attribute | A custom attribute that describes the endpoint\. | 
+| Attributes\.custom\_attribute | A custom endpoint attribute that describes the endpoint\. | 
 | ChannelType | The channel to use when sending messages or push notifications to the endpoint\. For example:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-personalizing.html) | 
 | CreationDate | The date and time when the endpoint was added to the project, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)\. For example, 2019\-06\-30T11:45:25\.220Z for 11:45 AM UTC June 30, 2019\. | 
 | Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 
@@ -94,6 +117,10 @@ The following table indicates the name to use in a message variable for each sup
 | Location\.Region | The name of the region, such as a state or province, where the endpoint is located\. | 
 | Metrics\.custom\_attribute | A custom, numeric metric that your application reports to Amazon Pinpoint for the endpoint\. | 
 | OptOut | Whether the user opted out of receiving messages and push notifications from you: ALL, the user opted out and doesn't want to receive any messages or push notifications; or, NONE, the user hasn't opted out and wants to receive all messages and push notifications\. | 
+| RecommendationItems | A standard recommended attribute that stores one recommendation for the endpoint or user\. This attribute contains text that's provided directly by a recommender model\. | 
+| RecommendationItems\.\[\#\] | A standard recommended attribute that stores a list of 2–5 recommendations for the endpoint or user\. \(The numeric placeholder, \.\[\#\], indicates that the attribute contains multiple values\. You can ignore this text\.\) This attribute contains text that's provided directly by a recommender model\. | 
+| Recommendations\.custom\_attribute | A custom recommended attribute that stores one recommendation for the endpoint or user\. This attribute contains content that's provided by a recommender model and enhanced by an AWS Lambda function\. | 
+| Recommendations\.custom\_attribute\.\[\#\] | A custom recommended attribute that stores multiple recommendations for the endpoint or user\. \(The numeric placeholder, \.\[\#\], indicates that the attribute contains multiple values\. You can ignore this text\.\) These attributes contain content that's provided by a recommender model and enhanced by an AWS Lambda function\. | 
 | RequestId | The unique identifier for the most recent request to update the endpoint\. | 
-| User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. | 
+| User\.UserAttributes\.custom\_attribute | A custom user attribute that describes the user\. | 
 | User\.UserId | A unique identifier for the user\. | 

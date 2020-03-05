@@ -14,6 +14,8 @@ To create a funnel, you specify each event that's part of the conversion process
 + Standard events – These include events that automatically report when an app session starts or stops\. The names of event types for standard events are denoted with an underscore prefix, as in `_session.start`\. Standard events also include monetization events that report in\-app purchases\.
 + Custom events – These are defined by you to monitor activities that are specific to your app\. Some examples are completing a level in a game, posting to social media, or setting particular app preferences\.
 
+For information about configuring your app to report events, see [Streaming Events with Amazon Pinpoint](analytics-streaming.md)\.
+
 ## Enabling Funnels<a name="analytics-funnels-load-data"></a>
 
 To provide you with the best possible experience, we hide the funnels reports if you haven't used them in the past 90 days\.

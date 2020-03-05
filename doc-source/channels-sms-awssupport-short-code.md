@@ -7,7 +7,8 @@ You can only use short codes to send messages to recipients in the same country 
 For information about short code pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/#Dedicated_Short_Codes)\.
 
 **Important**  
-If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spending threshold that meets the expected demands of your SMS use case\. By default, your monthly spending threshold is $1\.00 \(USD\)\. You can request to increase your spending threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spending Quota for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
+If you're new to SMS messaging with Amazon Pinpoint, request a monthly SMS spending threshold that meets the expected demands of your SMS use case\. By default, your monthly spending threshold is $1\.00 \(USD\)\. You can request to increase your spending threshold in the same support case that includes your request for a short code\. Or, you can use a separate case\. For more information, see [Requesting Increases to Your Monthly SMS Spending Quota for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.  
+In addition, if you're requesting a dedicated short code to send messages that will or may contain Protected Health Information \(PHI\), you should identify this purpose in your **Case description** when you open a support case, as detailed below\.
 
 ## Step 1: Open a Support Case<a name="channels-sms-awssupport-short-code-open"></a>
 
@@ -73,6 +74,7 @@ Open a case with AWS Support by completing the following steps\.
      + **Sweepstakes or contests**\.
      + **Other**\. If other, explain\.
    + Whether you plan to use your short code to send promotional or marketing messages for a business other than your own\.
+   + Whether you plan to use your short code to send messages that will or may contain Protected Health Information \(PHI\), as defined by the Health Insurance Portability and Accountability Act \(HIPAA\) and associated legislation and regulations\.
 
 **Message content:**
    + The message that you plan to send when customers opt in to your messages by sending you a specific keyword\. Be careful when you specify this keyword and message—it may take several weeks to change this message\. When we create your short code, we register the keyword and message with the mobile phone carriers in the country where you use the short code\. Your message might resemble the following example: *Welcome to *ProductName* alerts\! Msg&data rates apply\. *2* msgs per month\. Reply HELP for help, STOP to cancel\.*

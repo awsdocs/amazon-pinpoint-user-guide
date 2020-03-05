@@ -57,6 +57,7 @@ Note that account\-level settings and data for your Amazon Pinpoint account and 
 + Verified identities for sending email and SMS messages\.
 + SMS information such as short codes, long codes, keywords, and registered sender IDs for sending SMS messages\.
 + SMTP credentials and other settings for sending email by using the Amazon Pinpoint SMTP interface\.
++ Configuration settings for connecting to and using machine learning models\.
 
 In addition, data that's stored in other AWS services isn't deleted\. This includes event data that you streamed to other AWS services such as Amazon Kinesis, files that you imported from an Amazon Simple Storage Service \(Amazon S3\) bucket to define a segment, and any Amazon Pinpoint metrics and spending alarms that you configured in Amazon CloudWatch\.
 

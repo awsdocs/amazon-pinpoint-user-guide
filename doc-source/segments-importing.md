@@ -33,7 +33,7 @@ When you import a segment, remember the following:
 + The files that you import must use UTF\-8 character encoding\.
 + If you're importing new endpoints, the `Address` and `ChannelType` attributes are required\.
 + If you're updating existing endpoints, the `Id` attribute is required for each endpoint that you want to update\.
-+ Your endpoint definitions can include only certain attributes\. For a list, see [Supported Attributes](#segments-importing-available-attributes)\.
++ Your endpoint definitions can include only certain attributes\. For a list, see [Supported Attributes](#segments-importing-available-attributes)\. In addition, an attribute name has to be 50 or fewer characters\. An attribute value has to be 100 or fewer characters\.
 
 ### Example Segment Files<a name="segments-importing-examples"></a>
 
@@ -102,7 +102,7 @@ As you can see in the example endpoint definitions, the user ID `example-user-id
 
 There are two ways to import segments into Amazon Pinpoint: you can upload files directly from your computer, or you can import files that are stored in an Amazon S3 bucket\.
 
-Uploading files from your computer is generally the easier method of importing segments, especially if you already have the customer data on your computer\. However, you can only import 10 files at a time, and you can only upload files that are smaller than 1 gigabyte \(GB\)\.
+Uploading files from your computer is generally the easier method of importing segments, especially if you already have the customer data on your computer\. However, you can import only 10 files at a time, and you can only upload files that are smaller than 1 gigabyte \(GB\)\.
 
 If you need to import more than 10 files at one time, or if you need to upload files that are larger than 1 GB, then you should import files from Amazon S3\. The Amazon S3 import option is also useful if you already have processes that send customer data files to Amazon S3 for storage\.
 
@@ -199,7 +199,7 @@ For JSON files, a period in the attribute name indicates that the name following
 
 The full JSON structure closely resembles the [example Endpoint request](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-schemas) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the Endpoint request schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
 
-You can replace attribute names that are shown as `custom_attribute` with any value\. For example, if you want to store users' first and last names in attributes named `FirstName` and `LastName`, you can create custom attributes named `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`, respectively\.
+You can replace attribute names that are shown as `custom_attribute` with any value\. For example, if you want to store users' first and last names in attributes named `FirstName` and `LastName`, you can create custom attributes named `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`, respectively\. An attribute name can contain up to 50 characters\. An attribute value can contain up to 100 characters\. Attribute names are case sensitive\.
 
 
 | Attribute | Description | 

@@ -10,7 +10,7 @@ Before you can use Amazon Pinpoint to send SMS messages, you must enable the SMS
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Projects** page, choose the project for which you want to enable the SMS channel\.
+1. On the **All projects** page, choose the project for which you want to enable the SMS channel\.
 
 1. In the navigation pane, under **Settings**, choose **SMS**\.
 

@@ -145,15 +145,15 @@ This section contains information about writing a push notification and setting 
 
 To create a message that's personalized for each recipient, use message variables\. Message variables refer to specific user attributes\. These attributes can include characteristics that you create and store for users, such as the user's name, city, device, or operating system\. When Amazon Pinpoint sends the message, it replaces the variables with the corresponding attribute values for the recipient\. For information about the attributes that you can use, see [Endpoint Properties](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-properties) in the *Amazon Pinpoint API Reference*\.
 
-To include a variable in your message, enclose the attribute name in two sets of curly braces, as in `{{Demographic.AppVersion}}`\.
+To include a variable in your message, add the name of an existing attribute to the message\. Enclose the name in two sets of curly braces, and use the exact capitalization of the name—for example, `{{Demographic.AppVersion}}`\.
 
-Often, the most useful attributes for message variables are custom attributes that you create and store for users\. By using custom attributes for your variables, you can display personalized messages that are unique for each recipient\.
+Often, the most useful attributes for message variables are custom attributes that you create and store for users\. By using custom attributes and variables, you can send personalized messages that are unique for each recipient\.
 
 For example, if your app is a fitness app for runners and it includes custom attributes for each user's first name, preferred activity, and personal record, you could use variables in the following message:
 
 `Hey {{User.UserAttributes.FirstName}}, congratulations on your new {{User.UserAttributes.Activity}} record of {{User.UserAttributes.PersonalRecord}}!`
 
-When Amazon Pinpoint sends this message, the content varies for each recipient after the variables are substituted\. Possible final messages are:
+When Amazon Pinpoint sends this message, the content varies for each recipient after the variables are replaced\. Possible final messages are:
 
 `Hi Jane Doe, congratulations on your new half marathon record of 1:42:17!`
 

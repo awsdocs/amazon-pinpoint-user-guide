@@ -2,7 +2,7 @@
 
 On the **Bounce and complaint rates** page, you can find important metrics related to the bounce and complaint rates for your combined Amazon Pinpoint and Amazon Simple Email Service \(Amazon SES\) account\.
 
-A *bounce* occurs when an email that you send can't be delivered because of a permanent issue\. For example, a bounce might occur if the recipient's address doesn't exist, or if the recipient's email providers is blocking email from your domain or IP address\. Email providers consider a high bounce rate to be a negative sign\. This is because it indicates that you're sending email to people who haven't explicitly opted to receive messages from you\. A high bounce rate could have a negative impact on the delivery of your emails\.
+A *bounce* occurs when an email that you send can't be delivered because of a permanent issue\. For example, a bounce might occur if the recipient's address doesn't exist, or the recipient's email provider is blocking email from your domain or IP address\. Email providers consider a high bounce rate to be a negative sign\. This is because it indicates that you're sending email to people who haven't explicitly opted to receive messages from you\. A high bounce rate could have a negative impact on the delivery of your emails\.
 
 A *complaint* occurs when a customer receives an email from you and reports it to their email provider as an unwanted email \(for example, by using the *Report Spam* feature in their email client\)\. Email providers consider complaints to be a serious sign that your domain is sending unsolicited email\. For this reason, a high complaint rate can have a very negative impact on the delivery of your email\.
 
@@ -28,6 +28,8 @@ This section shows the status of your account\. The following is a list of possi
 
 The number that's shown under **Emails sent** is the number of emails that we considered in making this determination\. The number under **Sent over period** is the period of time during which you sent those emails\.
 
+To learn more about each status value and how we work with you to address issues that impact your account, see the [sending review process FAQs](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/faqs-enforcement.html) in the *Amazon Simple Email Service Developer Guide*\.
+
 ### Bounce Rate<a name="channels-email-deliverability-dashboard-bounce-complaint-overview-bouncerate"></a>
 
 This section shows the current bounce rate for your account\. The bounce rate for your account should remain below 5%\. If the bounce rate for your account exceeds 10%, we might temporarily pause your account's ability to send email\.
@@ -43,9 +45,11 @@ This section contains the following information:
   + **Sending pause** – Your account's ability to send email was paused because the bounce rate was too high\. While your account's ability to send email is paused, you can't send email\. You can request that we review this decision\.
   + **Pending sending pause** – The metric caused us to place your account under review\. The issues that caused this review period haven't been resolved\. These issues might cause us to pause your account's ability to send email\. A member of our team has to review your account before we take any further action\.
 
+  To learn more about each status value and how we work with you to address issues that impact your account, see the [sending review process FAQs](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/faqs-enforcement.html) in the *Amazon Simple Email Service Developer Guide*\.
+
 ### Complaint Rate<a name="channels-email-deliverability-dashboard-bounce-complaint-overview-complaintrate"></a>
 
-This section shows the current complaint rate for your account\. The complaint rate for your account should remain below 0\.1%\. If the bounce rate for your account exceeds 0\.1%, we might temporarily pause your account's ability to send email\.
+This section shows the current complaint rate for your account\. The complaint rate for your account should remain below 0\.1%\. If the complaint rate for your account exceeds 0\.1%, we might temporarily pause your account's ability to send email\.
 
 This section contains the following information:
 + **Eligible emails sent** – The number of emails that were considered in calculating the complaint rate\.
@@ -57,6 +61,8 @@ This section contains the following information:
   + **Under review** – Your account was placed under review because the complaint rate was too high\. Since your account was placed under review, the complaint rate hasn't improved\. If the issue that caused the complaint rate to exceed 0\.1% isn't resolved by the end of the review period, we might pause your account's ability to send email\.
   + **Sending pause** – Your account's ability to send email was paused because the complaint rate was too high\. While your account's ability to send email is paused, you can't send email\. You can request that we review this decision\.
   + **Pending sending pause** – Your account was placed under review because the complaint rate was too high\. The issues that caused this review period haven't been resolved\. These issues might cause us to pause your account's ability to send email\. A member of our team has to review your account before we take any further action\.
+
+  To learn more about each status value and how we work with you to address issues that impact your account, see the [sending review process FAQs](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/faqs-enforcement.html) in the *Amazon Simple Email Service Developer Guide*\.
 
 ## Alarms<a name="channels-email-deliverability-dashboard-bounce-complaint-alarms"></a>
 
@@ -70,7 +76,7 @@ On the **Alarms** tab, you can create alarms that send you notifications when th
 
    1. For **Alarm name**, enter a name that helps you easily identify the alarm\.
 
-   1. Next to **Send a notification when the**, choose one of the following options:
+   1. For **Send a notification when the**, choose one of the following options:
       + **Bounce rate**
       + **Complaint rate**
 
@@ -82,7 +88,7 @@ On the **Alarms** tab, you can create alarms that send you notifications when th
 
    1. Under **Notification method**, choose one of the following options:
       + **Use an existing SNS topic** – Choose this option if you've already created an Amazon SNS topic and subscribed endpoints to it\.
-      + **Create a new topic** – Choose this option if you haven't yet created an Amazon SNS topic, or if you want to create a new topic\.
+      + **Create a new topic** – Choose this option if you haven't yet created an Amazon SNS topic, or you want to create a new topic\.
 **Note**  
 When you create a new topic, you have to subscribe one or more endpoints to it\. For more information, see [Subscribing an Endpoint to a Topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
