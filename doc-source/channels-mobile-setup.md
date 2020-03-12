@@ -1,4 +1,4 @@
-# Setting up Amazon Pinpoint Mobile Push Channels<a name="channels-mobile-setup"></a>
+# Setting Up Amazon Pinpoint Mobile Push Channels<a name="channels-mobile-setup"></a>
 
 Before you can use Amazon Pinpoint to send push notifications to your app, you first have to create a project and enable the push notifications channel\. After you create a project in Amazon Pinpoint, you can update your push notification credentials on the **Push notifications** settings page\. For more information, see [Push Notification Settings](settings-push.md)\.
 

@@ -1,12 +1,12 @@
-# Supported Countries and Regions<a name="channels-voice-countries"></a>
+# Supported Countries and Regions \(Voice Channel\)<a name="channels-voice-countries"></a>
 
-You can use the voice channel to send voice messages to recipients all around the world\. However, in some countries and regions, you have to use a local phone number in order to make automated calls, such as the calls that you make by using the Amazon Pinpoint voice channel\. You can obtain local phone numbers in several countries and regions directly from AWS\.
+You can use the voice channel to send voice messages to recipients all around the world\. However, in some countries and regions, you have to use a local phone number in order to make automated calls, such as the calls that you make by using the Amazon Pinpoint voice channel\. You can obtain local phone numbers, also referred to as *long codes*, directly from AWS for several countries and regions\.
 
 ## Countries and Regions Where You Can Obtain Local Phone Numbers<a name="channels-voice-countries-table"></a>
 
 The following table lists the countries that you can obtain local phone numbers in\. If a country or region isn't listed in this table, you might still be able to send voice messages to recipients in that country or region\. 
 
-If the value in the **Supports SMS** column is *Yes*, then you can send both voice and SMS messages from the same phone number\. If the value in the **Supports SMS** column is *No*, but your use case requires that you use a long code for sending SMS messages, see [Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)\.
+If the value in the **Supports SMS** column is *Yes*, then you can send both voice and SMS messages from the same phone number\. If the value in the **Supports SMS** column is *No*, but your use case requires that you use a long code to send SMS messages, see [Requesting Dedicated Long Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)\.
 
 If the value in the **Local address required** column is *Yes*, then you have to provide a local address in that country or region in order to lease a local phone number\. If the value in the **Local address required** column is *No*, you can lease local phone numbers directly through the Amazon Pinpoint console\.
 

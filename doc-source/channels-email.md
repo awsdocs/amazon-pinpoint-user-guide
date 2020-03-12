@@ -9,7 +9,7 @@ You can [monitor your email activity](channels-email-monitor.md) by viewing anal
 As your email needs change, you can manage your email channel by [updating your email address or domain](channels-email-manage-update.md) or [requesting an increase to your sending quotas](channels-email-manage-limits.md)\.
 
 **Topics**
-+ [Setting up the Amazon Pinpoint Email Channel](channels-email-setup.md)
++ [Setting Up the Amazon Pinpoint Email Channel](channels-email-setup.md)
 + [Monitoring Email Activity with Amazon Pinpoint](channels-email-monitor.md)
 + [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)
 + [Sending Email in Amazon Pinpoint](channels-mobile-send.md)

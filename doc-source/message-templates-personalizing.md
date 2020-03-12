@@ -73,7 +73,9 @@ To add a variable for a recommended attribute, choose the attribute from the lis
 
 1. Repeat steps 4 through 6 for each message variable that you want to add\.
 
-1. To specify a default value for a message variable, expand the **Default attribute values** section\. Then, in the list of variables, enter the default value that you want to use for the variable\. We recommend that you do this for each variable in the template\. Otherwise, Amazon Pinpoint might not be able to send a message that uses the template or the message might display in unexpected or unwanted ways\.
+1. To specify a default value for a message variable, expand the **Default attribute values** section\. Then, in the list of variables, enter the default value that you want to use for the variable\.
+**Note**  
+We recommend that you do this for each variable in the template\. Otherwise, Amazon Pinpoint might not be able to send a message that uses the template or the message might display in unexpected or unwanted ways\.
 
 1. When you finish, do one of the following:
    + If you added message variables to a new template, choose **Create**\.
@@ -118,9 +120,9 @@ You can use any standard, custom, or recommended attribute in a message variable
 | Metrics\.custom\_attribute | A custom, numeric metric that your application reports to Amazon Pinpoint for the endpoint\. | 
 | OptOut | Whether the user opted out of receiving messages and push notifications from you: ALL, the user opted out and doesn't want to receive any messages or push notifications; or, NONE, the user hasn't opted out and wants to receive all messages and push notifications\. | 
 | RecommendationItems | A standard recommended attribute that stores one recommendation for the endpoint or user\. This attribute contains text that's provided directly by a recommender model\. | 
-| RecommendationItems\.\[\#\] | A standard recommended attribute that stores a list of 2–5 recommendations for the endpoint or user\. \(The numeric placeholder, \.\[\#\], indicates that the attribute contains multiple values\. You can ignore this text\.\) This attribute contains text that's provided directly by a recommender model\. | 
+| RecommendationItems\.\[\#\] | A standard recommended attribute that stores an ordered list of 2–5 recommendations for the endpoint or user\. This attribute contains text that's provided directly by a recommender model\.The numeric placeholder \(\.\[\#\]\) indicates that the attribute contains multiple values\. A message variable for this attribute can refer to a specific value in the list\. | 
 | Recommendations\.custom\_attribute | A custom recommended attribute that stores one recommendation for the endpoint or user\. This attribute contains content that's provided by a recommender model and enhanced by an AWS Lambda function\. | 
-| Recommendations\.custom\_attribute\.\[\#\] | A custom recommended attribute that stores multiple recommendations for the endpoint or user\. \(The numeric placeholder, \.\[\#\], indicates that the attribute contains multiple values\. You can ignore this text\.\) These attributes contain content that's provided by a recommender model and enhanced by an AWS Lambda function\. | 
+| Recommendations\.custom\_attribute\.\[\#\] | A custom recommended attribute that stores multiple recommendations for the endpoint or user\. This attribute contains content that's provided by a recommender model and enhanced by an AWS Lambda function\.The numeric placeholder \(\.\[\#\]\) indicates that the attribute contains multiple values\. A message variable for this attribute can refer to one of those values specifically\. | 
 | RequestId | The unique identifier for the most recent request to update the endpoint\. | 
 | User\.UserAttributes\.custom\_attribute | A custom user attribute that describes the user\. | 
 | User\.UserId | A unique identifier for the user\. | 

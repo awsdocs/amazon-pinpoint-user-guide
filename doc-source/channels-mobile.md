@@ -7,6 +7,6 @@ With Amazon Pinpoint, you can engage your mobile app users by sending push notif
 + Amazon Device Messaging \(ADM\)
 
 **Topics**
-+ [Setting up Amazon Pinpoint Mobile Push Channels](channels-mobile-setup.md)
++ [Setting Up Amazon Pinpoint Mobile Push Channels](channels-mobile-setup.md)
 + [Monitoring Push Notification Activity with Amazon Pinpoint](channels-mobile-monitor.md)
 + [Managing Mobile Push Channels with Amazon Pinpoint](channels-mobile-manage.md)

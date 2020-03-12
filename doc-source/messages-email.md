@@ -1,6 +1,6 @@
 # Sending a Test Email Message<a name="messages-email"></a>
 
-To send a test email message, you have to use a project that has the email channel enabled\. To learn how to create a new project and enable the email channel for it, see [Setting up the Amazon Pinpoint Email Channel](channels-email-setup.md)\. To learn how to enable the email channel for an existing project, see [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)\.
+To send a test email message, you have to use a project that has the email channel enabled\. To learn how to create a new project and enable the email channel for it, see [Setting Up the Amazon Pinpoint Email Channel](channels-email-setup.md)\. To learn how to enable the email channel for an existing project, see [Managing the Amazon Pinpoint Email Channel](channels-email-manage.md)\.
 
 **To send a test email message**
 

@@ -156,7 +156,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Papua New Guinea | PG | Yes |  | 
 | Paraguay | PY | Yes |  | 
 | Peru | PE |  |  | 
-| Philippines | PH |  | Yes | 
+| Philippines | PH | Yes[1](#sms-support-note-1) | Yes | 
 | Poland | PL | Yes | Yes | 
 | Portugal | PT | Yes | Yes | 
 | Puerto Rico | PR |  | Yes | 

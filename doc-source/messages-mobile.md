@@ -1,6 +1,6 @@
 # Sending a Test Push Notification<a name="messages-mobile"></a>
 
-To send a test push notification, you have to use a project that has one or more push notification channels enabled\. To learn how to create a new project and enable a push notification channel for it, see [Setting up Amazon Pinpoint Mobile Push Channels](channels-mobile-setup.md)\. To learn how to enable a push notification channel for an existing project, see [Managing Mobile Push Channels with Amazon Pinpoint](channels-mobile-manage.md)\.
+To send a test push notification, you have to use a project that has one or more push notification channels enabled\. To learn how to create a new project and enable a push notification channel for it, see [Setting Up Amazon Pinpoint Mobile Push Channels](channels-mobile-setup.md)\. To learn how to enable a push notification channel for an existing project, see [Managing Mobile Push Channels with Amazon Pinpoint](channels-mobile-manage.md)\.
 
 After you enable one or more push notification channels for a project, you can send a test push notification through any of those channels\.
 

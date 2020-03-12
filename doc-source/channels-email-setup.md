@@ -1,4 +1,4 @@
-# Setting up the Amazon Pinpoint Email Channel<a name="channels-email-setup"></a>
+# Setting Up the Amazon Pinpoint Email Channel<a name="channels-email-setup"></a>
 
 To set up the Amazon Pinpoint email channel, you start by creating a new project\. Then you specify and verify the email address that you want to use when you send email from that project\.
 

@@ -1,6 +1,6 @@
 # SMS and Voice Settings<a name="settings-sms"></a>
 
-Use the **SMS and voice** settings page to enable or disable the SMS channel for the current project\. You can also use this page to manage the default SMS settings that apply to all SMS messages that you send from your AWS account, including messages that you send by using other AWS services\.
+Use the **SMS and voice** settings page to enable or disable the SMS and voice channels for the current project\. You can also use this page to manage the default SMS settings that apply to all SMS messages that you send from your AWS account, including messages that you send by using other AWS services\.
 
 In addition, you can use this page to view a list of the phone numbers that you can use to send voice messages\. This page also provides options for requesting additional phone numbers and relinquishing phone numbers for the voice channel\. To learn more about using the voice channel to send voice messages, see [Amazon Pinpoint Voice Channel](channels-voice.md)\.
 

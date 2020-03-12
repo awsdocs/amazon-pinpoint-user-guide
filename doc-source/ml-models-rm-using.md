@@ -4,9 +4,15 @@ To add dynamic, personalized recommendations to messages, create and use message
 
 If a template contains message variables, Amazon Pinpoint replaces each variable with the current, corresponding value of the attribute for each recipient\. For recommendations, this process includes retrieving the latest recommendations for each recipient from an Amazon Personalize campaign\. Amazon Pinpoint does this each time it sends a message that uses the template\. This means that you can feel confident that the message contains the latest recommendations for a recipient\.
 
-For example, if your project is an application that recommends movies and TV shows to users, you might have the following attributes for each user: the user's first name; the title of the movie or show that the user most recently rated; the rating that the user most recently submitted; and, the titles of the movies and shows that the model recommends for the user\. For this project, you could use the following text and message variables in a template:
+For example, if your project is an application that recommends movies and TV shows to users, you might have the following attributes for each user:
++ The user's first name\.
++ The rating that the user most recently submitted\.
++ The title of the movie or show that the user most recently rated\.
++ The titles of the top three movies and shows that the model recommends for the user\.
 
-`Hi {{User.UserAttributes.FirstName}}, based on your recent {{User.UserAttributes.LatestRating}}-star rating for {{User.UserAttributes.LatestRatedTitle}}, we think you might also enjoy: {{RecommendationItems.[3]}}.`
+For this project, you could use the following text and message variables in a template:
+
+`Hi {{User.UserAttributes.FirstName}}, based on your recent {{User.UserAttributes.LatestRating}}-star rating for {{User.UserAttributes.LatestRatedTitle}}, we think you might also enjoy: {{RecommendationItems.[0]}}, {{RecommendationItems.[1]}}, and {{RecommendationItems.[2]}}.`
 
 When you send a message that uses the template, Amazon Pinpoint replaces the variables with the current value of each attribute for each recipient\. The following examples show this\.
 
@@ -66,7 +72,7 @@ Note that you can't use recommendations in messages that you send to a limited a
 
 ## Removing Recommendations from Messages<a name="ml-models-using-remove-variables"></a>
 
-To remove personalized recommendations from messages, update the message template that the messages use\. When you update the template, you can remove all or only some recommendations\.
+To remove personalized recommendations from messages, update the message template that the messages use\. When you update the template, you can remove all or only some message variables for recommendations\.
 
 If you remove recommendations from a template, Amazon Pinpoint doesn't necessarily apply the changes to messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on the version of the template that you remove recommendations from and how you configured the messages that use the template\. For more information, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
 
@@ -80,7 +86,7 @@ If you remove recommendations from a template, Amazon Pinpoint doesn't necessari
 
 1. Under **Template details**, use the version selector to choose the version of the template that you want to use as a starting point\. If you choose the most recent version, you can save your changes directly to that version of the template\. Otherwise, you can save your changes as a new version of the template\.
 
-1. In the message editor, delete all the text of the message variable for each recommended attribute that you want to remove\. Amazon Pinpoint displays a variable as the name of the associated attribute, enclosed in two sets of curly braces—for example, `{{RecommendationItems}}`\.
+1. In the message editor, delete all the text of the message variable for each recommended attribute that you want to remove\. Each message variable consists of two sets of curly braces and the name of the associated attribute—for example, `{{RecommendationItems}}`\.
 
    To remove the recommender model from the template completely, delete all the variables for recommended attributes that the model provides\. Then, in the **Attribute finder**, expand the **Recommended attributes** section, and choose **X** next to the name of the model\.
 

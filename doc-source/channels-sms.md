@@ -6,14 +6,14 @@ To send text messages using Amazon Pinpoint, you have to [enable the SMS channel
 
 To receive text messages using Amazon Pinpoint, you should first obtain a dedicated [short code](channels-sms-awssupport-short-code.md) or [long code](channels-sms-awssupport-long-code.md)\. When you have a dedicated number, you can [enable two\-way SMS for it](channels-sms-two-way.md)\. Finally, you can [specify the messages that Amazon Pinpoint sends to customers when it receives incoming messages](settings-sms.md)\. 
 
-In the [SMS settings section](settings-sms.md) of the Amazon Pinpoint console, you can manage SMS channel settings for your use case and budget\. For example, you can set your monthly SMS spending quota, or change your default message type\.
+In the [SMS and voice settings section](settings-sms.md) of the Amazon Pinpoint console, you can manage SMS channel settings for your use case and budget\. For example, you can set your monthly SMS spending quota, or change your default message type\.
 
 **Note**  
 When you configure SMS channel settings in Amazon Pinpoint, your changes apply to other AWS services that send SMS messages, such as Amazon SNS\.
 
 **Topics**
 + [SMS Limits and Restrictions in Amazon Pinpoint](channels-sms-limitations.md)
-+ [Setting up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)
++ [Setting Up the Amazon Pinpoint SMS Channel](channels-sms-setup.md)
 + [Requesting Support for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport.md)
 + [Monitoring SMS Activity with Amazon Pinpoint](channels-sms-monitor.md)
 + [Managing the Amazon Pinpoint SMS Channel](channels-sms-manage.md)

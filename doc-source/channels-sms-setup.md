@@ -1,4 +1,4 @@
-# Setting up the Amazon Pinpoint SMS Channel<a name="channels-sms-setup"></a>
+# Setting Up the Amazon Pinpoint SMS Channel<a name="channels-sms-setup"></a>
 
 To send SMS messages with Amazon Pinpoint, you need an Amazon Pinpoint project in which the SMS channel is enabled\.
 
