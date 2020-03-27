@@ -95,6 +95,8 @@ When a journey participant arrives on a **Send email** activity, Amazon Pinpoint
 You can send yourself a preview of the message, even if your Amazon Pinpoint account doesn't contain an endpoint record for your email address\. To send a preview, choose **Send a test message**\.
 
 1. For **Sender email address**, choose the email address that you want to send the message from\. This list contains all the verified email addresses for your Amazon Pinpoint account in the current AWS Region\. For information about verifying additional email addresses or domains, see [Verifying Email Identities](channels-email-manage-verify.md)\.
+**Tip**  
+To display a friendly sender name for the message, choose the default email address for the project\. A *friendly sender name* is the name that appears in participants' email clients when they receive the message\. To change the default email address for the project or the friendly sender name for that address, update the project's settings for the email channel\. To do this, choose **Settings** in the left navigation pane, and then choose **Email**\. Then, enter the settings that you want\.
 
 1. \(Optional\) For **Description**, enter text that describes the purpose of the activity\. When you save the activity, this text appears as its label\.
 

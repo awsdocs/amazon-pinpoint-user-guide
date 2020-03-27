@@ -22,7 +22,7 @@ To experiment with alternative campaign strategies, set up your campaign as an A
 
 ### Create User Journeys<a name="welcome-journeys"></a>
 
-Create custom, multi\-step experiences for your customers by designing and building journeys\. With journeys, you can send messages to your customers based on their attributes, behaviors, and activities\. When you build a journey, you design an automated workflow of activities that perform a variety of different actions—for example, sending an email message to participants, waiting for a certain period of time, or splitting participants based on actions that they take, such as clicking a link in a message\.
+Create custom, multi\-step experiences for your customers by [designing and building journeys](journeys.md)\. With journeys, you can send messages to your customers based on their attributes, behaviors, and activities\. When you build a journey, you design an automated workflow of activities that perform a variety of different actions—for example, sending an email message to participants, waiting for a certain period of time, or splitting participants based on actions that they take, such as clicking a link in a message\.
 
 ### Provide Consistent Messaging with Templates<a name="welcome-templates"></a>
 
