@@ -36,6 +36,9 @@ When you first start using the voice channel, your account is in the *sandbox*\.
 
 To remove these quotas from your account, you can request to have your account removed from the sandbox\. When your account is removed from the sandbox, it has *production access*\.
 
+**Note**  
+Before you request production access, you must send at least one voice message from your Amazon Pinpoint account\. You can send a voice message on the [Test Messaging](messages.md) page, or by using the [SendMessages](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-messages.html#SendMessages) API\.
+
 **To request production access**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.

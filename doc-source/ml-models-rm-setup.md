@@ -24,13 +24,15 @@ For this step, you specify which Amazon Personalize campaign you want to retriev
 
 1. \(Optional\) For **Recommender model description**, enter a brief description of the model\. The description can contain up to 128 characters\. The characters can be letters, numbers, spaces, or the following symbols: \_ ; \(\) , ‐\.
 
-1. Under **Model configuration**, for **IAM role**, choose the AWS Identity and Access Management \(IAM\) role that authorizes Amazon Pinpoint to connect to and retrieve recommendations from the Amazon Personalize campaign that uses the model\.
+1. Under **Model configuration**, for **IAM role**, choose the AWS Identity and Access Management \(IAM\) role that authorizes Amazon Pinpoint to connect to and retrieve recommendations from the Amazon Personalize campaign that uses the model\. You have the following options:
+   + **Use an existing role** – Choose this option to use an IAM role that already exists for your AWS account\. Then, from the list of roles, choose the role that you want\.
+   + **Automatically create a role** – Choose this option to automatically create an IAM role that has the required permissions\. Then, enter a name for the role\.
 
-   This list displays all the IAM roles that are associated with your AWS account\. If the list doesn't include the role that you want to use, work with your administrator to create the role\. For more information, see [IAM Role for Retrieving Recommendations](https://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-get-recommendations.html) in the *Amazon Pinpoint Developer Guide*\.
+   Another option is to work with your administrator to create the role manually\. For information about creating the role manually, see [IAM Role for Retrieving Recommendations](https://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-get-recommendations.html) in the *Amazon Pinpoint Developer Guide*\.
 
-1. For **Recommender model**, choose the Amazon Personalize campaign that uses the model\.
+1. For **Recommender model**, choose the Amazon Personalize campaign that you want to retrieve recommendations from\.
 
-   This list displays all the Amazon Personalize campaigns that you're allowed to access with your AWS account in the current AWS Region\. If the list doesn't include the campaign that you want, ask your administrator to give you access to the campaign\. Also, verify that the campaign exists in the current AWS Region\.
+   This list displays all the Amazon Personalize campaigns that you're allowed to access with your AWS account in the current AWS Region\. If the list doesn't include the campaign that you want, ask your administrator to give you access to the campaign and verify that you chose the correct IAM role in the preceding step\. Also, verify that the campaign exists in the current AWS Region\.
 
 1. Under **Settings**, for **Identifier to use for recommendations**, specify whether you want to associate unique users in the Amazon Personalize campaign with endpoints \(**Endpoint ID**\) or users \(**User ID**\) in your Amazon Pinpoint projects\.
 
@@ -40,7 +42,7 @@ For this step, you specify which Amazon Personalize campaign you want to retriev
 
 1. For **Processing method**, choose one of the following options to specify how you want Amazon Pinpoint to process the recommendations that it retrieves:
    + **Use the value returned by the model** – With this option, messages display the exact text of the recommendations that are provided by the Amazon Personalize campaign\. In addition, all the recommendations for each endpoint or user are temporarily stored in one standard recommended attribute for each endpoint or user\.
-   + **Use a Lambda function** – With this option, messages can display enhanced recommendations, instead of or in addition to the text of the recommendations that are provided by the Amazon Personalize campaign\. If you choose this option, Amazon Pinpoint sends recommendations to an AWS Lambda function for additional processing, before it sends a message that includes the recommendations\. In addition, you can temporarily store recommendations in as many as 10 custom recommended attributes for each endpoint or user\.
+   + **Use a Lambda function** – With this option, messages can display enhanced recommendations instead of or in addition to the text of the recommendations that are provided by the Amazon Personalize campaign\. If you choose this option, Amazon Pinpoint sends recommendations to an AWS Lambda function for additional processing, before it sends a message that includes the recommendations\. In addition, you can temporarily store recommendations in as many as 10 custom recommended attributes for each endpoint or user\.
 
      If you choose this option, also use the **Lambda function** list to choose the function that you want to use\. This list displays all the Lambda functions that you're allowed to access with your AWS account in the current AWS Region\. If the list doesn't include the function that you want, ask your administrator to give you access to the function\. If the function doesn't exist yet, choose **Create new Lambda function**, and work with your development team to create the function\. For more information, see [Customizing Recommendations with AWS Lambda](https://docs.aws.amazon.com/pinpoint/latest/developerguide/ml-models-rm-lambda.html) in the *Amazon Pinpoint Developer Guide*\.
 
@@ -48,7 +50,7 @@ For this step, you specify which Amazon Personalize campaign you want to retriev
 
 ## Step 2: Add Attributes to the Model<a name="ml-models-rm-setup-step2"></a>
 
-After you choose settings for connecting to and retrieving recommendation data from the Amazon Personalize campaign, you're ready to enter settings for the attributes that will store the data\. These options vary depending on the processing method that you chose in the preceding step:
+After you choose settings for connecting to and retrieving recommendations from the Amazon Personalize campaign, you're ready to enter settings for the attributes that will store the recommendation data\. These options vary depending on the processing method that you chose in the preceding step:
 
 **Use the value returned by the model**  
 If you chose this option, recommendations are temporarily stored in one attribute\. This is a standard recommended attribute for each endpoint or user, depending on the option that you chose for the **Identifier to use for recommendations** setting in the preceding step\. The underlying name of this attribute is `RecommendationItems`\.  
@@ -68,6 +70,6 @@ When you finish entering attribute settings, choose **Next** to proceed to the n
 
 After you finish entering all the settings for connecting to and using the recommender model, you're ready to review the settings\.
 
-When you finish reviewing the settings and making sure they're correct, choose **Publish** to save them\. Amazon Pinpoint then checks the settings to verify that they are correct\. If any settings are missing or incorrect, it displays a message for each error to help you determine which settings to fix\. If you need to fix a setting, use the navigation pane to go directly to the page that contains the setting\.
+When you finish reviewing the settings, choose **Publish** to save them\. Amazon Pinpoint then checks the settings to verify that they're correct\. If any settings are missing or incorrect, it displays a message for each error to help you determine which setting to fix\. If you need to fix a setting, use the navigation pane to go directly to the page that contains the setting\.
 
 After you publish the settings, you can start using recommendations in messages\.

@@ -1,10 +1,10 @@
 # Push Notification Settings<a name="settings-push"></a>
 
-Use the **Push notifications** settings page to specify the credentials that Amazon Pinpoint should use to send push notifications for the current project to iOS, Android, or Kindle Fire devices\. You can provide credentials for the following push notification services, each of which is supported by an Amazon Pinpoint channel:
-+ Firebase Cloud Messaging \(FCM\)
+Use the **Push notifications** settings page to specify the credentials that Amazon Pinpoint should use to send push notifications for the current project to iOS, Android, or Amazon devices\. You can provide credentials for the following push notification services, each of which is supported by an Amazon Pinpoint channel:
++ Amazon Device Messaging \(ADM\)
 + Apple Push Notification service \(APNs\)
 + Baidu Cloud Push
-+ Amazon Device Messaging \(ADM\)
++ Firebase Cloud Messaging \(FCM\)
 
 **Topics**
 + [Updating Push Notification Settings](#settings-push-manage)
@@ -12,7 +12,7 @@ Use the **Push notifications** settings page to specify the credentials that Ama
 
 ## Updating Push Notification Settings<a name="settings-push-manage"></a>
 
-By using the console, you can update the credentials that Amazon Pinpoint uses to send push notifications for the current project to iOS, Android, and Kindle Fire devices\.
+By using the console, you can update the credentials that Amazon Pinpoint uses to send push notifications for the current project to iOS, Android, and Amazon devices\.
 
 **To update push notification settings**
 

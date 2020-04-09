@@ -66,13 +66,13 @@ You can add the variables to a new template when you create the template, or to 
    + If you added message variables to an existing template and you want to save your changes as a new version of the template, choose **Save as new version**\.
    + If you added message variables to an existing template and you want to save your changes as an update to the most recent version of the template, choose **Update version**\. This option is available only if you opened the most recent version of the template in step 3\.
 
-You can now use the template to send personalized recommendations in messages that you send from campaigns and journeys\.
+You can now use the template to include personalized recommendations in messages that you send from campaigns and journeys\.
 
-Note that you can't use recommendations in messages that you send to a limited audience as direct or test messages\. Although you can use templates in these messages more generally, Amazon Pinpoint can't correlate recommendations from a model with recipients of a direct or test message\. To test the appearance and formatting of a template that uses recommendations, specify a default value for each message variable that uses a recommended attribute, and then send a test message that uses the template\.
+Note that you can't include recommendations in messages that you send to a limited audience as direct or test messages\. Although you can use templates in these messages more generally, Amazon Pinpoint can't correlate recommendations from a model with recipients of a direct or test message\. To test the appearance and formatting of a template that uses recommendations, specify a default value for each message variable that refers to a recommended attribute, and then send a test message that uses the template\.
 
 ## Removing Recommendations from Messages<a name="ml-models-using-remove-variables"></a>
 
-To remove personalized recommendations from messages, update the message template that the messages use\. When you update the template, you can remove all or only some message variables for recommendations\.
+To remove personalized recommendations from messages, update the message template that the messages use\. When you update the template, remove all or only some message variables for recommendations\.
 
 If you remove recommendations from a template, Amazon Pinpoint doesn't necessarily apply the changes to messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on the version of the template that you remove recommendations from and how you configured the messages that use the template\. For more information, see [Managing Versions of Message Templates](message-templates-versioning.md)\.
 
@@ -88,8 +88,8 @@ If you remove recommendations from a template, Amazon Pinpoint doesn't necessari
 
 1. In the message editor, delete all the text of the message variable for each recommended attribute that you want to remove\. Each message variable consists of two sets of curly braces and the name of the associated attribute—for example, `{{RecommendationItems}}`\.
 
-   To remove the recommender model from the template completely, delete all the variables for recommended attributes that the model provides\. Then, in the **Attribute finder**, expand the **Recommended attributes** section, and choose **X** next to the name of the model\.
+   To remove the recommender model from the template completely, delete all the variables for recommended attributes that the model provides\. Then, in the **Attribute finder**, expand the **Recommended attributes** section and choose **X** next to the name of the model\.
 
 1. When you finish, do one of the following:
    + To save your changes as a new version of the template, choose **Save as new version**\.
-   + To save your changes as an update to the most recent version of the template, choose **Update version**\. This option is available only if you opened the most recent version of the template in step 4\.
+   + To save your changes as an update to the most recent version of the template, choose **Update version**\. This option is available only if you chose the most recent version of the template in step 4\.

@@ -2,7 +2,7 @@
 
 Use the **Email** settings page to view information about email usage for your Amazon Pinpoint account, such as the number of emails that you've sent during the past 24 hours and whether there are sending restrictions on your account\.
 
-You can also use the **Email** settings page to enable or disable the email channel for the current project\. If you disable the email channel for the project, you can't send campaign\-based email from the project\. However, you can send transactional email from your Amazon Pinpoint account\.
+You can also use the **Email** settings page to enable or disable the email channel for the current project\. If you disable the email channel for the project, you can't send email from campaigns or journeys in the project\. However, you can send transactional email from your Amazon Pinpoint account\.
 
 In addition, you can use the **Email** settings page to verify email identities for the current project\. In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Every email address that you want to use as a "From," "Source," "Sender," or "Return\-Path" address in email has to be verified before you can send email with it by using Amazon Pinpoint\.
 
@@ -22,7 +22,7 @@ The **Email usage and restrictions** section also indicates whether your account
 
 ## Enabling and Disabling the Email Channel<a name="settings-email-enable"></a>
 
-To send email for campaigns in the current project, you first have to enable the email channel for the project\. If you don't plan to send email for any campaigns in a project, you can disable the email channel for the project\. 
+To send email for campaigns and journeys in the current project, you first have to enable the email channel for the project\. If you don't plan to send email for any campaigns or journeys in a project, you can disable the email channel for the project\. 
 
 Note that you don't need to enable the email channel to send transactional email, which is email that is typically sent only once in response to a specific action\. For information about sending transactional email, see [Sending Email in Amazon Pinpoint](channels-mobile-send.md)\.
 
@@ -42,7 +42,7 @@ Note that you don't need to enable the email channel to send transactional email
 
 1. Choose **Save**\.
 
-The process for disabling the email channel is similar\. If you disable the email channel, you can't send email for any campaigns in the project\. However, you can send transactional email from your Amazon Pinpoint account\.
+The process for disabling the email channel is similar\. If you disable the email channel, you can't send email for any campaigns or journeys in the project\. However, you can send transactional email from your Amazon Pinpoint account\.
 
 **To disable the email channel**
 
@@ -70,7 +70,7 @@ If you aren't able to change DNS settings for your domain or you want to send em
 
 1. Under **Identity type**, choose **Email address**, and then choose **Verify a new email address**\.
 
-1. For **Email address**, enter the email address that you want to verify\. The email address must be an address that you can access and is able to receive mail\. 
+1. For **Default sender address**, enter the email address that you want to verify\. The email address must be an address that you can access and is able to receive mail\. 
 
 1. Choose **Verify email address**\.
 
@@ -82,7 +82,7 @@ You should receive the verification email within five minutes\. If you don't rec
 Make sure you typed the address correctly\.
 Make sure the email address that you're attempting to verify can receive email\. You can test this by using another email address to send a test email to the address that you want to verify\.
 Check your junk mail folder\.
-The link in the verification email expires after 24 hours\. To resend the verification email, choose **Send verification email again**\.
+The link in the verification email expires after 24 hours\. To resend the verification email, choose **Send verification email again** on the **Identities** tab of the **Email** settings page\.
 
 When you verify an email address, consider the following:
 + Amazon Pinpoint has endpoints in multiple AWS Regions and the verification status of an email address is separate for each Region\. If you want to send email from the same identity in more than one Region, you must verify that identity in each Region\. You can verify as many as 10,000 identities \(email addresses and domains, in any combination\) in each AWS Region\.
@@ -130,13 +130,13 @@ The procedures for updating the DNS records for a domain vary depending on which
 | DNS/Hosting Provider | Documentation Link | 
 | --- | --- | 
 |  Amazon Route 53  |  [Creating Records by Using the Amazon Route 53 Console](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-creating.html)  | 
-|  GoDaddy  |  [Add a CNAME record](https://www.godaddy.com/help/add-a-cname-record-19236) \(external link\)  | 
-|  Dreamhost  |  [How do I add custom DNS records?](https://help.dreamhost.com/hc/en-us/articles/215414867-How-do-I-add-custom-DNS-records-) \(external link\)  | 
-|  Cloudflare  |  [Managing DNS records in Cloudflare](https://support.cloudflare.com/hc/en-us/articles/360019093151) \(external link\)  | 
-|  HostGator  |  [Manage DNS Records with HostGator/eNom](https://support.hostgator.com/articles/hosting-guide/lets-get-started/dns-name-servers/manage-dns-records-with-hostgatorenom) \(external link\)  | 
-|  Namecheap  |  [How do I add TXT/SPF/DKIM/DMARC records for my domain? ](https://www.namecheap.com/support/knowledgebase/article.aspx/317/2237/how-do-i-add-txtspfdkimdmarc-records-for-my-domain) \(external link\)  | 
-|  Names\.co\.uk  |  [Changing your domains DNS Settings](https://www.names.co.uk/support/1156-changing_your_domains_dns_settings.html) \(external link\)  | 
-|  Wix  |  [Adding or Updating CNAME Records in Your Wix Account](https://support.wix.com/en/article/adding-or-updating-cname-records-in-your-wix-account) \(external link\)  | 
+|  GoDaddy  |  [Add a CNAME record](https://www.godaddy.com/help/add-a-cname-record-19236)  | 
+|  Dreamhost  |  [How do I add custom DNS records?](https://help.dreamhost.com/hc/en-us/articles/215414867-How-do-I-add-custom-DNS-records-)  | 
+|  Cloudflare  |  [Managing DNS records in Cloudflare](https://support.cloudflare.com/hc/en-us/articles/360019093151)  | 
+|  HostGator  |  [Manage DNS Records with HostGator/eNom](https://support.hostgator.com/articles/hosting-guide/lets-get-started/dns-name-servers/manage-dns-records-with-hostgatorenom)  | 
+|  Namecheap  |  [How do I add TXT/SPF/DKIM/DMARC records for my domain? ](https://www.namecheap.com/support/knowledgebase/article.aspx/317/2237/how-do-i-add-txtspfdkimdmarc-records-for-my-domain)  | 
+|  Names\.co\.uk  |  [Changing your domains DNS Settings](https://www.names.co.uk/support/1156-changing_your_domains_dns_settings.html)  | 
+|  Wix  |  [Adding or Updating CNAME Records in Your Wix Account](https://support.wix.com/en/article/adding-or-updating-cname-records-in-your-wix-account)  | 
 
 #### Domain Verification Tips and Troubleshooting<a name="settings-email-verify-domain-troubleshooting"></a>
 

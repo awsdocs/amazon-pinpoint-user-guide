@@ -6,7 +6,7 @@ Before you set up a recommender model in Amazon Pinpoint, work with your data sc
 
 **Topics**
 + [Amazon Personalize Campaigns](#ml-models-rm-prerequisites-personalize)
-+ [IAM Roles and Policies](#ml-models-rm-prerequisites-iam)
++ [AWS Identity and Access Management Roles and Policies](#ml-models-rm-prerequisites-iam)
 + [AWS Lambda Functions](#ml-models-rm-prerequisites-lambda)
 
 ## Amazon Personalize Campaigns<a name="ml-models-rm-prerequisites-personalize"></a>
@@ -28,7 +28,7 @@ In addition to these requirements, we recommend configuring the campaign to supp
 As you work with your team to implement an Amazon Personalize campaign that meets the preceding requirements, also be sure to answer the following questions:
 
 **Which campaign?**  
-To set up the model in Amazon Pinpoint, you'll need to know the name of the Amazon Personalize campaign to retrieve recommendations from\. Later, when you work with your administrator to configure access to the campaign, you'll also need to know the Amazon Resource Name \(ARN\) of the campaign\.
+To set up the model in Amazon Pinpoint, you'll need to know the name of the Amazon Personalize campaign to retrieve recommendations from\. Later, if you work with your administrator to manually configure access to the campaign, you'll also need to know the Amazon Resource Name \(ARN\) of the campaign\.
 
 **Which type of ID?**  
 When you set up the model in Amazon Pinpoint, you choose whether to associate users in the Amazon Personalize campaign with endpoints or users in your Amazon Pinpoint projects\. This enables the model to provide recommendations that are truly specific to a particular message recipient\.  
@@ -39,19 +39,19 @@ When you choose the type of Amazon Pinpoint ID to associate with Amazon Personal
 
 **How many recommendations?**  
 Each time Amazon Pinpoint retrieves recommendations, Amazon Personalize returns an ordered list of recommendations for each recipient of a message\. You can configure Amazon Pinpoint to retrieve between 1 and 5 of these recommendations for each recipient\. If you choose one recommendation, Amazon Pinpoint retrieves only the first item from the list for each recipient—for example, the most highly recommended movie for a recipient\. If you choose two recommendations, it retrieves the first and second items from the list for each recipient—for example, the top two recommended movies for a recipient\. And so on\.  
-Your choice for this setting depends primarily on your goals for messages that will include recommendations from the model\. However, it might also depend on how your team designed the solution and your team's evaluation of the solution's performance\. For this reason, work with your team to ensure that you choose an appropriate number for this setting\.
+Your choice for this setting depends primarily on your goals for messages that include recommendations from the model\. However, it might also depend on how your team designed the solution and your team's evaluation of the solution's performance\. For this reason, work with your team to ensure that you choose an appropriate number for this setting\.
 
 **What does a recommendation contain?**  
 When Amazon Pinpoint retrieves recommendations, Amazon Personalize returns an ordered list of 1\-5 recommended items, depending on how many recommendations you choose to retrieve for each message recipient\. Each item consists only of text, such as a product ID or a movie title\. However, the nature and contents of these items can vary from one Amazon Personalize campaign to another, based on the design of the underlying solution and the campaign\.  
 Therefore, it's a good idea to ask your team exactly what content the campaign provides for recommended items\. Their answer will probably affect how you design messages that use recommendations from the campaign\. If you want to enhance the content that the campaign provides, you might also choose to implement an AWS Lambda function that can perform this task\.
 
-## IAM Roles and Policies<a name="ml-models-rm-prerequisites-iam"></a>
+## AWS Identity and Access Management Roles and Policies<a name="ml-models-rm-prerequisites-iam"></a>
 
 AWS Identity and Access Management \(IAM\) is an AWS service that helps administrators control access to AWS resources\. To learn more about IAM and how it works with Amazon Pinpoint, see [Identity and Access Management for Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/security-iam.html) in the *Amazon Pinpoint Developer Guide*\.
 
-When you set up a recommender model in Amazon Pinpoint, you specify which Amazon Personalize campaign you want to retrieve recommendations from\. To choose the campaign, your administrator first needs to allow you to view the campaigns for your organization's AWS account\. Otherwise, the campaign won't appear in the list of campaigns that you can choose from\. If you don't see the campaign in the list, ask your administrator to provide you with this access\. 
+When you set up a recommender model in Amazon Pinpoint, you specify which Amazon Personalize campaign you want to retrieve recommendations from\. To choose the campaign, your administrator needs to first allow you to view the campaigns for your organization's AWS account\. Otherwise, the campaign won't appear in the list of campaigns that you can choose from\. If you don't see the campaign in the list, ask your administrator to provide you with this access\. 
 
-In addition, work with your administrator to create an IAM role and policy that allows Amazon Pinpoint to retrieve recommendations from the campaign\. For detailed information about this role and policy, see [IAM Role for Retrieving Recommendations](https://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-get-recommendations.html) in the *Amazon Pinpoint Developer Guide*\.
+In addition, you or your administrator needs to create an IAM role and policy that allows Amazon Pinpoint to retrieve recommendations from Amazon Personalize campaigns\. When you set up a recommender model, you can choose to have Amazon Pinpoint create this role and policy for you automatically\. Another option is for you or your administrator to create this role and policy manually, before you set up the recommender model in Amazon Pinpoint\. To learn how to do this, see [IAM Role for Retrieving Recommendations](https://docs.aws.amazon.com/pinpoint/latest/developerguide/permissions-get-recommendations.html) in the *Amazon Pinpoint Developer Guide*\.
 
 ## AWS Lambda Functions<a name="ml-models-rm-prerequisites-lambda"></a>
 
