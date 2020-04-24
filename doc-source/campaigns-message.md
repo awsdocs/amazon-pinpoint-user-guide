@@ -11,13 +11,15 @@ Before you begin, complete [Step 2: Specify the Audience for the Campaign](campa
 
 1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), specify the percentage of segment members who should receive each treatment\. An A/B test campaign can include up to five treatments\. Choose **Add another treatment** to add additional treatments\.
 
-1. On the **Create your message** page, write the message for the campaign\. The message options vary depending on the channel that you chose for the campaign\.
+1. On the **Create your message** page, configure the message for the campaign\. The message options vary depending on the channel that you chose for the campaign\.
 
-   If you chose **Email**, see [Writing an Email Message](#campaigns-message-email)\.
+   If you're creating an email campaign, see [Writing an Email Message](#campaigns-message-email)\.
 
-   If you chose **SMS**, see [Writing an SMS Message](#campaigns-message-sms)\.
+   If you're creating an SMS campaign, see [Writing an SMS Message](#campaigns-message-sms)\.
 
-   If you chose **Push notifications**, see [Writing a Push Notification](#campaigns-message-mobile)\.
+   If you're creating a push notification campaign, see [Writing a Push Notification](#campaigns-message-mobile)\.
+
+   If you're creating a campaign that sends messages through a custom channel, see [Configuring a Custom Channel Message](#campaigns-message-custom)\.
 
 ### Writing an Email Message<a name="campaigns-message-email"></a>
 
@@ -29,7 +31,7 @@ This section contains information about writing an email message\.
 
      1. Select **Choose an existing email template**, and then select **Choose a template**\.
 
-     1. Browse for the template that you want to use\. When you select a template from the list, Amazon Pinpoint displays a preview of the active version of the template\. \(The active version is typically the version of a template that's been reviewed and approved for use, depending on your workflow\.\)
+     1. Browse for the template that you want to use\. When you select a template from the list, Amazon Pinpoint displays a preview of the active version of the template\. \(The active version is usually the version of a template that's been reviewed and approved for use, depending on your workflow\.\)
 
      1. When you find the template that you want, select it, and then select **Choose template**\.
 
@@ -138,6 +140,42 @@ This section contains information about writing a push notification and setting 
 1. For **Message**, enter the content of the message in JSON format\. The exact content of the message varies depending on the notification service that you use and the values that your app expects to receive\.
 
 1. If you created this campaign as an A/B test campaign \(as opposed to a standard campaign\), repeat the steps in this section for each treatment\. You can switch between treatments by using the tabs at the top of the **Push notification details** section\.
+
+1. Choose **Next**\.
+
+### Configuring a Custom Channel Message<a name="campaigns-message-custom"></a>
+
+This section contains information about configuring a campaign to send messages by using a custom channel\. You can use custom channels to send messages to your customers through any service that has an API or web hook functionality, including third\-party services\.
+
+#### Sending a Custom Message Using a Lambda Function<a name="campaigns-message-custom-lambda"></a>
+
+To send messages through a service that has an API, you have to create an AWS Lambda function that calls the API\. For more information about creating these functions, see [Creating Custom Channels](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom.html) in the *Amazon Pinpoint Developer Guide*\.
+
+**To configure a custom channel that uses a Lambda function to call an API**
+
+1. On the **Create your message** page, for **Choose your custom message channel type**, choose **Lambda function**\.
+
+1. For **Lambda function**, choose the name of the Lambda function that you want to execute when the campaign runs\.
+
+1. For **Endpoint options**, choose the endpoint types that you want Amazon Pinpoint to send to the Lambda function or webhook that's associated with the custom channel\.
+
+    For example, if the segment you chose for this campaign contains several endpoint types, but you only want to send the campaign to endpoints that have the Custom endpoint type attribute, choose **Custom**\. You aren't required to choose the Custom endpoint type\. For example, you could choose to only send the custom channel campaign to endpoints with the Email endpoint type attribute\.
+
+1. Choose **Next**\.
+
+#### Sending a Custom Message Using a Webhook<a name="campaigns-message-custom-webhook"></a>
+
+You can also create custom channels that send information about your segment members to services that use webhooks\.
+
+**To configure a custom channel that uses webhooks**
+
+1. On the **Create your message** page, for **Choose your custom message channel type**, choose **URL**\.
+
+1. For **Enter your custom message channel URL**, enter the URL of the webhook\.
+
+   The URL that you specify has to begin with "https://"\. It can only contain alphanumeric characters, plus the following symbols: hyphen \(\-\), period \(\.\), underscore \(\_\), tilde \(\~\), question mark \(?\), slash or solidus \(/\), pound or hash sign \(\#\), and semicolon \(:\)\. The URL has to comply with [RFC3986](https://tools.ietf.org/html/rfc3986)\.
+
+1. For **Endpoint options**, choose the endpoint types that you want Amazon Pinpoint to send to the Lambda function\. For example, if the segment you chose for this campaign contains several endpoint types, but you only want to send the campaign to endpoints that have the "Custom" endpoint type attribute, choose **Custom**\.
 
 1. Choose **Next**\.
 

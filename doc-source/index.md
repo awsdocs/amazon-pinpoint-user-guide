@@ -80,6 +80,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Setting Up the Amazon Pinpoint Voice Channel](channels-voice-setup.md)
       + [Managing the Amazon Pinpoint Voice Channel](channels-voice-manage.md)
       + [Supported Countries and Regions (Voice Channel)](channels-voice-countries.md)
+   + [Custom Channels in Amazon Pinpoint](channels-custom.md)
 + [Amazon Pinpoint Segments](segments.md)
    + [Building Segments](segments-building.md)
    + [Managing Segments](segments-managing.md)

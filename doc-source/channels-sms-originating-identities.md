@@ -68,4 +68,4 @@ When you use dedicated short codes to send SMS messages, you can send a higher v
 
 **Disadvantages**
 
-There are additional costs to acquire short codes, and they can take a long time to implement\. For example, in the United States, there's a one\-time setup fee of $650\.00 \(USD\) for each short code, plus an additional recurring charge of $995\.00 per month for each short code\. It can take 8–12 weeks for short codes to become active on all carrier networks\.
+There are additional costs to acquire short codes, and they can take a long time to implement\. For example, in the United States, there's a one\-time setup fee of $650\.00 \(USD\) for each short code, plus an additional recurring charge of $995\.00 per month for each short code\. It can take 8–12 weeks for short codes to become active on all carrier networks\. To find the price and provisioning time for a different country or region, complete the procedure described in [Requesting Dedicated Short Codes for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-short-code.md)\.

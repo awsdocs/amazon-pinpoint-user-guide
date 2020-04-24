@@ -19,6 +19,8 @@ The first step in setting up a campaign is to create a new campaign\. When you c
    + **A/B test campaign** – Behaves like a standard campaign, but enables you to define different treatments for the campaign's message or schedule\. In an A/B test campaign, you create several versions of a message or schedule to compare their performance\.
 
 1. Under **Choose a channel for this campaign**, choose the channel that you want to use to send the campaign\.
+**Note**  
+You can only choose a single channel\. This section only shows the channels that are enabled for the current project\. The **Custom** channel is enabled for all projects by default\.
 
 1. Choose **Next**\.
 

@@ -205,7 +205,7 @@ You can replace attribute names that are shown as `custom_attribute` with any va
 | Attribute | Description | 
 | --- | --- | 
 | Address | The unique destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token\. | 
-| Attributes\.custom\_attribute | A custom attribute that describes the endpoint\. You can use this type of attribute as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\. | 
+| Attributes\.custom\_attribute | A custom attribute that describes the endpoint\. You can use this type of attribute as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. | 
 | ChannelType | The channel to use when sending messages or push notifications to the endpoint\. For example:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/segments-importing.html) | 
 | Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 
 | Demographic\.Locale | The locale of the endpoint, in the following format: the [ISO 639\-1 alpha\-2](https://en.wikipedia.org/wiki/ISO_639-1) code, followed by an underscore \(\_\), followed by an [ISO 3166\-1 alpha\-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) value\. For example, en\_US is the English language locale for the United States\. | 
@@ -223,10 +223,10 @@ You can replace attribute names that are shown as `custom_attribute` with any va
 | Location\.Longitude | The longitude coordinate of the endpoint's location, rounded to one decimal place\. | 
 | Location\.PostalCode | The postal or ZIP code for the area where the endpoint is located\. | 
 | Location\.Region | The name of the region, such as a state or province, where the endpoint is located\. | 
-| Metrics\.custom\_attribute | A custom numeric metric that your application reports to Amazon Pinpoint for the endpoint—for example, the number of sessions or number of items left in a cart—to use for segmentation purposes\. You can replace custom\_attribute with any value\. You can specify up to 20 custom attributes per endpoint\.These custom values can only be numeric\. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as average or sum, on them\. | 
+| Metrics\.custom\_attribute | A custom numeric metric that your application reports to Amazon Pinpoint for the endpoint—for example, the number of sessions or number of items left in a cart—to use for segmentation purposes\. You can replace custom\_attribute with any value\.These custom values can only be numeric\. Because they're numeric, Amazon Pinpoint can perform arithmetic operations, such as average or sum, on them\. | 
 | OptOut | Indicates whether a user opted out of receiving messages and push notifications from you\. Acceptable values are: ALL, the user opted out and doesn't want to receive any messages or push notifications; or, NONE, the user hasn't opted out and wants to receive all messages and push notifications\. | 
 | RequestId | The unique identifier for the most recent request to update the endpoint\. | 
-| User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. You can specify up to 20 custom attributes per endpoint\. | 
+| User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. | 
 | User\.UserId | A unique identifier for the user\. | 
 
 You can create as many as 40 custom attributes for endpoints and users in each project\. For more information, see [Amazon Pinpoint Quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html) in the *Amazon Pinpoint Developer Guide*\.
