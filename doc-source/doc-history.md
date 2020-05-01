@@ -1,10 +1,11 @@
 # Document History for Amazon Pinpoint<a name="doc-history"></a>
 
 The following table describes important changes in each release of the *Amazon Pinpoint User Guide* after December 2018\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
-+ **Latest documentation update:** April 23, 2020
++ **Latest documentation update:** April 30, 2020
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Regional availability](#doc-history) | Amazon Pinpoint is now available in the AWS GovCloud \(US\) Region\. | April 30, 2020 | 
 | [Custom channels](#doc-history) | Your campaigns can now [send messages using custom channels](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-custom)\. | April 23, 2020 | 
 | [Machine learning](#doc-history) | You can now use [machine learning models](https://docs.aws.amazon.com/pinpoint/latest/userguide/ml-models.html) with message templates to add dynamic, personalized recommendations to messages that you send from campaigns and journeys\. | March 4, 2020 | 
 | [Templates](#doc-history) | You can now create, view, and manage versions of [message templates](https://docs.aws.amazon.com/pinpoint/latest/userguide/messages-templates.html)\. | December 20, 2019 | 

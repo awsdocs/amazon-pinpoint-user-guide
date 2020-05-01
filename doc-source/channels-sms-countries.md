@@ -45,11 +45,11 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Cameroon | CM | Yes |  | 
 | Canada | CA |  | Yes | 
 | Cape Verde | CV | Yes |  | 
-| Cayman Islands | KY |  |  | 
+| Cayman Islands | KY | No |  | 
 | Central African Republic | CF | Yes |  | 
 | Chad | TD | Yes |  | 
 | Chile | CL |  | Yes | 
-| China[2](#sms-support-note-2) | CN |  | For support, [contact sales](https://aws.amazon.com/contact-us/aws-sales/)\. | 
+| China | CN |  | Yes | 
 | Colombia | CO |  |  | 
 | Comoros | KM | Yes |  | 
 | Cook Islands | CK | Yes |  | 
@@ -62,7 +62,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Djibouti | DJ | Yes |  | 
 | Dominica | DM | Yes |  | 
 | Dominican Republic | DO |  |  | 
-| Timor\-Leste | TL |  |  | 
+| East Timor | TL |  |  | 
 | Ecuador | EC |  |  | 
 | Egypt | EG | Yes[1](#sms-support-note-1) |  | 
 | El Salvador | SV |  |  | 
@@ -102,12 +102,12 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Italy | IT | Yes | Yes | 
 | Ivory Coast | CI |  |  | 
 | Jamaica | JM | Yes |  | 
-| Japan | JP |  | Yes | 
+| Japan | JP | Yes[2](#sms-support-note-2) | Yes | 
 | Jordan | JO | Yes[1](#sms-support-note-1) |  | 
 | Kazakhstan | KZ |  |  | 
 | Kenya | KE |  |  | 
 | Kiribati | KI |  |  | 
-| Kuwait | KW | Yes[1](#sms-support-note-1) |  | 
+| Kuwait | KW |  |  | 
 | Kyrgyzstan | KG |  |  | 
 | Laos | LA |  |  | 
 | Latvia | LV | Yes | Yes | 
@@ -155,8 +155,8 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Panama | PA |  |  | 
 | Papua New Guinea | PG | Yes |  | 
 | Paraguay | PY | Yes |  | 
-| Peru | PE |  |  | 
-| Philippines | PH | Yes[1](#sms-support-note-1) | Yes | 
+| Peru | PE | No |  | 
+| Philippines | PH |  | Yes | 
 | Poland | PL | Yes | Yes | 
 | Portugal | PT | Yes | Yes | 
 | Puerto Rico | PR |  | Yes | 
@@ -210,7 +210,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 | Uzbekistan | UZ | Yes |  | 
 | Vanuatu | VU | Yes |  | 
 | Venezuela | VE |  |  | 
-| Vietnam | VN | Yes[1](#sms-support-note-1) |  | 
+| Vietnam | VN |  |  | 
 | Virgin Islands, British | VG | Yes |  | 
 | Virgin Islands, US | VI | Yes |  | 
 | Yemen | YE | Yes |  | 
@@ -221,7 +221,7 @@ You can purchase long codes directly through the Amazon Pinpoint console\. The l
 
 1. <a name="sms-support-note-1"></a>Senders are required to use a pre\-registered alphabetic sender ID\. To request a sender ID from AWS Support, see [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might contact you for additional information after you submit your sender ID request\.
 
-1. <a name="sms-support-note-2"></a>Senders are required to use a pre\-registered template for each type of message that they plan to send\. If a sender doesn’t meet this requirement, their messages will be blocked\. To register a template, open an Amazon Pinpoint SMS case with AWS Support\. When you create the case, provide the same information that you would provide to request a sender ID\. For more information, see [Requesting Sender IDs for SMS Messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet additional, specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might ask you for additional information\.
+1. <a name="sms-support-note-2"></a>All carriers in Japan except KDDI support sender ID\.
 
 ## Sender ID Support<a name="channels-sms-countries-sender-id"></a>
 
