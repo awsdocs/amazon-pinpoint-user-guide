@@ -23,7 +23,7 @@ Open a case with AWS Support by completing the following steps\.
 
 1. On the **My support cases** tab, choose **Create case**\.
 
-1. Under **Create case**, choose **Service quota increase**\.
+1. Under **Create case**, choose **Service limit increase**\.
 
 1. Under **Case classification**, complete the following sections:
    + For **Quota type**, choose **Pinpoint SMS**\.
