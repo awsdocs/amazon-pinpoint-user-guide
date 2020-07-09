@@ -23,7 +23,7 @@ Open a case with AWS Support by completing the following steps\.
 
 1. On the **My support cases** tab, choose **Create case**\.
 
-1. Choose **Service quota increase**\.
+1. Choose **Service limit increase**\.
 
 1. Under **Case classification**, complete the following sections:
    + For **Quota type**, choose **Pinpoint SMS**\.
@@ -32,6 +32,7 @@ Open a case with AWS Support by completing the following steps\.
    + For **Which countries do you plan to send messages to**, enter the country or region that you want to purchase short codes in\.
 
 1. Under **Requests**, complete the following sections:
+   + For **Region**, choose **No region specified**\.
    + For **Resource Type**, choose **Dedicated SMS Short Codes**\.
    + For **Quota**, choose the type of messages that you plan to send using this short code\.
    + For **New quota value**, enter the number of short codes that you want to purchase\.
