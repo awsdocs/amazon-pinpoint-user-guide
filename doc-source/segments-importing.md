@@ -229,4 +229,4 @@ You can replace attribute names that are shown as `custom_attribute` with any va
 | User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. | 
 | User\.UserId | A unique identifier for the user\. | 
 
-You can create as many as 40 custom attributes for endpoints and users in each project\. For more information, see [Amazon Pinpoint Quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html) in the *Amazon Pinpoint Developer Guide*\.
+You can create as many as 250 custom attributes for endpoints and users in each project by default\. For more information, see [Amazon Pinpoint Quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html) in the *Amazon Pinpoint Developer Guide*\.
