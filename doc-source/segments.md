@@ -1,12 +1,7 @@
-# Creating segments<a name="segments"></a>
+# Amazon Pinpoint segments<a name="segments"></a>
 
-A user *segment* represents a subset of your users based on shared characteristics, such as how recently the users have used your app or which device platform they use\. A segment designates which users receive the messages delivered by a campaign\. Define segments so that you can reach the right audience when you want to invite users back to your app, make special offers, or otherwise increase user engagement and purchasing\.
+When you create a campaign, you choose a *segment* to send that campaign to\. A segment is a group of your customers that share certain attributes\. For example, a segment might contain all of your customers who use version 2\.0 of your app on an Android device, or all customers who live in the city of Los Angeles\. You can send multiple campaigns to a single segment, and you can send a single campaign to multiple segments\.
 
-After you create a segment, you can use it in one or more campaigns\. A campaign delivers tailored messages to the users in the segment\.
-
-For more information, see [Segments](https://docs.aws.amazon.com/pinpoint/latest/apireference/rest-api-segments.html)\.
-
-**Topics**
-+ [Building segments](segments-dimensional.md)
-+ [Importing segments](segments-importing.md)
-+ [Customizing segments with AWS Lambda](segments-dynamic.md)
+There are two types of segments that you can create in Amazon Pinpoint:
++ **Dynamic segments** – Segments that are based on attributes that you define\. Dynamic segments can change over time\. For example, if you add new endpoints to Amazon Pinpoint, or if you modify or delete existing endpoints, the number of endpoints in that segment may increase or decrease\. For more information about dynamic segments, see [Building segments](segments-building.md)\.
++ **Imported segments** – Segments that are created outside of Amazon Pinpoint and saved in CSV or JSON format\. When you create an imported segment, you upload your files to Amazon Simple Storage Service \(Amazon S3\)\. Amazon Pinpoint retrieves the files from Amazon S3 and creates new endpoints based on the contents of those files\. Imported segments are static—they never change\. When you create a new segment, you can use an imported segment as a base segment, and then refine it by adding filters\. For more information about importing segments, see [Importing segments](segments-importing.md)\.
