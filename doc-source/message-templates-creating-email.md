@@ -33,8 +33,16 @@ You can also include personalized content in the subject and body of the templat
 
    To specify default values for variables, expand the **Default attribute values** section\. Then enter the default value that you want to use for each variable\. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint does not send the message\.
 
-1.  
-
-   When you finish entering content and settings for the template, choose **Create**\.
+1. When you finish entering content and settings for the template, choose **Create**\.
 
 If you want to test the template before you use it in an email message that you send to users, you can [send a test message](messages-email.md) that uses the template\. If you do this, ensure that you first complete step 9 to specify default values for all the variables in the template\. Otherwise, the message might not be sent or it might not render correctly\.
+
+## Including unsubscribe links in message templates<a name="message-templates-creating-email-optout"></a>
+
+Including an unsubscribe link in your email is a best practice, and in some countries it's a legal requirement\. In your unsubscribe links, you can include a special attribute, `ses:tags="unsubscribeLinkTag:value"`, where *value* is any value that you define\. If a recipient clicks a link that contains this special attribute, Amazon Pinpoint counts it as an opt\-out event for analytics purposes \(for example, in the Opt\-out rate metric on the [Analytics overview page](analytics-overview.md)\)\. The following example shows the syntax for this type of link:
+
+```
+<a ses:tags="unsubscribeLinkTag:optout" href="https://www.example.com/preferences">Unsubscribe</a>
+```
+
+Note that if your template includes a link with this attribute, you still need to develop a system for handling opt\-out requests\. For an example of a system that processes opt\-out requests, see the [Amazon Pinpoint Preference Center solution](https://aws.amazon.com/solutions/implementations/amazon-pinpoint-preference-center/) in the AWS Solutions Library\.

@@ -20,7 +20,7 @@ To send a test SMS message, you have to use a project that has the SMS channel e
 
    If you use phone numbers as the destination type, specify each number in E\.164 format\. E\.164 is a standard for the phone number structure that's used for international telecommunication\. Phone numbers that follow this format typically have up to 15 digits, and they are prefixed with the plus character \(\+\) and the country code\. For example, a US phone number in E\.164 format appears as \+12065550100\.
 
-1. \(Optional\) For the **Origination phone number**, choose the number to use as the originator\. The originator can be any of your numbers: short code, 10DLC, or long code/toll\-free\. If you have multiple numbers associated with your account, and you do not choose an originator, Amazon Pinpoint will choose an originator for you based on the following order: short code, 10DLC, long code/toll\-free\. 
+1. \(Optional\) For the **Origination phone number**, select a phone number to send the message from\. This list contains all of the dedicated phone numbers that are associated with your account\. If your account contains multiple dedicated phone numbers, and you don't choose an origination number, Amazon Pinpoint looks for a short code in your account; if it finds one, it uses that short code to send the message\. If a short code isn't found in your account, then it looks for a 10DLC number \(US recipients only\), and then a toll\-free number \(US recipients only\), and then a long code\.
 
 1. For **Message type**, choose one of the following:
    + **Promotional** – Noncritical messages, such as marketing messages\. If you choose this option, Amazon Pinpoint optimizes the message delivery to incur the lowest cost\.

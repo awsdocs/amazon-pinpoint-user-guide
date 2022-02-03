@@ -40,8 +40,7 @@ To request higher sending quotas for Amazon Pinpoint, open a case in AWS Support
 
 1. Sign in to the AWS Management Console at [https://console\.aws\.amazon\.com/](https://console.aws.amazon.com/)\.
 
-1. On the **Support** menu, choose **Support Center**, as shown in the following image\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/console_region_selector.png)
+1. On the **Support** menu, choose **Support Center**\.
 
 1. On the **Open support cases** tab, choose **Create case**\.
 

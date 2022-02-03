@@ -1,31 +1,22 @@
 # Requesting dedicated long codes for SMS messaging with Amazon Pinpoint<a name="channels-sms-awssupport-long-code"></a>
 
-A long code \(also referred to as a long virtual number, or LVN\) is a standard phone number that contains up to 12 digits, depending on the country that it's based in\. Long codes are typically meant for low\-volume, person\-to\-person communication\. However, you can also use long codes for sending test messages, or for sending low volumes of messages to your customers\. You cannot request a long code for A2P messaging within the United States\. Instead you'll need to request a 10DLC\. For more information on 10DLC and how to request one, see "10DLC" in [SMS and voice settings](settings-sms.md)\. 
-
- 
-
-**Note**  
-In the United States and Canada, sending rates for long codes are restricted to 1 message per second\. This restriction is set by the phone carriers, and isn't a limitation of Amazon Pinpoint\. This restriction might be higher or lower in other countries and regions\. If you send a large volume of messages from a long code, wireless carriers might begin to block your messages\. If you [send SMS messages programmatically](https://docs.aws.amazon.com/pinpoint/latest/developerguide/send-messages-sms.html), your applications should limit the number of messages that they send each second\. See [ Best practices](channels-sms-best-practices.md) for more information on ways to help you improve your customer engagement\.
-
-Depending on your location, the steps to request a long code are different\. If you're located in the United States or Canada you can request a long code using the Amazon Pinpoint Console\. For all other countries and territories you'll need to first file a Support request, described below\.
+A long code \(also referred to as a long virtual number, or LVN\) is a standard phone number that contains up to 12 digits, depending on the country that it's based in\. Long codes are typically meant for low\-volume, person\-to\-person communication\. In some countries, you can use long codes for sending test messages, or for sending low volumes of messages to your customers\. In other countries, including the United States, senders are prohibited from using long codes to send Application\-to\-Person \(A2P\) messages, which includes the messages that you send from Amazon Pinpoint\.
 
 **Note**  
 If you're new to SMS messaging with Amazon Pinpoint, you should also request a monthly SMS spending threshold that meets the expected demands of your SMS use case\. By default, your monthly spending threshold is $1\.00 \(USD\)\. For more information, see [Requesting increases to your monthly SMS spending quota for Amazon Pinpoint](channels-sms-awssupport-spend-threshold.md)\.
 
-## Requesting a long code in the U\.S\. and Canada<a name="request-number-us"></a>
+## Requesting a long code<a name="request-number-row"></a>
 
-If you're in the United States or Canada, you can purchase long codes directly through the Amazon Pinpoint console\. For the steps to request a long code using the Amazon Pinpoint console, see [Requesting a number](settings-request-number.md)\. 
+You can request a long code by opening a case in the AWS Support Center\.
 
-## Requesting a long code outside of the U\.S\. and Canada<a name="request-number-row"></a>
-
-If you're located outside of the United States or Canada, you need to create a ticket in the AWS Support Center requesting any long codes\.
+**Important**  
+If you want to send messages to recipients in the United States, you must use either [a short code](channels-sms-awssupport-short-code.md), a [10DLC phone number](settings-sms-10dlc.md), or a [toll\-free number](settings-sms-request-number.md)\. If you complete the following steps and request a long code for the United States, your request will be rejected\.
 
 **To request a dedicated long code by opening a case in the AWS Support Center**
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **Support** menu, choose **Support Center**, as shown in the following image\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/console_region_selector.png)
+1. On the **Support** menu, choose **Support Center**\.
 
 1. On the **Open support cases** tab, choose **Create case**\.
 
@@ -58,7 +49,7 @@ The Region is required in the **Requests** section\. Even if you provided this i
 
 1. When you finish, choose **Submit**\.
 
-After we receive your request, we provide an initial response within 24 hours\. We might contact you to request additional information\. Once approved, you can add keywords and response messages to your long code\. See [Managing SMS and voice settings](settings-sms-managing.md)\. 
+After we receive your request, we provide an initial response within 24 hours\. We might contact you to request additional information\. Once approved, you can add keywords and response messages to your long code\. See [Managing SMS and voice settings in Amazon Pinpoint](settings-sms-managing.md)\. 
 
 If we're able to provide you with a long code, we send you information about the costs associated with obtaining it\. We also provide an estimate of the amount of time that's required to provision the long code\. In many countries, we can provide you with a dedicated long code within 24 hours\. However, in some countries and regions, it can take several weeks to obtain a dedicated long code for the SMS channel\.
 

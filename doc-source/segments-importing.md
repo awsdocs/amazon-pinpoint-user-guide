@@ -44,7 +44,7 @@ The example files in this section are based on the following data:
 
 | ChannelType | Address | Location\.Country | Demographic\.Platform | Demographic\.Make | User\.UserId | 
 | --- | --- | --- | --- | --- | --- | 
-| SMS | \+12365550182 | CA | Android | LG | example\-user\-id\-1 | 
+| SMS | \+16045550182 | CA | Android | LG | example\-user\-id\-1 | 
 | APNS | 1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f | US | iOS | Apple | example\-user\-id\-2 | 
 | EMAIL | john\.stiles@example\.com | US | iOS | Apple | example\-user\-id\-2 | 
 | GCM | 4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c | CN | Android | Google | example\-user\-id\-3 | 
@@ -57,7 +57,7 @@ You can import endpoints that are defined in a CSV file, as in the following exa
 
 ```
 ChannelType,Address,Location.Country,Demographic.Platform,Demographic.Make,User.UserId
-SMS,2065550182,CA,Android,LG,example-user-id-1
+SMS,+16045550182,CA,Android,LG,example-user-id-1
 APNS,1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f,US,iOS,Apple,example-user-id-2
 EMAIL,john.stiles@example.com,US,iOS,Apple,example-user-id-2
 GCM,4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c,CN,Android,Google,example-user-id-3
@@ -66,11 +66,11 @@ EMAIL,wang.xiulan@example.com,CN,Android,OnePlus,example-user-id-3
 The first line is the header, which contains the endpoint attributes\. For a complete list of possible attributes, see [Supported attributes](#segments-importing-available-attributes)\.  
 The subsequent lines define the endpoints by providing values for each attribute in the header\.  
 To include a comma or double quote in a value, enclose the value in double quotes, as in `"aaa,bbb"`\.   
-Line breaks are not supported within a value in the CSV\.
+The CSV file can't contain line breaks or tabs\. If your file contains data with line breaks or tabs, the data in the file might not be imported, or the import process might fail\.
 You can import endpoints that are defined in a newline\-delimited JSON file\. In this format, each line is a complete JSON object that contains an individual endpoint definition, as in the following example:  
 
 ```
-{"ChannelType":"SMS","Address":"2065550182","Location":{"Country":"CA"},"Demographic":{"Platform":"Android","Make":"LG"},"User":{"UserId":"example-user-id-1"}}
+{"ChannelType":"SMS","Address":"+16045550182","Location":{"Country":"CA"},"Demographic":{"Platform":"Android","Make":"LG"},"User":{"UserId":"example-user-id-1"}}
 {"ChannelType":"APNS","Address":"1a2b3c4d5e6f7g8h9i0j1a2b3c4d5e6f","Location":{"Country":"US"},"Demographic":{"Platform":"iOS","Make":"Apple"},"User":{"UserId":"example-user-id-2"}}
 {"ChannelType":"EMAIL","Address":"john.stiles@example.com","Location":{"Country":"US"},"Demographic":{"Platform":"iOS","Make":"Apple"},"User":{"UserId":"example-user-id-2"}}
 {"ChannelType":"GCM","Address":"4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c","Location":{"Country":"CN"},"Demographic":{"Platform":"Android","Make":"Google"},"User":{"UserId":"example-user-id-3"}}
@@ -142,7 +142,7 @@ You can use the same name for multiple segments\. If you do, Amazon Pinpoint cre
 
 Before you use this procedure to import a segment, you first have to create an Amazon S3 bucket and upload your file to that bucket\. You can organize the files for different segments into separate folders\. When Amazon Pinpoint imports the endpoints or user IDs for a segment, it includes the files within all folders and subfolders that belong to the Amazon S3 location you specify\.
 
-For an introduction to creating buckets and uploading objects, see the [Amazon Simple Storage Service Getting Started Guide](https://docs.aws.amazon.com/AmazonS3/latest/gsg/)\.
+For an introduction to creating buckets and uploading objects, see the [Amazon Simple Storage Service User Guide](https://docs.aws.amazon.com/AmazonS3/latest/gsg/)\.
 
 Amazon Pinpoint can import only one file format \(CSV or JSON\) per segment, so the Amazon S3 path that you specify should only contain files of a single type\.
 
@@ -204,7 +204,7 @@ You can replace attribute names that are shown as `custom_attribute` with any va
 
 | Attribute | Description | 
 | --- | --- | 
-| Address | The unique destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token\. | 
+| Address | The unique destination address for messages or push notifications that you send to the endpoint—for example, an email address, phone number, or device token\.  If the endpoint address is a phone number, you must specify it in E\.164 format\. For more information about the E\.164 format, see [E\.164](https://en.wikipedia.org/wiki/E.164) on Wikipedia\.   | 
 | Attributes\.custom\_attribute | A custom attribute that describes the endpoint\. You can use this type of attribute as selection criteria when you create a segment\. You can replace custom\_attribute with any value\. | 
 | ChannelType | The channel to use when sending messages or push notifications to the endpoint\. For example:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/segments-importing.html) | 
 | Demographic\.AppVersion | The version number of the application that's associated with the endpoint\. | 

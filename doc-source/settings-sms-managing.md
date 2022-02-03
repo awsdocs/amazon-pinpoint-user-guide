@@ -1,4 +1,6 @@
-# Managing SMS and voice settings<a name="settings-sms-managing"></a>
+# Managing SMS and voice settings in Amazon Pinpoint<a name="settings-sms-managing"></a>
+
+Within your Amazon Pinpoint account, you can change several settings that determine how your messages in the SMS and voice channels behave\. This section provides information about these settings, and procedures for changing them\.
 
 **Topics**
 + [Changing SMS settings](#settings-account-sms-managing)
@@ -53,12 +55,15 @@ Wireless carriers in the US require short codes to support the following keyword
 
 HELP  
 Used to obtain customer support\. The response message must include customer\-support contact information, as in the following example:  
-*"For assistance with your account, call 1 \(NNN\) 555\-0199\."*
+*"For assistance with your account, call \(206\) 555\-0199\."*
 
 STOP  
 Used to opt out of receiving messages from your number\. In addition to *STOP*, your audience can use any supported opt\-out keyword, such as *CANCEL* or *OPTOUT*\. For a list of supported opt\-out keywords, see [SMS opt out](channels-sms-manage.md#channels-sms-manage-optout)\. After your number receives an SMS message that contains an opt\-out keyword, Amazon Pinpoint stops sending SMS messages from your account to the individual who opted out\.  
 The response message must confirm that messages will stop being sent to the individual who opted out, as in the following example:  
 *"You are now opted out and will no longer receive messages\."*
+
+**Note**  
+If a recipient responds with one of these keywords as the first word of their message, Amazon Pinpoint responds with the response for that keyword\. For example, if a recipient responds to one of your messages with "Help me understand what this means," then Amazon Pinpoint responds with the response that you specified for the HELP keyword\.
 
 #### Registered keyword<a name="settings-account-sms-number-keyword-registered"></a>
 
@@ -69,7 +74,7 @@ A *registered keyword* is a keyword that's specific to your SMS use case\. When 
 Use the Amazon Pinpoint console to customize the keyword responses for your number\.
 
 **Important**  
-Required opt\-out and opt\-in keyword responses for toll\-free numbers are STOP and UNSTOP, which are carrier\-managed\. Because these keywords are carrier\-managed, they can't be changed\. On the Amazon Pinpoint console these fields will be grayed\-out\. When a user sends STOP or UNSTOP, the carrier also sends the response message\. Therefore, you won't be able to customize your opt\-out or opt\-in response message\.
+Required opt\-out and opt\-in keyword responses for US toll\-free numbers are STOP and UNSTOP, which are managed by carriers\. When a user replies to your message with STOP or UNSTOP, the carrier sends the response message\. On the Amazon Pinpoint console these fields are unavailable\.
 
 1. On the **SMS and voice** settings page, under **Number settings**, choose the short code or long code that you want to manage keyword responses for\.
 
@@ -83,33 +88,9 @@ Required opt\-out and opt\-in keyword responses for toll\-free numbers are STOP 
 
 ### Two\-way SMS settings<a name="settings-account-sms-number-2way"></a>
 
-You can define keywords for SMS messages that you want to receive and process by using a service other than Amazon Pinpoint\. When your number receives an SMS message that begins with one of these keywords, Amazon Pinpoint sends the message and related data to an Amazon Simple Notification Service \(Amazon SNS\) topic in your account\. You can then use Amazon SNS to publish the message to topic subscribers or to AWS services for further processing\.
+You can configure Amazon Pinpoint to handle incoming SMS messages\. When your number receives an SMS message, Amazon Pinpoint sends the message and related data to an Amazon Simple Notification Service \(Amazon SNS\) topic\. You can then use Amazon SNS to publish the message to topic subscribers or to AWS services for further processing\.
 
-**To set up two\-way SMS**
-
-1. On the **All projects** page, choose the project that you want to manage two\-way SMS settings for\.
-
-1. In the navigation pane, under **Settings**, choose **SMS and voice**\.
-
-1. Under **Number settings**, choose the phone number that you want to configure two\-way SMS for\.
-**Note**  
-You can enable two\-way SMS for a phone number only if the value in the **SMS** column is *Enabled*\.
-
-1. Under **Two\-way SMS**, choose **Enable 2\-way SMS**\.
-
-1. Under **Incoming messages destination**, specify the Amazon SNS topic that receives your SMS messages by choosing one of the following options:
-   + **Create a new Amazon SNS topic** – Amazon Pinpoint creates a topic in your account\.
-   + **Choose an existing Amazon SNS topic** – Specify the ARN of a topic in your account\.
-**Note**  
-Amazon Pinpoint currently doesn't support the use of encrypted Amazon SNS topics for two\-way SMS messaging\. You have to choose a topic that isn't encrypted\.
-
-1. Under **Two\-way SMS keywords**, you can add or edit keywords and response messages\. When your number receives an SMS message that contains one of these keywords, Amazon Pinpoint does the following:
-   + Sends the message to your Amazon SNS topic\.
-   + Responds with the keyword response message, if you specified one\.
-
-   To add a keyword, choose **Add another keyword**\.
-
-1. When you finish making changes, choose **Save**\.
+For more information about setting up two\-way messaging, see [Configuring two\-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)\.
 
 ### Self\-managed opt\-outs<a name="settings-account-sms-self-managed-opt-out"></a>
 
@@ -131,21 +112,25 @@ Many countries, regions, and jurisdictions impose severe penalties for sending u
 
 1. On the **Number settings** page, choose **Two\-way SMS**\.
 
-1. Enable and set up two\-way SMS messaging, if you haven't already done so\. For information about setting up two\-way SMS messaging, see [Using two\-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)\. 
+1. Enable and set up two\-way SMS messaging, if you haven't already done so\. For information about setting up two\-way SMS messaging, see [Configuring two\-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)\. 
 
 1. Under **Opt\-outs**, choose **Enable self\-managed opt\-outs**\.
 
 ## Removing a number<a name="settings-account-sms-remove"></a>
 
-If you don't need a dedicated phone number for your account anymore, you can relinquish and end your lease for it\. When you relinquish a number, we stop charging you for it in your bill for the next calendar month\. You can remove a long code or toll\-free number yourself through the Amazon Pinpoint console\. For removing a 10DLC you'll need to file a support ticket, which you can submit following the steps below\.
+If you don't need a dedicated phone number anymore, you can remove it from your account\. When you remove a number, we stop charging you for it in your bill for the next calendar month\.
 
 **Important**  
-If you relinquish a number you might not be able to get that same number back in the future\. Once you remove a 10DLC number you no longer have access to that number for other campaigns\. 
+Removing a phone number from your account is permanent and can't be undone\. If you remove a phone number, you won't be able to obtain the same number again in the future\.
 
 **To remove a number from your account**
 
-1. Under **Phone number**, choose the long code, toll\-free number, or 10DLC\. You can only remove one number at a time\.
+1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. Choose **Remove phone number**\.
+1. In the navigation pane, under **SMS and voice**, choose **Phone numbers**\.
 
-1. Enter **delete** into the confirmation box, and then choose **Confirm**\. A success message appears at the top of the SMS and voice page\.
+1. In the **Number settings** section, choose the phone number that you want to remove\. Choose **Remove phone number**\.
+**Note**  
+You can only remove one number at a time\.
+
+1. On the **Remove number confirmation** window, enter **delete** in the text field, and then choose **Delete**\.

@@ -1,12 +1,17 @@
 # What is Amazon Pinpoint?<a name="welcome"></a>
 
-Amazon Pinpoint is an AWS service that you can use to engage with your customers across multiple messaging channels\. You can use Amazon Pinpoint to send push notifications, emails, SMS text messages, and voice messages\.
+Amazon Pinpoint is an AWS service that you can use to engage with your customers across multiple messaging channels\. You can use Amazon Pinpoint to send push notifications, in\-app notifications, emails, text messages, voice messages, and messages over custom channels\. It includes segmentation, campaign, and journey features that help you send the right message to the right customer at the right time over the right channel\.
 
 The information in this user guide is intended for all Amazon Pinpoint users, including marketers, business users, and developers\. This guide contains information that's especially helpful for users who mainly interact with Amazon Pinpoint by using the AWS Management Console\. If you're new to Amazon Pinpoint, start by reading [Getting started with Amazon Pinpoint](gettingstarted.md)\.
 
 If you're an application developer, also refer to the [Amazon Pinpoint Developer Guide](https://docs.aws.amazon.com/pinpoint/latest/developerguide/) and the [Amazon Pinpoint API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference/)\. These documents provide information about using the features of Amazon Pinpoint programmatically\. They also contain information about integrating Amazon Pinpoint features into your applications\.
 
-## Amazon Pinpoint features<a name="welcome-features"></a>
+**Topics**
++ [Features of Amazon Pinpoint](#welcome-features)
++ [Regional availability](#welcome-regions)
++ [Get started](#welcome-getstarted)
+
+## Features of Amazon Pinpoint<a name="welcome-features"></a>
 
 This section describes the major features of Amazon Pinpoint and the tasks that you can perform by using them\.
 
@@ -26,7 +31,7 @@ Create custom, multi\-step experiences for your customers by [designing and buil
 
 ### Provide consistent messaging with templates<a name="welcome-templates"></a>
 
-Design consistent messages and reuse content more effectively by [creating and using message templates](messages-templates.md)\. A message template contains content and settings that you want to reuse in messages that you send for any of your Amazon Pinpoint projects\. You can use message templates in email messages, push notifications, SMS messages, and voice messages\.
+Design consistent messages and reuse content more effectively by [creating and using message templates](messages-templates.md)\. A message template contains content and settings that you want to reuse in messages that you send for any of your Amazon Pinpoint projects\. You can create templates for email, push notifications, in\-app messages, SMS messages, and voice messages\.
 
 ### Deliver personalized content<a name="welcome-ml-models-rm"></a>
 
@@ -40,10 +45,6 @@ Gain insight into your audience and the effectiveness of your campaigns and mess
 
 To analyze or store analytics data outside Amazon Pinpoint, configure Amazon Pinpoint to [stream the data](analytics-streaming.md) to Amazon Kinesis\.
 
-### Send test messages<a name="welcome-transactional"></a>
-
-Test the design and deliverability of your messages by [sending test messages](messages.md) before you send messages to your customers\.
-
 ## Regional availability<a name="welcome-regions"></a>
 
 Amazon Pinpoint is available in several AWS Regions in North America, Europe, Asia, and Oceania\. In each Region, AWS maintains multiple Availability Zones\. These Availability Zones are physically isolated from each other, but are united by private, low\-latency, high\-throughput, and highly redundant network connections\. These Availability Zones enable us to provide very high levels of availability and redundancy, while also minimizing latency\.
@@ -52,4 +53,4 @@ To learn more about AWS Regions, see [Managing AWS Regions](https://docs.aws.ama
 
 ## Get started<a name="welcome-getstarted"></a>
 
-Get started with Amazon Pinpoint by [creating a new project](gettingstarted.md) or [completing a tutorial](tutorials.md)\. 
+Get started with Amazon Pinpoint by [creating a new project](gettingstarted.md)\. 

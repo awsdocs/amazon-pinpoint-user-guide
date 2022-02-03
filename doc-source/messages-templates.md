@@ -20,10 +20,11 @@ The topics in this chapter explain how to create and manage message templates fo
 
 **Topics**
 + [Creating email templates](message-templates-creating-email.md)
++ [Creating in\-app templates](message-templates-creating-inapp.md)
 + [Creating push notification templates](message-templates-creating-push.md)
 + [Creating SMS templates](message-templates-creating-sms.md)
 + [Creating voice templates](message-templates-creating-voice.md)
 + [Adding personalized content to message templates](message-templates-personalizing.md)
-+ [Using advanced template capabilities](message-template-helpers.md)
++ [Using message template helpers](message-template-helpers.md)
 + [Managing message templates](message-templates-managing.md)
 + [Managing versions of message templates](message-templates-versioning.md)

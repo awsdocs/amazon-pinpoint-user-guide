@@ -37,6 +37,7 @@ This section contains the following information:
 + **Does not refresh on segment update**/ **Refreshes on update** – Indicates whether **Refresh on segment update** was chosen when adding endpoints for the journey entry activity\.
 + **Number of times entry segment will be refreshed** – The maximum number of times that the segment will be refreshed during the course of the journey\.
 + **Number of times entry segment has been refreshed since start** – The current number of times the segment has been refreshed since the journey started\.
++ **Removed due to re\-evaluation** – The number of endpoints that were removed from the journey as a result of the re\-evaluation process that occurs when a participant reaches a **Send contact center** activity\. For more information, see [Set up a contact center activity](journeys-add-activities.md#journeys-add-activities-procedures-contact-center)\.
 
 ### Unsent Message Metrics<a name="journeys-metrics-execution-unsent"></a>
 
@@ -83,7 +84,13 @@ This section contains the following information:
 + **Permanent failure** – The number of messages that weren't sent because of a permanent failure\.
 + **Unsupported channel** – The number of endpoints that weren’t sent through the activity because the endpoint did not match the activity type\.
 + **Unknown failure** – The number of messages that weren't sent because of an unknown reason\.
-+ ***\(Custom message channel only\)* Custom delivery failure** – The number of messages that weren’t sent because of a Lambda function or webhook failure\.
++ **Custom delivery failure** – The number of messages that weren't sent because of a Lambda function or webhook failure\.
+**Note**  
+This metric only appears on **Send through a custom channel** activities\.
++ **Dial failure** – The number of messages that couldn't be delivered through a **Send through a contact center** activity because an issue prevented the number from being dialed\. This type of failure can occur if there are permissions issues that prevent the call from being made, if an Amazon Connect service quota has been exceeded, or if a transient service issue occurs\.
++ **Removed due to re\-evaluation** – The number of endpoints that were removed from the journey as a result of the re\-evaluation process that occurs when a participant reaches a **Send through a contact center** activity\. For more information, see [Set up a contact center activity](journeys-add-activities.md#journeys-add-activities-procedures-contact-center)\.
+**Note**  
+The **Dial failure** and **Removed due to re\-evaluation** metrics only appear on **Send through a contact center** activities\.
 
 ## Journey\-Level Engagement Metrics<a name="journeys-metrics-engagement"></a>
 

@@ -1,6 +1,6 @@
 # Verifying email identities<a name="channels-email-manage-verify"></a>
 
-In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Before you can send email by using Amazon Pinpoint, you must verify each identity that you plan to use as a "From," "Source," "Sender," or "Return\-Path" address to prove that you own it\. If your account is still in the Amazon Pinpoint sandbox, you also need to verify the identities that you plan to send email to\.
+In Amazon Pinpoint, an *identity* is an email address or domain that you use to send email\. Before you can send email by using Amazon Pinpoint, you must verify each identity that you plan to use as a From, Source, Sender, or Return\-Path address to prove that you own it\. If your account is still in the Amazon Pinpoint sandbox, you also need to verify the identities that you plan to send email to\.
 
 Before you verify an identity, you have to create a project and enable the email channel for the project\. For more information, see [Creating an Amazon Pinpoint project with email support](channels-email-setup-create.md)\.
 
@@ -10,27 +10,21 @@ Before you verify an identity, you have to create a project and enable the email
 
 ## Verifying an email address<a name="channels-email-manage-verify-email-address"></a>
 
-If you've already created a project for sending email, you might have already verified an email address\. You can verify a different email address by using the Amazon Pinpoint console\.
+If you've already created a project for sending email, you probably already verified an email address\. You can verify a different email address by using the Amazon Pinpoint console\.
 
 **To verify an email address**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **All projects** page, choose the project that you want to verify an identity for\. 
+1. In the navigation pane, under **Email**, choose **Email identities**\.
 
-1. In the navigation pane, under **Settings**, choose **Email**\.
+1. Choose **Verify email identity**\.
 
-1. On the **Identities** tab, choose **Edit**\.
+1. Under **Identity type**, choose **Email address**\.
 
-1. Select **Enable the email channel for this project**\.
-
-1. Under **Identity type**, choose **Email address**, and then choose **Verify a new email address**\.
-
-1. For **Email address**, enter the email address that you want to verify\. The email address must be an address that you can access and is able to receive mail\.
+1. For **Verify a new email address**, enter the email address that you want to verify\.
 
 1. Choose **Verify email address**\.
-
-1. Choose **Save**\.
 
 1. Check the inbox of the address that you entered and look for an email from *no\-reply\-aws@amazon\.com*\. Open the email and click the link in the email to complete the verification process for the email address\.
 **Note**  
@@ -61,30 +55,28 @@ To complete the verification process, you have to be able to modify the DNS sett
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
-1. On the **All projects** page, choose the project that you want to verify an identity for\. 
+1. In the navigation pane, under **Email**, choose **Email identities**\.
 
-1. In the navigation pane, under **Settings**, choose **Email**\.
-
-1. On the **Identities** tab, choose **Edit**\.
+1. Choose **Verify email identity**\.
 
 1. Under **Identity type**, choose **Domain**, and then choose **Verify a new domain**\.
 
 1. For **Domain**, enter the domain that you want to verify\.
 
-1. For **Default sender address**, enter the email address that you want to use by default when you send email from this domain\. When you send email, you can specify a different address\. However, if you don't specify a different address for specific email, Amazon Pinpoint sends the email from this default address\.
-
 1. Choose **Verify domain**\.
 
-1. Under **DNS records for domain verification**, copy the three CNAME records and save them to a location on your computer\. Or, to download and save the values in a \.csv file, choose **Download record set**\.
+1. Under **Record set**, copy the three CNAME records and save them to a location on your computer\. Or, to download and save the values in a \.csv file, choose **Download record set**\.
 
 1. Log in to the management console for your DNS or web hosting provider, and then create three new CNAME records that contain the values that you saved in the previous step\. See the next section for links to the documentation for several common providers\.
 
-   It usually takes 24–48 hours for changes to DNS settings to propagate\. As soon as Amazon Pinpoint detects all three of these CNAME records in the DNS configuration of your domain, the verification process is complete\. You can't send email from a domain until the verification process is complete\.
+1. When Amazon Pinpoint detects all three of these CNAME records in the DNS configuration of your domain, the verification process is complete\. You can check the verification status by returning to the **Email identities** page\. In the **All identities** table, locate the domain that you attempted to verify\. If the value in the **Status** column for that domain is *Active*, the verification process is complete\. 
+**Note**  
+In some cases, it can take 72 hours or more for DNS changes to propagate across the internet\. You can't send email from a domain until the verification process is complete\.
 
 When you verify a domain, consider the following:
 + You can send email from any subdomain of the verified domain, without verifying the subdomain specifically\. For example, if you verify *example\.com*, you don't need to verify *a\.example\.com* or *a\.b\.example\.com*\. 
 + As specified in [RFC 1034](https://tools.ietf.org/html/rfc1034), each DNS label can have up to 63 characters\. In addition, the whole domain name must not exceed a total length of 255 characters\.
-+ Amazon Pinpoint has endpoints in multiple AWS Regions and the verification status of a domain is separate for each Region\. If you want to send email from the same identity in more than one Region, you must verify that identity in each Region\. You can verify as many as 10,000 identities \(domains and email addresses, in any combination\) in each AWS Region\.
++ Amazon Pinpoint is available in multiple AWS Regions, and the verification status of a domain is separate for each Region\. If you want to send email from the same identity in more than one Region, you must verify that identity in each Region\. You can verify as many as 10,000 identities \(domains and email addresses, in any combination\) in each AWS Region\.
 
 ### Instructions for configuring DNS records for various providers<a name="channels-email-manage-verify-domain-third-party-instructions"></a>
 
@@ -93,7 +85,7 @@ The procedures for updating the DNS records for a domain vary depending on which
 
 | DNS/hosting provider | Documentation link | 
 | --- | --- | 
-|  Amazon Route 53  |  [Working with records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html)  | 
+|  Amazon Route 53  |  [Working with records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html)  | 
 |  GoDaddy  |  [Add a CNAME record](https://www.godaddy.com/help/add-a-cname-record-19236) \(external link\)  | 
 |  Dreamhost  |  [How do I add custom DNS records?](https://help.dreamhost.com/hc/en-us/articles/215414867-How-do-I-add-custom-DNS-records-) \(external link\)  | 
 |  Cloudflare  |  [Managing DNS records in cloudflare](https://support.cloudflare.com/hc/en-us/articles/360019093151) \(external link\)  | 

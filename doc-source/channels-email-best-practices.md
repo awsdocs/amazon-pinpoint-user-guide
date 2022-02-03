@@ -56,11 +56,7 @@ The following guidelines can help you avoid bounces and improve your sender repu
 + Keep your list up to date\. If you haven't emailed your recipients in a long time, try to validate your customers' statuses through some other means \(such as website login activity or purchase history\)\.
 + If you don't have a method of verifying your customers' statuses, consider sending a *win\-back* email\. A typical win\-back email mentions that you haven't heard from the customer in a while, and encourages the customer to confirm that they still want to receive your email\. After sending a win\-back email, purge all of the recipients who did not respond from your lists\.
 
-When you receive bounces, it's vital that you respond to them appropriately by observing the following rules:
-+ If an email address hard bounces, immediately remove that address from your lists\. Don't attempt to re\-send messages to hard\-bouncing addresses\. Repeated hard bounces add up, and ultimately harm your reputation with the recipient's ISP\.
-+ Make sure that the address you use to receive bounce notifications is able to receive email\. 
-+ If your inbound email comes to you from an ISP, instead of through your own internal servers, an influx of bounce notifications can land in your spam folder or be dropped completely\. Ideally, you shouldn't use a hosted email address to receive bounces\. If you must, however, then check the spam folder often, and don't mark the bounce messages as spam\. In Amazon Pinpoint, you can specify the address that bounce notifications are sent to\.
-+ Usually, a bounce provides the address of the mailbox refusing delivery\. However, if you need more granular data to map a recipient address to a particular email campaign, include an X\-header with a value you can trace back to your internal tracking system\. 
+When you receive bounces, it's important that you immediately remove that address from your lists\. Don't attempt to re\-send messages to hard\-bouncing addresses\. Repeated hard bounces can ultimately harm your reputation with the recipient's ISP\.
 
 ## Complaints<a name="channels-email-best-practices-complaints"></a>
 

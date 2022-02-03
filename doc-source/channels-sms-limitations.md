@@ -6,7 +6,7 @@ When you send SMS messages using Amazon Pinpoint, you should consider these limi
 
 **Topics**
 + [SMS character limits in Amazon Pinpoint](channels-sms-limitations-characters.md)
-+ [Message parts per second \(MPS\)](channels-sms-limitations-mps.md)
++ [Message Parts per Second \(MPS\) limits](channels-sms-limitations-mps.md)
 + [Message routes](channels-sms-limitations-routes.md)
 + [Message fallback](channels-sms-limitations-fallback.md)
 + [Opting out](channels-sms-limitations-opt-out.md)

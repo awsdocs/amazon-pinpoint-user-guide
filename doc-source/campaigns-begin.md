@@ -20,7 +20,11 @@ The first step in setting up a campaign is to create a new campaign\. When you c
 
 1. Under **Choose a channel for this campaign**, choose the channel that you want to use to send the campaign\.
 **Note**  
-You can only choose a single channel\. This section only shows the channels that are enabled for the current project\. The **Custom** channel is enabled for all projects by default\.
+You can only choose a single channel\. You can only choose the channels that are enabled for the current project\. The **Custom** channel is enabled for all projects by default\.
+
+1. If you chose **In\-app messaging** in the preceding step, choose a **Prioritization** for the in\-app message\. The value that you choose determines which message is shown in response to a trigger event\.
+
+   If you chose a different message type, proceed to the next step\.
 
 1. Choose **Next**\.
 

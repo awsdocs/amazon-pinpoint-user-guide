@@ -18,4 +18,4 @@ If you want to send your campaign when certain events occur \(as opposed to send
    You can use this feature to perform hold\-out testing\. In a hold\-out test, you omit a sample group of random recipients, and then compare their behaviors \(for example, the number of purchases they make\) against the behaviors of the customers who received the campaign\. In this way, you can determine the effectiveness of your campaigns\. 
 
 **Next**  
-[Step 3: Write the message](campaigns-message.md)
+[Step 3: Configure the message](campaigns-message.md)

@@ -34,6 +34,9 @@ As a best practice, we recommend that you specify a default value for each varia
 
 You can add message attributes to a new template you create or to an existing template\. If you add variables to an existing template, Amazon Pinpoint doesn't necessarily apply the changes to messages that use the template and haven't been sent yet, such as campaign messages that are scheduled to be sent at a later time\. This depends on the version of the template that you add variables to and how you configured the messages that use the template\. For more information, see [Managing versions of message templates](message-templates-versioning.md)\.
 
+**Note**  
+In\-app messaging templates do not support the use of message variables\.
+
 **To add a message variable to a message template**
 
 1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.

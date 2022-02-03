@@ -21,6 +21,8 @@ This section describes several best practices that might help you improve your c
 + [Avoid cross\-channel fatigue](#channels-sms-best-practices-cross-channel-fatigue)
 + [Maintain independent lists](#channels-sms-best-practices-independent-lists)
 + [Use dedicated short codes](#channels-sms-best-practices-dedicated-short-codes)
++ [Verify your destination phone numbers](#channels-sms-best-practices-verify-destination-numbers)
++ [Design with redundancy in mind](#channels-sms-best-practices-redundancy)
 
 ## Comply with laws and regulations<a name="channels-sms-best-practices-understand-laws"></a>
 
@@ -108,3 +110,19 @@ When customers opt in to a topic, make sure that they only receive messages abou
 ## Use dedicated short codes<a name="channels-sms-best-practices-dedicated-short-codes"></a>
 
 If you use short codes, maintain a separate short code for each brand and each type of message\. For example, if your company has two brands, use a separate short code for each one\. Similarly, if you send both transactional and promotional messages, use a separate short code for each type of message\. To learn more about requesting short codes, see [Requesting short codes for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-short-code.md)\.
+
+## Verify your destination phone numbers<a name="channels-sms-best-practices-verify-destination-numbers"></a>
+
+When you send SMS messages through Amazon Pinpoint, you're billed for each message part you send\. The price you pay per message part varies on the recipient's country or region\. For more information about SMS pricing, see [Amazon Pinpoint Pricing](https://aws.amazon.com/pinpoint/pricing/#SMS_text_messages)\.
+
+When Amazon Pinpoint accepts a request to send an SMS message \(as the result of a call to the [SendMessages](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-messages.html#SendMessages) API, or as the result of a campaign or journey being launched\), you're charged for sending that message\. This statement is true even if the intended recipient doesn't actually receive the message\. For example, if the recipient's phone number is no longer in service, or if the number that you sent the message to wasn't a valid mobile phone number, you're still billed for sending the message\.
+
+Amazon Pinpoint accepts valid requests to send SMS messages and attempts to deliver them\. For this reason, you should validate that the phone numbers that you send messages to are valid mobile numbers\. You can use the Amazon Pinpoint phone number validation service to determine if a phone number is valid and what type of number it is \(such as mobile, landline, or VoIP\)\. For more information, see [Validating phone numbers in Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/validate-phone-numbers.html) in the *Amazon Pinpoint Developer Guide*\.
+
+## Design with redundancy in mind<a name="channels-sms-best-practices-redundancy"></a>
+
+Amazon Pinpoint is available in several AWS Regions\. For a complete list of Regions where Amazon Pinpoint is available, see the [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/pinpoint.html)\.
+
+For mission\-critical messaging programs, we recommend that you configure Amazon Pinpoint in more than one AWS Region\.
+
+The phone numbers that you use for SMS messages—including short codes, long codes, toll\-free numbers, and 10DLC numbers—can't be replicated across AWS Regions\. As a result, in order to use Amazon Pinpoint in multiple Regions, you must purchase separate phone numbers in each Region where you want to use Amazon Pinpoint\. For example, if you use a short code to send text messages to recipients in the US, you need request separate short codes in each AWS Region that you plan to use\.

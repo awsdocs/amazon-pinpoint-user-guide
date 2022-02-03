@@ -2,6 +2,9 @@
 
 In the Amazon Pinpoint console, you update the settings for a campaign, delete a campaign, or copy an existing campaign to a new campaign\.
 
+**Note**  
+Because 10DLC campaigns exist outside of a specific project, information about these campaigns can be found on the** 10DLC campaigns** tab on the **SMS and voice** page of the Amazon Pinpoint console\.
+
 **To manage a campaign**
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.

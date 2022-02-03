@@ -65,7 +65,7 @@ Before you request production access, you must send at least one voice message f
 
 1. For **Limit**, verify that **Production Access** is selected\.
 
-1. For **New limit value**, enter the maximum amount, in US Dollars, that you want to spend sending voice messages each calendar month\.
+1. For **New limit value**, enter any number—the value that you enter in this field is not important\.
 
 1. Under **Case description**, for **Use case description**, provide the following details:
    + The website or app of the company or service that will send voice messages\.

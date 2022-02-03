@@ -4,6 +4,9 @@ After fully testing your SMS environment in the SMS sandbox, you can choose to m
 
 Alternatively, you can request production access from the sandbox environment\. To do so, choose **Request production access** under ** Account tier** on the **SMS and voice** page\.
 
+**Note**  
+If your account is in multiple regions, you must submit a support request for each region\.
+
 **To move from the SMS sandbox**
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.

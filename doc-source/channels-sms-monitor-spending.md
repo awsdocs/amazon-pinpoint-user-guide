@@ -2,6 +2,8 @@
 
 This topic provides information about viewing SMS spending metrics in Amazon CloudWatch\. It also explains how to set up a CloudWatch alarm that sends you a notification when your monthly SMS spending exceeds a certain amount\.
 
+If you only want to view your monthly charges for using Amazon Pinpoint, including the amount of money you've spent sending SMS messages, you should use the AWS Billing and Cost Management console\. The Billing and Cost Management console provides an estimate of your bill for the current month, and your final charges for previous months\. For more information, see [Viewing your monthly charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/invoice.html) in the *AWS Billing and Cost Management User Guide*\.
+
 ## View your monthly SMS spending by using CloudWatch<a name="channels-sms-monitor-spending-metrics"></a>
 
 To quickly determine how much money you've spent sending SMS messages during the current month, you can use the Metrics section of the CloudWatch console\. CloudWatch retains metrics data for 15 months, so you can view real\-time data and analyze historical trends\.

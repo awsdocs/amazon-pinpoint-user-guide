@@ -12,13 +12,14 @@ In the [SMS and voice settings section](settings-sms.md) of the Amazon Pinpoint 
 When you configure SMS channel settings in Amazon Pinpoint, your changes apply to other AWS services that send SMS messages, such as Amazon SNS\.
 
 **Topics**
-+ [Amazon Pinpoint SMS sandbox](channels-sms-sandbox.md)
++ [About the Amazon Pinpoint SMS sandbox](channels-sms-sandbox.md)
 + [Setting up the Amazon Pinpoint SMS channel](channels-sms-setup.md)
 + [Originating identities for SMS messages](channels-sms-originating-identities.md)
 + [SMS limits and restrictions in Amazon Pinpoint](channels-sms-limitations.md)
 + [Requesting support for SMS messaging with Amazon Pinpoint](channels-sms-awssupport.md)
 + [Monitoring SMS activity with Amazon Pinpoint](channels-sms-monitor.md)
 + [Managing the Amazon Pinpoint SMS channel](channels-sms-manage.md)
-+ [Using two\-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)
++ [Test SMS sending with the Amazon Pinpoint SMS simulator](channels-sms-simulator.md)
++ [Configuring two\-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)
 + [Country capabilities and limitations for SMS with Amazon Pinpoint](channels-sms-country-capabilities.md)
 + [Best practices](channels-sms-best-practices.md)

@@ -7,7 +7,7 @@ If you've used the Amazon Pinpoint API, you may have seen references to "applica
 
 This section shows you how to create a project\. As part of this procedure, you also verify an email address\. You use this address to send email when you create your email campaign later in this tutorial\.
 
-If you've never created a project in your Amazon Pinpoint account, complete the steps in [Option 1: Create and configure a project \(New Amazon Pinpoint Users\)](#gettingstarted-create-project-new-user)\. If your Amazon Pinpoint account already contains one or more projects, complete the steps in [Option 1: Create and Configure a Project \(Existing Amazon Pinpoint Users\)](#gettingstarted-create-project-existing-user) instead\.
+If you've never created a project in your Amazon Pinpoint account, complete the steps in [Option 1: Create and configure a project](#gettingstarted-create-project-new-user)\. If your Amazon Pinpoint account already contains one or more projects, complete the steps in [Option 2: Create and configure a project](#gettingstarted-create-project-existing-user) instead\.
 
 ## Option 1: Create and configure a project \(new Amazon Pinpoint users\)<a name="gettingstarted-create-project-new-user"></a>
 

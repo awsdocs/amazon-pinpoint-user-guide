@@ -9,3 +9,4 @@ To send voice messages using Amazon Pinpoint, you first have to enable the voice
 + [Setting up the Amazon Pinpoint voice channel](channels-voice-setup.md)
 + [Managing the Amazon Pinpoint voice channel](channels-voice-manage.md)
 + [Supported countries and regions \(voice channel\)](channels-voice-countries.md)
++ [Best practices for the voice channel](channels-voice-best-practices.md)

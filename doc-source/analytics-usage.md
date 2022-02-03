@@ -34,6 +34,9 @@ The **Usage** page contains three sections: [User metrics](#analytics-usage-desc
 
 The **User metrics** section provides information about how users and endpoints interacted with your application\. These charts and metrics help you better understand user retention—that is, the likelihood that a customer who used your application in the past will use it again at a later time\.
 
+**Note**  
+The following metrics can be affected by API operations that impact endpoints: **Daily active endpoints**, **Monthly active endpoints**, **Daily active users**, **Monthly active users**\. For example, if you use the `UpdateEndpoint` or `PutEvents` API operations to modify endpoints, metrics such as **Daily active users** could indicate higher counts than **Daily sessions**\.
+
 For information about the difference between users and endpoints, see [Endpoints and users in Amazon Pinpoint analytics](analytics-charts.md#analytics-endpoints-users)\.
 
 **Daily active endpoints**  

@@ -24,8 +24,8 @@ For more information, see the [Amazon Kinesis Data Streams Developer Guide](http
 
 ### About Amazon Kinesis Data Firehose<a name="analytics-streaming-about-kinesis-firehose"></a>
 
-Amazon Kinesis Data Firehose is a service that you can use to deliver your streaming data to AWS data stores, including Amazon Simple Storage Service \(Amazon S3\), Amazon Redshift, or Amazon Elasticsearch Service \(Amazon ES\)\. For example, streaming your events to Kinesis Data Firehose is useful if you want to:
-+ Use your own analytics applications and tools to analyze events in Amazon S3, Amazon Redshift, or Amazon ES\.
+Amazon Kinesis Data Firehose is a service that you can use to deliver your streaming data to AWS data stores, including Amazon Simple Storage Service \(Amazon S3\), Amazon Redshift, or Amazon OpenSearch Service \(OpenSearch Service\)\. For example, streaming your events to Kinesis Data Firehose is useful if you want to:
++ Use your own analytics applications and tools to analyze events in Amazon S3, Amazon Redshift, or OpenSearch Service\.
 + Send your events to Amazon S3 so that you can write SQL queries on this data with Amazon Athena\.
 + Back up your event data for long\-term storage in Amazon S3\.
 

@@ -31,7 +31,7 @@ The email that you create later in this tutorial uses several of these fields to
 **Note**  
 If you used a spreadsheet application to modify the file, make sure that you save the modified file in Comma\-Separated Values \(\.csv\) format\. Amazon Pinpoint can only import \.csv and \.json files\.
 
-## Step 2\.2: Import a file that contains customer data<a name="gettingstarted-import-customer-data-import-segment"></a>
+## Step 2\.2: Import the sample customer data file<a name="gettingstarted-import-customer-data-import-segment"></a>
 
 Now that you have a file that contains customer data, you can import it into Amazon Pinpoint\. To import customer data, you have to create a new segment\.
 
@@ -67,19 +67,13 @@ In this section, you create a targeted segment\. You add segment criteria that f
 
    1. Next to **Include endpoints that are in any of the following segments**, choose the **Pinpoint\_Sample\_Import** segment that you created in the previous step\.
 
-   1. Under **Add filters to refine your segment**, from the menu, choose **Filter by channel**\.
+   1. Choose **Add criteria**\.
 
-   1. Next to **Endpoints that match**, choose **all**\.
+   1. From the menu under **Attribute**, choose **Channel Types > Email**\.
 
-   1. For **Channel**, choose **EMAIL**\.
+   1. Choose **Add filter**\.
 
-   1. Under **Add filters to refine your segment**, from the menu, choose **Filter by user**\.
-
-   1. In the **User** filter, use the menu to choose **Company**\. Next, use the **Choose values** menu to choose the unique company name that you specified for your own contact record in [Step 2\.1](#gettingstarted-import-customer-data-download-sample-file)\.
-
-   1. Choose **Add an attribute or metric**\.
-
-   1. In the new filter, use the menu to choose **First Name**\. Next, use the **Choose values** menu to choose your first name\.
+   1. In the new menu that appears in the **Attribute** column, choose **Custom User Attributes > Company**\. Next, in the **Operator** column, choose **Is**\. Finally, in the **Values** column, enter the unique company name that you specified for your own contact record in [Step 2\.1](#gettingstarted-import-customer-data-download-sample-file)\.
 
    1. Choose **Create segment**\.
 

@@ -1,6 +1,6 @@
 # Amazon Pinpoint campaigns<a name="campaigns"></a>
 
-A *campaign* is a messaging initiative that engages a specific audience [segment](segments.md)\. A campaign sends tailored messages according to a schedule that you define\. You can use the console to create a campaign that sends messages through any single channel that is supported by Amazon Pinpoint: mobile push, email, or SMS\.
+A *campaign* is a messaging initiative that engages a specific audience [segment](segments.md)\. A campaign sends tailored messages according to a schedule that you define\. You can use the console to create a campaign that sends messages through any single channel that is supported by Amazon Pinpoint: mobile push, in\-app, email, SMS or custom channels\.
 
 For example, to help increase engagement between your mobile app and its users, you could use Amazon Pinpoint to create and manage push notification campaigns that reach out to users of that app\. Your campaign might invite users back to your app who haven't run it recently or offer special promotions to users who haven't purchased recently\.
 
@@ -15,7 +15,7 @@ If you want to send a one\-time message without engaging a user segment or defin
 **Topics**
 + [Step 1: Create a campaign](campaigns-begin.md)
 + [Step 2: Specify the audience for the campaign](campaigns-segment.md)
-+ [Step 3: Write the message](campaigns-message.md)
++ [Step 3: Configure the message](campaigns-message.md)
 + [Step 4: Choose when to send the campaign](campaigns-schedule.md)
 + [Step 5: Review and launch the campaign](campaigns-review.md)
 + [Managing campaigns](campaigns-managing.md)

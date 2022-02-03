@@ -1,41 +1,41 @@
 # Supported countries and regions \(SMS channel\)<a name="channels-sms-countries"></a>
 
-You can use Amazon Pinpoint to send SMS messages to the countries and regions listed in the following table\. This table also lists the countries and regions that support sender IDs and [two\-way SMS messaging](channels-sms-two-way.md)\.
+You can use Amazon Pinpoint to send SMS messages to the countries, regions, and territories listed in the following table\. This table also lists the countries and regions that support Sender IDs and [two\-way SMS messaging](channels-sms-two-way.md)\.
 
 Before you can use two\-way SMS messaging to receive messages, you have to obtain either a dedicated short code or a dedicated long code for the SMS channel\. For more information about requesting short and long codes, see [Requesting support for SMS messaging with Amazon Pinpoint](channels-sms-awssupport.md)\.
 
 **Note**  
-You can purchase long codes directly through the Amazon Pinpoint console\. The long codes that you purchase through the console are intended for use with the [voice channel](channels-voice.md)\. However, if you purchase a long code that is based in the United States \(including Puerto Rico\) or Canada, you can also use it to send SMS messages\. If you need a long code for sending SMS messages in a different country or region, complete the procedures at [Requesting dedicated long codes for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)\.
-
-The following table explains which ID is displayed when you send SMS messages to countries or regions where sender ID is supported, compared to those where sender ID isn't supported\.
+You can purchase long codes for some countries directly through the Amazon Pinpoint console\. The long codes that you purchase through the console are intended for use with the [voice channel](channels-voice.md)\. However, if you purchase a long code that is based in the United States \(including Puerto Rico\) or Canada, you can also use it to send SMS messages\. If you need a long code for sending SMS messages in a different country or region, complete the procedures at [Requesting dedicated long codes for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-long-code.md)\.
 
 
 ****  
 
-| Country or region | ISO code | Dialing code | Supports short codes | Supports long codes | Supports sender IDs | Supports two\-way SMS | 
+| Country or region | ISO code | Dialing code | Supports short codes | Supports long codes | Supports Sender IDs | Supports two\-way SMS | 
 | --- | --- | --- | --- | --- | --- | --- | 
 |  A | 
 | Afghanistan | AF | 93 | No | No | Yes | No | 
 | Albania | AL | 355 | No | No | Yes | No | 
+| Algeria | DZ | 213 | No | No | Yes | No | 
 | Andorra | AD | 376 | No | No | Yes | No | 
 | Anguilla | AI | 1\-264 | No | No | Yes | No | 
 | Antigua and Barbuda | AG | 1\-268 | No | No | Yes | No | 
 | Argentina  | AR | 54 | Yes | No | No  | No | 
 | Armenia | AM | 374 | No | No | Yes | No | 
 | Aruba | AW | 297 | No | No | Yes | No | 
-| Australia | AU | 61 | No | Yes | Yes | No | 
+| Australia | AU | 61 | No | Yes | Yes | Yes | 
 | Austria | AT | 43 | Yes | Yes | Yes | Yes | 
-| Azerbijan | AZ | 994 | No | No | Yes | No | 
+| Azerbaijan | AZ | 994 | No | No | Yes | No | 
 |  B | 
 | Bahamas | BS | 1\-242 | No | No | No | No | 
 | Bahrain | BH | 973 | No | No  | Yes  | No | 
-| Bangladesh | BDE | 880 | No | No  | Yes | No | 
+| Bangladesh | BD | 880 | No | No  | Yes | No | 
 | Barbados | BB | 1\-246 | No | No | Yes | No | 
 | Belarus | BY | 375 | No | No | Registration required[1](#sms-support-note-1) | No | 
 | Belgium | BE | 32 | No | Yes | No | Yes | 
 | Belize | BZ | 501 | No | No | Yes | No | 
 | Bermuda | BM | 1\-441 | No | No | Yes | No | 
 | Bhutan | BT | 975 | No | No | Yes | No | 
+| Bolivia | BO | 591 | No | No | Yes | No | 
 | Bosnia and Herzegovina | BA | 387 | No | No | Yes | No | 
 | Botswana | BW | 267 | No | No | Yes | No | 
 | Brazil | BR | 55 | Yes | Yes | No | Yes | 
@@ -44,14 +44,15 @@ The following table explains which ID is displayed when you send SMS messages to
 | Burkina Faso | BF | 226 | No | No | Yes | No | 
 | Burundi | BL | 257 | No | No | Yes | No | 
 |  C | 
-| Cambodia | CM | 855 | No | No | Yes | No | 
+| Cambodia | KH | 855 | No | No | Yes | No | 
 | Cameroon | CM | 237 | No | No | Yes | No | 
 | Canada | CA | 1 | Yes | Yes | No | Yes | 
 | Cape Verde | CV | 238 | No | No | Yes | No | 
 | Cayman Islands | KY | 1\-345 | No | No | No | No | 
 | Central African Republic | CF | 236 | No | No | Yes | No | 
+| Chad | TD | 235 | No | No | Yes | No | 
 | Chile | CL | 56 | Yes | Yes | No | Yes | 
-| China | CN | 86 | Yes | No | No [2](#sms-support-note-2)  | Yes | 
+| China | CN | 86 | Yes | No | No [2](#sms-support-note-2)  | Yes | 
 | Colombia | CO | 57 | No | Yes | No | Yes | 
 | Comoros | KM | 269 | No | No | Yes | No | 
 | Cook Islands | CK | 682 | No | No | Yes | Yes | 
@@ -92,7 +93,7 @@ The following table explains which ID is displayed when you send SMS messages to
 | Grenada | GD | 1\-473 | No | No | Yes | No | 
 | Guadeloupe | GP | 590 | No | No | Yes | No | 
 | Guam | GU | 1\-671 | No | No | No | No | 
-| Guatemala | GT | 502 | No | No | Yes | No | 
+| Guatemala | GT | 502 | No | No | No | No | 
 | Guernsey | GG | 44\-1481 | No | No | Yes | No | 
 | Guinea | GN | 224 | No | No | Yes | No | 
 | Guinea\-Bissau | GW | 245 | No | No | Yes | N/A | 
@@ -104,7 +105,7 @@ The following table explains which ID is displayed when you send SMS messages to
 | Hungary | HU | 36 | No | Yes | No | Yes | 
 |  I | 
 | Iceland | IS | 354 | No | No | Yes | No | 
-| India | IN | 91 | Yes | Yes | Registration required[3](#sms-support-note-3)  | Yes | 
+| India | IN | 91 | Yes | Yes[4](#sms-support-note-4) | Registration required[3](#sms-support-note-3)  | Yes | 
 | Indonesia | ID | 62 | No | No | Yes | No | 
 | Iraq | IQ | 964 | No | No | Yes | No | 
 | Ireland | IE | 353 | No | Yes | Yes | Yes | 
@@ -125,6 +126,7 @@ The following table explains which ID is displayed when you send SMS messages to
 | Kyrgyzstan | KG | 996 | No | No | Yes | No | 
 | L | 
 | Laos | LA | 856 | No | No | Yes | No | 
+| Latvia | LV | 371 | No | No | Yes | No | 
 | Lebanon | LB | 961 | No | No | Yes | No | 
 | Lesotho | LS | 266 | No | No | Yes | No | 
 | Liberia | LR | 231 | No | Yes | No |  | 
@@ -136,7 +138,7 @@ The following table explains which ID is displayed when you send SMS messages to
 | Macau | MO | 853 | No | No | Yes | No | 
 | Macedonia | MK | 389 | No | No | Yes | No | 
 | Madagascar | MG | 261 | No | No | Yes | No | 
-| Malwai | MW | 265 | No | No | Yes | No | 
+| Malawi | MW | 265 | No | No | Yes | No | 
 | Malaysia | MY | 60 | No | Yes | No | Yes | 
 | Maldives | MV | 960 | No | No | Yes | No | 
 | Mali | ML | 223 | No | No | Yes | No | 
@@ -146,7 +148,7 @@ The following table explains which ID is displayed when you send SMS messages to
 | Mauritania | MR | 222 | No | No | Yes | No | 
 | Mauritius | MU | 230 | No | No | Yes | No | 
 | Mayotte | YT | 262 | No | No | Yes | No | 
-| Mexico | MX | 52 | Yes | Yes | Yes | Yes | 
+| Mexico | MX | 52 | Yes | Yes[4](#sms-support-note-4) | No | Yes | 
 | Micronesia \(Federated States of\) | FM | 691 | No | No | No | No | 
 | Moldova | MD | 373 | No | No | Yes | No | 
 | Monaco | MC | 377 | No | No | No | No | 
@@ -162,11 +164,12 @@ The following table explains which ID is displayed when you send SMS messages to
 | Netherlands | NL | 31 | Yes | Yes | Yes | Yes | 
 | Netherlands Antilles | AN | 599 | No | No | Yes | No | 
 | New Caledonia | NC | 687 | No | No | Yes | No | 
-| New Zealand | NZ | 64 | Yes | No | No | NO | 
+| New Zealand | NZ | 64 | Yes | No | No | Yes | 
 | Nicaragua | NI | 505 | No | No | No | No | 
 | Niger | NE | 227 | No | No | Yes | No | 
 | Nigeria | NG | 234 | No | No | Yes | No | 
 | Niue | NU | 683 | No | No | Yes | No | 
+| Norway | NO | 47 | No | Yes | Yes | Yes | 
 | O | 
 | Oman | OM | 968 | No | No | Yes | N/A | 
 | P | 
@@ -184,7 +187,7 @@ The following table explains which ID is displayed when you send SMS messages to
 | Qatar | QA | 974 | No | No | Registration required[1](#sms-support-note-1) | No | 
 | R | 
 | Republic of the Congo | CG | 242 | No | No | No | No | 
-| Rèunion \(France\) | RE | 262 | No | No | Yes | No | 
+| Réunion \(France\) | RE | 262 | No | No | Yes | No | 
 | Romania | RO | 40 | No | Yes | Yes | Yes | 
 | Russia | RU | 7 | Yes | No | Registration required[1](#sms-support-note-1) | Yes | 
 | Rwanda | RW | 250 | No | No | Yes | No | 
@@ -193,15 +196,15 @@ The following table explains which ID is displayed when you send SMS messages to
 | Saint Lucia | LC | 1\-758 | No | No | No | No | 
 | Samoa | WS | 685 | No | No | Yes | No | 
 | San Marino | SM | 378 | No | No | Yes | No | 
-| Sao Tome and Principe | ST | 239 | No | No | Yes | No | 
-| Saudi Arabia | SA | 966 | No | Yes | Registration required[1](#sms-support-note-1)  | No | 
+| São Tomé and Príncipe | ST | 239 | No | No | Yes | No | 
+| Saudi Arabia | SA | 966 | No | Yes[4](#sms-support-note-4) | Registration required[1](#sms-support-note-1)  | No | 
 | Senegal | SN | 221 | No | No | Yes | No | 
 | Serbia | RS | 381 | No | No | Yes | No | 
 | Seychelles | SC | 248 | No | No | Yes | No | 
 | Sierra Leone | SL | 232 | No | No | Yes | No | 
 | Singapore | SG | 65 | Yes | Yes | Yes | Yes | 
 | Slovakia | SK | 421 | No | Yes | Yes | No | 
-| Slovenia | SL | 386 | No | No | Yes | No | 
+| Slovenia | SI | 386 | No | No | Yes | No | 
 | Solomon Islands | SB | 677 | No | No | Yes | No | 
 | Somalia | SO | 252 | No | No | Yes | No | 
 | South Africa | ZA | 27 | Yes | Yes | No | Yes | 
@@ -251,14 +254,16 @@ The following table explains which ID is displayed when you send SMS messages to
 
 **Notes**
 
-1. <a name="sms-support-note-1"></a>Senders are required to use a pre\-registered alphabetic sender ID\. To request a sender ID from AWS Support, see [Requesting sender IDs for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might contact you for additional information after you submit your sender ID request\.
+1. <a name="sms-support-note-1"></a>Senders are required to use a pre\-registered alphabetic Sender ID\. To request a Sender ID from AWS Support, see [Requesting sender IDs for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might contact you for additional information after you submit your Sender ID request\.
 
 1. <a name="sms-support-note-2"></a>Senders are required to use a pre\-registered template for each type of message that they plan to send\. If a sender doesn’t meet this requirement, their messages will be blocked\. To register a template, open an Amazon Pinpoint SMS case with AWS Support\. When you create the case, provide the same information that you would provide to request a sender ID\. For more information, see [Requesting sender IDs for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet additional, specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might ask you for additional information\.
 
-1. <a name="sms-support-note-3"></a>Senders are required to use a pre\-registered alphabetic sender ID\. Additional registration steps are required\. For more information, see [Special requirements for sending SMS messages to recipients in India](channels-sms-senderid-india.md)\.
+1. <a name="sms-support-note-3"></a>Senders are required to use a pre\-registered alphabetic Sender ID\. Additional registration steps are required\. For more information, see [Special requirements for sending SMS messages to recipients in India](channels-sms-senderid-india.md)\.
+
+1. <a name="sms-support-note-4"></a>Long codes in these countries only support inbound messaging\. In other words, you can't use these long codes to send messages *to* your recipients, but you can use them to receive messages *from* your recipients\. These long codes are useful way to allow your recipients to opt\-out if you send messages using an alphabetic Sender ID, because Sender IDs only support outbound messages\.
 
 ## Sender ID support<a name="channels-sms-countries-sender-id"></a>
 
-The following table explains which ID is displayed when you send SMS messages to countries or regions where sender ID is supported, compared to those where sender ID isn't supported\.
+The following table explains which ID is displayed when you send SMS messages to countries where Sender IDs are supported, compared to those where Sender IDs aren't supported\.
 
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-countries.html)

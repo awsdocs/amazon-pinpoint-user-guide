@@ -24,7 +24,7 @@ The **Email usage and restrictions** section also indicates whether your account
 
 To send email for campaigns and journeys in the current project, you first have to enable the email channel for the project\. If you don't plan to send email for any campaigns or journeys in a project, you can disable the email channel for the project\. 
 
-Note that you don't need to enable the email channel to send transactional email, which is email that is typically sent only once in response to a specific action\. For information about sending transactional email, see [Sending email in Amazon Pinpoint](channels-mobile-send.md)\.
+Note that you don't need to enable the email channel to send transactional email, which is email that is typically sent only once in response to a specific action\. For information about sending transactional email, see [Sending email in Amazon Pinpoint](channels-email-send.md)\.
 
 **To enable the email channel for a project**
 
@@ -70,7 +70,9 @@ If you aren't able to change DNS settings for your domain or you want to send em
 
 1. Under **Identity type**, choose **Email address**, and then choose **Verify a new email address**\.
 
-1. For **Default sender address**, enter the email address that you want to verify\. The email address must be an address that you can access and is able to receive mail\. 
+1. Do one of the following:
+   + Choose **Use an existing email address**, and then choose **Default sender address**\. You can optionally enter a **Friendly sender name** identifying this address\.
+   + Choose **Verify a new email address**, enter a new** Default sender address** that you want to verify\. The email address must be an address that you can access and is able to receive mail\.
 
 1. Choose **Verify email address**\.
 
@@ -129,7 +131,7 @@ The procedures for updating the DNS records for a domain vary depending on which
 
 | DNS/Hosting provider | Documentation link | 
 | --- | --- | 
-|  Amazon Route 53  |  [Creating Records by Using the Amazon Route 53 Console](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-creating.html)  | 
+|  Amazon Route 53  |  [Creating Records by Using the Amazon Route 53 Console](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-creating.html)  | 
 |  GoDaddy  |  [Add a CNAME record](https://www.godaddy.com/help/add-a-cname-record-19236)  | 
 |  Dreamhost  |  [How do I add custom DNS records?](https://help.dreamhost.com/hc/en-us/articles/215414867-How-do-I-add-custom-DNS-records-)  | 
 |  Cloudflare  |  [Managing DNS records in Cloudflare](https://support.cloudflare.com/hc/en-us/articles/360019093151)  | 

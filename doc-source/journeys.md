@@ -9,6 +9,8 @@ This chapter contains conceptual information about journeys in Amazon Pinpoint\.
 **Topics**
 + [Take a tour of journeys](journeys-tour.md)
 + [Create a journey](journeys-create.md)
++ [Set up the journey entry activity](journeys-entry-activity.md)
++ [Add activities to the journey](journeys-add-activities.md)
 + [Review and test a journey](journeys-review-test.md)
 + [Publish a journey](journeys-publish.md)
 + [Pause, resume, or stop a journey](journeys-pause-stop.md)

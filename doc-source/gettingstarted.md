@@ -7,7 +7,7 @@ This tutorial includes procedures for all steps involved in sending an email cam
 **Note**  
 As soon as you set up a new Amazon Pinpoint account, it is placed in a sandbox for email, SMS, and voice message channels until you request production access\. In the sandbox, you can access all of Amazon Pinpoint's features, with the following restrictions on your email, SMS, and voice messages:  
 For email sandbox restrictions, see [Amazon Pinpoint email sandbox](channels-email-setup-production-access.md)\. 
-For SMS sandbox restrictions, see [Amazon Pinpoint SMS sandbox](channels-sms-sandbox.md)\. 
+For SMS sandbox restrictions, see [About the Amazon Pinpoint SMS sandbox](channels-sms-sandbox.md)\. 
 For voice sandbox restrictions, see [Amazon Pinpoint voice sandbox](channels-voice-sandbox.md)\. 
 There are no Amazon Pinpoint sandbox restrictions for push notifications\. 
 To move to production access from the sandbox, create an AWS Support case for a **Service limit increase** request for each channel you want to move\.

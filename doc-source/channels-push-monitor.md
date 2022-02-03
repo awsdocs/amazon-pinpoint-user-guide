@@ -1,11 +1,11 @@
-# Monitoring push notification activity with Amazon Pinpoint<a name="channels-mobile-monitor"></a>
+# Monitoring push notification activity with Amazon Pinpoint<a name="channels-push-monitor"></a>
 
 For push notifications that you send as part of a campaign, Amazon Pinpoint provides options for monitoring your push notification activity\. 
 
 **Note**  
 To monitor push notification activity, you must use a campaign\. You can't monitor push notification activity outside a campaign\.
 
-## Amazon Pinpoint analytics<a name="channels-mobile-monitor-analytics"></a>
+## Amazon Pinpoint analytics<a name="channels-push-monitor-analytics"></a>
 
 The Analytics pages on the Amazon Pinpoint console provide charts and metrics that show trends related to user engagement, campaign outreach, revenue, and more\. For example, you can view the number of endpoints that you can send push notifications to, the number of endpoints that you've already sent push notifications to, and the open rates for push notifications that you've already sent\. You can view these charts and metrics across all of your campaigns, or for individual campaigns\.
 
