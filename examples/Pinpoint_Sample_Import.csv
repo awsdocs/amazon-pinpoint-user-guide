@@ -1,16 +1,7 @@
-ChannelType,Address,Attributes.Address,Location.Country,User.UserAttributes.FirstName,User.UserAttributes.LastName,User.UserAttributes.Company,User.UserAttributes.MailingStreet1,User.UserAttributes.MailingStreet2,User.UserAttributes.MailingCity,User.UserAttributes.MailingRegion,User.UserAttributes.MailingCountry,User.UserAttributes.PostalCode,OptOut,Demographic.Timezone,Demographic.Locale,User.UserId,User.UserAttributes.RefNumber
-EMAIL,arnav@example.co.uk,arnav@example.co.uk,GBR,Arnav,Desai,ExampleCorp.,5 Kings Street,Suite 89,London,,United Kingdom,EC1A7XX,NONE,Europe/London,en_GB,5ae10d63-3994-4c2b-9f5a-b2fef0fa1eec,6156087
-SMS,+442079460322,+442079460322,GBR,Arnav,Desai,ExampleCorp.,5 Kings Street,Suite 89,London,,United Kingdom,EC1A7XX,NONE,Europe/London,en_GB,5ae10d63-3994-4c2b-9f5a-b2fef0fa1eec,6156087
-EMAIL,mateo@example.se,mateo@example.se,SWE,Mateo,Jackson,ExampleCorp.,Fiktivgatan 42,3:e Våningen,Stockholm,,Sweden,111 XX,NONE,Europe/Stockholm,sv_SE,e9c955d5-2604-4d62-94f7-21204eed67a2,4453514
-EMAIL,nikhil@example.in,nikhil@example.in,IND,Nikhil,Jayashankar,ExampleCorp.,"Technology Tower, 5th Floor",Palace Road,Sampangi Rama Nagar,Bengaluru,India,56000X,NONE,Asia/Kolkata,en_IN,971a3e3d-e817-416b-9869-69e81d04be35,9832744
-EMAIL,mary@example.com,mary@example.com,USA,Mary,Major,ExampleCorp.,100 Any Street,,Los Angeles,CA,United States,900XX,NONE,America/Los_Angeles,en_US,a3749750-207d-4075-8ca9-6249960fe924,3289453
-SMS,+12135550142,12135550142,USA,Mary,Major,ExampleCorp.,100 Any Street,,Los Angeles,CA,United States,900XX,NONE,America/Los_Angeles,en_US,a3749750-207d-4075-8ca9-6249960fe924,3289453
-EMAIL,sofia@example.com,sofia@example.com,USA,Sofia,Martinez,ExampleCorp.,123 Main Street,Office 11.101,Seattle,WA,United States,981XX,NONE,America/Los_Angeles,en_US,5ca69ef4-74aa-48df-9b71-51dbe565322b,8943389
-SMS,+12065550123,12065550123,USA,Sofia,Martinez,ExampleCorp.,123 Main Street,Office 11.101,Seattle,WA,United States,981XX,NONE,America/Los_Angeles,en_US,5ca69ef4-74aa-48df-9b71-51dbe565322b,8943389
-EMAIL,alejandro@example.com,alejandro@example.com,USA,Alejandro,Rosales,ExampleCorp.,123 Main Street,Office 16.200,Seattle,WA,United States,981XX,NONE,America/Los_Angeles,en_US,b7225d50-99c3-4664-9e73-44fb083c9e72,6722014
-SMS,+14255550199,14255550199,USA,Alejandro,Rosales,ExampleCorp.,123 Main Street,Office 16.200,Seattle,WA,United States,981XX,NONE,America/Los_Angeles,en_US,b7225d50-99c3-4664-9e73-44fb083c9e72,4990808
-EMAIL,paulo@example.mx,paulo@example.mx,MEX,Paulo,Santos,ExampleCorp.,489 Avenida Ejemplo,"No. 77, Piso 16",Ciudad de Mexico,Mexico D.F.,Mexico,0246X,NONE,America/Mexico_City,es_MX,ef404b89-2eca-4a0b-aaf0-1ceaa9d8d344,2477110
-EMAIL,john@example.com,john@example.com,USA,John,Stiles,ExampleCorp.,100 Any Street,4th Floor,Los Angeles,CA,United States,900XX,NONE,America/Los_Angeles,en_US,8ddcbad6-ce33-4619-a99f-a145e2c8ddb5,7234584
-SMS,+12135550107,12135550107,USA,John,Stiles,ExampleCorp.,100 Any Street,4th Floor,Los Angeles,CA,United States,900XX,NONE,America/Los_Angeles,en_US,8ddcbad6-ce33-4619-a99f-a145e2c8ddb5,7234584
-EMAIL,xiulan@example.cn,xiulan@example.cn,CHN,Xiulan,Wang,ExampleCorp.,"Block A, International Center",#56 East High Road,Chaoyang District,Beijing,China,10000X,NONE,Asia/Shanghai,zh_CN,9d63b2eb-4fac-42bc-8e1b-9b848d23a745,2803940
-EMAIL,<your email address>,<your email address>,<country>,<your name>,<your name>,<your company>,<your postal address>,<your postal address>,<your city>,<your region>,<your country>,<your postal code>,NONE,<your tz_database value>,<your locale code>,<a user ID>,<a reference code>
+ChannelType,Address,User.UserAttributes.FirstName,User.UserAttributes.LastName,User.UserAttributes.Company,User.UserId
+EMAIL,arnav@example.co.uk,Arnav,Desai,ExampleCorp.,1
+EMAIL,mateo@example.se,Mateo,Jackson,ExampleCorp.,2
+EMAIL,nikhil@example.in,Nikhil,Jayashankar,ExampleCorp.,3
+EMAIL,mary@example.com,Mary,Major,ExampleCorp.,4
+EMAIL,xiulan@example.cn,Xiulan,Wang,ExampleCorp.,5
+EMAIL,<your email address>,<your first name>,<your last name>,<a company name>,<a number not listed above>
