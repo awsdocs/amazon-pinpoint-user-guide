@@ -15,6 +15,7 @@ Each country might also have additional capabilities and limitations when using 
 **Topics**
 + [Supported countries and regions \(SMS channel\)](channels-sms-countries.md)
 + [Special requirements for sending SMS messages to recipients in India](channels-sms-senderid-india.md)
++ [Special requirements for Singapore](channels-sms-senderid-singapore.md)
 
 **Note**  
 Two\-way SMS is only available in certain countries and regions\. For more information about two\-way SMS support by country or region, see [Supported countries and regions \(SMS channel\)](channels-sms-countries.md)\.

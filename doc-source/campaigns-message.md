@@ -311,7 +311,7 @@ Or:
 
 ## Test the message<a name="campaigns-message-test"></a>
 
-Amazon Pinpoint can display a preview of an email message that you can view before you schedule the message to be sent\. For email and other types of messages, you can also send a test message to a small group of recipients for testing purposes\. You can send test messages in all of the channels that Amazon Pinpoint supports—email, push notification, in\-app notification, SMS, and voice\.
+Amazon Pinpoint can display a preview of an email message that you can view before you schedule the message to be sent\. For email and other types of messages, you can also send a test message to a small group of recipients for testing purposes\. You can send test messages in the following channels —email, push notification, in\-app notification, or SMS\.
 
 ### Previewing an email message without sending it<a name="campaigns-message-test-preview"></a>
 

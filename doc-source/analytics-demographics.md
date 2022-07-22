@@ -33,7 +33,7 @@ Shows the proportion of users who use your app on various device models, such as
 Shows the proportion of users who use your app on various makes of devices, such as Apple or Samsung\.
 
 **User location**  
-Shows the countries and regions where users of your app are located\.
+Shows the countries where users of your app are located\.
 
 **Custom attributes**  
 Shows the values for each custom attribute that's reported by your app\.

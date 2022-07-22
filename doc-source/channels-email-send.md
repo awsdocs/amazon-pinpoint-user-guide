@@ -1,5 +1,7 @@
 # Sending email in Amazon Pinpoint<a name="channels-email-send"></a>
 
+Before you can use Amazon Pinpoint to send an email, complete the procedures in [Setting up the Amazon Pinpoint email channel](channels-email-setup.md)\.
+
 There are several types of email that you can send using Amazon Pinpoint: campaign\-based email, journey\-based email, and transactional email\. *Campaign\-based emails* are messages that are sent either one time or on a recurring schedule, and that target customers based on their attributes\. *Journey\-based emails* are messages that are sent when participants in a journey arrive at an email activity as part of a larger workflow\. *Transactional emails* are sent one time only, and are typically sent in response to another action occurring\. For example, you can use transactional messages to send an email when a customer chooses the "Forgot my password" link in your app, or to send a confirmation when a customer places an order on your site\.
 
 In Amazon Pinpoint, you typically use the web\-based management console to send campaign\-based emails and journey\-based emails, whereas transactional emails are usually sent from applications that use an AWS SDK or call the Amazon Pinpoint API directly\.

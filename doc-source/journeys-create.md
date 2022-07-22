@@ -21,30 +21,42 @@ In Amazon Pinpoint, segments and endpoints are unique to each project\. The proj
 
    1. \(Optional\) For **Start date and time** and **End date and time**, enter the dates and times when the journey should start and end, respectively\. If you don't enter a start date, customers enter the journey 5 minutes after you launch it\. If you don't enter an end date, the journey runs continuously for up to 540 days \(approximately 18 months\)\.
 
-   1. \(Optional\) For **Time zone**, choose the time zone that the start date and end date should be based on\. By default, Amazon Pinpoint chooses a time zone from this list based on your location\. You need to complete this step only if you set a start date or end date\.
+   1. \(Optional\) For **Time zone**, choose the time zone that the start date and end date should be based on\. By default, Amazon Pinpoint chooses a time zone from this list based on your location\. You only need to complete this step if you set a start date or end date\.
 
-      Optionally, choose **Use recipient's local time zone** to use the time zone value in the endpoint record for each participant\. Note, however, that a participant won't be included in the journey if you choose this option and the participant's endpoint record doesn't specify a time zone\.
-
-      If you choose this option, you must specific a time zone for the participant's endpoint record in order for the participant to be included in the journey\.
+      Optionally, choose **Use recipient's local time zone** to use the time zone value in the endpoint record for each participant\. 
+**Important**  
+In order to use the **Use recipient's local time zone** settings, each of the endpoints in your journey must include the `Demographic.Timezone` attribute\. A participant won't be included in the journey if you choose this option and the participant's endpoint record doesn't specify a time zone\.
 **Note**  
 **Use recipient's local time zone** is not supported for event\-triggered journeys\.
-
-   1. Under **Advanced settings \- optional**, further refine your scheduling and message parameters, such as including a start and end date for the journey or setting quiet hours in which no messages are sent:
-      + **Quiet time settings** – Choose **Enable quiet time** to enable quiet time for message delivery for this journey\. During quiet time, Amazon Pinpoint does not send messages to participants during the specified **Start time** and **End time** based on the end user's local timezone\. Choose the **Resume sending after quiet times** option to send any messages that were held from being sent during quiet time along with new messages\. If you do not choose **Resume sending after quiet time ends**, any messages held during quiet time are dropped and not sent\. Only new messages are sent after quiet time ends\.
-**Note**  
-SMS messages might take up to 5 minutes to process\. When configuring your quiet time hours, it's recommended to factor in a 5\-minute buffer to the **Start time**\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-start-quiet-time.png)
 
    1. Under **Journey limits**, set options for message processing\. For example, this might be changing the number of journey messages per second or changing the number of entries per endpoint\. Endpoints will only re\-enter a journey if allowed by limits\. 
       + **Maximum daily messages per endpoint** – Choose **Override default setting** to override the maximum daily message setting for the project that contains this journey\. If you specify a value in this section, Amazon Pinpoint limits the number of messages that are sent to each individual endpoint\.  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-max-daily-endpoint.png)
+      + **Maximum number of messages an endpoint can receive from this journey** – Choose **Override default setting** to override the maximum messages an endpoint can receive from this journey\. The default setting is 0, which means that there is no limit on the number of messages that endpoints in the journey can receive\. When you enable this feature, other limits \(such as **Maximum daily messages per endpoint**\) still apply\.  
+![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-max-messages-per-endpoint.png)
       + **Maximum number of journey messages per second** – Choose **Override default setting** to override the maximum messages per second setting for the project that contains this journey\. If you specify a value in this section, Amazon Pinpoint limits the number of messages that the journey can send each second\. The value that you specify should be less than or equal to the maximum sending rate for your account\. You can find the maximum sending rate for your account on the [Email settings](settings-email.md) page on the Amazon Pinpoint console\.  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-max-journey-second.png)
       + **Maximum entries per endpoint** – Choose this setting to override the maximum entry setting for the project that contains this journey\. If you specify a value in this section, Amazon Pinpoint limits the number of times that a participant can enter the journey\. For example, if you specify a value greater than 1, a participant could enter a journey, complete several activities in the journey, arrive at an **End** activity, and start the journey again\. If a participant is eligible for a journey, but they've already entered the journey the maximum number of times, they are prevented from entering the journey again\. For example, if you have a maximum entry endpoint limit of **2**, and a participant has already entered and exited the journey two times, they will not re\-enter that journey again\.
 
-        If you choose a value greater than **1** for the default, you can then choose and **Endpoint re\-entry interval**, setting how long to wait before an endpoint re\-enters a journey\. For example, you might set a re\-entry interval if you want to space out messages sent to your users, thus preventing your users from being spammed\.  
+        If you choose a value greater than **1** for the default, you can then choose **Endpoint re\-entry interval**, setting how long to wait before an endpoint re\-enters a journey\. For example, you might set a re\-entry interval if you want to space out messages sent to your users, thus preventing your users from being spammed\.  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-max-entries-endpoint.png)
 
    1. Choose **Save**\. At this point, you can [set up the journey entry activity](journeys-entry-activity.md)\. The journey entry activity determines the conditions that cause participants to enter your journey\.
+
+## \(Optional\) Configuring journey schedule settings<a name="journeys-create-schedule"></a>
+
+When you create a journey, you can specify a sending schedule for that journey\. There are two schedule settings that you can configure\. The first setting is *do not send time*, which refers to a range of hours during which Amazon Pinpoint won't deliver messages to journey participants\. The second setting is *sending time*, which refers to ranges of hours during which Amazon Pinpoint will deliver messages to journey participants\. The *sending time* setting allows for more granular customization of time and channels than *do not send time*\. These settings use each endpoint's time zone settings\. In order to use journey schedule settings, each of the endpoints in your journey must include the `Demographic.Timezone` attribute\.
+
+**Important**  
+In order to use the **Use recipient's local time zone** settings, each of the endpoints in your journey must include the `Demographic.Timezone` attribute\. A participant won't be included in the journey if you choose this option and the participant's endpoint record doesn't specify a time zone\.
+
+You can configure the schedule settings for a journey by choosing the **Schedule** button at the top of the journey workspace\. Then, on the **Schedule settings** window, specify the **Start time** and **End time** for *Do not send time*\. You can also choose to enable the following settings:
++ **Resume sending after quiet times** – When you enable this feature, Amazon Pinpoint holds any messages that would have been sent during *Do not send time*, and then delivers them when *Do not send time* ends\. If you don't enable this option, messages that would have been sent tare instead dropped and not sent\.
++ **Configure sending time to define each day of a week** – Enable this option to configure different sending time hours for different days of the week\. For example, if your *Do not send time*is scheduled between 8:00 AM and 8:00 PM \(20:00\) you can set sending time for Sunday between 8:00 AM and end at 6:00 PM \(18:00\), and set the sending time for all other days to begin at 8:00 AM and end at 8:00 PM \(20:00\)\. You can add up to four time ranges per day\.
+
+  You can also specify exceptions for specific days of the year\. For example, if you want to ensure that you don't send any messages on New Year's Day, you can create an exception that begins on December 31st at 8:00 PM and ends on January 2nd at 8:00 AM\. You can add up to 20 exceptions\.
+**Note**  
+The hours that you specify for days of the week or for exceptions must respect the quiet time hours that you specify for the journey\. In other words, if you set the journey quiet time hours to 8:00 PM through 8:00 AM, you can't set the quiet time hours for Monday to 8:30 PM through 7:30 AM\.
++ **Apply this schedule to all channels** – Enable this feature to automatically set the sending time setting for each channel to equal the **Start time** and **End time** that you specified for the *Do not send time* setting\. If you don't enable this feature, you can define different sending time hours for different channels\. For example, you can configure the email channel so that messages are sent from 6:00 AM to 10:00 PM \(22:00\), and configure the SMS channel so that messages are sent from 8:00 AM to 8:00 PM \(20:00\)\.
 
 **Next**: [Set up the journey entry activity](journeys-entry-activity.md)

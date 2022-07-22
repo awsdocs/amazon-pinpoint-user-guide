@@ -32,7 +32,7 @@ This section shows the refresh metrics for the journey\. It includes information
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-metrics-refresh.png)
 
 This section contains the following information:
-+ **Total journey entires** – The total number of journey entries\.
++ **Total journey entries** – The total number of journey entries\.
 + **Next entry group \- *estimate*** – The number of endpoints that will be added on the next update\. If a segment refresh interval is not set there will be no endpoints to add\. The value displays as **N/A**\.
 + **Does not refresh on segment update**/ **Refreshes on update** – Indicates whether **Refresh on segment update** was chosen when adding endpoints for the journey entry activity\.
 + **Number of times entry segment will be refreshed** – The maximum number of times that the segment will be refreshed during the course of the journey\.
@@ -47,7 +47,7 @@ The next section in the list of journey execution metrics includes information a
 
 This section contains the following information:
 + **Maximum entries per endpoint**/**Exceeded maximum entries per endpoint** – Displays the maximum number of entries per endpoint and the number of participants who were prevented from participating in the journey because they would have exceeded the maximum number of times that a single endpoint can participate in the journey\.
-+ **Maximum daily messages per endpoint**/**Exceeded max daily messages per endpoint** – Displays the maximum number of daily messages per andpoint, and the number of messages that weren't sent because sending them would have exceeded the maximum number of messages that a single participant can receive during a 24\-hour period\.
++ **Maximum daily messages per endpoint**/**Exceeded max daily messages per endpoint** – Displays the maximum number of daily messages per endpoint, and the number of messages that weren't sent because sending them would have exceeded the maximum number of messages that a single participant can receive during a 24\-hour period\.
 + **Quiet time**/**Not sent during quiet time** – Displays the current quiet time hours set for the journey, and the number of messages that weren't sent because they would have been delivered during quiet time in the recipient's time zone\.
 
 ## Activity\-Level Execution Metrics<a name="journeys-metrics-execution-activity"></a>
@@ -211,6 +211,21 @@ This section contains the following information:
 **Note**  
 This does not indicate that the message was delivered to the destination, it only indicates that the Lambda function or webhook was called\.
 + **Call to webhook or function failed** – The number of times that a Lambda function or webhook was not successfully invoked as a result of this activity\.
+
+### Contact Center Activity<a name="journeys-contact-center-outbound-campaigns"></a>
+
+You can use Contact center activity metrics to analyze participants' interactions with your calls\.
+
+#### Contact center metrics<a name="jounrneys-contact-center-outbound-campaigns-success"></a>
+
+The following call metrics are available:
++ **Connected** – The number of calls that connected to an agent\.
++ **SIT tone** – The number of calls that received a busy tone\.
++ **Fax** – The number of calls that received a fax tone\.
++ **Voicemail beep** – The number of calls that reached voice mail with a beep sound\.
++ **Voicemail no beep** – The number of calls that reached voice mail without a beep sound\.
++ **Not answered** – The number of calls that received a response, but the call continued to ring without reaching voice mail\.
++ **Connection rate** – The rate of calls that successfully connected to an agent as compared to all attempted calls\.
 
 ### Activity metrics<a name="journeys-metrics-activity"></a>
 

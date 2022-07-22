@@ -25,9 +25,8 @@ Each type of journey activity has separate components that you have to configure
 
 When a journey participant arrives on a **Send email** activity, Amazon Pinpoint sends them an email immediately\. Before you can configure an email activity, you have to create an email template\. For more information about creating email templates, see [Creating email templates](message-templates-creating-email.md)\.
 
+**To set up an email activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-email-activity.png)
-
-**To set up an email activity**
 
 1. Choose **Add activity**\.
 
@@ -52,9 +51,8 @@ When a journey participant arrives on a **Send a push notification** activity, A
 **Note**  
 To send push notifications to journey participants, your app has to be integrated with an AWS SDK\. For more information, see [Handling Push Notifications](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate-push.html) in the *Amazon Pinpoint Developer Guide*\.
 
+**To set up a push notification activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-create-step-3-add-activities-procedures-push.png)
-
-**To set up a push notification activity**
 
 1. Choose **Add activity**\.
 
@@ -74,9 +72,8 @@ You can send yourself a preview of the message, even if your Amazon Pinpoint acc
 
 When a journey participant arrives on a **Send an SMS message** activity, Amazon Pinpoint sends them an SMS message immediately\. Before you can configure an SMS activity, you have to create an SMS template\. For more information about creating SMS templates, see [Creating SMS templates](message-templates-creating-sms.md)\.
 
+**To set up an SMS message activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-create-step-3-add-activities-procedures-sms.png)
-
-**To set up an SMS message activity**
 
 1. Choose **Add activity**\.
 
@@ -111,12 +108,7 @@ For more information about the regulatory requirements for sending SMS messages 
 
 ### Set up a contact center activity<a name="journeys-add-activities-procedures-contact-center"></a>
 
-
-|  | 
-| --- |
-|   The contact center activity uses Amazon Connect high\-volume outbound communication, which is currently in Preview\. For more information about high\-volume outbound communications compliance, see [AWS Services in Scope by Compliance Program](https://aws.amazon.com/compliance/services-in-scope/)\.   | 
-
-When a journey participant arrives on a **Send through a contact center** activity, Amazon Pinpoint places them into an Amazon Connect high\-volume outbound communication campaign \(referred to in Amazon Pinpoint as an *Amazon Connect campaign*\)\. You can configure this activity type to dial the journey participant's phone number and either connect them to an agent, or play a voice message\.
+When a journey participant arrives on a **Send through a contact center** activity, Amazon Pinpoint places them into an Amazon Connect outbound campaigns \(referred to in Amazon Pinpoint as an *Amazon Connect campaign*\)\. You can configure this activity type to dial the journey participant's phone number and either connect them to an agent, or play a voice message\.
 
 Contact center activities behave slightly differently when compared to other types of journey activities\. When a journey participant arrives on a **Send through a contact center** activity, all of the preceding activities that involve a decision \(specifically, journey entry, **Multivariate split** and **Yes/no split** activities\) are re\-evaluated immediately before the participant's phone number is dialed\.
 
@@ -135,11 +127,11 @@ Before you can add a contact center activity to a journey, you must do the follo
 + Make sure that the Amazon Connect queue you plan to use has an outbound number defined in the queue\.
 + In IAM, create a policy and role that allow Amazon Connect to send messages through Amazon Pinpoint\.
 
-You can find procedures for completing these tasks in steps 1–5 of [Make predictive and progressive calls using Amazon Connect high\-volume outbound communications](https://aws.amazon.com/blogs/contact-center/make-predictive-and-progressive-calls-using-amazon-connect-high-volume-outbound-communications/) on the AWS Contact Center blog\. 
+You can find procedures for completing these tasks in steps 1–5 of [Make predictive and progressive calls using Amazon Connect outbound](https://aws.amazon.com/blogs/contact-center/make-predictive-and-progressive-calls-using-amazon-connect-high-volume-outbound-communications/) on the AWS Contact Center blog\. 
 
 #### Setting up a contact center activity<a name="journeys-add-activities-procedures-contact-center-setting-up"></a>
 
-There are two ways to add a contact center activity to a journey\. You can connect your journey to an existing Amazon Connect campaign, or you can create a new Amazon Connect campaign\. This section contains procedures for both options\.
+ You can connect your journey to an existing Amazon Connect outbound campaign,, or click to build an Amazon Connect outbound campaign\.
 
 Note the following considerations when using contact center activities in Amazon Pinpoint:
 + You can only use one Amazon Connect campaign per journey\. If a journey contains multiple contact center activities, and you change the Amazon Connect campaign for one activity, the change is reflected in all other contact center activities in the same journey\.
@@ -147,7 +139,7 @@ Note the following considerations when using contact center activities in Amazon
 + Your phone numbers of your customers must exist in Amazon Pinpoint as voice endpoints\.
 + Endpoint phone numbers must be in E\.164 format\. For more information, see [E\.164: The international public telecommunication numbering plan](https://www.itu.int/rec/T-REC-E.164/en) on the International Telecommunications Union web site\.
 
-##### Option 1: Using an existing Amazon Connect campaign<a name="journeys-add-activities-procedures-contact-center-option-1"></a>
+##### Using an existing Amazon Connect campaign<a name="journeys-add-activities-procedures-contact-center-option-1"></a>
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-create-step-3-add-activities-procedures-contact-center-option-1.png)
 
@@ -155,45 +147,23 @@ Note the following considerations when using contact center activities in Amazon
 
 1. For **Add an activity**, choose **Send through a contact center**\.
 
-1. Choose **Select an existing Amazon Connect campaign**\.
+1. Choose the **Amazon Connect instance** that you want to use\.
 
-1. For **Amazon Connect campaign**, select the Amazon Connect campaign you want to use\.
+1. Choose the **Amazon Connect outbound campaign** from the dropdown list\. 
 
-1. For **Execution role**, select an execution role that has the appropriate permissions\.
+1. \(Optional\) You can choose **Build an Amazon Connect outbound campaign**, which directs you to Amazon Connect\.
 
-1. \(Optional\) For **Description**, enter text that describes the purpose of the activity\. When you save the activity, this text appears as its label\. 
+1. For **Execution role**, select an existing execution role that has the appropriate permissions or create a new role with the appropriate permissions\.
 
-1. When you finish, choose **Save**\.
+   1. If you've already created an IAM role that allows Amazon Pinpoint to pass phone numbers to Amazon Connect, select **Choose an existing role**\. Then, for IAM role, select a role that contains the appropriate permissions\.
 
-##### Option 2: Creating a new Amazon Connect campaign<a name="journeys-add-activities-procedures-contact-center-option-2"></a>
+   1. If you want to have Amazon Pinpoint create a role that allows it to pass phone numbers to Amazon Connect, select **Automatically create a role**\. Then enter a unique name for the new role in IAM role\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-create-step-3-add-activities-procedures-contact-center-option-2.png)
-
-1. Choose **Add activity**\.
-
-1. For **Add an activity**, choose **Send through a contact center**\.
-
-1. Choose **Create a new Amazon Connect campaign**\.
-
-1. For **Campaign name**, enter a name for the Amazon Connect campaign\.
-
-1. For **Connect instance**, select the Amazon Connect instance you want to use\.
-
-1. For **Connect contact flow**, select the Amazon Connect contact flow that you want to use\.
-
-1. For **Dialer type**, choose a dialer type to use\. You can choose from the following options:
-   + **Progressive** – In this mode, the dialer doesn't dial until the agent becomes available\. Use this mode when reaching customers is more important than optimizing agent talk time\.
-   + **Predictive** – In this mode, pacing of calls is based on predicted agent availability and near\-real time statistics\. Use this mode for high volume campaigns where maximizing agent talk time is the most important metric\.
-
-1. For **Queue**, choose the Amazon Connect queue you want to use\.
-
-1. For **Bandwidth allocation**, enter an estimate of the percentage of available agents who will be considered for a particular Amazon Connect campaign\.
-
-1. For **Execution role**, select an execution role that has the appropriate permissions\.
-
-1. \(Optional\) For **Description**, enter text that describes the purpose of the activity\. When you save the activity, this text appears as its label\. 
+1. \(Optional\) In **Description**, describe the purpose of the activity\. When you save the activity, this text appears as the activity's label\. 
 
 1. When you finish, choose **Save**\.
+
+##### <a name="journeys-add-activities-procedures-contact-center-option-2"></a>
 
 ### Set up a custom message channel activity<a name="journeys-add-activities-procedures-custom"></a>
 
@@ -201,9 +171,8 @@ When a journey participant arrives on a **Send through a custom channel** activi
 
 Before you can configure a custom channel activity, you need to decide whether to use a Lambda function or a webhook URL to send your message\. For more information about creating custom message channels, see [Creating custom channels in Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom.html) in the *Amazon Pinpoint Developer Guide*\.
 
+**To set up a custom message channel activity that calls a Lambda function**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-create-step-3-add-activities-procedures-custom-lambda.png)
-
-**To set up a custom message channel activity that calls a Lambda function**
 
 1. Choose **Add activity**\.
 
@@ -213,7 +182,13 @@ Before you can configure a custom channel activity, you need to decide whether t
 
 1. For **Lambda function**, choose the function that you want to execute\.
 
+1. \(Optional\) The **Custom Data** is for when endpoints are delivered to the custom channel, the custom data is in the payload as well\. This field can contain up to 5000 alphanumeric characters\.
+
 1. For **Specify the endpoint types that will receive this message**, select the endpoint types that the custom channel applies to\. By default, only the **Custom** endpoint type is selected\. To add additional endpoint types, select **Choose endpoint types**\.
+
+   1. The lambda function can be used to evaluate which endpoints to include in the segment\. For more information, see [Customizing segments with AWS Lambda](https://docs.aws.amazon.com/pinpoint/latest/developerguide/segments-dynamic.html)\.
+
+   1. The **Custom Data** is for when endpoints are delivered to the custom channel, the custom data is in the payload as well\.
 **Note**  
 Other endpoint types that arrive at this activity are sent through it, but only the endpoint types that you specify are sent to the Lambda function or webhook\.
 
@@ -221,9 +196,8 @@ Other endpoint types that arrive at this activity are sent through it, but only 
 
 1. When you finish, choose **Save**\.
 
+**To set up a custom message channel activity that uses a webhook URL**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-create-step-3-add-activities-procedures-custom-webhook.png)
-
-**To set up a custom message channel activity that uses a webhook URL**
 
 1. Choose **Add activity**\.
 
@@ -232,6 +206,8 @@ Other endpoint types that arrive at this activity are sent through it, but only 
 1. For **Choose the method that you want to use to send messages**, select **Specify a webhook URL**\.
 
 1. For **Webhook URL**, enter the address of the webhook that you want to execute\. For more information about configuring webhooks, see [Creating custom channels in Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom.html) in the *Amazon Pinpoint Developer Guide*\.
+
+1. \(Optional\) The Custom Data is for when endpoints are delivered to the custom channel, the custom data is in the payload as well\. This field can contain up to 5000 alphanumeric characters\.
 
 1. For **Specify the endpoint types that will receive this message**, select the endpoint types that the custom channel applies to\. By default, only the **Custom** endpoint type is selected\. To add additional endpoint types, select **Choose endpoint types**\.
 **Note**  
@@ -245,9 +221,8 @@ Other endpoint types that arrive at this activity are sent through it, but only 
 
 When a journey participant arrives on a **Wait** activity, they remain on that activity for a certain period of time or until a specific date and time\. This type of activity is a useful way to schedule the sending of time\-sensitive communications, or to give customers time to interact with messages that you sent earlier in the journey\.
 
+**To set up a wait activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-wait-activity.png)
-
-**To set up a wait activity**
 
 1. Choose **Add activity**\.
 
@@ -268,9 +243,8 @@ When journey participants arrive on a **yes/no split** activity, they're sent do
 **Note**  
 To create split activities that send participants down different paths based on push notification events \(such as Open or Received events\), your mobile app has to specify the User ID and Endpoint ID values\. For more information, see [Integrating Amazon Pinpoint with your application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.
 
+**To set up a yes/no split activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-yes-no-split-activity.png)
-
-**To set up a yes/no split activity**
 
 1. Choose **Add activity**\.
 
@@ -280,22 +254,47 @@ To create split activities that send participants down different paths based on 
    + **Segment** – Choose this option to send all members of the chosen segment down the "Yes" path\. Then, for **Segments**, choose a segment\.
    + **Event** – Choose this option to send users down the "Yes" path based on their interactions with a previous step in this journey\. Then, complete the following steps:
 
-     1. For **Events**, choose one of the following options:
-        + **Email send** – Amazon Pinpoint accepted the message and will attempt to deliver it\.
-        + **Email delivered** – The message was successfully delivered to the recipient\.
-        + **Email rejected** – Amazon Pinpoint rejected the message because it contained a virus or malware\.
-        + **Email hard bounce** – The email wasn't delivered to the recipient because of a permanent issue\. For example, the recipient's email address might not exist anymore\. When a message generates a hard bounce, Amazon Pinpoint doesn't attempt to re\-deliver it\.
-        + **Email soft bounce** – The email wasn't delivered to the recipient because of a temporary issue\. For example, the recipient's inbox could be full, or their email provider might be experiencing a temporary issue\. When a soft bounce occurs, Amazon Pinpoint attempts to re\-deliver the message for a certain period of time\. If the message still can't be delivered, the message becomes a hard bounce\.
-        + **Email complaint** – The recipient received the email, but used the "Report spam" or similar button in their email client to report the message as unwanted\.
+     1. For **Events**, select the messaging activity you want to split on:
+
+     1. For **Choose an activity**, choose the message activity that the split should be applied to\. Depending on the channel type of messaging activity you select you will have the following options on split on:
+        + For **Email** here are the events you can select\.
+          + **Send** – Amazon Pinpoint accepted the message and will attempt to deliver it\.
+          + **Delivered** – The message was successfully delivered to the recipient\.
+          + **Rejected** – Amazon Pinpoint rejected the message because it contained a virus or malware\.
+          + **Hard bounce** – The email wasn't delivered to the recipient because of a permanent issue\. For example, the recipient's email address might not exist anymore\. When a message generates a hard bounce, Amazon Pinpoint doesn't attempt to re\-deliver it\.
+          + **Soft bounce** – The email wasn't delivered to the recipient because of a temporary issue\. For example, the recipient's inbox could be full, or their email provider might be experiencing a temporary issue\. When a soft bounce occurs, Amazon Pinpoint attempts to re\-deliver the message for a certain period of time\. If the message still can't be delivered, the message becomes a hard bounce\.
+          + **Complaint** – The recipient received the email, but used the "Report spam" or similar button in their email client to report the message as unwanted\.
 **Note**  
 Amazon Pinpoint relies on complaint reports from email providers to generate complaint events\. Some email providers give us these reports on a regular basis, while others send them infrequently\.
-        + **Email open** – The recipient received the email and opened it\.
+          + **Open** – The recipient received the email and opened it\.
 **Note**  
 For Amazon Pinpoint to capture an **Email open** event, the recipient's email client has to download the images contained in the message\. Many common email clients, such as Microsoft Outlook, don't download email images by default\.
-        + **Email click** – The recipient received the email and followed one of the links contained in the body of the message\.
-        + **Email unsubscribe** – The recipient received the email and used the "Unsubscribe" link to opt out of future messages\.
+          + **Click** – The recipient received the email and followed one of the links contained in the body of the message\.
+          + **Unsubscribe** – The recipient received the email and used the "Unsubscribe" link to opt out of future messages\.
+        + For **SMS** here are the events you can select\.
+          + **Send** – Amazon Pinpoint attempted to send the message\. 
+          + **Delivered** – Amazon Pinpoint received a confirmation the message was delivered\. 
+          + **Failed** – An error occurred when delivering the message to the endpoint address\. 
+          + **Opt\-out** – The user who's associated with the endpoint address has opted out of receiving messages from you\. 
+        + For **Push** here are the events you can select\.
+          + **Send** – Amazon Pinpoint attempted to send the message\. 
+          + **Opened notification** – Amazon Pinpoint received a confirmation the message was opened by the user\. 
+          + **Received foreground** – Amazon Pinpoint received a confirmation the message was received by the users device and displayed in the foreground\. 
+          + **Received background** – Amazon Pinpoint received a confirmation the message was received by the users device and displayed in the background\. 
+        + For **Contact Center** here are the events you can select\.
+          + **Connected** – Amazon Pinpoint received a confirmation the call was connected to an agent\. 
+          + **SIT tone** – Amazon Pinpoint received a response the call gave back a busy tone\. 
+          + **Fax** – Amazon Pinpoint received a response the call gave back a fax tone\. 
+          + **Voicemail beep** – Amazon Pinpoint received a response the call gave back a voicemail with beep\. 
+          + **Voicemail no beep** – Amazon Pinpoint received a response the call gave back a voicemail without beep\. 
+          + **Not answered** – Amazon Pinpoint received a response the call was not answered and rang out without a voicemail\. 
+        + **Custom channel** – For the custom channel activity you can define the response attribute and value you would like to split on\. You must ensure this attribute and value is passed back to Amazon Pinpoint journeys in a way that can be read\. For more information about how this response should be structured, see [Creating custom channels](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom.html) in Amazon Pinpoint in the Amazon Pinpoint Developer Guide\. 
 
-     1. For **Choose an activity**, choose the activity that the split should be applied to\.
+     1. 
+**Note**  
+\(Optional\) For custom channel activities you can split based on the **Call to a function or webhook response**\. To configure this can you define:  
+**Attribute** – The name of the attribute to evaluate\.
+**Value** – The value used to determine in which way to split\.
 
 1. For **Condition evaluation**, choose when Amazon Pinpoint should evaluate the condition\. You can choose from the following options:
    + **Evaluate immediately** – If you choose this option, Amazon Pinpoint checks to see if the event condition that you specified has been met the moment when the journey participant arrives on the activity\.
@@ -316,9 +315,8 @@ You can use this type of split to send journey participants down separate paths 
 If a journey participant meets more than one condition in a conditional split, they are sent down the first condition that they meet, in alphabetical order\. For example, if a participant meets the conditions in Branch A and Branch D, they're sent down the path that corresponds with Branch A\.  
 To create split activities that send participants down different paths based on push notification events \(such as Open or Received events\), your mobile app has to specify the User ID and Endpoint ID values\. For more information, see [Integrating Amazon Pinpoint with your application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.
 
+**To set up a multivariate split activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-multivariate-split-activity.png)
-
-**To set up a multivariate split activity**
 
 1. Choose **Add activity**\.
 
@@ -330,22 +328,45 @@ To create split activities that send participants down different paths based on 
    + **Segment** – Choose this option to send all members of the chosen segment down the path\. Then, for **Segments**, choose a segment\.
    + **Event** – Choose this option to send users down the path based on their interactions with a previous step in this journey\. Then, complete the following steps:
 
-     1. For **Events**, choose one of the following options:
-        + **Email send** – Amazon Pinpoint accepted the message and will attempt to deliver it\.
-        + **Email delivered** – The message was successfully delivered to the recipient\.
-        + **Email rejected** – Amazon Pinpoint rejected the message because it contained a virus or malware\.
-        + **Email hard bounce** – The email wasn't delivered to the recipient because of a permanent issue\. For example, the recipient's email address might not exist anymore\. When a message generates a hard bounce, Amazon Pinpoint doesn't attempt to re\-deliver it\.
-        + **Email soft bounce** – The email wasn't delivered to the recipient because of a temporary issue\. For example, the recipient's inbox could be full, or their email provider might be experiencing a temporary issue\. When a soft bounce occurs, Amazon Pinpoint attempts to re\-deliver the message for a certain period of time\. If the message still can't be delivered, the message becomes a hard bounce\.
-        + **Email complaint** – The recipient received the email, but used the "Report spam" or similar button in their email client to report the message as unwanted\.
+     1. For **Events**, select the messaging activity you would like to split on\.
+
+     1. For **Choose an activity**, choose the message activity that the split should be applied to\. Depending on the channel type of messaging activity you select you will have the following options on split on:
+        + For **Email** here are the events you can select\.
+          + **Send** – Amazon Pinpoint accepted the message and will attempt to deliver it\.
+          + **Delivered** – The message was successfully delivered to the recipient\.
+          + **Rejected** – Amazon Pinpoint rejected the message because it contained a virus or malware\.
+          + **Hard bounce** – The email wasn't delivered to the recipient because of a permanent issue\. For example, the recipient's email address might not exist anymore\. When a message generates a hard bounce, Amazon Pinpoint doesn't attempt to re\-deliver it\.
+          + **Soft bounce** – The email wasn't delivered to the recipient because of a temporary issue\. For example, the recipient's inbox could be full, or their email provider might be experiencing a temporary issue\. When a soft bounce occurs, Amazon Pinpoint attempts to re\-deliver the message for a certain period of time\. If the message still can't be delivered, the message becomes a hard bounce\.
+          + **Complaint** – The recipient received the email, but used the "Report spam" or similar button in their email client to report the message as unwanted\.
 **Note**  
 Amazon Pinpoint relies on complaint reports from email providers to generate complaint events\. Some email providers give us these reports on a regular basis, while others send them infrequently\.
-        + **Email open** – The recipient received the email and opened it\.
+          + **Open** – The recipient received the email and opened it\.
 **Note**  
 For Amazon Pinpoint to capture an **Email open** event, the recipient's email client has to download the images contained in the message\. Many common email clients, such as Microsoft Outlook, don't download email images by default\.
-        + **Email click** – The recipient received the email and followed one of the links contained in the body of the message\.
-        + **Email unsubscribe** – The recipient received the email and used the "Unsubscribe" link to opt out of future messages\.
+          + **Click** – The recipient received the email and followed one of the links contained in the body of the message\.
+          + **Unsubscribe** – The recipient received the email and used the "Unsubscribe" link to opt out of future messages\.
+        + For **SMS** here are the events you can select\.
+          + **Send** – Amazon Pinpoint attempted to send the message\. 
+          + **Delivered** – Amazon Pinpoint received a confirmation the message was delivered\. 
+          + **Failed** – An error occurred when delivering the message to the endpoint address\. 
+          + **Opt\-out** – The user who's associated with the endpoint address has opted out of receiving messages from you\. 
+        + For **Push** here are the events you can select\.
+          + **Send** – Amazon Pinpoint attempted to send the message\. 
+          + **Opened notification** – Amazon Pinpoint received a confirmation the message was opened by the user\. 
+          + **Received foreground** – Amazon Pinpoint received a confirmation the message was received by the users device and displayed in the foreground\. 
+          + **Received background** – Amazon Pinpoint received a confirmation the message was received by the users device and displayed in the background\. 
+        + For **Contact Center** here are the events you can select\.
+          + **Connected** – Amazon Pinpoint received a confirmation the call was connected to an agent\. 
+          + **SIT tone** – Amazon Pinpoint received a response the call gave back a busy tone\. 
+          + **Fax** – Amazon Pinpoint received a response the call gave back a fax tone\. 
+          + **Voicemail beep** – Amazon Pinpoint received a response the call gave back a voicemail with beep\. 
+          + **Voicemail no beep** – Amazon Pinpoint received a response the call gave back a voicemail without beep\. 
+          + **Not answered** – Amazon Pinpoint received a response the call was not answered and rang out without a voicemail\. 
+        + **Custom channel** – For the custom channel activity you can define the response attribute and value you would like to split on\. You must ensure this attribute and value is passed back to Amazon Pinpoint journeys in a way that can be read\. For more information about how this response should be structured, see [Creating custom channels](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom.html) in Amazon Pinpoint in the Amazon Pinpoint Developer Guide\. 
 
-     1. For **Choose an activity**, choose the activity that the split should be applied to\.
+     1. For **Choose a journey message activity and event** choose Call to a function or webhook response\.
+        + **Attribute** – The name of the attribute to evaluate\.
+        + **Value** – The value used to determine which branch to traverse for the path\.
 
    Repeat this step for each path in the activity\.
 
@@ -365,9 +386,8 @@ When journey participants arrive on a **Holdout** activity, the journey ends for
 **Note**  
 Amazon Pinpoint uses a probability\-based algorithm to determine which journey participants are held out\. The percentage of journey participants who are held out will be very close to the percentage that you specify, but it might not be perfectly equal\.
 
+**To set up a holdout activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-holdout-activity.png)
-
-**To set up a holdout activity**
 
 1. Choose **Add activity**\.
 
@@ -386,9 +406,8 @@ When journey participants arrive on a **Random split** activity, they're randoml
 **Note**  
 Amazon Pinpoint uses a probability\-based algorithm to determine which journey participants are sent down each path in a random split activity\. The percentages of journey participants who are sent down each path will be very close to the percentages that you specify, but they might not be perfectly equal\.
 
+**To set up a random split activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-random-split-activity.png)
-
-**To set up a random split activity**
 
 1. Choose **Add activity**\.
 

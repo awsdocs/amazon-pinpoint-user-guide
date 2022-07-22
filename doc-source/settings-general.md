@@ -20,21 +20,29 @@ On the **General settings** page, you can configure default settings and quotas 
 
 1. Choose **Edit**\.
 
-1. On the **Edit general settings** page, change any of the following settings:  
+1. On the **Edit general settings** page, change any of the following settings:
+
+   1. *Campaign settings*  
 **Quiet time hours**  
 Use these settings to prevent Amazon Pinpoint from sending messages during specific hours\. When you configure these settings, you provide a **Start time** and an **End time**\. If a message would be sent between the start and end times in an endpoint's local time zone, Amazon Pinpoint doesn't attempt to send the message to that endpoint\.  
 In order for this setting to observe local time zones, the endpoint definition for a recipient has to include a properly\-formatted `Demographic.Timezone` attribute\.
 The times that you specify have to use 24\-hour notation and be in *HH:MM* format\. For example, for 9:30 PM, enter **21:30**\.  
 **Maximum number of daily messages per endpoint**  
-Use this setting to specify the maximum number of messages that can be sent to a single endpoint during a 24\-hour period by all the campaigns and journeys in the project\. The value that you specify can't be larger than 100\.  
+Use this setting to specify the maximum number of messages that can be sent to a single endpoint during a 24\-hour period by all the campaigns in the project\. The value that you specify can't be larger than 100\.   
 In certain situations, it's possible for an endpoint to receive a number of messages that exceeds the value that you specify in this setting\. For example, assume that this setting is configured to send a maximum of five messages per day\. If you have 10 campaigns that target the endpoint, and all 10 are launched at the same time, then the endpoint receives 10 messages\. However, if there are 10 campaigns that target the endpoint, and the start times for the campaigns are separated by several minutes, then the recipient only receives five messages\.  
 **Maximum number of messages per endpoint**  
-Use this setting to specify the maximum number of messages that can be sent to a single endpoint by each campaign or journey\. If a campaign recurs, this setting applies to all runs of the campaign\. The value that you specify can't be larger than 100\.  
+Use this setting to specify the maximum number of messages that can be sent to a single endpoint by each campaign\. If a campaign recurs, this setting applies to all runs of the campaign\. The value that you specify can't be larger than 100\.  
 This setting considers the number of messages that *target* an endpoint, as opposed to the number of messages that are actually *delivered* to an endpoint\. For example, if a campaign is configured to automatically send a message when a customer creates a new account, but the endpoint isn't able to receive the message \(for example, if the quiet time setting applies to the endpoint\), then the endpoint is still counted as having been targeted\. In this situation, the endpoint would be removed from subsequent runs of the campaign\.  
 **Maximum number of messages per second**  
-Use this setting to specify the maximum number of messages that can be sent each second by a campaign or journey\. The value that you specify has to be a number between 50 and 20,000\. If you define a messages per second parameter, we try to match it\. Otherwise, if this is not defined, we attempt to deliver the message as fast as possible\. Note that delivery speed, however, is dependent on channel latency at any given time\.  
+Use this setting to specify the maximum number of messages that can be sent each second by a campaign\. The value that you specify has to be a number between 50 and 20,000\. If you define a messages per second parameter, we try to match it\. Otherwise, if this is not defined, we attempt to deliver the message as fast as possible\. Note that delivery speed, however, is dependent on channel latency at any given time\.  
 **Maximum amount of time for a campaign run**  
 Use this setting to specify the maximum amount of time, in seconds, that a campaign can attempt to deliver a message after the scheduled start time\. The minimum value for this setting is 60 seconds\.
+
+   1. *Journey settings*  
+**Maximum number of messages across all journeys within a time frame**  
+Use this setting to specify the maximum number of times a message can be sent to a single endpoint within the specified **Timeframe**\. For example, if you want to send a maximum of 3 messages within a **Timeframe** of 7 days to each endpoint\. The default setting is 0, which means that there is no limit on the number of messages that endpoints in the journey can receive\.   
+**Timeframe**  
+The number of days applied to the **Maximum number of messages across all journeys within a time frame** if not set to 0\. The default setting is 0, which means that there is no limit on the number of days that endpoints in the journey can receive\. 
 
 1. When you finish, choose **Save**\.
 
