@@ -10,7 +10,7 @@ When you create a segment, you first give the segment a name\. Next, you choose 
 
 **To create the campaign and choose segment**
 
-1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/master/examples/Pinpoint\_Sample\_Email\.html](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/master/examples/Pinpoint_Sample_Email.html)\. Save the file to your computer\.
+1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/main/examples/Pinpoint\_Sample\_Email\.html](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/main/examples/Pinpoint_Sample_Email.html)\. Save the file to your computer\.
 **Tip**  
 You can quickly save this file to your computer by right\-clicking the link, and then choosing **Save Link As**\.
 

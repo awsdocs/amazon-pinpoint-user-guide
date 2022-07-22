@@ -38,7 +38,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Bolivia | BO | 591 | No | No | Yes | No | 
 | Bosnia and Herzegovina | BA | 387 | No | No | Yes | No | 
 | Botswana | BW | 267 | No | No | Yes | No | 
-| Brazil | BR | 55 | Yes | Yes | No | Yes | 
+| Brazil | BR | 55 | Yes | No | No | Yes | 
 | Brunei | BN | 673 | No | No | Yes | No | 
 | Bulgaria | BG | 359 | Yes | No | Yes | Yes | 
 | Burkina Faso | BF | 226 | No | No | Yes | No | 
@@ -78,7 +78,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Faroe Islands | FO | 298 | No | No | Yes | No | 
 | Fiji | FJ | 679 | No | No | Yes | No | 
 | Finland | FI | 358 | Yes | Yes | Yes | Yes | 
-| France | FR | 33 | Yes | Yes | Yes | Yes | 
+| France | FR | 33 | Yes | No | Yes | Yes | 
 | French Guiana | GF | 594 | No | No | Yes | No | 
 | French Polynesia | PF | 689 | No | No | Yes | No | 
 |  G | 
@@ -139,7 +139,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Macedonia | MK | 389 | No | No | Yes | No | 
 | Madagascar | MG | 261 | No | No | Yes | No | 
 | Malawi | MW | 265 | No | No | Yes | No | 
-| Malaysia | MY | 60 | No | Yes | No | Yes | 
+| Malaysia | MY | 60 | Yes | No | No | Yes | 
 | Maldives | MV | 960 | No | No | Yes | No | 
 | Mali | ML | 223 | No | No | Yes | No | 
 | Malta | MT | 356 | No | No | Yes | No | 
@@ -202,7 +202,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Serbia | RS | 381 | No | No | Yes | No | 
 | Seychelles | SC | 248 | No | No | Yes | No | 
 | Sierra Leone | SL | 232 | No | No | Yes | No | 
-| Singapore | SG | 65 | Yes | Yes | Yes | Yes | 
+| Singapore | SG | 65 | Yes | Yes | Yes[5](#sms-support-note-5) | Yes | 
 | Slovakia | SK | 421 | No | Yes | Yes | No | 
 | Slovenia | SI | 386 | No | No | Yes | No | 
 | Solomon Islands | SB | 677 | No | No | Yes | No | 
@@ -226,7 +226,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Tonga | TO | 676 | No | No | Yes | No | 
 | Trinidad and Tobago | TT | 1\-868 | No | No | Yes | No | 
 | Tunisia | TN | 216 | No | No | Yes | No | 
-| Turkey | TR | 90 | Yes | No | Registration required[1](#sms-support-note-1)  | Yes | 
+| Turkey | TR | 90 | No | No | Registration required[1](#sms-support-note-1)  | No | 
 | Turkmenistan | TM | 993 | No | No | No | No | 
 | Turks and Caicos Islands | TC | 1\-649 | No | No | Yes | No | 
 | Tuvalu | TC | 688 | No | No | Yes | No | 
@@ -257,10 +257,14 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 1. <a name="sms-support-note-1"></a>Senders are required to use a pre\-registered alphabetic Sender ID\. To request a Sender ID from AWS Support, see [Requesting sender IDs for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might contact you for additional information after you submit your Sender ID request\.
 
 1. <a name="sms-support-note-2"></a>Senders are required to use a pre\-registered template for each type of message that they plan to send\. If a sender doesn’t meet this requirement, their messages will be blocked\. To register a template, open an Amazon Pinpoint SMS case with AWS Support\. When you create the case, provide the same information that you would provide to request a sender ID\. For more information, see [Requesting sender IDs for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)\. Some countries require senders to meet additional, specific requirements or abide by certain restrictions in order to obtain approval\. In these cases, AWS Support might ask you for additional information\.
+**Note**  
+In order to send messages to China, you must first register your templates through AWS Support for approval\.
 
 1. <a name="sms-support-note-3"></a>Senders are required to use a pre\-registered alphabetic Sender ID\. Additional registration steps are required\. For more information, see [Special requirements for sending SMS messages to recipients in India](channels-sms-senderid-india.md)\.
 
 1. <a name="sms-support-note-4"></a>Long codes in these countries only support inbound messaging\. In other words, you can't use these long codes to send messages *to* your recipients, but you can use them to receive messages *from* your recipients\. These long codes are useful way to allow your recipients to opt\-out if you send messages using an alphabetic Sender ID, because Sender IDs only support outbound messages\.
+
+1. <a name="sms-support-note-5"></a>Amazon Pinpoint can send SMS traffic to Singapore using a Sender ID that has been registered on the Singapore SMS Sender ID Registry \(SSIR\), a registry created by the [Info\-communications Media Development Authority \(IMDA\)](https://www.imda.gov.sg/) of Singapore\. For more information on requirements to use a Singapore Sender ID, see [Special requirements for Singapore](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-senderid-singapore.html)\. You can also send SMS traffic in Singapore using unregistered Sender IDs or alternative origination identity types such as Short Codes or Long Codes\.
 
 ## Sender ID support<a name="channels-sms-countries-sender-id"></a>
 

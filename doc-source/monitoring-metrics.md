@@ -6,6 +6,7 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 + [Metrics related to message delivery](#monitoring-metrics-delivery)
 + [Metrics related to endpoints](#monitoring-metrics-endpoints)
 + [Metrics related to import jobs](#monitoring-metrics-import-jobs)
++ [Metrics related to one\-time passwords](#monitoring-metrics-one-time-passwords)
 + [Metrics related to events](#monitoring-metrics-events)
 
 ## Metrics related to message delivery<a name="monitoring-metrics-delivery"></a>
@@ -42,6 +43,18 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 |  `ImportedEndpointFailure`  |  The number of endpoints in an import job that couldn't be imported because they were invalid\. Units: *Count* Dimensions: ApplicationId  | 
 |  `ImportJobFailure`  |  The number of import jobs that couldn't be completed for any reason\. Units: *Count* Dimensions: ApplicationId  | 
 |  `ImportJobDuration`  |  The amount of time, in seconds, that elapsed between the beginning and the end of each import job\. Units: *Count* Dimensions: ApplicationId  | 
+
+## Metrics related to one\-time passwords<a name="monitoring-metrics-one-time-passwords"></a>
+
+
+****  
+
+| Metric | Description | 
+| --- | --- | 
+|  `OTPVerificationSuccess`  |  The number of One\-Time Password \(OTP\) verification requests that succeeded\. Units: *Count* Dimensions: ApplicationId  | 
+|  `OTPVerificationAttempt`  |  The total number of attempts to verify an OTP\. Units: *Count* Dimensions: ApplicationId  | 
+|  `OTPVerificationFailure`  |  The total number of OTP verification requests that failed\. Units: *Count* Dimensions: ApplicationId  | 
+|  `OTPVerificationFailureFinalAttempt`  |  The total number of OTP verification requests that failed on the final attempt\. Units: *Count* Dimensions: ApplicationId  | 
 
 ## Metrics related to events<a name="monitoring-metrics-events"></a>
 

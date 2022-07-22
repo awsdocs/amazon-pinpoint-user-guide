@@ -46,12 +46,12 @@ You can only enable two\-way SMS for a phone number if the value in the **SMS** 
 
      ```
      {
-         "Effect": "Allow",
-         "Principal": {
-             "Service": "mobile.amazonaws.com"
-         },
-         "Action": "SNS:Publish",
-         "Resource": "*"
+       "Effect": "Allow",
+       "Principal": {
+         "Service": "sms-voice.amazonaws.com"
+       },
+       "Action": "sns:Publish",
+       "Resource": "*"
      }
      ```
 **Note**  
@@ -75,7 +75,7 @@ Second, the key policy must be modified to allow Amazon Pinpoint to use the key\
 {
     "Effect": "Allow",
     "Principal": {
-        "Service": "mobile.amazonaws.com"
+        "Service": "sms-voice.amazonaws.com"
     },
     "Action": [
         "kms:GenerateDataKey*",

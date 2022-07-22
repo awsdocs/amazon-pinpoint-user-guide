@@ -7,4 +7,3 @@ When you enable the email channel for the first time, Amazon Pinpoint doesn't im
 **Topics**
 + [Verifying email identities](channels-email-manage-verify.md)
 + [Creating an Amazon Pinpoint project with email support](channels-email-setup-create.md)
-+ [Tracking open and click events in email](channels-email-open-click-tracking.md)

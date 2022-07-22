@@ -404,10 +404,10 @@ The `format` parameter must be one of:
 + "`medium`": medium date format\. For example: *Sept 19, 2020*
 + "`short`": short date format\. For example: *9/19/20*
 + "`pattern`": uses a custom date pattern format\. For more information about date patterns, see [https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html)\.
-If a format is passed, then `medium` is used by default\.   
+If a format is not passed, then `medium` is used by default\.   
 **Example**  
-In this example, a message is sent to a user using the `full` date format based on the *America/Los\_Angeles* time zone and a date of **09/19/2020**\.  
-`We can meet with you any time on ``{{dateFormat date inputFormat="19/09/2020" outputFormat="full" tz=America/Los_Angeles}}.` returns  
+In this example, the `[0]` entry for `User.UserAttributes.StartDate.[0]` is **09/19/2020** and a message is sent to a user using the `full` date format based on the *America/Los\_Angeles* time zone\.  
+`We can meet with you any time on ``{{dateFormat User.UserAttributes.StartDate.[0] inputFormat="MM/dd/yyyy" outputFormat="full" tz=America/Los_Angeles}}.` returns  
 *We can meet with you any time on Tuesday, September 19, 2020\.*
 
 *inflect*  

@@ -13,7 +13,7 @@ If send a message with an `originationNumber` that does not exist in your accoun
 
 If none of the previous parameters are passed in the request, Amazon Pinpoint looks at your account and checks for a valid number in this order:
 
-1. Dedicated numbers\. Any dedicated numbers associated with y our account are checked in this order: short code, 10DLC, long code/toll\-free number\. Domestic numbers are checked before international numbers\. If you have both transactional and promotional long codes in your account, Amazon Pinpoint chooses a transational number by default\.
+1. Dedicated numbers\. Any dedicated numbers associated with your account are checked in this order: short code, 10DLC, long code/toll\-free number\. Domestic numbers are checked before international numbers\. If you have both transactional and promotional long codes in your account, Amazon Pinpoint chooses a transational number by default\.
 
 1. Default sender IDs
 

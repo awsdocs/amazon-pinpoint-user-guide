@@ -1,6 +1,6 @@
 # Best practices for the voice channel<a name="channels-voice-best-practices"></a>
 
-This section contains several best practices related to sending voice messages using Amazon Pinpoint\. These practices can help ensure the satifaction of your recipients, and can protect you from unexpected charges\.
+This section contains several best practices related to sending voice messages using Amazon Pinpoint\. These practices can help ensure the satisfaction of your recipients, and can protect you from unexpected charges\.
 
 **Topics**
 + [Comply with laws and regulations](#channels-voice-best-practices-understand-laws)

@@ -14,22 +14,17 @@ In this tutorial, you create an imported segment by uploading a file from your c
 
 In this section, you download a file that contains fictitious customer data\. You also modify the data to include your own contact information\. Later in this tutorial, you use this data to create a segment\.
 
-1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/master/examples/Pinpoint\_Sample\_Import\.csv](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/master/examples/Pinpoint_Sample_Import.csv)\. Save the file to your computer\.
+1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/main/examples/Pinpoint\_Sample\_Import\.csv](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/main/examples/Pinpoint_Sample_Import.csv)\. Save the file to your computer\.
 **Tip**  
 You can quickly save this file to your computer by right\-clicking the link, and then choosing **Save Link As**\.
 
-1. Open the file in a text editor or spreadsheet application\. On the last row of the file, replace the items in angle brackets \(`<…>`\) with your own contact information\.
+1. Open the file in a spreadsheet application\. On the last row of the file, replace the items in angle brackets \(`<…>`\) with your own contact information\.
 
-   In the `Address` column, provide the same email address that you verified in [Step 1](gettingstarted-create-project.md)\.
-
-   In the `User.UserAttributes.Company` column, specify a company name that's different from the fictitious company names in the file\. You'll use this unique company name when you define the criteria for your targeted segment in the next section\.
-**Note**  
-You don't have to provide your information for each column in the file\. However, at a minimum, you have to provide information for the `ChannelType`, `Address`, and `User.UserAttributes.Company` columns\.  
-The email that you create later in this tutorial uses several of these fields to create a personalized message\.
+   In the `Address` column, enter the same email address that you verified in [Step 1](gettingstarted-create-project.md)\. The message that you send in this campaign will be sent to that address\.
 
 1. When you finish, save the file\.
 **Note**  
-If you used a spreadsheet application to modify the file, make sure that you save the modified file in Comma\-Separated Values \(\.csv\) format\. Amazon Pinpoint can only import \.csv and \.json files\.
+If you used a spreadsheet application to modify the file, make sure that you save the modified file in Comma\-Separated Values \(\.csv\) format\. Amazon Pinpoint can't import proprietary file formats, such as \.xlsx\.
 
 ## Step 2\.2: Import the sample customer data file<a name="gettingstarted-import-customer-data-import-segment"></a>
 

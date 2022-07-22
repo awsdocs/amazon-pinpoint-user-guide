@@ -8,6 +8,8 @@ The **Message templates** page on the Amazon Pinpoint console provides a single 
 + [Editing a message template](#message-templates-managing-edit)
 + [Copying a message template](#message-templates-managing-copy)
 + [Deleting a message template](#message-templates-managing-delete)
++ [Adding a tag to a template](#message-templates-managing-add-tag)
++ [Removing a tag from a template](#message-templates-managing-remove-tag)
 
 For information about creating a message template, see [Creating email templates](message-templates-creating-email.md), [Creating push notification templates](message-templates-creating-push.md), [Creating SMS templates](message-templates-creating-sms.md), or [Creating voice templates](message-templates-creating-voice.md), depending on the type of template that you want to create\.
 
@@ -104,3 +106,47 @@ If you delete a template, Amazon Pinpoint deletes all versions, content, and set
 1. On the **Message templates** page, select the check box next to each template that you want to delete\.
 
 1.  On the **Actions** menu, choose **Delete**\.
+
+## Adding a tag to a template<a name="message-templates-managing-add-tag"></a>
+
+A tag is a label that you can define and associate with AWS resources, including certain types of Amazon Pinpoint resources\.
+
+Adding a tag to a template can help you categorize and manage templates in different ways, such as by purpose, owner, environment, or other criteria\. You can use tags to easily find existing templates, or to control which users can access specific templates\. You can add at most 50 key\-value pairs, with each key being unique\.
+
+**To add a tag**
+
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. In the navigation pane, choose **Message templates**\.
+
+1. On the **Message templates** page, choose the template that you want to add a tag to\.
+
+1. Under **Tags**, choose **Manage tags**\.
+
+1. Choose **Add new tag**\.
+
+1. Enter the tag key and value pair you want to add\.
+
+1. \(Optional\) To add additional tags, choose **Add new tag**\.
+
+1. When you finish, choose **Save tags**\.
+
+## Removing a tag from a template<a name="message-templates-managing-remove-tag"></a>
+
+If you no longer need a tag to apply to a template, you can remove it through the console\. 
+
+**To remove a tag**
+
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. In the navigation pane, choose **Message templates**\.
+
+1. On the **Message templates** page, choose the template that you want to remove a tag\.
+
+1. Under **Tags**, choose **Manage tags**\.
+
+1. Next to the tag you want to remove, choose **Remove**\.
+
+1. Choose **Save tags**\.
+
+For more information on how to use tags in IAM policies see [Managing tags](https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html)\.
