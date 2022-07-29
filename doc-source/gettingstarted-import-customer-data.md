@@ -60,7 +60,7 @@ In this section, you create a targeted segment\. You add segment criteria that f
 
 1. Under **Segment group 1**, do the following:
 
-   1. Next to **Include endpoints that are in any of the following segments**, choose the **Pinpoint\_Sample\_Import** segment that you created in the previous step\.
+   1. Next to **Include audiences that are in any of the following**, choose the **Pinpoint\_Sample\_Import** segment that you created in the previous step\.
 
    1. Choose **Add criteria**\.
 
