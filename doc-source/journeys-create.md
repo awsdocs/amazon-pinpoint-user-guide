@@ -56,7 +56,7 @@ You can configure the schedule settings for a journey by choosing the **Schedule
 
   You can also specify exceptions for specific days of the year\. For example, if you want to ensure that you don't send any messages on New Year's Day, you can create an exception that begins on December 31st at 8:00 PM and ends on January 2nd at 8:00 AM\. You can add up to 20 exceptions\.
 **Note**  
-The hours that you specify for days of the week or for exceptions must respect the quiet time hours that you specify for the journey\. In other words, if you set the journey quiet time hours to 8:00 PM through 8:00 AM, you can't set the quiet time hours for Monday to 8:30 PM through 7:30 AM\.
+The hours that you specify for days of the week or for exceptions must respect the quiet time hours that you specify for the journey\. In other words, if you set the journey quiet time hours to 8:00 PM through 8:00 AM, you can't set the sending time hours for Monday to 8:30 PM through 7:30 AM\.
 + **Apply this schedule to all channels** – Enable this feature to automatically set the sending time setting for each channel to equal the **Start time** and **End time** that you specified for the *Do not send time* setting\. If you don't enable this feature, you can define different sending time hours for different channels\. For example, you can configure the email channel so that messages are sent from 6:00 AM to 10:00 PM \(22:00\), and configure the SMS channel so that messages are sent from 8:00 AM to 8:00 PM \(20:00\)\.
 
 **Next**: [Set up the journey entry activity](journeys-entry-activity.md)
