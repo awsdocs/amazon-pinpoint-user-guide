@@ -33,7 +33,7 @@ The following table shows general MPS limits for dedicated long codes\.
 Toll\-free numbers are currently only available in the United States\. US toll\-free numbers support 3 MPS\.
 
 **Important**  
-If your throughput requirements exceed 3 TPS, you should use a 10DLC number or a short code\. If you purchase multiple toll\-free numbers and attempt to distribute your throughput across them, the mobile carriers are likely to filter all of your messages from their networks\.
+If your throughput requirements exceed 3 MPS, you should use a 10DLC number or a short code\. If you purchase multiple toll\-free numbers and attempt to distribute your throughput across them, the mobile carriers are likely to filter all of your messages from their networks\.
 
 ## Sender IDs<a name="channels-sms-limitations-senderid"></a>
 
