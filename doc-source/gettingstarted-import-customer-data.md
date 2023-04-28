@@ -16,7 +16,7 @@ In this section, you download a file that contains fictitious customer data\. Yo
 
 1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/main/examples/Pinpoint\_Sample\_Import\.csv](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/main/examples/Pinpoint_Sample_Import.csv)\. Save the file to your computer\.
 **Tip**  
-You can quickly save this file to your computer by right\-clicking the link, and then choosing **Save Link As**\.
+You can quickly save this file to your computer by right\-clicking the link, and then choosing **Save Link As**\. Some browsers may download the file with the **txt** file extension name\. Before downloading and saving the file make sure the extension is changed to **csv**\.
 
 1. Open the file in a spreadsheet application\. On the last row of the file, replace the items in angle brackets \(`<…>`\) with your own contact information\.
 

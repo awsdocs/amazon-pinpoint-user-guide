@@ -22,4 +22,6 @@ When you configure SMS channel settings in Amazon Pinpoint, your changes apply t
 + [Test SMS sending with the Amazon Pinpoint SMS simulator](channels-sms-simulator.md)
 + [Configuring two\-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)
 + [Country capabilities and limitations for SMS with Amazon Pinpoint](channels-sms-country-capabilities.md)
++ [Managing Pools in Amazon Pinpoint](channels-sms-managing-pools.md)
 + [Best practices](channels-sms-best-practices.md)
++ [Understanding SMS billing and usage reports for Amazon Pinpoint](channel-sms-monitoring-bill.md)

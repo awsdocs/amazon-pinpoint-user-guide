@@ -42,18 +42,13 @@ A 10DLC number is used only for sending messages within the US\. Using a 10DLC n
 
 Toll\-free numbers are typically used for transactional messaging, such as registration confirmation or for sending one\-time passwords and only used within the US\. They can be used for both voice messaging and SMS\. Average throughput is three message parts per second \(MPS\); however, this throughput is affected by character encoding\. For more information about how character encoding affects message parts, see [SMS character limits in Amazon Pinpoint](channels-sms-limitations-characters.md)\. 
 
-When using a toll\-free number as an originator, it's best to follow these guidelines:
-+ Don't use shortened URLs created from third\-party URL shorteners, as these messages are more likely to be filtered as spam\. If you want to use a shortened URL consider using a 10LDC phone number or short code\. Using either of these number types require that you register your message template, which can then include a shortened URL in the message\.
-+ Keyword opt\-out and opt\-in responses are set at the carrier level, using STOP and UNSTOP\. These keywords can't be modified, and no other keywords can be used\. Response messages when a user replies with STOP and UNSTOP are also carrier\-managed and can't be modified\.
-+ Don't send the same or similar message contents using multiple toll\-free numbers\. This is considered "snowshoeing", and is typically used by spammers to avoid number rate and volume limitations\.
-+ Toll\-free numbers are subject to content filtering\. The following table describes the types of restricted content:    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-originating-identities.html)
+US mobile carriers require that you register your toll\-free number before live messaging will be enabled, see [US toll\-free number registration requirements and process](settings-sms-tfn-register.md)\. When using or registering a toll\-free number as an originator, it's best to follow the guidelines in the Best Practices section for [Prohibited message content](channels-sms-best-practices.md#channels-sms-best-practices-message-content)
 
 ### <a name="channels-sms-originating-identities-dedicated-short-codes"></a>
 
 **Advantages**
 
-Toll\-free originators have higher MPS over long codes as well as good deliverability\. Because there's no message template registration, you can purchase a toll\-free number for use instantly on the **SMS and voice** page of the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+Toll\-free originators have higher MPS over long codes as well as good deliverability\. 
 
 **Disadvantages**
 

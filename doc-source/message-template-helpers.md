@@ -8,6 +8,8 @@ These are the categories of helpers, described in the following sections:
 
 This section describes the **built\-in** helpers provided by Handlebars\. For the full list see [Built\-in Helpers](https://handlebarsjs.com/guide/builtin-helpers.html) at [handlebarsjs\.com](https://handlebarsjs.com)\. These are the built\-in helpers:
 + `each` – Iterates a list\.
+**Note**  
+The maximum list size is 15 items\.
 + `if` – Evaluates a statement\.
 
 *each*  
@@ -702,7 +704,11 @@ Handlebars includes additional features beyond those documented here\. For more 
 
 ## Using variables with message template helpers<a name="template-helpers-variables"></a>
 
-Pinpoint custom attributes, such as `User.UserAttributes.LastName`, are stored as a list, regardless of whether there's a single item or multiple items\. When passing a list in a helper that expects a string, you must specify the attribute index value along with the attribute name\. This attribute index value indicates the position of a value from the attribute list: `.[0]` for the first entry in the list, `.[1]` for the second, `.[2]` for the third, and so on\. For example, let's say you're using the `upper` helper to convert the first \(`[0]`\) entry of `User.UserAttributes.LastName` to all upper case\. The helper usage is `{{upper value}}`, and the attribute formatted as `User.UserAttributes.LastName`\. Replace *value* with the attribute name and attribute index value `.[0]` as follows: `{{upper User.UserAttributes.LastName.[0]}}`\. The response then returns the `[0]` entry from the list, formatted in all upper case\. For example, if the value of `[0]` is *Santos*, the response returns *SANTOS*\. 
+Amazon Pinpoint custom attributes, such as `User.UserAttributes.LastName`, are stored as a list, regardless of whether there's a single item or multiple items\. When passing a list in a helper that expects a string, you must specify the attribute index value along with the attribute name\. This attribute index value indicates the position of a value from the attribute list: `.[0]` for the first entry in the list, `.[1]` for the second, `.[2]` for the third, and so on\. For example, let's say you're using the `upper` helper to convert the first \(`[0]`\) entry of `User.UserAttributes.LastName` to all upper case\. The helper usage is `{{upper value}}`, and the attribute formatted as `User.UserAttributes.LastName`\. Replace *value* with the attribute name and attribute index value `.[0]` as follows: `{{upper User.UserAttributes.LastName.[0]}}`\. The response then returns the `[0]` entry from the list, formatted in all upper case\. For example, if the value of `[0]` is *Santos*, the response returns *SANTOS*\. 
+
+Amazon Pinpoint custom attributes names support spaces\. To have a custom attribute called `"Last Name"` you need to format the attribute as `User.UserAttributes.[Last Name]`\. To access the first entry in attribute index list the format is `User.UserAttributes.[Last Name].[0]`\.
+
+A custom attribute name can contain up to 50 characters\. An attribute value can contain up to 100 characters\. When you define the name of a custom attribute, avoid using the following characters: number sign \(\#\), colon \(:\), question mark \(?\), backslash \(\\\), and slash \(/\)\. The Amazon Pinpoint console can't display attribute names that contain these characters\. This restriction doesn't apply to attribute values\.
 
 ## Using nested helpers<a name="template-helpers-nesting"></a>
 

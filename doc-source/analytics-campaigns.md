@@ -48,7 +48,7 @@ The number of messages that were sent\.
 **Messages delivered**  
 The number of messages that were delivered to their intended recipients\. Amazon Pinpoint calculates this number by subtracting the number of messages that hard bounced from the number of messages that were sent\.  
 **Links clicked**  
-The number of times that recipients clicked links in the message\. If a single recipient clicks multiple links in a message, or clicks the same link more than once, each click is counted as a separate event\.  
+ If a message recipient clicks multiple links in a message or clicks the same link more than once, those clicks will be counted as one click if they occur within the same hour\. Multiple clicks taking place at different hours will be counted as separate clicks\. For example, a link is clicked at 8:30 AM and 8:45 AM it will count as one click but if the link is clicked at 8:30 AM and 9:05 AM it will count as two clicks because the hour has changed\.  
 **Endpoint deliveries**  
 The average number of unique email endpoints that the message was delivered to on each day\. The chart shows the number of unique email endpoints that the message was delivered to, for each day in the selected time period\.
 

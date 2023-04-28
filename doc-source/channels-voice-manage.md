@@ -83,7 +83,7 @@ We might not be able to grant your request if your use case doesn’t align with
 
 ## Requesting phone numbers<a name="channels-voice-manage-request-phone-numbers"></a>
 
-You can use the Amazon Pinpoint console to request and lease phone numbers for sending voice messages\. These phone numbers are referred to as *long codes*\. A *long code* is a standard telephone number that contains up to 15 digits, depending on the country or region that it's based in\. When you lease a long code, the code is *dedicated*—that is, it's reserved for use only by your Amazon Pinpoint account\. You can lease local long codes that are based in a variety of countries or regions\.
+You can use the Amazon Pinpoint console to request and lease phone numbers for sending voice messages\. These phone numbers are referred to as origination numbers\. The type of origination number depends on the destination country and can include Long Code, Toll Free and 10DLC\.
 
 **To request a dedicated long code for sending voice messages**
 
@@ -94,6 +94,8 @@ You can use the Amazon Pinpoint console to request and lease phone numbers for s
 1. Under **Phone numbers**, choose **Request phone number**\.
 
 1. On the **Define your phone numbers** page, for **Country**, choose the country where your recipients are located\. You can choose only one country at a time, but you can add more countries later if necessary\.
+**Tip**  
+Not having a phone number from a country where your recipients are located can cause deliverability issues as such deliveries are on best effort basis\.
 
 1. Specify the use case for the phone number\. You can choose one of the following options:
    + **Promotional** – Choose this option for sending marketing messages or messages promoting your business or service\.

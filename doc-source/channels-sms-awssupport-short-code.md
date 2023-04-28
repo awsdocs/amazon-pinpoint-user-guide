@@ -21,11 +21,11 @@ The first step in requesting a short code is to open a Service Limit Increase ca
 
 1. Open the Support Center Console at [https://console\.aws\.amazon\.com/support/home](https://console.aws.amazon.com/support/home)\.
 
-1. In the **Open support cases** section, choose **Create case**\.
+1. On the **Your support cases** pane, choose **Create case**\.
 
-1. On the **Create case** page, choose **Service limit increase**\.
+1. Choose the **Looking for service limit increases?** link\.
 
-1. In the **Case details** section, do the following:
+1. Choose **Service limit increase**, then complete the following:
    + For **Limit type**, choose **Pinpoint SMS**\.
    + For **Provide a link to the site or app which will be sending SMS messages**, provide information about the website, application, or service that will send SMS messages\.
    + For **What type of messages do you plan to send**, choose the type of messages that you plan to send using your short code:

@@ -46,14 +46,12 @@ If the value in the **Local address required** column is *Yes*, then you must re
 | Latvia | Yes | 
 | Lithuania | No | 
 | Luxembourg | Yes | 
-| Malaysia | No | 
 | Mali | Yes | 
 | Mexico | Yes | 
 | Moldova | Yes | 
 | New Zealand | No | 
 | Nicaragua | Yes | 
 | Norway | Yes | 
-| Pakistan | Yes | 
 | Panama | Yes | 
 | Peru | No | 
 | Philippines | No | 

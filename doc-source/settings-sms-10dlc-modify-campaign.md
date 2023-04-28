@@ -22,11 +22,15 @@ If you want to modify any fields other than the HELP, STOP, and sample messages,
 1. In the** Campaign messages** section of the campaign details page, choose **Edit\.**
 
 1. Update any of the following fields:
-   + **Help message**
-   + **Stop message**
-   + **Sample SMS message**
+   + The following fields require a minimum of 40 characters:
+     + **Campaign name/description**
+     + **Opt\-in workflow**
+   + The following fields require a minimum of 20 characters:
+     + **Help message**
+     + **Stop message**
+     + **Sample SMS message**
 
-     You can't delete a previously added sample message, or delete the contents of a sample message so that the field is empty\. If you delete the contents of a message without replacing that content, the original message will be used on updating\.
+       You can't delete a previously added sample message, or delete the contents of a sample message so that the field is empty\. If you delete the contents of a message without replacing that content, the original message will be used on updating\.
 
 1. Choose **Update**\. A confirmation banner appears letting you know the campaign messages were updated\.
 

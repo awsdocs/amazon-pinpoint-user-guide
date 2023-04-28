@@ -6,6 +6,9 @@ First, Amazon Pinpoint adds a tiny, transparent image to the end of each email t
 
 Second, Amazon Pinpoint replaces all links in your emails with links that refer to a domain that is hosted by AWS\. This link includes a parameter that is unique for each recipient\. When a recipient clicks one of these links, they are first sent to the AWS\-hosted domain, and then immediately redirected to their intended destination\. When a recipient visits one of these redirect links, we count it as a click event\.
 
-If a user opens an email multiple times or clicks the same link in an email multiple times, we count each open or click separately\. In other words, if a recipient opens an email three times, we count three separate open events\.
+If a message recipient clicks multiple links in a message or clicks the same link more than once, those clicks will be counted as one click if they occur within the same hour\. Multiple clicks taking place at different hours will be counted as separate clicks\. For example, a link is clicked at 8:30 AM and 8:45 AM it will count as one click but if the link is clicked at 8:30 AM and 9:05 AM it will count as two clicks because the hour has changed\. Email opens are counted the same way as clicks\.
 
 In order to view open and click events, you have to set up event streaming\. For more information about creating event streams, see [Event stream settings](settings-event-streams.md)\.
+
+**Note**  
+If you have event streaming enabled you will still receive duplicate events and should handle such duplicates in your workflows accordingly\.

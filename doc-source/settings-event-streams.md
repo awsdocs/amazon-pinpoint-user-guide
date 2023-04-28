@@ -2,6 +2,10 @@
 
 Use the **Event stream** settings page to enable or disable streaming of usage and engagement data, known as *event* data, for the current project to supported AWS services\. If you enable streaming, you can also choose the type of stream and the AWS Identity and Access Management role that you want to use\. 
 
+**Note**  
+If you haven't already created an Amazon Kinesis stream, go to the Amazon Kinesis console at [https://console\.aws\.amazon\.com/kinesis](https://console.aws.amazon.com/kinesis)\. For more information about creating streams, see the [Amazon Kinesis Data Streams Developer Guide](https://docs.aws.amazon.com/streams/latest/dev/) or the [Amazon Kinesis Data Firehose Developer Guide](https://docs.aws.amazon.com/firehose/latest/dev/)\.  
+Verify you have the permissions to setup and send to the stream\. For more information about permissions see [IAM role for streaming events to Kinesis](/pinpoint/latest/developerguide/permissions-streams.html)
+
 **To set up event streaming**
 
 1. Sign in to the AWS Management Console and open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.

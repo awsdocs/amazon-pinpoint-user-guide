@@ -58,6 +58,12 @@ The following guidelines can help you avoid bounces and improve your sender repu
 
 When you receive bounces, it's important that you immediately remove that address from your lists\. Don't attempt to re\-send messages to hard\-bouncing addresses\. Repeated hard bounces can ultimately harm your reputation with the recipient's ISP\.
 
+If you receive a *hard bounce* you should note the following:
++ The recipient's email address is added to a global suppression list for a period of 14 days\. When you send an email and the recipient's address is on the global suppression list, the message is still accepted\. However, Amazon Pinpoint doesn't attempt to deliver the message the recipient\.
++ When an email *hard bounces*, it's important to remove the recipient's email address from your mailing lists\. When you send email to an address that is on the global suppression list, Amazon Pinpoint generates bounce events, even though the email isn't sent\. These bounce events count against your account's bounce rate\. If your bounce rate gets too high, we might place your account under review in order to protect your reputation as a sender\.
+
+You can find more information about the global suppression list at [Amazon SES global suppression list](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/sending-email-global-suppression-list.html) \.
+
 ## Complaints<a name="channels-email-best-practices-complaints"></a>
 
 A complaint occurs when an email recipient clicks the "Mark as Spam" \(or equivalent\) button in their web\-based email client\. If you accumulate a large number of these complaints, the ISP assumes that you are sending spam\. This has a negative impact on your deliverability rate and sender reputation\. Some, but not all, ISPs will notify you when a complaint is reported; this is known as a *feedback loop*\. Amazon Pinpoint automatically forwards complaints from ISPs that offer feedback loops to you\.

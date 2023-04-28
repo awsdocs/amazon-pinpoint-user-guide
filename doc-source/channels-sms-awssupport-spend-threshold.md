@@ -22,11 +22,11 @@ Some of the fields on the request form are marked as "optional\." However, AWS S
 
 1. On the **Support** menu, choose **Support Center**\.
 
-1. On the **Open support cases** tab, choose **Create case**\.
+1. On the **Your support cases** pane, choose **Create case**\.
 
-1. Under **Create case**, choose **Service limit increase**\.
+1. Choose the **Looking for service limit increases?** link\.
 
-1. Under **Case details**, complete the following sections:
+1. Choose **Service limit increase**, then complete the following:
    + For **Limit type**, choose **Pinpoint SMS**\.
    + \(Optional\) For **Provide a link to the site or app which will be sending SMS messages**, provide information about the website, application, or service that will send SMS messages\.
    + \(Optional\) For **What type of messages do you plan to send**, choose the type of message that you plan to send using your long code:

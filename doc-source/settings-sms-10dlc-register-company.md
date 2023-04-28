@@ -4,6 +4,8 @@ Before you can request a 10DLC phone number, you must register your company or b
 
 You only need to register your company once\. After it's registered, you can edit your company and contact information\. To delete a registered company, create a case with AWS Support\. For more information about editing or deleting company details, see [Editing or deleting a registered company](settings-sms-10dlc-modify-company.md)\.
 
+If you are an Independent Software Vendor \(ISV\), authorized to provide messaging services to other businesses represented by their own brand, you can register the companies you represent and request on their behalf 10DLC numbers through Amazon Pinpoint\. There is a limit of 25 companies per AWS account but can be increased for eligible customers, see [10DLC quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html#quotas-10dlc)\.
+
 ## 10DLC company registration statuses<a name="settings-sms-10dlc-register-company-statuses"></a>
 
 When you register your company or brand, one of two statuses is returned: either **Unverified** or **Verified**\. If the status for your company registration is **Unverified**, it means that there was an issue with your registration\. For example, the Registered Company Name that you provided might not exactly match the registered name of the company associated with the Tax ID that you provided\. If you find a problem with your company registration details, you can correct them\. For more information about modifying your company registration details, see [Editing or deleting a registered company](settings-sms-10dlc-modify-company.md)\.

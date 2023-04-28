@@ -13,11 +13,11 @@ If your account is in multiple regions, you must submit a support request for ea
 
 1. On the **Support** menu, choose **Support Center**\.
 
-1. On the **Open support cases** tab, choose **Create case**\.
+1. On the **Your support cases** pane, choose **Create case**\.
 
-1. Choose **Service limit increase**\.
+1. Choose the **Looking for service limit increases?** link\.
 
-1. Under **Case details**, complete the following sections:
+1. Choose **Service limit increase**, then complete the following:
    + For **Limit type**, choose **Pinpoint SMS**\.
    + \(Optional\) For **Provide a link to the site or app which will be sending SMS messages**, provide information about the website, application, or service that will send SMS messages\.
    + \(Optional\) For **What type of messages do you plan to send**, choose the type of message that you plan to send using your long code:
@@ -35,7 +35,7 @@ If your account is in multiple regions, you must submit a support request for ea
 The Region is required in the **Requests** section\. Even if you provided this information in the **Case details** section you must also include it here\.
    + For **Resource Type**, choose** General Limits**\.
    + For the Limit, choose **SMS Production Access**\.
-   + For **New limit value**, enter a new limit value\.
+   + For **New limit value**, enter 1\.
 
 1. Under **Case description**, for **Use case description**, enter any relevant details about this request\.
 

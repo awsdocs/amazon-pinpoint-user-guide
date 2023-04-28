@@ -5,6 +5,9 @@ The **Transactional messaging** page provides charts and metrics that show how m
 **Note**  
 The data on this page only includes information about transactional messages\. It doesn't include information about messages that you sent by using campaigns\. To see the data for messages that were sent by campaigns, use the [Campaigns charts](analytics-campaigns.md)\. In addition, it can take up to two hours for new data to appear on this page\.
 
+**Important**  
+KPI calculations are performed on hourly partitioned data due to the volume of events\. Under certain circumstances, events that are close to the beginning or end of an hour can be written into the previous or next hour partition\. This can cause KPIs to be off by around one percent\.
+
 ## Viewing the transactional messaging charts<a name="analytics-transactional-messages-view"></a>
 
 Complete the following steps to view the **Transactional messaging** charts and metrics on the Amazon Pinpoint console\. You can filter the data by channel and by date\.
@@ -86,11 +89,11 @@ There are several factors that could cause these values to differ from the avera
 
 **Opens**  
 Shows the number of messages that were opened by recipients:   
-+ Average – The average number of messages that were opened each day of the selected time period\.
-+ Total – The total number of messages that were opened during the selected time period\.
++ Average – The average number of messages that were opened each day, of the messages sent during the selected time period\.
++ Total – The total number of messages that were opened, of the messages sent during the selected time period
 + Change over period – The percentage of change between the number of messages that were opened on the first and last days of the selected time period\. If this value is an em dash \(—\), no messages were opened on the first day of the time period\. Amazon Pinpoint can't calculate the percentage of change if the value is zero \(`0`\) for the first day of the time period\.
 The chart shows the total number of messages that were opened on each day of the selected time period\.  
-Amazon Pinpoint adds a very small, transparent image to the end of each transactional message that you send\. When a recipient opens a message that contains one of these images, their email client downloads the image from our servers\. We count the message as opened\. If a recipient opens the same message more than once, we count each of those opens separately\.
+Amazon Pinpoint adds a very small, transparent image to the end of each transactional message that you send\. When a recipient opens a message that contains one of these images, their email client downloads the image from our servers\. If a message is opened once or opened multiple times within the same hour it will be counted as one open\. Multiple opens taking place at different hours will be counted as separate opens\. For example, a message is opened at 8:30 AM and 8:45 AM it will count as one open but if the messaged is opened at 8:30 AM and 9:05 AM it will count as two opens because the hour has changed\.
 
 **Clicks**  
 Shows the number of times that recipients clicked links in the messages:   
@@ -98,7 +101,7 @@ Shows the number of times that recipients clicked links in the messages:
 + Total – The total number of clicks that occurred during the selected time period\.
 + Change over period – The percentage of change between the number of clicks that occurred on the first and last days of the selected time period\. If this value is an em dash \(—\), no clicks occurred on the first day of the time period\. Amazon Pinpoint can't calculate the percentage of change if the value is zero \(`0`\) for the first day of the time period\.
 The chart shows the total number of clicks that occurred on each day of the selected time period\.  
-When you send a message that contains links, Amazon Pinpoint replaces those links with links that refer to our servers\. When a recipient clicks one of these links, we redirect the recipient to the intended location, and count the click\. If a single recipient clicks multiple links in a message, or clicks the same link more than once, each click is counted as a separate event\.
+When you send a message that contains links, Amazon Pinpoint replaces those links with links that refer to our servers\. When a recipient clicks one of these links, we redirect the recipient to the intended location, and count the click\. If a message recipient clicks multiple links in a message or clicks the same link more than once, those clicks will be counted as one click if they occur within the same hour\. Multiple clicks taking place at different hours will be counted as separate clicks\. For example, a link is clicked at 8:30 AM and 8:45 AM it will count as one click but if the link is clicked at 8:30 AM and 9:05 AM it will count as two clicks because the hour has changed\.
 
 **Complaints**  
 Shows the number of messages that were reported as spam by recipients:   

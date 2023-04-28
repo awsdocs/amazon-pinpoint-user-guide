@@ -70,6 +70,10 @@ On the **Alarms** tab, you can create alarms that send you notifications when th
 
 **To create an alarm**
 
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
+1. In the navigation pane, choose **Deliverability dashboard**\.
+
 1. On the **Alarms** tab, choose **Create alarm**\.
 
 1. On the **Create alarm** page, do the following:

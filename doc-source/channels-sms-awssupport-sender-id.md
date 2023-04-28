@@ -20,6 +20,7 @@ If you plan to send messages to recipients a country where sender IDs are requir
 
 **Important**  
 If you need to register a sender ID in India, complete the procedures in [Special requirements for India](channels-sms-senderid-india.md) *before* you open a case in Support Center\.
+If you need to register a sender ID in Singapore, complete the procedures in [Special requirements for Singapore](channels-sms-senderid-singapore.md)\.
 
 **To request a sender ID**
 
@@ -27,11 +28,11 @@ If you need to register a sender ID in India, complete the procedures in [Specia
 
 1. On the **Support** menu, choose **Support Center**\.
 
-1. On the **Open support cases** tab, choose **Create case**\.
+1. On the **Your support cases** pane, choose **Create case**\.
 
-1. Choose **Service limit increase**\.
+1. Choose the **Looking for service limit increases?** link\.
 
-1. Under **Case details**, complete the following sections:
+1. Choose **Service limit increase**, then complete the following:
    + For **Limit type**, choose **Pinpoint SMS**\.
    + \(Optional\) For **Provide a link to the site or app which will be sending SMS messages**, provide information about the website, application, or service that will send SMS messages\.
    + \(Optional\) For **What type of messages do you plan to send**, choose the type of message that you plan to send using your long code:
@@ -48,6 +49,7 @@ If you need to register a sender ID in India, complete the procedures in [Specia
 **Note**  
 The Region is required in the **Requests** section\. Even if you provided this information in the **Case details** section you must also include it here\.
    + For **Resource Type**, choose** Sender ID Registration**\.
+   + For **Limit**, choose the type of messages that you plan to send\.
    + For **New limit value**, enter the number of sender IDs that you're requesting\. Typically, this value is **1**\.
 
 1. Under **Case description**, for **Use case description**, provide the following information:

@@ -10,7 +10,7 @@ You can also monitor [campaign analytics](analytics-campaigns.md) to see how you
 
 To analyze how many users are completing each step in a conversion process, such as purchasing an item or upgrading your app, you can create and monitor [funnels](analytics-funnels.md)\. 
 
-To analyze or store analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data to Amazon Kinesis](analytics-streaming.md)\.
+To analyze or store analytics data outside Amazon Pinpoint, you can configure Amazon Pinpoint to [stream the data to Amazon Kinesis](analytics-streaming.md) or [stream the data to Amazon Athena](https://aws.amazon.com/solutions/implementations/digital-user-engagement-events-database)\.
 
 **Topics**
 + [Chart reference](analytics-charts.md)

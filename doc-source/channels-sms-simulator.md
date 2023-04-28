@@ -1,10 +1,10 @@
 # Test SMS sending with the Amazon Pinpoint SMS simulator<a name="channels-sms-simulator"></a>
 
-Amazon Pinpoint includes an SMS simulator, which you can use to send text messages and receive realistic event records\. The SMS simulator is a helpful way to view actual SMS event records\. It's also useful for testing applications that use Amazon Pinpoint to send SMS messages\.
+Amazon Pinpoint includes an SMS simulator, which you can use to send text messages and receive realistic event records\. The SMS simulator is a helpful way to view actual SMS event records\. It's also useful for testing applications that use Amazon Pinpoint to send SMS messages\. Messages sent to these destination phone numbers are designed to stay within Amazon Pinpoint, so they are not sent over the carrier network\.
 
 When you send a message to an SMS simulator phone number, you pay the standard outbound SMS messaging rate\. The price that you pay differs depending on the destination country—in this case, the country that the simulated phone number is based in\. For more information about SMS pricing, see [Amazon Pinpoint pricing](https://aws.amazon.com/pinpoint/pricing/#SMS_text_messages)\.
 
-You can send messages to the SMS simulator phone numbers even if your account is in the [SMS sandbox](channels-sms-sandbox.md)\. However, messages that you send to the simulator are counted toward your [monthly spending quota](channels-sms-awssupport-spend-threshold.md)\.
+You can send messages to the SMS simulator phone numbers even if your account is in the [SMS sandbox](channels-sms-sandbox.md)\. However, messages that you send to the simulator are counted toward your [monthly spending quota](channels-sms-awssupport-spend-threshold.md)\. 
 
 **Topics**
 + [Prerequisites](#channels-sms-simulator-prereqs)

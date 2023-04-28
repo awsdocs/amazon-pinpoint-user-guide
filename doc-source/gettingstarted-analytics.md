@@ -12,7 +12,7 @@ Before you can view the delivery and response metrics for your campaign, you hav
 
 1. If your email client automatically hides images by default, choose the **Download pictures** \(or equivalent\) button to load the images in the message\.
 
-1. Choose one or more of the links that are contained in the message\.
+1. Click one or more of the links that are contained in the message\.
 
 1. Wait for a few minutes, and then proceed to the next section\.
 

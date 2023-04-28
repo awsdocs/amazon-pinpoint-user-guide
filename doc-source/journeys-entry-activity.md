@@ -4,6 +4,9 @@ After you create and configure the journey, you must configure the *Journey entr
 + **When an event occurs** – You can configure the journey so that participants are inserted into a journey dynamically, when specific events occur\. For example, you can use this option to add participants to a journey when they complete a sign\-up workflow\. For more information, see [Add participants when they perform an activity](#journeys-entry-activity-event-triggered)\.
 + **Based on segment membership** – You can insert the members of an existing segment directly into the journey\. The journey can be configured to periodically re\-evaluate the segment to determine if there are new segment members to add\. For more information, see [Add participants from a segment](#journeys-entry-activity-segment-based)\.
 
+**Note**  
+*Participant* refers to either a user and their endpoints or individual endpoints, depending on the data\. If the journey entry segment consists of user\-level data \(user\_id\), then the *participant* is the user and all the endpoints associated with the user progress through the journey together\. If the journey entry segment consists of endpoint\-level data \(no user\_id\), then the *participant* is the individual endpoints\.
+
 ## Add participants when they perform an activity<a name="journeys-entry-activity-event-triggered"></a>
 
 This event\-triggered journey type adds participants based on a chosen event\. You choose an event, such as music downloads, and then choose the event attributes to further define the journey event\. This might be downloading music from a specific artist\. When a user performs any of the activities described by the event, they become participants in the journey\.

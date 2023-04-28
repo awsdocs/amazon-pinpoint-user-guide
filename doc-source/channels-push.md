@@ -8,6 +8,9 @@ You can use APNs to send messages to iOS devices such as iPhones and iPads, as w
 + Baidu Cloud Push
 + Amazon Device Messaging \(ADM\)
 
+**Note**  
+Amazon Pinpoint sets the push endpoints with the oldest **EffectiveDate** to `INACTIVE` if a user has 15 endpoints and you add more push endpoints\. See [Older push endpoints automatically set to inactive](https://docs.aws.amazon.com/pinpoint/latest/developerguide/audience-define-auto-inactive.html) for more information\.
+
 **Topics**
 + [Setting up Amazon Pinpoint mobile push channels](channels-push-setup.md)
 + [Monitoring push notification activity with Amazon Pinpoint](channels-push-monitor.md)

@@ -131,10 +131,10 @@ This section contains the following information:
 + **Total opens** – The number of messages that were opened by recipients\.
 **Note**  
 In order for Amazon Pinpoint to count an email open event, the recipient has to load the images in your messages\. Several email clients, such as some versions of Microsoft Outlook, prevent images from being loaded by default\.  
-Each time the recipient opens the email, it's counted as a distinct event\. For example, if a recipient opens the same message five times, Amazon Pinpoint counts five distinct open events\. For this reason, it's possible \(but unlikely\) for the number of opens to exceed the number of sends or deliveries\.
+If a message is opened once or opened multiple times within the same hour it will be counted as one open\. Multiple opens taking place at different hours will be counted as separate opens\. For example, a message is opened at 8:30 AM and 8:45 AM it will count as one open but if the messaged is opened at 8:30 AM and 9:05 AM it will count as two opens because the hour has changed\. For this reason, it's possible \(but unlikely\) for the number of opens to exceed the number of sends or deliveries\.
 + **Total clicks** – The number of times that recipients clicked links in messages\.
 **Note**  
-Amazon Pinpoint counts each click as a separate event\. For example, if a recipient clicks three links in a message, Amazon Pinpoint counts three distinct click events\. For this reason, it's possible for the number of clicks to exceed the number of opens or deliveries\.
+If a message recipient clicks multiple links in a message or clicks the same link more than once, those clicks will be counted as one click if they occur within the same hour\. Multiple clicks taking place at different hours will be counted as separate clicks\. For example, a link is clicked at 8:30 AM and 8:45 AM it will count as one click but if the link is clicked at 8:30 AM and 9:05 AM it will count as two clicks because the hour has changed\. For this reason, it's possible for the number of clicks to exceed the number of opens or deliveries\.
 
 #### Message Engagement Metrics<a name="journeys-metrics-engagement-activity-message"></a>
 
@@ -219,13 +219,17 @@ You can use Contact center activity metrics to analyze participants' interaction
 #### Contact center metrics<a name="jounrneys-contact-center-outbound-campaigns-success"></a>
 
 The following call metrics are available:
++ **Total successful dials** – The total number of calls that were successfully dialed\.
 + **Connected** – The number of calls that connected to an agent\.
 + **SIT tone** – The number of calls that received a busy tone\.
 + **Fax** – The number of calls that received a fax tone\.
 + **Voicemail beep** – The number of calls that reached voice mail with a beep sound\.
 + **Voicemail no beep** – The number of calls that reached voice mail without a beep sound\.
 + **Not answered** – The number of calls that received a response, but the call continued to ring without reaching voice mail\.
-+ **Connection rate** – The rate of calls that successfully connected to an agent as compared to all attempted calls\.
++ **Connection error** – The number of calls that received a response, but the call could not reach voice mail\.
++ **Connection rate** – The rate of calls that successfully connected to an agent as compared to all successful dials\.
++ **Total failed dials** – The number of calls that failed due to system issues, telecom issues or permission errors\.
++ **Total expired dials** – The number of calls that expired because dialer faced an error or there were no agents available\.
 
 ### Activity metrics<a name="journeys-metrics-activity"></a>
 

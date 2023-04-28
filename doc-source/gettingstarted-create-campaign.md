@@ -10,12 +10,6 @@ When you create a segment, you first give the segment a name\. Next, you choose 
 
 **To create the campaign and choose segment**
 
-1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/main/examples/Pinpoint\_Sample\_Email\.html](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/main/examples/Pinpoint_Sample_Email.html)\. Save the file to your computer\.
-**Tip**  
-You can quickly save this file to your computer by right\-clicking the link, and then choosing **Save Link As**\.
-
-1. Open the file that you just downloaded in a text editor, such as Notepad \(Windows\) or TextEdit \(macOS\)\. Press Ctrl\+A \(Windows\) or Cmd\+A \(macOS\) to select all of the text\. Then, press Ctrl\+C \(Windows\) or Cmd\+C \(macOS\) to copy it\.
-
 1. In the Amazon Pinpoint console, in the navigation pane, choose **Campaigns**\.
 
 1. Choose **Create a campaign**\.
@@ -42,7 +36,13 @@ This sample file uses responsive HTML to create a message that renders properly 
 
 1. For **Subject**, enter a subject line for the email\.
 
-1. Under **Message**, erase the sample HTML code that's shown in the editor\. Paste the HTML code that you copied in the first step in this section\.
+1. In a web browser, download the sample file from [https://raw\.githubusercontent\.com/awsdocs/amazon\-pinpoint\-user\-guide/main/examples/Pinpoint\_Sample\_Email\.html](https://raw.githubusercontent.com/awsdocs/amazon-pinpoint-user-guide/main/examples/Pinpoint_Sample_Email.html)\. Save the file to your computer\.
+**Tip**  
+You can quickly save this file to your computer by right\-clicking the link, and then choosing **Save Link As**; Otherwise, you can click the link to open the html text in a browser tab\. Leave the tab open until you've completed Step 4\.
+
+1. Open the file that you just downloaded in a text editor, such as Notepad \(Windows\) or TextEdit \(macOS\)\. If you opened the file in a browser tab then select that tab\. Press Ctrl\+A \(Windows\) or Cmd\+A \(macOS\) to select all of the text\. Then, press Ctrl\+C \(Windows\) or Cmd\+C \(macOS\) to copy it\.
+
+1. Under **Message**, erase the sample HTML code that's shown in the editor\. Paste the HTML code that you copied in the last step
 
 1. \(Optional\) Modify the content of the message to include a message that you want to send\. 
 

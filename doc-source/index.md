@@ -4,13 +4,13 @@
 *****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
-Amazon's trademarks and trade dress may not be used in 
-     connection with any product or service that is not Amazon's, 
-     in any manner that is likely to cause confusion among customers, 
-     or in any manner that disparages or discredits Amazon. All other 
-     trademarks not owned by Amazon are the property of their respective
-     owners, who may or may not be affiliated with, connected to, or 
-     sponsored by Amazon.
+Amazon's trademarks and trade dress may not be used in
+connection with any product or service that is not Amazon's,
+in any manner that is likely to cause confusion among customers,
+or in any manner that disparages or discredits Amazon. All other
+trademarks not owned by Amazon are the property of their respective
+owners, who may or may not be affiliated with, connected to, or
+sponsored by Amazon.
 
 -----
 ## Contents
@@ -74,7 +74,7 @@ Amazon's trademarks and trade dress may not be used in
          + [Requesting sender IDs for SMS messaging with Amazon Pinpoint](channels-sms-awssupport-sender-id.md)
          + [Moving from the Amazon Pinpoint SMS sandbox to production](channels-sms-awssupport-sandbox.md)
       + [Monitoring SMS activity with Amazon Pinpoint](channels-sms-monitor.md)
-         + [Monitoring SMS spending activity with Amazon Pinpoint](channels-sms-monitor-spending.md)
+         + [Monitoring SMS and voice spending activity with Amazon Pinpoint](channels-sms-monitor-spending.md)
       + [Managing the Amazon Pinpoint SMS channel](channels-sms-manage.md)
       + [Test SMS sending with the Amazon Pinpoint SMS simulator](channels-sms-simulator.md)
       + [Configuring two-way SMS messaging in Amazon Pinpoint](channels-sms-two-way.md)
@@ -82,12 +82,17 @@ Amazon's trademarks and trade dress may not be used in
          + [Supported countries and regions (SMS channel)](channels-sms-countries.md)
          + [Special requirements for sending SMS messages to recipients in India](channels-sms-senderid-india.md)
          + [Special requirements for Singapore](channels-sms-senderid-singapore.md)
+         + [SMS template registration](channels-sms-template-registration.md)
+      + [Managing Pools in Amazon Pinpoint](channels-sms-managing-pools.md)
       + [Best practices](channels-sms-best-practices.md)
+         + [Handling deactivated phone numbers](channels-sms-best-practices-deactivated.md)
+      + [Understanding SMS billing and usage reports for Amazon Pinpoint](channel-sms-monitoring-bill.md)
    + [Amazon Pinpoint voice channel](channels-voice.md)
       + [Amazon Pinpoint voice sandbox](channels-voice-sandbox.md)
       + [Setting up the Amazon Pinpoint voice channel](channels-voice-setup.md)
       + [Managing the Amazon Pinpoint voice channel](channels-voice-manage.md)
       + [Supported countries and regions (voice channel)](channels-voice-countries.md)
+      + [Managing Pools in Amazon Pinpoint](channels-voice-managing-pools.md)
       + [Best practices for the voice channel](channels-voice-best-practices.md)
    + [Amazon Pinpoint in-app messaging channel](channels-inapp.md)
    + [Custom channels in Amazon Pinpoint](channels-custom.md)
@@ -158,6 +163,7 @@ Amazon's trademarks and trade dress may not be used in
          + [Getting information about 10DLC registration issues](settings-sms-10dlc-learn-about-rejections.md)
       + [Requesting a number](settings-sms-request-number.md)
       + [Managing SMS and voice settings in Amazon Pinpoint](settings-sms-managing.md)
+      + [US toll-free number registration requirements and process](settings-sms-tfn-register.md)
    + [Push notification settings](settings-push.md)
    + [Mobile and web app analytics settings](settings-analytics.md)
    + [Event stream settings](settings-event-streams.md)
@@ -165,4 +171,5 @@ Amazon's trademarks and trade dress may not be used in
    + [Amazon Pinpoint metrics that are exported to CloudWatch](monitoring-metrics.md)
    + [View Amazon Pinpoint metrics in CloudWatch](monitoring-view-metrics.md)
    + [Create CloudWatch alarms for Amazon Pinpoint metrics](monitoring-create-alarms.md)
++ [Troubleshooting](troubleshooting.md)
 + [Document history for Amazon Pinpoint](doc-history.md)

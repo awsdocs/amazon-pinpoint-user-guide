@@ -24,7 +24,7 @@ Consider the following factors when you create imported segments:
 + When you create a campaign, you have to choose a segment\. When you choose a dynamic segment, Amazon Pinpoint provides an estimate of the size of that segment\. However, when you choose an imported segment, Amazon Pinpoint can't provide an estimate\.
 + If you create a campaign that sends messages when certain events happen, you can't use imported segments\. Event\-based campaigns can only use dynamic segments\. For more information about creating dynamic segments, see [Building segments](segments-building.md)\.
 
-## Segment files<a name="segments-importing-examples"></a>
+## Segment files<a name="segments-importing-examples-files"></a>
 
 You define the endpoints or user IDs that belong to your segment in a comma\-separated values \(CSV\) or JSON file\. Then, you import the file into Amazon Pinpoint to create the segment\.
 
@@ -199,7 +199,16 @@ For JSON files, a period in the attribute name indicates that the name following
 
 The full JSON structure closely resembles the [example endpoint request](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints-endpoint-id.html#apps-application-id-endpoints-endpoint-id-schemas) in the *Amazon Pinpoint API Reference*\. However, not all attributes in the Endpoint request schema are supported when you import segments, including `EndpointStatus` and `EffectiveDate`\.
 
+For a custom field to have multiple values in CSV you need to replicate the header and keep one value per header\. For example:
+
+```
+...,User.UserId, User.UserAttributes.new_multi_field,User.UserAttributes.new_multi_field
+...,example-user-id-2,test10,test20
+```
+
 You can replace attribute names that are shown as `custom_attribute` with any value\. For example, if you want to store users' first and last names in attributes named `FirstName` and `LastName`, you can create custom attributes named `User.UserAttributes.FirstName` and `User.UserAttributes.LastName`, respectively\. An attribute name can contain up to 50 characters\. An attribute value can contain up to 100 characters\. Attribute names are case sensitive\.
+
+In JSON the custom attribute needs to be formatted at `"Attributes":{"Ride":["Bus"]}`\.
 
 
 | Attribute | Description | 
@@ -229,4 +238,4 @@ You can replace attribute names that are shown as `custom_attribute` with any va
 | User\.UserAttributes\.custom\_attribute | A custom attribute that describes the user\. You can replace custom\_attribute with any value, such as FirstName or Age\. | 
 | User\.UserId | A unique identifier for the user\. | 
 
-You can create as many as 40 custom attributes for endpoints and users in each project\. For more information, see [Amazon Pinpoint quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html) in the *Amazon Pinpoint Developer Guide*\.
+You can create as many as 250 custom attributes for endpoints and users in each project\. For more information, see [Amazon Pinpoint quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html) in the *Amazon Pinpoint Developer Guide*\.

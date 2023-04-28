@@ -11,6 +11,8 @@ Your monthly Deliverability dashboard subscription includes 25 inbox placement t
 
 **To create a new email placement test**
 
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
+
 1. In the navigation pane of the Deliverability dashboard, choose **Inbox placement tests**\.
 
 1. Choose **Create a test**\.
@@ -28,6 +30,8 @@ Your monthly Deliverability dashboard subscription includes 25 inbox placement t
 It takes approximately 24 hours for the test to complete\. When the test is finished, complete the following steps to view the results\.
 
 **To view the results of an inbox placement test**
+
+1. Open the Amazon Pinpoint console at [https://console\.aws\.amazon\.com/pinpoint/](https://console.aws.amazon.com/pinpoint/)\.
 
 1. In the navigation pane of the Deliverability dashboard, choose **Inbox placement tests**\.
 

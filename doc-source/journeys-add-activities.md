@@ -126,6 +126,10 @@ Before you can add a contact center activity to a journey, you must do the follo
 + Create and publish a contact flow that includes a **Check call progress** block\. This block enables you to branch based on whether a person answered the phone, for example, or a voice mail was detected\.
 + Make sure that the Amazon Connect queue you plan to use has an outbound number defined in the queue\.
 + In IAM, create a policy and role that allow Amazon Connect to send messages through Amazon Pinpoint\.
+**Note**  
+ The **ResourceID** roles specified for **ConnectCampaignExecutionRoleArn** are not allowed to contain service\-roles or sub\-paths\. This means that the IAM role name, passed via the request parameter: `arn:aws:iam::account:role/role-name-without-path`, should not contain a sub\-path delimited by a "/" after the role name\. For example:   
+Valid role ARN in request parameters:`"ConnectCampaignExecutionRoleArn": "arn:aws:iam::123456781234:role/testuser"`
+Invalid role ARN in request parameters: `"ConnectCampaignExecutionRoleArn": "arn:aws:iam::123456781234:role/testuser/subrole"`
 
 You can find procedures for completing these tasks in steps 1–5 of [Make predictive and progressive calls using Amazon Connect outbound](https://aws.amazon.com/blogs/contact-center/make-predictive-and-progressive-calls-using-amazon-connect-high-volume-outbound-communications/) on the AWS Contact Center blog\. 
 
@@ -134,6 +138,7 @@ You can find procedures for completing these tasks in steps 1–5 of [Make predi
  You can connect your journey to an existing Amazon Connect outbound campaign,, or click to build an Amazon Connect outbound campaign\.
 
 Note the following considerations when using contact center activities in Amazon Pinpoint:
++ You can only use 3 contact center activities in a Journey\. If you need more than 3 contact center activities you can request a quota increase\. See [Requesting a quota increase](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html#quotas-increase) in the *Amazon Pinpoint Developer Guide*\.
 + You can only use one Amazon Connect campaign per journey\. If a journey contains multiple contact center activities, and you change the Amazon Connect campaign for one activity, the change is reflected in all other contact center activities in the same journey\.
 + You can use a single Amazon Connect campaign in multiple journeys\. Amazon Pinpoint shows a warning if the Amazon Connect campaign is already in use when you publish the journey\.
 + Your phone numbers of your customers must exist in Amazon Pinpoint as voice endpoints\.
@@ -153,11 +158,11 @@ Note the following considerations when using contact center activities in Amazon
 
 1. \(Optional\) You can choose **Build an Amazon Connect outbound campaign**, which directs you to Amazon Connect\.
 
-1. For **Execution role**, select an existing execution role that has the appropriate permissions or create a new role with the appropriate permissions\.
+1. For **IAM role**, complete one of the following steps:
+
+   1. If you want to have Amazon Pinpoint create a role that allows it to pass phone numbers to Amazon Connect, select **Automatically create a role**\. Then, for IAM role, enter a unique name for the new role that you're creating\.
 
    1. If you've already created an IAM role that allows Amazon Pinpoint to pass phone numbers to Amazon Connect, select **Choose an existing role**\. Then, for IAM role, select a role that contains the appropriate permissions\.
-
-   1. If you want to have Amazon Pinpoint create a role that allows it to pass phone numbers to Amazon Connect, select **Automatically create a role**\. Then enter a unique name for the new role in IAM role\.
 
 1. \(Optional\) In **Description**, describe the purpose of the activity\. When you save the activity, this text appears as the activity's label\. 
 
@@ -241,7 +246,8 @@ When a journey participant arrives on a **Wait** activity, they remain on that a
 When journey participants arrive on a **yes/no split** activity, they're sent down one of two paths based on their attributes or behaviors\. You can use this type of split activity to send journey participants down separate paths based on their membership in a segment\. You can also send participants down separate paths based on their interactions with other journey activities\. For example, you can divide journey participants based on whether they opened an email that was sent earlier in the journey\.
 
 **Note**  
-To create split activities that send participants down different paths based on push notification events \(such as Open or Received events\), your mobile app has to specify the User ID and Endpoint ID values\. For more information, see [Integrating Amazon Pinpoint with your application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.
+To create split activities that send participants down different paths based on push notification events \(such as Open or Received events\), your mobile app has to specify the User ID and Endpoint ID values\. For more information, see [Integrating Amazon Pinpoint with your application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.  
+If the Journey segment is at the user\-level, with user\_id in the data and the criteria used for evaluating a conditional split is an endpoint attribute, Amazon Pinpoint processes the journey attributes using a logical OR between the attribute values for the different endpoints of the user\. For example, if a single user has multiple endpoints, and if any of these endpoints had the criteria satisfied, all endpoints linked to that user would be grouped together and evaluated as a ‘Yes’, and would go down the ‘Yes’ branch of a Yes/No split activity\.
 
 **To set up a yes/no split activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-yes-no-split-activity.png)
@@ -313,7 +319,8 @@ You can use this type of split to send journey participants down separate paths 
 
 **Note**  
 If a journey participant meets more than one condition in a conditional split, they are sent down the first condition that they meet, in alphabetical order\. For example, if a participant meets the conditions in Branch A and Branch D, they're sent down the path that corresponds with Branch A\.  
-To create split activities that send participants down different paths based on push notification events \(such as Open or Received events\), your mobile app has to specify the User ID and Endpoint ID values\. For more information, see [Integrating Amazon Pinpoint with your application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.
+To create split activities that send participants down different paths based on push notification events \(such as Open or Received events\), your mobile app has to specify the User ID and Endpoint ID values\. For more information, see [Integrating Amazon Pinpoint with your application](https://docs.aws.amazon.com/pinpoint/latest/developerguide/integrate.html) in the *Amazon Pinpoint Developer Guide*\.  
+If the Journey segment is at the user\-level, with user\_id in the data and the criteria used for evaluating a conditional split is an endpoint attribute, Amazon Pinpoint processes the journey attributes using a logical OR between the attribute values for the different endpoints of the user\. For example, if a single user has multiple endpoints, and if any of these endpoints had the criteria satisfied, all endpoints linked to that user would be grouped together and evaluated as a ‘Yes’, and would go down the ‘Yes’ branch of a Yes/No split activity\.
 
 **To set up a multivariate split activity**  
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-multivariate-split-activity.png)

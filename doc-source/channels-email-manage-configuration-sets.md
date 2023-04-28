@@ -22,7 +22,7 @@ When you set a default configuration set for an identity, all emails that you se
 
 **Note**  
 The following procedure assumes that you've already verified an identity\. Identities that you verify in Amazon SES are available in Amazon Pinpoint, and vice\-versa\. For more information, see [Verifying email identities](channels-email-manage-verify.md)\.  
-This procedure also assumes that you've 
+This procedure also assumes that you've created a configuration set\.
 
 **To specify a default configuration set for an identity**
 

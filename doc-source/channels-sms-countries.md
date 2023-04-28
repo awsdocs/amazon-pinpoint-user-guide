@@ -42,7 +42,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Brunei | BN | 673 | No | No | Yes | No | 
 | Bulgaria | BG | 359 | Yes | No | Yes | Yes | 
 | Burkina Faso | BF | 226 | No | No | Yes | No | 
-| Burundi | BL | 257 | No | No | Yes | No | 
+| Burundi | BI | 257 | No | No | Yes | No | 
 |  C | 
 | Cambodia | KH | 855 | No | No | Yes | No | 
 | Cameroon | CM | 237 | No | No | Yes | No | 
@@ -64,7 +64,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Democratic Republic of the Congo | CD | 243 | No | No | Yes | No | 
 | Denmark | DK | 45 | Yes | Yes | Yes | Yes | 
 | Djibouti | DJ | 253 | No | No | Yes | No | 
-| Dominica | DN | 1\-767 | No | No | Yes | No | 
+| Dominica | DM | 1\-767 | No | No | Yes | No | 
 | Dominican Republic | DO | 1\-809, 1\-829, 1\-849 | Yes | No | No | Yes | 
 |  E | 
 | Ecuador | EC | 593 | Yes | No | No | Yes | 
@@ -87,7 +87,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Georgia | GE | 995 | No | No | Yes | No | 
 | Germany | DE | 49 | Yes | Yes | Yes | Yes | 
 | Ghana | GH | 233 | No | No | Yes | No | 
-| Gibraltar | GL | 350 | No | No | Yes | No | 
+| Gibraltar | GI | 350 | No | No | Yes | No | 
 | Greece | GR | 30 | No | No | Yes | No | 
 | Greenland | GL | 299 | No | No | Yes | No | 
 | Grenada | GD | 1\-473 | No | No | Yes | No | 
@@ -99,7 +99,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Guinea\-Bissau | GW | 245 | No | No | Yes | N/A | 
 | Guyana | GY | 592 | No | No | Yes | No | 
 |  H | 
-| Haiti | H | 509 | No | No | Yes | No | 
+| Haiti | HT | 509 | No | No | Yes | No | 
 | Honduras | HN | 504 | No | No | Yes | No | 
 | Hong Kong | HK | 852 | No | Yes | Yes | Yes | 
 | Hungary | HU | 36 | No | Yes | No | Yes | 
@@ -112,7 +112,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Isle of Man | IM | 44\-1624 | No | No | Yes | No | 
 | Israel | IL | 972 | No | Yes | Yes | Yes | 
 | Italy | IT | 39 | Yes | Yes | Yes | Yes | 
-| Ivory Coast | CL | 225 | No | No | Yes | No | 
+| Ivory Coast | CI | 225 | No | No | Yes | No | 
 |  J | 
 | Jamaica | JM | 1\-876 | No | No | Yes | No | 
 | Japan | JP | 81 | Yes | Yes | Yes | Yes | 
@@ -121,7 +121,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 |  K | 
 | Kazakhstan | KZ | 7 | No | No | Yes | No | 
 | Kenya | KE | 254 | No | No | Yes | No | 
-| Kosovo | XK | 383 | No | No | Yes | No | 
+| Kosovo | KV | 383 | No | No | Yes | No | 
 | Kuwait | KW | 965 | No | No | Registration required[1](#sms-support-note-1) | No | 
 | Kyrgyzstan | KG | 996 | No | No | Yes | No | 
 | L | 
@@ -156,7 +156,7 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Montenegro | ME | 382 | No | No | Yes | No | 
 | Montserrat | MS | 1\-664 | No | No | Yes | No | 
 | Morocco | MA | 212 | Yes | No | Yes | Yes | 
-| Mozambique | MS | 258 | No | No | No | No | 
+| Mozambique | MZ | 258 | No | No | No | No | 
 | Myanmar | MM | 95 | No | Yes | Yes | Yes | 
 | N | 
 | Namibia | NA | 264 | No | No | Yes | No | 
@@ -179,10 +179,10 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Papua New Guinea | PG | 675 | No | No | Yes | No | 
 | Paraguay | PY | 595 | No | No | No | No | 
 | Peru | PE | 51 | Yes | No | No | Yes | 
-| Philippines | PH | 63 | No | Yes | Registration required[1](#sms-support-note-1) | Yes | 
+| Philippines | PH | 63 | No | No | Registration required[1](#sms-support-note-1) | Yes | 
 | Poland | PL | 48 | No | Yes | Yes | Yes | 
 | Portugal | PT | 351 | No | Yes | Yes | Yes | 
-| Puerto Rico | PR | 1\-797, 1\-939 | No | Yes | No | Yes | 
+| Puerto Rico | PR | 1\-797, 1\-939 | Yes | Yes | No | Yes | 
 | Q | 
 | Qatar | QA | 974 | No | No | Registration required[1](#sms-support-note-1) | No | 
 | R | 
@@ -215,11 +215,11 @@ You can purchase long codes for some countries directly through the Amazon Pinpo
 | Suriname | SR | 597 | No | No | Yes | No | 
 | Swaziland | SZ | 268 | No | No | Yes | No | 
 | Sweden | SE | 46 | Yes | Yes | Yes | Yes | 
-| Switzerland | CH | 41 | No | Yes | Yes | Yes | 
+| Switzerland | CH | 41 | No | Yes[4](#sms-support-note-4) | Yes | No | 
 | T | 
 | Taiwan | TW | 886 | No | Yes | Yes | Yes | 
 | Tajikistan | TJ | 992 | No | No | Yes | No | 
-| Tanzania | TX | 255 | No | No | Yes | No | 
+| Tanzania | TZ | 255 | No | No | Yes | No | 
 | Thailand | TH | 66 | No | Yes | Registration required[1](#sms-support-note-1)  | Yes | 
 | Timor\-Leste | TL | 670 | No | No | Yes | No | 
 | Togo | TG | 228 | No | No | Yes | No | 
@@ -264,7 +264,7 @@ In order to send messages to China, you must first register your templates throu
 
 1. <a name="sms-support-note-4"></a>Long codes in these countries only support inbound messaging\. In other words, you can't use these long codes to send messages *to* your recipients, but you can use them to receive messages *from* your recipients\. These long codes are useful way to allow your recipients to opt\-out if you send messages using an alphabetic Sender ID, because Sender IDs only support outbound messages\.
 
-1. <a name="sms-support-note-5"></a>Amazon Pinpoint can send SMS traffic to Singapore using a Sender ID that has been registered on the Singapore SMS Sender ID Registry \(SSIR\), a registry created by the [Info\-communications Media Development Authority \(IMDA\)](https://www.imda.gov.sg/) of Singapore\. For more information on requirements to use a Singapore Sender ID, see [Special requirements for Singapore](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-senderid-singapore.html)\. You can also send SMS traffic in Singapore using unregistered Sender IDs or alternative origination identity types such as Short Codes or Long Codes\.
+1. <a name="sms-support-note-5"></a>Amazon Pinpoint can send SMS traffic to Singapore using a Sender ID that has been registered on the Singapore SMS Sender ID Registry \(SSIR\), a registry created by the [Info\-communications Media Development Authority \(IMDA\)](https://www.imda.gov.sg/) of Singapore\. For more information on requirements to use a Singapore Sender ID, see [Special requirements for Singapore](channels-sms-senderid-singapore.md)\. You can also send SMS traffic in Singapore using unregistered Sender IDs or alternative origination identity types such as Short Codes or Long Codes\.
 
 ## Sender ID support<a name="channels-sms-countries-sender-id"></a>
 

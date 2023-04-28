@@ -24,13 +24,13 @@ The following table shows general MPS limits for dedicated long codes\.
 
 | Geographic area | MPS | 
 | --- | --- | 
-| United States \(US\) \(10DLC\) | Varies\. Carrier\-dependent, based on the campaign type or brand level\. | 
+| United States \(US\) \(10DLC\) | Default 1 MPS\. Limit increase varies\. Carrier\-dependent, based on the campaign type or brand level\. To submit a limit increase see [SMS quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html#quotas-sms) | 
 | Canada \(CA\) | 1 MPS | 
 | All other countries and regions | 10 MPS | 
 
 ## Toll\-free numbers<a name="channels-sms-limitations-tfn"></a>
 
-Toll\-free numbers are currently only available in the United States\. US toll\-free numbers support 3 MPS\.
+Toll\-free numbers are currently only available in the United States\. US toll\-free numbers support 3 MPS and require that you register the toll\-free number\. For more information about registering a toll\-free number, see [US toll\-free number registration requirements and process](settings-sms-tfn-register.md)\.
 
 **Important**  
 If your throughput requirements exceed 3 TPS, you should use a 10DLC number or a short code\. If you purchase multiple toll\-free numbers and attempt to distribute your throughput across them, the mobile carriers are likely to filter all of your messages from their networks\.

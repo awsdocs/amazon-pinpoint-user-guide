@@ -2,6 +2,9 @@
 
 After you write your message, you can specify when the campaign should be sent\. You can choose to send the campaign immediately, at a scheduled date and time, on a recurring basis, or when certain events occur\.
 
+**Tip**  
+If a campaign is running it will complete and then pause\. Pause only pauses or skips the next run for a recurring future scheduled campaign\. A campaign scheduled for immediate can't be paused\.
+
 When you create a campaign, you choose a *segment* to send that campaign to\. A segment is a group of your customers that share certain attributes\. For example, a segment might contain all of your customers who use version 2\.0 of your app on an Android device, or all customers who live in the city of Los Angeles\. 
 
 **Topics**
@@ -24,7 +27,7 @@ If you want to send the campaign as soon as you finish creating it, you can choo
 
 ### Sending the campaign immediately<a name="campaigns-schedule-immediate"></a>
 
-If you want to send the campaign as soon as you finish creating it, you can choose to send the campaign immediately\.
+If you want to send the campaign as soon as you finish creating it, you can choose to send the campaign immediately\. You can't pause a campaign that is set to run immediately\.
 
 **To send the campaign immediately**
 

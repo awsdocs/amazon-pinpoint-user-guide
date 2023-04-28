@@ -28,8 +28,8 @@ If the **Filters** section shows a message stating that the filters are unavaila
    + To apply a filter that displays data for only those endpoints that have a specific attribute, choose the attribute from the **Endpoint Attributes** list\. After you choose an attribute, choose an attribute value from the **Endpoint Attribute Values** list\. Then choose **View charts** to see the updated metrics\.
 
    To further filter the data, repeat this step for each additional event or attribute that you want to filter the data by\.
-
-   If your app or project contains a high number of endpoints, there might be a delay of up to six hours for Amazon Pinpoint to display this data\.
+**Note**  
+If your app or project contains a high number of endpoints, there might be a delay of up to six hours for Amazon Pinpoint to display this data\.
 
 ## Chart descriptions<a name="analytics-events-description"></a>
 

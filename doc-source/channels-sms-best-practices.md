@@ -12,6 +12,7 @@ This section describes several best practices that might help you improve your c
 
 **Topics**
 + [Comply with laws, regulations, and carrier requirements](#channels-sms-best-practices-understand-laws)
++ [Prohibited message content](#channels-sms-best-practices-message-content)
 + [Obtain permission](#channels-sms-best-practices-obtain-permission)
 + [Don't send to old lists](#channels-sms-best-practices-old-lists)
 + [Audit your customer lists](#channels-sms-best-practices-audit-lists)
@@ -24,6 +25,7 @@ This section describes several best practices that might help you improve your c
 + [Use dedicated short codes](#channels-sms-best-practices-dedicated-short-codes)
 + [Verify your destination phone numbers](#channels-sms-best-practices-verify-destination-numbers)
 + [Design with redundancy in mind](#channels-sms-best-practices-redundancy)
++ [Handling deactivated phone numbers](channels-sms-best-practices-deactivated.md)
 
 ## Comply with laws, regulations, and carrier requirements<a name="channels-sms-best-practices-understand-laws"></a>
 
@@ -40,19 +42,61 @@ As a sender, these laws may apply to you even if your company or organization is
 
 In many countries, the local carriers ultimately have the authority to determine what kind of traffic flows over their networks\. This means that the carriers might impose restrictions on SMS content that exceed the minimum requirements of local laws\.
 
+## Prohibited message content<a name="channels-sms-best-practices-message-content"></a>
+
+Some countries or mobile carriers require that you register your number or Sender ID with them before live messaging will be enabled\. When using or registering a number as an originator, it's best to follow these guidelines:
++ Regulators have a high bar for number registration and you will need to provide a valid opt\-in workflow to register the number, see [SMS Best Practices: Obtain Permission](#channels-sms-best-practices-obtain-permission)\.
++ Don't use shortened URLs created from third\-party URL shorteners, as these messages are more likely to be filtered as spam\. If you want to use a shortened URL consider using a 10LDC phone number or short code\. Using either of these number types require that you register your message template, which can then include a shortened URL in the message\.
++ Keyword opt\-out and opt\-in responses are set at the carrier level, using STOP and UNSTOP\. These keywords can't be modified, and no other keywords can be used\. Response messages when a user replies with STOP and UNSTOP are also carrier\-managed and can't be modified\.
++ Don't send the same or similar message contents using multiple numbers\. This is considered "snowshoeing", and is typically used by spammers to avoid number rate and volume limitations\.
++ Any messages related to these industries may be considered restricted and is subject heavy filtering or outright blocks\. This can include One Time Passwords and Multi Factor Authentication for services related to restricted categories\. 
+
+  If you had a registration denied for being a non compliant use case and you feel this designation is incorrect you can submit a request via support\.
+
+  The following table describes the types of restricted content:    
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-best-practices.html)
+
 ## Obtain permission<a name="channels-sms-best-practices-obtain-permission"></a>
 
-Never send messages to customers who haven't explicitly asked to receive the specific types of messages that you plan to send\. Don't share opt\-in lists, even among organizations within the same company\. 
+Never send messages to recipients who haven't explicitly asked to receive the specific types of messages that you plan to send\. Don't share opt\-in lists, even among organizations within the same company\. 
 
-If customers can sign up to receive your messages by using an online form, add systems that prevent automated scripts from subscribing people without their knowledge\. You should also limit the number of times a user can submit a phone number in a single session\.
+If recipients can sign up to receive your messages by using an online form, add systems that prevent automated scripts from subscribing people without their knowledge\. You should also limit the number of times a user can submit a phone number in a single session\.
 
-When you receive an SMS opt\-in request, send the customer a message that asks them to confirm that they want to receive messages from you\. Don't send that customer any additional messages until they confirm their subscription\. A subscription confirmation message might resemble the following example:
+When you receive an SMS opt\-in request, send the recipient a message that asks them to confirm that they want to receive messages from you\. Don't send that recipient any additional messages until they confirm their subscription\. A subscription confirmation message might resemble the following example:
 
 `Text YES to join ExampleCorp alerts. 2 msgs/month. Msg & data rates may apply. Reply HELP for help, STOP to cancel.`
 
 Maintain records that include the date, time, and source of each opt\-in request and confirmation\. This might be useful if a carrier or regulatory agency requests it, and can also help you perform routine audits of your customer list\.
 
-Finally, note that transactional SMS messages, such as order confirmations or one\-time passwords, typically don't require explicit consent as long as you tell your customers that you're going to send them these messages\. However, you should never send marketing messages to customers who only provided you with permission to send them transactional messages\.
+### Opt\-in workflow<a name="channels-sms-best-practices-obtain-permission-optin"></a>
+
+In some cases \(like US Toll\-Free or Short Code registration\) mobile carriers require you to provide mockups or screen shot of your entire opt\-in workflow\. The mockups or screen shot must closely resemble the opt\-in workflow that your recipients will complete\. 
+
+Your mockups or screen shot should include all of the required disclosures listed below to maintain the highest level of compliance\. 
+
+**Required disclosures**
++ A description of the messaging use case that you will send through your program\.
++ The phrase “Message and data rates may apply\.”
++ An indication of how often recipients will get messages from you\. For example, a recurring messaging program might say “one message per week\.” A one\-time password or multi\-factor authentication use case might say “message frequency varies” or “one message per login attempt\.”
++ Links to your Terms and Conditions and Privacy Policy documents\. 
+
+**Common rejection reasons for non compliant opt\-ins**
++ If the provided company name does not match what is provided in the mockup or screen shot\. Any non obvious relations should be explained in the opt\-in workflow description\.
++ If it appears that a message will be sent to the recipient, but no consent is explicitly gathered before doing so\. Explicit consent is a requirement of all messaging\.
++ If it appears that receiving a text message is required to sign up for a service\. This is not compliant if the workflow doesn’t provide any alternative to receiving an opt\-in message in another form like email or a voice call\. 
++ If the opt\-in language is presented entirely in the Terms of Service\. The disclosures should always be presented to the recipient at time of opt\-in rather than housed inside a linked policy document\. 
++ If a customer provided consent to receive one type of message from you and you send them other types of text messages\. For example they consent to receive one\-time passwords but are also sent polling and survey messages\.
++ If the required disclosures \(listed above\) are not presented to the recipients\.
+
+The following example complies with the mobile carriers’ requirements for a multi\-factor authentication use case\.
+
+![\[Image NOT FOUND\]](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/best-practices-usecase.png)
+
+It contains finalized text and images, and it shows the entire opt\-in flow, complete with annotations\. In the opt\-in flow, the customer has to take distinct, intentional actions to provide their consent to receive text messages and contains all of the required disclosures\.
+
+### Other opt\-in workflow types<a name="channels-sms-best-practices-obtain-permission-other"></a>
+
+Mobile carriers will also accept opt\-in workflows outside of applications and websites like verbal or written opt\-in if it complies with what is outlined above\. A compliant opt\-in workflow and verbal or written script will gather explicit consent from the recipient to receive a specific message type\. Examples of this include the verbal script a support agent uses to gather consent before recording into a service database or a phone number listed on a promotional flyer\. To provide a mockup of these opt\-in workflow types you can provide a screenshot of your opt\-in script, marketing material or database where numbers are collected\. Mobile carriers may have additional questions around these use cases if an opt\-in is not clear or the use case exceed certain volumes\.
 
 ## Don't send to old lists<a name="channels-sms-best-practices-old-lists"></a>
 
@@ -188,3 +232,20 @@ For mission\-critical messaging programs, we recommend that you configure Amazon
 The phone numbers that you use for SMS messages—including short codes, long codes, toll\-free numbers, and 10DLC numbers—can't be replicated across AWS Regions\. As a result, in order to use Amazon Pinpoint in multiple Regions, you must request separate phone numbers in each Region where you want to use Amazon Pinpoint\. For example, if you use a short code to send text messages to recipients in the United States, you need to request separate short codes in each AWS Region that you plan to use\.
 
 In some countries, you can also use multiple types of phone numbers for added redundancy\. For example, in the United States, you can request short codes, 10DLC numbers, and toll\-free numbers\. Each of these phone number types takes a different route to the recipient\. Having multiple phone number types available—either in the same AWS Region or spread across multiple AWS Regions—provides an additional layer of redundancy, which can help improve resiliency\.
+
+**Topics**
++ [Comply with laws, regulations, and carrier requirements](#channels-sms-best-practices-understand-laws)
++ [Prohibited message content](#channels-sms-best-practices-message-content)
++ [Obtain permission](#channels-sms-best-practices-obtain-permission)
++ [Don't send to old lists](#channels-sms-best-practices-old-lists)
++ [Audit your customer lists](#channels-sms-best-practices-audit-lists)
++ [Keep records](#channels-sms-best-practices-keep-records)
++ [Make your messages clear, honest, and concise](#channels-sms-best-practices-appropriate-content)
++ [Respond appropriately](#channels-sms-best-practices-respond-appropriately)
++ [Adjust your sending based on engagement](#channels-sms-best-practices-adjust-engagement)
++ [Send at appropriate times](#channels-sms-best-practices-appropriate-times)
++ [Avoid cross\-channel fatigue](#channels-sms-best-practices-cross-channel-fatigue)
++ [Use dedicated short codes](#channels-sms-best-practices-dedicated-short-codes)
++ [Verify your destination phone numbers](#channels-sms-best-practices-verify-destination-numbers)
++ [Design with redundancy in mind](#channels-sms-best-practices-redundancy)
++ [Handling deactivated phone numbers](channels-sms-best-practices-deactivated.md)

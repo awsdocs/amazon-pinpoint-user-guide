@@ -12,10 +12,11 @@ In many countries and regions, if a customer receives restricted content and com
 
 Each country might also have additional capabilities and limitations when using SMS with Amazon Pinpoint\. These capabilities and limitations are described in the following topics\.
 
+**Note**  
+Two\-way SMS is only available in certain countries and regions\. For more information about two\-way SMS support by country or region, see [Supported countries and regions \(SMS channel\)](channels-sms-countries.md)\.
+
 **Topics**
 + [Supported countries and regions \(SMS channel\)](channels-sms-countries.md)
 + [Special requirements for sending SMS messages to recipients in India](channels-sms-senderid-india.md)
 + [Special requirements for Singapore](channels-sms-senderid-singapore.md)
-
-**Note**  
-Two\-way SMS is only available in certain countries and regions\. For more information about two\-way SMS support by country or region, see [Supported countries and regions \(SMS channel\)](channels-sms-countries.md)\.
++ [SMS template registration](channels-sms-template-registration.md)
