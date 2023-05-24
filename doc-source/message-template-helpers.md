@@ -52,7 +52,7 @@ In this example, the `if` helper is used to evaluate whether a user's first name
 `{{else}}`  
 *Hello,*  
 `{{/if}}`  
-returns *Hello, Jane* if the `if` helper is true\.
+returns *Hello Jane,* if the `if` helper is true\.
 
 ## Conditional helpers<a name="conditionhelpers"></a>
 
